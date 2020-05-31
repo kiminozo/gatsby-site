@@ -5,6 +5,7 @@ import { Menu } from 'semantic-ui-react'
 
 //import "./header.sass"
 import styles from "./header.module.sass"
+import { throws } from "assert"
 
 
 type Props = {

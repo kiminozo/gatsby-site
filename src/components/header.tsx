@@ -3,8 +3,8 @@ import PropTypes from "prop-types"
 import React from "react"
 import { Menu } from 'semantic-ui-react'
 
-import "./header.sass"
-
+//import "./header.sass"
+import styles from "./header.module.sass"
 
 
 type Props = {
@@ -21,7 +21,7 @@ class Header extends React.Component<Props, State> {
 
   state = ({ activeItem: 'bio' })
 
-  onMenuClick = (_: any, { name: string }) => { }
+  //onMenuClick = (_: any, { name: string }) => { }
 
   render() {
     const { activeItem } = this.state;
@@ -49,7 +49,7 @@ class Header extends React.Component<Props, State> {
           />
         </Menu>
       </div>
-    </header>);
+    </header >);
   }
 }
 

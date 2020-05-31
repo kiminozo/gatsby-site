@@ -26,7 +26,7 @@ class Header extends React.Component<Props, State> {
   render() {
     const { activeItem } = this.state;
 
-    return (<header>
+    return (<header className={styles.container}>
       <div
         style={{
           margin: `0 auto`,

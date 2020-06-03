@@ -37,10 +37,16 @@ class Header extends React.Component<Props, State> {
       >
         <Menu tabular>
           <Menu.Item as={Link}
-            name='bio'
+            name='home'
             activeClassName='active'
             link={true}
             to="/"
+          />
+          <Menu.Item as={Link}
+            name='bio'
+            activeClassName='active'
+            link={true}
+            to="/biography"
           />
           <Menu.Item as={Link}
             name='photos'

@@ -71,7 +71,7 @@ function SEO({ description, lang = `cn`, meta = [], title }: SEOProps): any {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${siteMetadata.title}`}
+      titleTemplate={`%s | ${siteMetadata.title} | ${siteMetadata.description}`}
       meta={constantMeta.concat(meta)}
     />
   )

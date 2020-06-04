@@ -1,0 +1,14 @@
+[{
+    "name": "title",
+    "link": "/"
+}, {
+    "name": "bio",
+    "link": "/biography",
+    "sub": {
+        "name": "hello",
+        "link": "/blog/my-first-post"
+    }
+}, {
+    "name": "photos",
+    "link": "/page-2"
+}]

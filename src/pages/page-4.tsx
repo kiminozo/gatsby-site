@@ -15,6 +15,7 @@ import {
   Ref,
   Image
 } from "semantic-ui-react";
+import DocsLayout from "src/components/DocsLayout";
 
 
 const Placeholder = () => <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' />
@@ -30,21 +31,23 @@ export default class StickyExampleAdjacentContext extends Component {
         <Grid.Column>
           <Ref innerRef={this.contextRef}>
             <Segment>
-              {_.times(20, (i) => (
-                <div id={`id-${i}`}>
-                  <Header as="h2" dividing>H1-{i}</Header>
-                  <p>
-                    Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem
-                    malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus
-                    commodo, tortor mauris condimentum nibh, ut fermentum massa.
+              <DocsLayout>
+                {_.times(20, (i) => (
+                  <div id={`id-${i}`}>
+                    <Header as="h2" dividing>H1-{i}</Header>
+                    <p>
+                      Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem
+                      malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus
+                      commodo, tortor mauris condimentum nibh, ut fermentum massa.
                   </p>
-                  <p>
-                    Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem
-                    malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus
-                    commodo, tortor mauris condimentum nibh, ut fermentum massa.
+                    <p>
+                      Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem
+                      malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus
+                      commodo, tortor mauris condimentum nibh, ut fermentum massa.
                   </p>
-                </div>
-              ))}
+                  </div>
+                ))}
+              </DocsLayout>
               <Rail position='right'>
                 <Sticky context={this.contextRef}>
                   <Header as='h3'>Stuck Content</Header>

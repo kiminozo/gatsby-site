@@ -21,6 +21,9 @@ const IndexPage = () => (
     <Button as={Link} to="/page-3/">
       Go to page 3
     </Button>
+    <Button as={Link} to="/page-4/">
+      Go to page 4
+    </Button>
     <Link to="/blog/my-first-post/">Go to my first Markdown blog post</Link>
   </Layout>
 )

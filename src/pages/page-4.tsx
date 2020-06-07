@@ -1,6 +1,6 @@
 import React, { Component, createRef } from "react";
 import { PageProps, Link } from "gatsby"
-import _ from "lodash";
+import lodash from "lodash";
 import {
   Button,
   Container,
@@ -15,7 +15,8 @@ import {
   Ref,
   Image,
   Visibility,
-  VisibilityEventData
+  VisibilityEventData,
+  VisibilityCalculations
 } from "semantic-ui-react";
 import { type } from "os";
 //import DocsLayout from "src/components/DocsLayout";
@@ -27,7 +28,10 @@ type Props = {
 };
 type State = {
   message: string
+  activeKey: string
+  idx: number;
 }
+
 
 export default class StickyExampleAdjacentContext extends Component<Props, State> {
   contextRef = createRef()
@@ -39,10 +43,28 @@ export default class StickyExampleAdjacentContext extends Component<Props, State
     }
   }
 
-  state = { message: "" }
+  showIndexs: Set<number> = new Set();
+
+  handleItemUpdate = (key: number, c: VisibilityCalculations) => {
+    let idxs = this.showIndexs;
+    let isShown = c.topVisible && c.bottomVisible
+      || c.topPassed && c.passing && !c.bottomVisible;
+    if (isShown) {
+      idxs.add(key)
+    } else {
+      idxs.delete(key)
+    }
+
+    let array = [...idxs]
+    let min = lodash.min(array) ?? -1;
+    //let s = JSON.stringify(array);//`key-${min}`
+    this.setState({ activeKey: `#hd-${min}`, idx: min });
+  }
+
+  state = { message: "", activeKey: "", idx: -1 }
 
   render() {
-    const { message } = this.state;
+    const { message, activeKey, idx } = this.state;
 
     return (
       <Grid centered columns={3}>
@@ -51,41 +73,50 @@ export default class StickyExampleAdjacentContext extends Component<Props, State
             <Visibility onUpdate={this.handleUpdate}>
               <Segment>
                 <div>
-                  {_.times(20, (i) => (
+                  {lodash.times(20, (i) => (
                     <React.Fragment>
-                      <div id={`id-${i}`}>
-                        <Header as="h2" dividing key={i}>{`H1-${i}`}</Header>
-                        <p>
-                          Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem
-                          malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus
-                          commodo, tortor mauris condimentum nibh, ut fermentum massa.
+                      <Visibility
+                        onUpdate={(nothing: null, { calculations }: VisibilityEventData) =>
+                          this.handleItemUpdate(i, calculations)}
+                      >
+                        <div id={`id-${i}`}>
+                          <Header as="h2" dividing href={`#hd-${i}`} key={i}>{`H1-${i}`}</Header>
+                          <p>
+                            Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem
+                            malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus
+                            commodo, tortor mauris condimentum nibh, ut fermentum massa.
                         </p>
-                        <p>
-                          Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem
-                          malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus
-                          commodo, tortor mauris condimentum nibh, ut fermentum massa.
+                          <p>
+                            Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem
+                            malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus
+                            commodo, tortor mauris condimentum nibh, ut fermentum massa.
                          </p>
-                      </div>
+                        </div>
+                      </Visibility>
                     </React.Fragment>
                   ))}
                 </div>
                 <Rail position='right'>
                   <Sticky context={this.contextRef}>
                     <p>{message ? message : "null"}</p>
+                    <p>{activeKey ? activeKey : "nokey"}</p>
+
                     <Header as='h3'>Stuck Content</Header>
                     <Menu pointing vertical text>
-                      {_.times(20, (i) => (
-                        <Menu.Item >H1-{i}</Menu.Item>
-                      ))}
+                      {lodash.times(20, (i) => {
+                        let header = `#hd-${i}`;
+                        return (<Menu.Item active={idx === i}>H1-{i}</Menu.Item>)
+                      }
+                      )}
                     </Menu>
                   </Sticky>
                 </Rail>
               </Segment>
             </Visibility>
           </Ref>
-        </Grid.Column>
+        </Grid.Column >
 
-      </Grid>
+      </Grid >
     )
   }
 }

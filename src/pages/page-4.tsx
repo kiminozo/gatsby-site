@@ -102,7 +102,7 @@ export default class StickyExampleAdjacentContext extends Component<Props, State
                     <p>{activeKey ? activeKey : "nokey"}</p>
 
                     <Header as='h3'>Stuck Content</Header>
-                    <Menu pointing vertical text>
+                    <Menu mini vertical text color="red">
                       {lodash.times(20, (i) => {
                         let header = `#hd-${i}`;
                         return (<Menu.Item active={idx === i}>H1-{i}</Menu.Item>)

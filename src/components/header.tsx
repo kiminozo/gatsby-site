@@ -54,6 +54,12 @@ class Header extends React.Component<Props, State> {
             link={true}
             to="/page-2/"
           />
+          <Menu.Item as={Link}
+            name='demo'
+            activeClassName='active'
+            link={true}
+            to="/page-5/"
+          />
         </Container>
       </Menu>
 

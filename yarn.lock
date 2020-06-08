@@ -12512,6 +12512,13 @@ react-style-singleton@^2.1.0:
     invariant "^2.2.4"
     tslib "^1.0.0"
 
+react-visibility-sensor@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.npm.taobao.org/react-visibility-sensor/download/react-visibility-sensor-5.1.1.tgz#5238380960d3a0b2be0b7faddff38541e337f5a9"
+  integrity sha1-Ujg4CWDToLK+C3+t3/OFQeM39ak=
+  dependencies:
+    prop-types "^15.7.2"
+
 react@^16.12.0, react@^16.8.0:
   version "16.13.1"
   resolved "https://registry.npm.taobao.org/react/download/react-16.13.1.tgz#2e818822f1a9743122c063d6410d85c1e3afe48e"

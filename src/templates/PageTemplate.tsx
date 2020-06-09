@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { type } from "os"
+import { Button, Grid, Header } from 'semantic-ui-react'
 
 // this prop will be injected by the GraphQL query below.
 type TemplateProps = {
@@ -25,16 +26,19 @@ export default function Template({ data }: TemplateProps) {
   return (
     <Layout>
       <SEO title={frontmatter.title} />
-      <div className="blog-post-container">
-        <div className="blog-post">
-          <h1>{frontmatter.title}</h1>
-          <p>{frontmatter.date}</p>
+      <Grid container>
+        <Grid.Column width={10} >
+          <Header as="h1">{frontmatter.title}</Header>
+          {/* <p>{frontmatter.date}</p> */}
           <div
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
           />
-        </div>
-      </div>
+        </Grid.Column>
+        <Grid.Column width={4}>
+          <div>SideBar</div>
+        </Grid.Column>
+      </Grid>
     </Layout>
   )
 }

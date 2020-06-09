@@ -52,13 +52,13 @@ class Header extends React.Component<Props, State> {
             name='photos'
             activeClassName='active'
             link={true}
-            to="/page-2/"
+            to="/demo/page-2/"
           />
           <Menu.Item as={Link}
             name='demo'
             activeClassName='active'
             link={true}
-            to="/page-5/"
+            to="/demo/page-5/"
           />
         </Container>
       </Menu>

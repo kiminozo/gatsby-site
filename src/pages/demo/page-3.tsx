@@ -46,7 +46,7 @@ class Page3 extends Component {
             </Segment>
           </Grid.Row>
           <Grid.Row>
-            <Grid.Column width={11}>
+            <Grid.Column width={10}>
               <Header size="large" as="h2">
                 <Header.Content>Sample blog post</Header.Content>
                 <Header.Subheader>
@@ -210,7 +210,7 @@ class Page3 extends Component {
               </Button>
               <Divider hidden />
             </Grid.Column>
-            <Grid.Column width={4}>
+            <Grid.Column width={3}>
               <Rail position='right'>
                 <Sticky context={this.contextRef}>
                   <Menu vertical accordion fluid>

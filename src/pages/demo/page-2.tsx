@@ -3,8 +3,8 @@ import React from "react"
 import { PageProps, Link } from "gatsby"
 import { Button } from 'semantic-ui-react'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
 
 const SecondPage = (props: PageProps) => (
   <Layout>

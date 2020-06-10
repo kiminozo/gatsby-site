@@ -93,19 +93,17 @@ class TemplatePage extends Component<TemplateProps> {
       <Layout>
         <SEO title="Page two" />
         <Grid container>
-          <Grid.Column width={10}>
-            <Ref innerRef={this.contextRef}>
-              <div>
-                <Header as="h1">{frontmatter.title}</Header>
-                {/* <p>{frontmatter.date}</p> */}
-                <div
-                  className="blog-post-content"
-                  dangerouslySetInnerHTML={{ __html: html }}
-                />
-                {this.renderMenu(headings)}
-              </div>
-            </Ref>
-          </Grid.Column>
+          <Ref innerRef={this.contextRef}>
+            <Grid.Column width={10}>
+              <Header as="h1">{frontmatter.title}</Header>
+              {/* <p>{frontmatter.date}</p> */}
+              <div
+                className="blog-post-content"
+                dangerouslySetInnerHTML={{ __html: html }}
+              />
+              {this.renderMenu(headings)}
+            </Grid.Column>
+          </Ref>
         </Grid>
       </Layout >
     )

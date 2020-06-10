@@ -62,7 +62,7 @@ class TemplatePage extends Component<TemplateProps> {
 
     return (
       <Rail position='right'>
-        <Sticky context={this.contextRef}>
+        <Sticky context={this.contextRef} offset={20}>
           <Menu as={Accordion} fluid style={sidebarStyle} text vertical>
             {h1s.map(h1 => (
               <Menu.Item>

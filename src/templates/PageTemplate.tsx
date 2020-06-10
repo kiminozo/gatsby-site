@@ -72,7 +72,7 @@ class TemplatePage extends Component<TemplateProps> {
                 </Accordion.Title>
                 <Accordion.Content as={Menu.Menu} active={true}>
                   {h1.child.map(h2 =>
-                    (<Menu.Item
+                    (<Menu.Item href={`#${h2.id}`}
                       content={h2.value} active={false}
                     />)
                   )}
@@ -113,29 +113,6 @@ class TemplatePage extends Component<TemplateProps> {
 export default function Template({ data }: TemplateProps) {
   return (<TemplatePage data={data} />)
 }
-
-// export default function Template({ data }: TemplateProps) {
-//   const { markdownRemark } = data // data.markdownRemark holds your post data
-//   const { frontmatter, html, headings } = markdownRemark
-//   return (
-//     <Layout>
-//       <SEO title={frontmatter.title} />
-//       <Grid container>
-//         <Grid.Column width={10} >
-//           <Header as="h1">{frontmatter.title}</Header>
-//           {/* <p>{frontmatter.date}</p> */}
-//           <div
-//             className="blog-post-content"
-//             dangerouslySetInnerHTML={{ __html: html }}
-//           />
-//         </Grid.Column>
-//         <Grid.Column width={4}>
-//           {headings.length > 0 && toc(headings)}
-//         </Grid.Column>
-//       </Grid>
-//     </Layout>
-//   )
-// }
 
 export const pageQuery = graphql`
   query($slug: String!) {

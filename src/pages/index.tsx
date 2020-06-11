@@ -15,11 +15,17 @@ const IndexPage = () => (
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
-    <Button as={Link} to="/page-2/">
+    <Button as={Link} to="/demo/page-2/">
       Go to page 2
     </Button>
-    <Button as={Link} to="/page-3/">
+    <Button as={Link} to="/demo/page-3/">
       Go to page 3
+    </Button>
+    <Button as={Link} to="/demo/page-4/">
+      Go to page 4
+    </Button>
+    <Button as={Link} to="/demo/page-5/">
+      Go to page 5
     </Button>
     <Link to="/blog/my-first-post/">Go to my first Markdown blog post</Link>
   </Layout>

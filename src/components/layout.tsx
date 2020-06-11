@@ -43,7 +43,7 @@ const Layout = ({ children }: LayoutProps) => {
       <Container as="main">{children}</Container>
       <Divider />
 
-      <Container textAlign="center">
+      <Container textAlign="center" style={{ height: 48 }}>
         © 2006-{new Date().getFullYear()},
         <a href="https://forritz.org">For RITZ</a>
         {` `}All rights reserved.

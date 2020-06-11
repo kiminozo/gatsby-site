@@ -3,7 +3,6 @@ import { graphql, PageProps, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { type } from "os"
 import {
   Button, Grid, Header, Ref, Segment, Rail, Accordion,
   Menu, Icon, Sticky, Visibility, VisibilityEventData
@@ -29,6 +28,7 @@ type TemplateProps = {
         title: string;
         slug: string;
         date: string;
+        toc: boolean;
       }
       html: string;
       headings: Headings[]
@@ -130,25 +130,31 @@ class TemplatePage extends Component<TemplateProps, TemplateState> {
   render() {
     const { markdownRemark } = this.props.data; // data.markdownRemark holds your post data
     const { frontmatter, html, headings } = markdownRemark
+
+    const body = (<Grid container>
+      <Ref innerRef={this.contextRef}>
+        <Grid.Column width={10}>
+          <Header as="h1">{frontmatter.title}</Header>
+          {/* <p>{frontmatter.date}</p> */}
+          <div
+            className="blog-post-content"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+          {frontmatter.toc && this.renderMenu(headings)}
+        </Grid.Column>
+      </Ref>
+    </Grid>)
+
     return (
       <Layout>
         <SEO title="Page two" />
-        <Visibility onUpdate={this.handleUpdate}>
-          <Grid container>
-            <Ref innerRef={this.contextRef}>
-              <Grid.Column width={10}>
-                <Header as="h1">{frontmatter.title}</Header>
-                {/* <p>{frontmatter.date}</p> */}
-                <div
-                  className="blog-post-content"
-                  dangerouslySetInnerHTML={{ __html: html }}
-                />
-                {this.renderMenu(headings)}
-              </Grid.Column>
-            </Ref>
-          </Grid>
-        </Visibility>
-      </Layout >
+        {frontmatter.toc ?
+          (<Visibility onUpdate={this.handleUpdate}>
+            {body}
+          </Visibility>) :
+          body
+        }
+      </Layout>
     )
   }
 }
@@ -165,6 +171,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         slug
         title
+        toc
       }
       headings {
         depth

@@ -9,6 +9,12 @@ const menusConfig: MenuConfig[] =
         name: "home",
         link: "/"
     }, {
+        name: "bio",
+        link: "/biography",
+    }, {
+        name: "post",
+        link: "/blog/my-first-post/"
+    }, {
         name: "demos",
         link: "/biography",
         sub: [{
@@ -25,26 +31,6 @@ const menusConfig: MenuConfig[] =
             name: "page-5",
             link: "/demo/page-5/"
         }]
-    }, {
-        name: "bio",
-        link: "/biography",
-    }, {
-        name: "post",
-        link: "/blog/my-first-post/"
-    }];
+    },];
 
 export { MenuConfig, menusConfig }
-    // [{
-    //     "name": "title",
-    //     "link": "/"
-    // }, {
-    //     "name": "bio",
-    //     "link": "/biography",
-    //     "sub": {
-    //         "name": "hello",
-    //         "link": "/blog/my-first-post"
-    //     }
-    // }, {
-    //     "name": "photos",
-    //     "link": "/page-2"
-    // }]

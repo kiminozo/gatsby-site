@@ -31,6 +31,9 @@ const menusConfig: MenuConfig[] =
             name: "page-5",
             link: "/demo/page-5/"
         }]
-    },];
+    }, {
+        name: "song-demo",
+        link: "/songs/asa-whats-goin-on"
+    }];
 
 export { MenuConfig, menusConfig }

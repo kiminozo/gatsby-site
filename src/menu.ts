@@ -6,7 +6,7 @@ type MenuConfig = {
 
 const menusConfig: MenuConfig[] =
     [{
-        name: "home",
+        name: "首页",
         link: "/"
     }, {
         name: "bio",

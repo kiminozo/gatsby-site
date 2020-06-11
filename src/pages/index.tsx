@@ -1,29 +1,35 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Card, Icon, Image, Button } from 'semantic-ui-react'
+import { Card, Icon, Image, Button, Grid, Divider } from 'semantic-ui-react'
 
 import SEO from "../components/seo"
 import Layout from "../components/layout";
 
 import logo from "../images/avatar/ritz.jpg"
 
-const CardExampleCard = () => (
-  <Card raised style={{ width: 200, height: 540 }}>
+const RitzCard = () => (
+  <Card raised style={{ width: 250, height: 650 }}>
     <Image src={logo} wrapped ui={false} />
     <Card.Content>
-      <Card.Header>Matthew</Card.Header>
+      <Card.Header>岡崎律子</Card.Header>
       <Card.Meta>
-        <span className='date'>Joined in 2015</span>
+        <span className='date'>1959 ~ 2004</span>
       </Card.Meta>
       <Card.Description>
-        Matthew is a musician living in Nashville.
+        別名 森野律 RITZ <br />
+        出生 1959年12月29日 <br />
+        血型 B型 <br />
+        出身地 日本長崎県西彼杵郡高島町 <br />
+        祭日 2004年5月5日（44岁） <br />
+        流派 animation <br />
+        职业 作曲家 唱作歌手 <br />
+        担当乐器 Vocal、Piano <br />
+        活動期間 1985年 – 2004年 <br />
+        事务所 STAR CHILD <br />
       </Card.Description>
     </Card.Content>
     <Card.Content extra>
-      <a>
-        <Icon name='user' />
-        22 Friends
-      </a>
+      <Button circular icon='world' />
     </Card.Content>
   </Card >
 )
@@ -31,23 +37,51 @@ const CardExampleCard = () => (
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <CardExampleCard />
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Button as={Link} to="/demo/page-2/">
-      Go to page 2
-    </Button>
-    <Button as={Link} to="/demo/page-3/">
-      Go to page 3
-    </Button>
-    <Button as={Link} to="/demo/page-4/">
-      Go to page 4
-    </Button>
-    <Button as={Link} to="/demo/page-5/">
-      Go to page 5
-    </Button>
-    <Link to="/blog/my-first-post/">Go to my first Markdown blog post</Link>
-  </Layout>
+    <Grid>
+      <Grid.Column width={4}>
+        <RitzCard />
+      </Grid.Column>
+      <Grid.Column width={12}>
+        <p>●她于1959年12月29日,在日本长崎县出生。<br />
+        大约1982年，开始创作广告配乐。当时，曾以森野律及RITZ为名提供乐曲。<br />
+        1991年，为OVA动画「1月にはChristmas」演唱OP和ED成为律子跨入动漫界的第一步作品。</p>
+        <p>她于1993年以唱作歌手的身份出道。</p>
+        <p>最有名的歌曲是2001年为动画作品《水果篮子》演唱片头曲《For フルーツバスケット》</p>
+        <p> 2002年为《妹妹公主Re Pure》片尾12个小故事OP和ED作曲。<br />
+          其后与日向めぐみ组成了二人歌唱组合メロキュア(Melocure)，该组合的几张单曲CD取得了不错的成绩。<br />
+        2003年5月，硬性癌症发作。在与病魔斗争的时候继续坚持着作曲的事业。<br />
+        2004年，组合推出了她们的第一张专辑《Melodic Hard Cure》。<br />
+        2004年5月5日，她因为败血症引发的贫血休克而突然去世，享年44岁。</p>
+        <p>临终前她没有办法留下遗言，遗下了她未完成的作品。一些动漫画的作者、配音演员，和大量的歌迷在网络上写下了遗憾与祝福。<br />
+        音乐恋爱游戏《交响乐之雨》是岡崎律子小姐最后一个全部包办的作曲项目。</p>
+        <p>她的作品以抒情慢歌为主，创作的歌曲比较多元化。岡崎律子小姐的歌曲具有诗人的想象力，深刻的情感，乐观主义及纯真的特点。她的声音被认为是令人印象深刻地柔软及精细。</p>
+        <p>在律子小姐短暂的一生中，写下了许多动人的乐章，大部分曲都是积极向上的，带有许多人生的感悟。</p>
+        <Divider />
+        <p>●刚接触岡崎律子的新人粉丝的指南：</p>
+        <Button as={Link} to="/demo/page-2/">
+          Go to page 2
+         </Button>
+        <br />
+
+        <Button as={Link} to="/demo/page-3/">
+          Go to page 3
+         </Button>
+        <br />
+
+        <Button as={Link} to="/demo/page-4/">
+          Go to page 4
+        </Button>
+        <br />
+
+        <Button as={Link} to="/demo/page-5/">
+          Go to page 5
+        </Button>
+        <br />
+        <Link to="/blog/my-first-post/">Go to my first Markdown blog post</Link>
+      </Grid.Column>
+    </Grid >
+
+  </Layout >
 )
 
 export default IndexPage

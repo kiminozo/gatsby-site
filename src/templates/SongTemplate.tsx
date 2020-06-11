@@ -106,7 +106,7 @@ class SongTemplatePage extends Component<TemplateProps, TemplateState> {
       return;
     }
     const { frontmatter, html } = edge.node;
-
+    const { title } = frontmatter;
     const zhEdge = _.find(edges, p => p.node.frontmatter.lang != null);
     if (!zhEdge) {
       return;
@@ -115,9 +115,9 @@ class SongTemplatePage extends Component<TemplateProps, TemplateState> {
 
     return (
       <Layout>
-        <SEO title="Page two" />
-        {this.renderDesktop(frontmatter.title, html, zhHtml)}
-        {this.renderMobile(frontmatter.title, html, zhHtml)}
+        <SEO title={title} />
+        {this.renderDesktop(title, html, zhHtml)}
+        {this.renderMobile(title, html, zhHtml)}
       </Layout>
     )
   }

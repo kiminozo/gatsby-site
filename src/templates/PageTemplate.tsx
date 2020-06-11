@@ -149,7 +149,7 @@ class TemplatePage extends Component<TemplateProps, TemplateState> {
 
     return (
       <Layout>
-        <SEO title="Page two" />
+        <SEO title={frontmatter.title} />
         {frontmatter.toc ?
           (<Visibility onUpdate={this.handleUpdate}>
             {body}

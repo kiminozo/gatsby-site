@@ -4,7 +4,10 @@ import { graphql, PageProps, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { type } from "os"
-import { Button, Grid, Header, Ref, Segment, Rail, Accordion, Menu, Icon, Sticky } from 'semantic-ui-react'
+import {
+  Button, Grid, Header, Ref, Segment, Rail, Accordion,
+  Menu, Icon, Sticky, Visibility, VisibilityEventData
+} from 'semantic-ui-react'
 import _ from "lodash";
 
 // this prop will be injected by the GraphQL query below.
@@ -33,6 +36,15 @@ type TemplateProps = {
   }
 }
 
+type TemplateState = {
+  activeId: string
+}
+
+type HeaderInfo = {
+  id: string;
+  offset: number;
+}
+
 const sidebarStyle = {
   background: '#fff',
   boxShadow: '0 2px 2px rgba(0, 0, 0, 0.1)',
@@ -41,13 +53,43 @@ const sidebarStyle = {
   paddingTop: '0.1em',
 }
 
-class TemplatePage extends Component<TemplateProps> {
-  contextRef = createRef()
+class TemplatePage extends Component<TemplateProps, TemplateState> {
+  contextRef = createRef<HTMLDivElement>()
+  headerInfos: HeaderInfo[] = [];
+
+  constructor(props: Readonly<TemplateProps>) {
+    super(props);
+    this.state = { activeId: "" }
+  }
+
+  handleUpdate = (nothing: null, { calculations }: VisibilityEventData) => {
+    if (calculations && this.headerInfos.length > 0) {
+      let offsetTop = calculations.pixelsPassed;//data.children.toString();
+      let id = this.headerInfos[0].id;
+      for (const headerInfo of this.headerInfos) {
+        if (headerInfo.offset > offsetTop) {
+          break;
+        }
+        id = headerInfo.id;
+      }
+      this.setState({ activeId: id })
+    }
+  }
+
+  componentDidMount() {
+    const { headings } = this.props.data.markdownRemark;
+    headings.forEach(element => {
+      let offset = document.getElementById(element.id)?.offsetTop ?? 0;
+      this.headerInfos.push({ id: element.id, offset });
+    });
+  }
 
   renderMenu(headings: Headings[]) {
     if (headings.length == 0) {
       return;
     }
+
+    const { activeId } = this.state;
 
     let h1s: Item[] = []
     let h1: Item | null = null;
@@ -67,13 +109,12 @@ class TemplatePage extends Component<TemplateProps> {
             {h1s.map(h1 => (
               <Menu.Item>
                 <Accordion.Title active={true}>
-                  <b>{h1.h.value}</b>
-                  <Icon name='dropdown' />
+                  {h1.h.id === activeId ? (<b>{h1.h.value}</b>) : h1.h.value}
                 </Accordion.Title>
                 <Accordion.Content as={Menu.Menu} active={true}>
                   {h1.child.map(h2 =>
                     (<Menu.Item href={`#${h2.id}`}
-                      content={h2.value} active={false}
+                      content={h2.value} active={h2.id === activeId}
                     />)
                   )}
                 </Accordion.Content>
@@ -92,19 +133,21 @@ class TemplatePage extends Component<TemplateProps> {
     return (
       <Layout>
         <SEO title="Page two" />
-        <Grid container>
-          <Ref innerRef={this.contextRef}>
-            <Grid.Column width={10}>
-              <Header as="h1">{frontmatter.title}</Header>
-              {/* <p>{frontmatter.date}</p> */}
-              <div
-                className="blog-post-content"
-                dangerouslySetInnerHTML={{ __html: html }}
-              />
-              {this.renderMenu(headings)}
-            </Grid.Column>
-          </Ref>
-        </Grid>
+        <Visibility onUpdate={this.handleUpdate}>
+          <Grid container>
+            <Ref innerRef={this.contextRef}>
+              <Grid.Column width={10}>
+                <Header as="h1">{frontmatter.title}</Header>
+                {/* <p>{frontmatter.date}</p> */}
+                <div
+                  className="blog-post-content"
+                  dangerouslySetInnerHTML={{ __html: html }}
+                />
+                {this.renderMenu(headings)}
+              </Grid.Column>
+            </Ref>
+          </Grid>
+        </Visibility>
       </Layout >
     )
   }

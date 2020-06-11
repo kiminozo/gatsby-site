@@ -1,10 +1,10 @@
-import React, { Component, createRef } from "react"
+import React, { Component } from "react"
 import { graphql, PageProps, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import {
-  Button, Grid, Header, Ref, Segment, Divider
+  Button, Grid, Header, Ref, Segment, Divider, Responsive
 } from 'semantic-ui-react'
 import _ from "lodash";
 
@@ -44,7 +44,6 @@ type HeaderInfo = {
 
 
 class SongTemplatePage extends Component<TemplateProps, TemplateState> {
-  contextRef = createRef<HTMLDivElement>()
   headerInfos: HeaderInfo[] = [];
 
   constructor(props: Readonly<TemplateProps>) {
@@ -52,26 +51,32 @@ class SongTemplatePage extends Component<TemplateProps, TemplateState> {
     this.state = { activeId: "" }
   }
 
+  renderMobile(title: string, html: string, zhHtml: string) {
+    return (
+      <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
+        <Grid container>
+          <Grid.Column>
+            <Header as="h1">{title}</Header>
+            <div
+              className="song-content"
+              dangerouslySetInnerHTML={{ __html: html }}
+            />
+            <Divider horizontal >翻译</Divider>
+            <div
+              className="song-content-zh"
+              dangerouslySetInnerHTML={{ __html: zhHtml }}
+            />
+          </Grid.Column>
+        </Grid>
+      </Responsive >
+    );
+  }
 
-
-  render() {
-    const { edges } = this.props.data.allMarkdownRemark; // data.markdownRemark holds your post data
-    const edge = _.find(edges, p => !p.node.frontmatter.lang);
-    if (!edge) {
-      return;
-    }
-    const { frontmatter, html } = edge.node;
-
-    const zhEdge = _.find(edges, p => p.node.frontmatter.lang != null);
-    if (!zhEdge) {
-      return;
-    }
-    const zhHtml = zhEdge.node.html;
-
-    const body = (<Grid container>
-      <Ref innerRef={this.contextRef}>
+  renderDesktop(title: string, html: string, zhHtml: string) {
+    return (<Responsive minWidth={Responsive.onlyTablet.minWidth}>
+      <Grid container>
         <Grid.Column width={12}>
-          <Header as="h1">{frontmatter.title}</Header>
+          <Header as="h1">{title}</Header>
           <Segment basic>
             <Grid columns={2} relaxed='very'>
               <Grid.Column>
@@ -87,16 +92,32 @@ class SongTemplatePage extends Component<TemplateProps, TemplateState> {
                 />
               </Grid.Column>
             </Grid>
-            <Divider vertical>翻译</Divider>
+            <Divider vertical >翻译</Divider>
           </Segment>
         </Grid.Column>
-      </Ref>
-    </Grid>)
+      </Grid>
+    </Responsive>)
+  }
+
+  render() {
+    const { edges } = this.props.data.allMarkdownRemark; // data.markdownRemark holds your post data
+    const edge = _.find(edges, p => !p.node.frontmatter.lang);
+    if (!edge) {
+      return;
+    }
+    const { frontmatter, html } = edge.node;
+
+    const zhEdge = _.find(edges, p => p.node.frontmatter.lang != null);
+    if (!zhEdge) {
+      return;
+    }
+    const zhHtml = zhEdge.node.html;
 
     return (
       <Layout>
         <SEO title="Page two" />
-        {body}
+        {this.renderDesktop(frontmatter.title, html, zhHtml)}
+        {this.renderMobile(frontmatter.title, html, zhHtml)}
       </Layout>
     )
   }
@@ -108,12 +129,12 @@ export default function SongTemplate({ data }: TemplateProps) {
 
 export const pageQuery = graphql`
   query($slug: String!) {
-    allMarkdownRemark( filter: {frontmatter: { slug: { eq: $slug } }}) {
-      edges {
-      node {
+        allMarkdownRemark(filter: {frontmatter: {slug: {eq: $slug } }}) {
+        edges {
+        node {
         html
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+        date(formatString: "MMMM DD, YYYY")
             slug
             title
             songWriter

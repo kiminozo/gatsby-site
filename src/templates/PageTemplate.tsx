@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import {
   Button, Grid, Header, Ref, Segment, Rail, Accordion,
-  Menu, Icon, Sticky, Visibility, VisibilityEventData
+  Menu, Icon, Sticky, Visibility, VisibilityEventData, Responsive
 } from 'semantic-ui-react'
 import _ from "lodash";
 
@@ -103,27 +103,29 @@ class TemplatePage extends Component<TemplateProps, TemplateState> {
     })
 
     return (
-      <Rail position='right'>
-        <Sticky context={this.contextRef} offset={20}>
-          <Menu as={Accordion} fluid style={sidebarStyle} text vertical>
-            {h1s.map(h1 => (
-              <Menu.Item>
-                <Accordion.Title active={true}>
-                  {h1.h.id === activeId ? (<b>{h1.h.value}</b>) : h1.h.value}
-                </Accordion.Title>
-                <Accordion.Content as={Menu.Menu} active={true}>
-                  {h1.child.map(h2 =>
-                    (<Menu.Item href={`#${h2.id}`}
-                      content={h2.value} active={h2.id === activeId}
-                    />)
-                  )}
-                </Accordion.Content>
-              </Menu.Item>
-            ))
-            }
-          </Menu>
-        </Sticky>
-      </Rail >
+      <Responsive minWidth={Responsive.onlyTablet.minWidth}>
+        <Rail position='right'>
+          <Sticky context={this.contextRef} offset={20}>
+            <Menu as={Accordion} fluid style={sidebarStyle} text vertical>
+              {h1s.map(h1 => (
+                <Menu.Item>
+                  <Accordion.Title active={true}>
+                    {h1.h.id === activeId ? (<b>{h1.h.value}</b>) : h1.h.value}
+                  </Accordion.Title>
+                  <Accordion.Content as={Menu.Menu} active={true}>
+                    {h1.child.map(h2 =>
+                      (<Menu.Item href={`#${h2.id}`}
+                        content={h2.value} active={h2.id === activeId}
+                      />)
+                    )}
+                  </Accordion.Content>
+                </Menu.Item>
+              ))
+              }
+            </Menu>
+          </Sticky>
+        </Rail>
+      </Responsive >
     )
   }
 
@@ -133,7 +135,7 @@ class TemplatePage extends Component<TemplateProps, TemplateState> {
 
     const body = (<Grid container>
       <Ref innerRef={this.contextRef}>
-        <Grid.Column width={10}>
+        <Grid.Column width={10} mobile={16} computer={10}>
           <Header as="h1">{frontmatter.title}</Header>
           {/* <p>{frontmatter.date}</p> */}
           <div
@@ -158,6 +160,27 @@ class TemplatePage extends Component<TemplateProps, TemplateState> {
     )
   }
 }
+
+// class MobileTemplatePage extends Component<TemplateProps, TemplateState> {
+//   render() {
+//     const { markdownRemark } = this.props.data; // data.markdownRemark holds your post data
+//     const { frontmatter, html, headings } = markdownRemark
+//     return (
+//       <Layout>
+//         <SEO title={frontmatter.title} />
+//         <Grid container>
+//           <Grid.Column width={10}>
+//             <Header as="h1">{frontmatter.title}</Header>
+//             <div
+//               className="blog-post-content"
+//               dangerouslySetInnerHTML={{ __html: html }}
+//             />
+//           </Grid.Column>
+//         </Grid>
+//       </Layout>
+//     )
+//   }
+// }
 
 export default function Template({ data }: TemplateProps) {
   return (<TemplatePage data={data} />)

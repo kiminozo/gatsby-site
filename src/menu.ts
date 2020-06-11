@@ -25,11 +25,13 @@ const menusConfig: MenuConfig[] =
             link: "/demo/page-3/"
         }, {
             name: "page-4",
-            link: "/demo/page-5/"
-        },
-        {
+            link: "/demo/page-4/"
+        }, {
             name: "page-5",
             link: "/demo/page-5/"
+        }, {
+            name: "page-6",
+            link: "/demo/page-6/"
         }]
     }, {
         name: "song-demo",

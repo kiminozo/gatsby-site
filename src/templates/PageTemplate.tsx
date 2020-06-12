@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import {
   Button, Grid, Header, Ref, Segment, Rail, Accordion,
-  Menu, Icon, Sticky, Visibility, VisibilityEventData, Responsive
+  Menu, Icon, Sticky, Visibility, VisibilityEventData, Responsive, Container
 } from 'semantic-ui-react'
 import _ from "lodash";
 
@@ -138,7 +138,7 @@ class TemplatePage extends Component<TemplateProps, TemplateState> {
         <Grid.Column width={10} mobile={16} computer={10}>
           <Header as="h1">{frontmatter.title}</Header>
           {/* <p>{frontmatter.date}</p> */}
-          <div
+          <Container text
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
           />

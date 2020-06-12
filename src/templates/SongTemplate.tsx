@@ -4,7 +4,7 @@ import { graphql, PageProps, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import {
-  Button, Grid, Header, Ref, Segment, Divider, Responsive
+  Icon, Grid, Header, Container, Segment, Divider, Responsive
 } from 'semantic-ui-react'
 import _ from "lodash";
 
@@ -57,12 +57,12 @@ class SongTemplatePage extends Component<TemplateProps, TemplateState> {
         <Grid container>
           <Grid.Column>
             <Header as="h1">{title}</Header>
-            <div
+            <Container text
               className="song-content"
               dangerouslySetInnerHTML={{ __html: html }}
             />
             <Divider horizontal >翻译</Divider>
-            <div
+            <Container text
               className="song-content-zh"
               dangerouslySetInnerHTML={{ __html: zhHtml }}
             />
@@ -80,13 +80,13 @@ class SongTemplatePage extends Component<TemplateProps, TemplateState> {
           <Segment basic>
             <Grid columns={2} relaxed='very'>
               <Grid.Column>
-                <div
+                <Container text
                   className="song-content"
                   dangerouslySetInnerHTML={{ __html: html }}
                 />
               </Grid.Column>
               <Grid.Column>
-                <div
+                <Container text
                   className="song-content-zh"
                   dangerouslySetInnerHTML={{ __html: zhHtml }}
                 />

@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Card, Icon, Image, Button, Grid, Divider, Header, List } from 'semantic-ui-react'
+import { Card, Icon, Image, Button, Grid, Divider, Header, List, Container } from 'semantic-ui-react'
 
 import SEO from "../components/seo"
 import Layout from "../components/layout";
@@ -11,7 +11,7 @@ import demo from "../images/demo.png"
 import "./index.sass"
 
 const RitzCard = () => (
-  <Card raised className="profile">
+  <Card raised>
     <Image src={logo} wrapped ui={false} />
     <Card.Content>
       <Card.Header>岡崎律子</Card.Header>
@@ -41,7 +41,7 @@ const RitzCard = () => (
 
 
 const AlbumCard = () => (
-  <Card.Group itemsPerRow={6} className="albums">
+  <Card.Group itemsPerRow={6} doubling>
     <Card image={demo} />
     <Card image={demo} />
     <Card image={demo} />
@@ -61,10 +61,10 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Grid>
-      <Grid.Column width={4}>
+      <Grid.Column width={4} mobile={16} computer={4}>
         <RitzCard />
       </Grid.Column>
-      <Grid.Column width={12}>
+      <Grid.Column width={12} mobile={16} computer={12}>
         <p>●她于1959年12月29日,在日本长崎县出生。<br />
         大约1982年，开始创作广告配乐。当时，曾以森野律及RITZ为名提供乐曲。<br />
         1991年，为OVA动画「1月にはChristmas」演唱OP和ED成为律子跨入动漫界的第一步作品。</p>

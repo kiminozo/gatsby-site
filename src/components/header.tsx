@@ -26,7 +26,7 @@ class Header extends React.Component<Props, State> {
     const { activeItem } = this.state;
 
     return (
-      <Menu inverted pointing color="blue">
+      <Menu inverted pointing className="main_menu">
         <Container>
           {
             menus.map(item => item.sub ?
@@ -51,44 +51,6 @@ class Header extends React.Component<Props, State> {
       </Menu>
     );
   }
-
-  //     <Menu inverted pointing color="blue">
-  //   <Container>
-  //     <Menu.Item as={Link}
-  //       name='home'
-  //       activeClassName='active'
-  //       link={true}
-  //       to="/"
-  //     />
-  //     <Dropdown text='Shopping' className='link item' active={true}>
-  //       <Dropdown.Menu>
-  //         <Dropdown.Item as={Link} to="/blog/my-first-post/">Home Goods</Dropdown.Item>
-  //         <Dropdown.Item as={Link} to="/biography">Bedroom</Dropdown.Item>
-  //       </Dropdown.Menu>
-  //     </Dropdown>
-  //     <Menu.Item as={Link}
-  //       name='bio'
-  //       activeClassName='active'
-  //       link={true}
-  //       to="/biography"
-  //     />
-  //     <Menu.Item as={Link}
-  //       name='photos'
-  //       activeClassName='active'
-  //       link={true}
-  //       to="/demo/page-2/"
-  //     />
-  //     <Menu.Item as={Link}
-  //       name='demo'
-  //       activeClassName='active'
-  //       link={true}
-  //       to="/demo/page-5/"
-  //     />
-  //   </Container>
-  // </Menu>
-
-  //     );
-  //}
 }
 
 export default Header;

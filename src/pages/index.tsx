@@ -1,15 +1,18 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Card, Icon, Image, Button, Grid, Divider } from 'semantic-ui-react'
+import { Card, Icon, Image, Button, Grid, Divider, Header } from 'semantic-ui-react'
 
 import SEO from "../components/seo"
 import Layout from "../components/layout";
 
 import logo from "../images/avatar/ritz.jpg"
+import demo from "../images/demo.png"
+
+import "./index.sass"
 
 const RitzCard = () => (
-  <Card raised style={{ width: 250, height: 650 }}>
-    <Image src={logo} wrapped ui={false} />
+  <Card raised className="profile">
+    <Image src={demo} wrapped ui={false} />
     <Card.Content>
       <Card.Header>岡崎律子</Card.Header>
       <Card.Meta>
@@ -34,6 +37,24 @@ const RitzCard = () => (
   </Card >
 )
 
+
+const AlbumCard = () => (
+  <Card.Group itemsPerRow={6} className="albums">
+    <Card image={demo} />
+    <Card image={demo} />
+    <Card image={demo} />
+    <Card image={demo} />
+    <Card image={demo} />
+    <Card image={demo} />
+    <Card image={demo} />
+    <Card image={demo} />
+    <Card image={demo} />
+    <Card image={demo} />
+    <Card image={demo} />
+    <Card image={demo} />
+  </Card.Group>
+)
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -56,28 +77,10 @@ const IndexPage = () => (
         音乐恋爱游戏《交响乐之雨》是岡崎律子小姐最后一个全部包办的作曲项目。</p>
         <p>她的作品以抒情慢歌为主，创作的歌曲比较多元化。岡崎律子小姐的歌曲具有诗人的想象力，深刻的情感，乐观主义及纯真的特点。她的声音被认为是令人印象深刻地柔软及精细。</p>
         <p>在律子小姐短暂的一生中，写下了许多动人的乐章，大部分曲都是积极向上的，带有许多人生的感悟。</p>
-        <Divider />
         <p>●刚接触岡崎律子的新人粉丝的指南：</p>
-        <Button as={Link} to="/demo/page-2/">
-          Go to page 2
-         </Button>
-        <br />
-
-        <Button as={Link} to="/demo/page-3/">
-          Go to page 3
-         </Button>
-        <br />
-
-        <Button as={Link} to="/demo/page-4/">
-          Go to page 4
-        </Button>
-        <br />
-
-        <Button as={Link} to="/demo/page-5/">
-          Go to page 5
-        </Button>
-        <br />
-        <Link to="/blog/my-first-post/">Go to my first Markdown blog post</Link>
+        <Divider />
+        <Header as='h2' content="唱片集" />
+        <AlbumCard />
       </Grid.Column>
     </Grid >
 

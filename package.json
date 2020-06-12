@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-site",
+  "name": "forritz.org",
   "private": true,
   "description": "",
   "version": "0.1.0",
@@ -57,9 +57,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kiminozo/gatsby-site"
+    "url": "https://github.com/kiminozo/forritz.org"
   },
   "bugs": {
-    "url": "https://github.com/kiminozo/gatsby-site/issues"
+    "url": "https://github.com/kiminozo/forritz.org/issues"
   }
 }

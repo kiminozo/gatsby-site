@@ -11,7 +11,7 @@ import demo from "../images/demo.png"
 import "./index.sass"
 
 const RitzCard = () => (
-  <Card raised>
+  <Card centered>
     <Image src={logo} wrapped ui={false} />
     <Card.Content>
       <Card.Header>岡崎律子</Card.Header>
@@ -34,7 +34,9 @@ const RitzCard = () => (
       </Card.Description>
     </Card.Content>
     <Card.Content extra>
-      <Button circular icon='world' />
+      <Button as="a" basic color='blue'
+        href="http://www.ne.jp/asahi/okazaki/book/"
+        icon='world' content='岡崎律子Book' labelPosition='left' />
     </Card.Content>
   </Card >
 )
@@ -61,10 +63,10 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Grid>
-      <Grid.Column width={4} mobile={16} computer={4}>
+      <Grid.Column width={4} mobile={15} computer={4} tablet={5}>
         <RitzCard />
       </Grid.Column>
-      <Grid.Column width={12} mobile={16} computer={12}>
+      <Grid.Column width={12} mobile={15} computer={10} tablet={10}>
         <p>●她于1959年12月29日,在日本长崎县出生。<br />
         大约1982年，开始创作广告配乐。当时，曾以森野律及RITZ为名提供乐曲。<br />
         1991年，为OVA动画「1月にはChristmas」演唱OP和ED成为律子跨入动漫界的第一步作品。</p>
@@ -80,9 +82,29 @@ const IndexPage = () => (
         <p>她的作品以抒情慢歌为主，创作的歌曲比较多元化。岡崎律子小姐的歌曲具有诗人的想象力，深刻的情感，乐观主义及纯真的特点。她的声音被认为是令人印象深刻地柔软及精细。</p>
         <p>在律子小姐短暂的一生中，写下了许多动人的乐章，大部分曲都是积极向上的，带有许多人生的感悟。</p>
         <p>●刚接触岡崎律子的新人粉丝的指南：</p>
+        <List>
+          <List.Item>
+            <Icon name='triangle right' />
+            <List.Content>
+              『<Link to="/performance">岡崎律子小姐的音乐年表</Link>』
+            </List.Content>
+          </List.Item>
+          <List.Item>
+            <Icon name='triangle right' />
+            <List.Content>
+              『<Link to="/biography">岡崎律子小姐的详细生平</Link>』
+            </List.Content>
+          </List.Item>
+        </List>
         <Divider />
         <Header as='h2' content="唱片集" />
         <AlbumCard />
+        <Divider hidden />
+
+        <Button as={Link} to="/biography" icon labelPosition='right'>
+          了解更多
+          <Icon name='arrow right' />
+        </Button>
       </Grid.Column>
     </Grid >
 

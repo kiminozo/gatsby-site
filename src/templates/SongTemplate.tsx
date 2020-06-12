@@ -57,12 +57,12 @@ class SongTemplatePage extends Component<TemplateProps, TemplateState> {
         <Grid container>
           <Grid.Column>
             <Header as="h1">{title}</Header>
-            <Container text
+            <div
               className="song-content"
               dangerouslySetInnerHTML={{ __html: html }}
             />
             <Divider horizontal >翻译</Divider>
-            <Container text
+            <div
               className="song-content-zh"
               dangerouslySetInnerHTML={{ __html: zhHtml }}
             />
@@ -80,13 +80,13 @@ class SongTemplatePage extends Component<TemplateProps, TemplateState> {
           <Segment basic>
             <Grid columns={2} relaxed='very'>
               <Grid.Column>
-                <Container text
+                <div
                   className="song-content"
                   dangerouslySetInnerHTML={{ __html: html }}
                 />
               </Grid.Column>
               <Grid.Column>
-                <Container text
+                <div
                   className="song-content-zh"
                   dangerouslySetInnerHTML={{ __html: zhHtml }}
                 />

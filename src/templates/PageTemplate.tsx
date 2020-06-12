@@ -138,7 +138,7 @@ class TemplatePage extends Component<TemplateProps, TemplateState> {
         <Grid.Column width={10} mobile={16} computer={10}>
           <Header as="h1">{frontmatter.title}</Header>
           {/* <p>{frontmatter.date}</p> */}
-          <Container text
+          <div
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
           />

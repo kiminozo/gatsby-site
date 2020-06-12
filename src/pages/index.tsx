@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Card, Icon, Image, Button, Grid, Divider, Header } from 'semantic-ui-react'
+import { Card, Icon, Image, Button, Grid, Divider, Header, List } from 'semantic-ui-react'
 
 import SEO from "../components/seo"
 import Layout from "../components/layout";
@@ -12,23 +12,25 @@ import "./index.sass"
 
 const RitzCard = () => (
   <Card raised className="profile">
-    <Image src={demo} wrapped ui={false} />
+    <Image src={logo} wrapped ui={false} />
     <Card.Content>
       <Card.Header>岡崎律子</Card.Header>
       <Card.Meta>
         <span className='date'>1959 ~ 2004</span>
       </Card.Meta>
       <Card.Description>
-        別名 森野律 RITZ <br />
-        出生 1959年12月29日 <br />
-        血型 B型 <br />
-        出身地 日本長崎県西彼杵郡高島町 <br />
-        祭日 2004年5月5日（44岁） <br />
-        流派 animation <br />
-        职业 作曲家 唱作歌手 <br />
-        担当乐器 Vocal、Piano <br />
-        活動期間 1985年 – 2004年 <br />
-        事务所 STAR CHILD <br />
+        <List>
+          <List.Item>別名 森野律 RITZ</List.Item>
+          <List.Item>出生 1959年12月29日</List.Item>
+          <List.Item>祭日 2004年5月5日（44岁）</List.Item>
+          <List.Item>血型 B型</List.Item>
+          <List.Item>出身地 日本長崎県西彼杵郡高島町</List.Item>
+          <List.Item>流派 animation</List.Item>
+          <List.Item>职业 作曲家 唱作歌手</List.Item>
+          <List.Item>担当乐器 Vocal、Piano</List.Item>
+          <List.Item>活動期間 1985年 – 2004年</List.Item>
+          <List.Item>事务所 STAR CHILD</List.Item>
+        </List>
       </Card.Description>
     </Card.Content>
     <Card.Content extra>

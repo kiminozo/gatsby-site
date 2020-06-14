@@ -5,7 +5,7 @@ import { Card, Icon, Image, Button, Grid, Divider, Header, List, Container } fro
 import SEO from "../components/seo"
 import Layout from "../components/layout";
 
-import logo from "../images/avatar/ritz.jpg"
+import logo from "../images/avatar/steps.jpg"
 import demo from "../images/demo.png"
 
 import "./index.sass"

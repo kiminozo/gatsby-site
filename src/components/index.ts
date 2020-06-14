@@ -1,6 +1,6 @@
 export {
     default as Image
-} from './image'
+} from './AvatarImage'
 
 export {
     default as SEO

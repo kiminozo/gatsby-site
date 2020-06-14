@@ -4,15 +4,17 @@ import { Card, Icon, Image, Button, Grid, Divider, Header, List, Container } fro
 
 import SEO from "../components/seo"
 import Layout from "../components/layout";
+import AvatarImage from "../components/AvatarImage";
 
-import logo from "../images/avatar/steps.jpg"
+//import logo from "../images/avatar/steps.jpg"
 import demo from "../images/demo.png"
 
 import "./index.sass"
 
 const RitzCard = () => (
   <Card centered>
-    <Image src={logo} wrapped ui={false} />
+    {/* <Image src={logo} wrapped ui={false} /> */}
+    <AvatarImage />
     <Card.Content>
       <Card.Header>岡崎律子</Card.Header>
       <Card.Meta>

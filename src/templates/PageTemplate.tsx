@@ -3,8 +3,11 @@ import { graphql, PageProps, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import CC from "../components/CC"
+
 import {
   Button, Grid, Header, Ref, Segment, Rail, Accordion,
+  Label, Divider, Message,
   Menu, Icon, Sticky, Visibility, VisibilityEventData, Responsive, Container
 } from 'semantic-ui-react'
 import _ from "lodash";
@@ -27,8 +30,10 @@ type TemplateProps = {
       frontmatter: {
         title: string;
         slug: string;
-        date: string;
-        toc: boolean;
+        date?: string;
+        toc?: boolean;
+        categories?: string[];
+        tags?: string[];
       }
       html: string;
       headings: Headings[]
@@ -129,6 +134,42 @@ class TemplatePage extends Component<TemplateProps, TemplateState> {
     )
   }
 
+  renderTags() {
+    const { markdownRemark } = this.props.data;
+    const { frontmatter } = markdownRemark
+    const { categories, tags } = frontmatter
+
+    const reprint = {
+      site: "あだち充の屋根裏部屋",
+      url: "http://spaces.msn.com/shinnsama/blog/cns!4E2F09F0EF53C369!1555.entry",
+      author: "原版奶昔"
+    };
+
+    return (
+      <>
+        <Divider />
+        <div >
+          {
+            categories &&
+            categories.map(category =>
+              (<Label as='a' color='teal'>
+                <Icon name='bookmark' />{category}
+              </Label>)
+            )
+          }
+          {
+            tags &&
+            tags.map(tag =>
+              (<Label as='a'>{tag}</Label>)
+            )
+          }
+        </div>
+
+        <CC original={false} reprint={reprint} />
+      </>
+    )
+  }
+
   render() {
     const { markdownRemark } = this.props.data; // data.markdownRemark holds your post data
     const { frontmatter, html, headings } = markdownRemark
@@ -137,11 +178,13 @@ class TemplatePage extends Component<TemplateProps, TemplateState> {
       <Ref innerRef={this.contextRef}>
         <Grid.Column width={10} mobile={16} computer={10}>
           <Header as="h1">{frontmatter.title}</Header>
+          <Divider />
           {/* <p>{frontmatter.date}</p> */}
           <div
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
           />
+          {this.renderTags()}
           {frontmatter.toc && this.renderMenu(headings)}
         </Grid.Column>
       </Ref>
@@ -194,6 +237,8 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         slug
         title
+        categories
+        tags
         toc
       }
       headings {

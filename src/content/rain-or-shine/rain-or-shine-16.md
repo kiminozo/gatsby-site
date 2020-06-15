@@ -3,7 +3,7 @@ title: "Rain or Shine～降っても晴れても〜第16回"
 date: "2010-08-20"
 slug: "/rain-or-shine/rain-or-shine-16"
 categories: ["Rain or Shine"]
-tags: []
+c: []
 ---
 
 看了《作家的饮食生活》那个节目。森欧外啦、芥川龙之介啦，这些在世界上都很著名的大人物纷纷登场，原来他们都是饮食通啊。其中还有个人带来日本最初的冰激凌机，按当时那个时代来讲这真是了不起的事情啊。

@@ -1,7 +1,7 @@
 ---
 title: "Rain or Shine～降っても晴れても〜第9回"
 date: "2010-08-20"
-slug: "/rain-or-shine/rain-or-shine-09"
+slug: "/rain-or-shine/rain-or-shine-9"
 categories: ["Rain or Shine"]
 tags: ["姐姐","时间段","魔法","生活","睡眠","考试"]
 ---

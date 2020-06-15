@@ -149,7 +149,7 @@ class TemplatePage extends Component<TemplateProps, TemplateState> {
     return (
       <>
         <Divider />
-        <div >
+        <Label.Group >
           {
             categories &&
             categories.map(category =>
@@ -164,7 +164,7 @@ class TemplatePage extends Component<TemplateProps, TemplateState> {
               (<Label as='a'>{tag}</Label>)
             )
           }
-        </div>
+        </Label.Group>
 
         <CC reprint={reprint} />
       </>

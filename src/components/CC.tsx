@@ -10,11 +10,12 @@ export type ReprintInfo = {
 }
 
 type CCProps = {
+    provenance?: string
     reprint?: ReprintInfo
 }
 
 const CC = (props: CCProps) => {
-    const { reprint } = props;
+    const { reprint, provenance } = props;
     return (
         <Message info>
             <Message.Header>
@@ -22,14 +23,18 @@ const CC = (props: CCProps) => {
                 <a href={byncsa}>BY-NC-SA 4.0</a>
             </Message.Header>
             <Message.Content>
-                {!reprint ?
+                {(!reprint && !provenance) ?
                     (
                         <>本文是原创内容。转载请注明转自 <a href="https://forritz.org">For RITZ 岡崎律子的非官方中文资料站</a></>
                     )
-                    :
-                    (
-                        <> 本文是转载内容。转载自<a href={reprint.url}>{reprint.site}</a>, 原作者:{reprint.author}。</>
-                    )}
+                    : provenance ?
+                        (
+                            <> 本文是翻译内容。翻译自<a href={provenance}>岡崎律子BOOK</a>。</>
+                        )
+                        : reprint &&
+                        (
+                            <> 本文是转载内容。转载自<a href={reprint.url}>{reprint.site}</a>, 原作者:{reprint.author}。</>
+                        )}
             </Message.Content>
         </Message >
     )

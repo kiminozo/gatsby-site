@@ -42,6 +42,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         gfm: true,
@@ -59,6 +66,12 @@ module.exports = {
               className: `custom-class`,
               maintainCase: true,
               removeAccents: true,
+            },
+          }, {
+            resolve: `gatsby-remark-images-anywhere`,
+            options: {
+              sharpMethod: 'fixed',
+              maxWidth: 300,
             },
           },
         ],

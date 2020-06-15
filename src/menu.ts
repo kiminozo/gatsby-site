@@ -35,6 +35,9 @@ const menusConfig: MenuConfig[] =
         }, {
             name: "rain-or-shine-9",
             link: "/rain-or-shine/rain-or-shine-9"
+        }, {
+            name: "photo-diary-1",
+            link: "/photo-diary/photo1"
         }]
     }, {
         name: "song-demo",

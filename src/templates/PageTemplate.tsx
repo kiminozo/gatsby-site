@@ -34,6 +34,7 @@ type TemplateProps = {
         toc?: boolean;
         categories?: string[];
         tags?: string[];
+        provenance?: string
         reprint?: ReprintInfo
       }
       html: string;
@@ -138,7 +139,7 @@ class TemplatePage extends Component<TemplateProps, TemplateState> {
   renderTags() {
     const { markdownRemark } = this.props.data;
     const { frontmatter } = markdownRemark
-    const { categories, tags, reprint } = frontmatter
+    const { categories, tags, reprint, provenance } = frontmatter
 
     // const reprint = {
     //   site: "あだち充の屋根裏部屋",
@@ -166,7 +167,7 @@ class TemplatePage extends Component<TemplateProps, TemplateState> {
           }
         </Label.Group>
 
-        <CC reprint={reprint} />
+        <CC reprint={reprint} provenance={provenance} />
       </>
     )
   }
@@ -241,11 +242,13 @@ export const pageQuery = graphql`
         categories
         tags
         toc
+        provenance
         reprint {
             author
             site
             url
           }
+        
       }
       headings {
         depth

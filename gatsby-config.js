@@ -67,6 +67,12 @@ module.exports = {
               maintainCase: true,
               removeAccents: true,
             },
+          }, {
+            resolve: `gatsby-remark-images-anywhere`,
+            options: {
+              sharpMethod: 'fixed',
+              maxWidth: 300,
+            },
           },
         ],
       },

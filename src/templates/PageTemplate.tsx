@@ -3,7 +3,7 @@ import { graphql, PageProps, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import CC from "../components/CC"
+import CC, { ReprintInfo } from "../components/CC"
 
 import {
   Button, Grid, Header, Ref, Segment, Rail, Accordion,
@@ -34,6 +34,7 @@ type TemplateProps = {
         toc?: boolean;
         categories?: string[];
         tags?: string[];
+        reprint?: ReprintInfo
       }
       html: string;
       headings: Headings[]
@@ -137,13 +138,13 @@ class TemplatePage extends Component<TemplateProps, TemplateState> {
   renderTags() {
     const { markdownRemark } = this.props.data;
     const { frontmatter } = markdownRemark
-    const { categories, tags } = frontmatter
+    const { categories, tags, reprint } = frontmatter
 
-    const reprint = {
-      site: "あだち充の屋根裏部屋",
-      url: "http://spaces.msn.com/shinnsama/blog/cns!4E2F09F0EF53C369!1555.entry",
-      author: "原版奶昔"
-    };
+    // const reprint = {
+    //   site: "あだち充の屋根裏部屋",
+    //   url: "http://spaces.msn.com/shinnsama/blog/cns!4E2F09F0EF53C369!1555.entry",
+    //   author: "原版奶昔"
+    // };
 
     return (
       <>
@@ -165,7 +166,7 @@ class TemplatePage extends Component<TemplateProps, TemplateState> {
           }
         </div>
 
-        <CC original={false} reprint={reprint} />
+        <CC reprint={reprint} />
       </>
     )
   }
@@ -240,6 +241,11 @@ export const pageQuery = graphql`
         categories
         tags
         toc
+        reprint {
+            author
+            site
+            url
+          }
       }
       headings {
         depth

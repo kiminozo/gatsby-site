@@ -3,18 +3,18 @@ import { Message, Icon } from 'semantic-ui-react'
 
 const byncsa = "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-Hans"
 
+export type ReprintInfo = {
+    site: string
+    url?: string
+    author: string
+}
 
 type CCProps = {
-    original: boolean
-    reprint?: {
-        site: string
-        url: string
-        author: string
-    }
+    reprint?: ReprintInfo
 }
 
 const CC = (props: CCProps) => {
-    const { original, reprint } = props;
+    const { reprint } = props;
     return (
         <Message info>
             <Message.Header>
@@ -22,11 +22,11 @@ const CC = (props: CCProps) => {
                 <a href={byncsa}>BY-NC-SA 4.0</a>
             </Message.Header>
             <Message.Content>
-                {original ?
+                {!reprint ?
                     (
-                        <>本文是原创内容。转载请注明转自 For RITZ 岡崎律子的非官方中文资料站[https://forritz.org],作者:ココロの雨 。</>
+                        <>本文是原创内容。转载请注明转自 <a href="https://forritz.org">For RITZ 岡崎律子的非官方中文资料站</a></>
                     )
-                    : reprint &&
+                    :
                     (
                         <> 本文是转载内容。转载自<a href={reprint.url}>{reprint.site}</a>, 原作者:{reprint.author}。</>
                     )}

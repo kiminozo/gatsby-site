@@ -4,6 +4,8 @@ date: "2010-08-20"
 slug: "/rain-or-shine/rain-or-shine-9"
 categories: ["Rain or Shine"]
 tags: ["姐姐","时间段","魔法","生活","睡眠","考试"]
+reprint: {site: "あだち充の屋根裏部屋",author: "原版奶昔",
+      url: "http://spaces.msn.com/shinnsama/blog/cns!4E2F09F0EF53C369!1555.entry"}
 ---
 
 大家好。在我写下这句问候时，正是晴朗的早晨。 6点起床后，我就来到窗边暖洋洋地晒起来了太阳。 昨晚的工作不太顺利，结果就心情郁闷着睡觉去了。 最后胡乱给自己找了一些理由，比如“哎，马上就到明天。晚上写的情书，第二天早上读就会觉得很丢人，不敢再拿出手了吧。”

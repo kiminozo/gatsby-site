@@ -2,7 +2,7 @@
 title: "●フルーツバスケットの大地丙太郎監督と対談[2001.7.16]"
 date: "2010-11-07"
 categories: ["Photo日记"]
-slug: "/photo-diary/photo16"
+slug: "/photo-diary/photo-16"
 tags: []
 license: {type: "translated",author: "岡崎律子",translator: "ココロの雨",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/photo/photo16.html",reproduced-website: "岡崎律子Book"}
 ---

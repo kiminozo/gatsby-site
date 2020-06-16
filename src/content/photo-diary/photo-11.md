@@ -2,7 +2,7 @@
 title: "●秋の花畑～in the country～ ['99.9.16]"
 date: "2010-11-07"
 categories: ["Photo日记"]
-slug: "/photo-diary/photo11"
+slug: "/photo-diary/photo-11"
 tags: []
 license: {type: "translated",author: "岡崎律子",translator: "ココロの雨",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/photo/photo11.html",reproduced-website: "岡崎律子Book"}
 ---

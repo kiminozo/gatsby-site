@@ -59,6 +59,14 @@ module.exports = {
         excerpt_separator: `<!-- end -->`,
         plugins: [
           {
+            resolve: `gatsby-remark-copy-linked-files`,
+            options: {
+              destinationDir: `static`,
+              ignoreFileExtensions: []
+              // ignoreFileExtensions: [`png`, `jpg`, `jpeg`, `bmp`, `tiff`],
+            },
+          },
+          {
             resolve: `gatsby-remark-autolink-headers`,
             options: {
               offsetY: `100`,
@@ -67,13 +75,15 @@ module.exports = {
               maintainCase: true,
               removeAccents: true,
             },
-          }, {
-            resolve: `gatsby-remark-images-anywhere`,
-            options: {
-              sharpMethod: 'fixed',
-              maxWidth: 300,
-            },
           },
+          // {
+          //   resolve: `gatsby-remark-images-anywhere`,
+          //   options: {
+          //     linkImagesToOriginal: true,
+          //     sharpMethod: 'fixed',
+          //     maxWidth: 300,
+          //   },
+          // },
         ],
       },
     },

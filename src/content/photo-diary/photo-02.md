@@ -1,20 +1,23 @@
 ---
 title: "レコーディングPhoto日記 ['97.6.17]"
 date: "2010-11-07"
-coverImage: "rec4b.jpg"
+categories: ["Photo日记"]
+slug: "/photo-diary/photo2"
+tags: []
+license: {type: "translated",author: "岡崎律子",translator: "ココロの雨",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/photo/photo2.html",reproduced-website: "岡崎律子Book"}
 ---
 
  
 
  
 
-[![](images/rec4b.jpg "rec4b")](https://forritz.org/home/wp-content/uploads/2010/11/rec4b.jpg)
+<span style="color: #808000;"><a href="./images/rec4b.jpg"><img class="alignnone size-full wp-image-410" title="rec4b" src="./images/rec4b.jpg" alt="" width="273" height="190"></a></span>
 
-飯塚雅弓さんのレコーディングで。
+<span style="color: #808000;">飯塚雅弓さんのレコーディングで。</span>
 
-サウンドプロデューサーの長谷川さんと、コーラスを決めているところ。
+<span style="color: #808000;">サウンドプロデューサーの長谷川さんと、コーラスを決めているところ。</span>
 
-コーラスとなると、つい、はりきる私ですが、この日は少なめにあっさりにして、おとなしく帰りました。
+<span style="color: #808000;">コーラスとなると、つい、はりきる私ですが、この日は少なめにあっさりにして、おとなしく帰りました。</span>
 
 由于和饭冢雅弓的录音。
 
@@ -24,15 +27,15 @@ coverImage: "rec4b.jpg"
 
  
 
- [![](images/rec5.jpg "rec5")](https://forritz.org/home/wp-content/uploads/2010/11/rec1.jpg) 
+ <span style="color: #808000;"><a href="./images/rec1.jpg"><img title="rec5" src="./images/rec5.jpg" alt="" width="258" height="190"> </a></span> 
 
-オズの魔法つかいの９曲が出来上がり、面倒くさい譜面も書き終えたので、外へ出た。
+<span style="color: #808000;">オズの魔法つかいの９曲が出来上がり、面倒くさい譜面も書き終えたので、外へ出た。</span>
 
-最初にもらった台本と並べて、芝生の上に置いてみました。
+<span style="color: #808000;">最初にもらった台本と並べて、芝生の上に置いてみました。</span>
 
-が、撮る前、２度、風が吹いてパニック！
+<span style="color: #808000;">が、撮る前、２度、風が吹いてパニック！</span>
 
-譜面は小ちゃな子供にも踏まれた。可愛い裸足だったので、まあ許す。
+<span style="color: #808000;">譜面は小ちゃな子供にも踏まれた。可愛い裸足だったので、まあ許す。</span>
 
 因为オズの魔法つかい9首的歌曲完成了,并且也完书写了麻烦的乐谱，所以出去了。
 
@@ -42,25 +45,25 @@ coverImage: "rec4b.jpg"
 
 并且乐谱也被对小孩踏了。因为是可爱赤脚地，所以饶恕了。
 
- [![](images/rec1.jpg "rec1")](https://forritz.org/home/wp-content/uploads/2010/11/rec3.jpg) 
+ [![](./images/rec1.jpg "rec1")](./images/rec3.jpg) 
 
-セルフカバーアルバムのレコーディング２日め。
+<span style="color: #808000;">セルフカバーアルバムのレコーディング２日め。</span>
 
-まだ歌う日ではないので、合間にちょこちょこと遊んでいるところ。
+<span style="color: #808000;">まだ歌う日ではないので、合間にちょこちょこと遊んでいるところ。</span>
 
 セルフカバー专辑的录音的2日。
 
 因为还没有到唱歌的日子、所以在工作的余暇做一些悠闲的事情。
 
-![](images/rec3.jpg "rec3")
+![](./images/rec3.jpg "rec3")
 
-レコーディングの合間の日、ファンクラブの限定Photo Setの写真にメッセージ＆サインを書く。
+<span style="color: #808000;">レコーディングの合間の日、ファンクラブの限定Photo Setの写真にメッセージ＆サインを書く。</span>
 
-この日はまず１００枚。
+<span style="color: #808000;">この日はまず１００枚。</span>
 
-乾くまでと思って並べたら、壮観だったのでパチリ。
+<span style="color: #808000;">乾くまでと思って並べたら、壮観だったのでパチリ。</span>
 
-失敗した１枚に、いたずらで三角の耳としっぽを描いて、ネコにした。スタッフの人に渡す時、これが届いた人は「当たり！」にしようか、と言って、大いにあきれられる。
+<span style="color: #808000;">失敗した１枚に、いたずらで三角の耳としっぽを描いて、ネコにした。スタッフの人に渡す時、これが届いた人は「当たり！」にしようか、と言って、大いにあきれられる。</span>
 
 录音的余暇的日子里,为Fans俱乐部的限定Photo Set的照片写留言&签名。
 
@@ -70,33 +73,33 @@ coverImage: "rec4b.jpg"
 
 失败了的1枚,由于恶作剧画了耳朵和三角形的尾巴,变成了猫。据说当时把这个在交给职员的人的时候，那个人说道"中彩了！"之类的话，感到非常惊讶。
 
-[![](images/rec2.jpg "rec2")](https://forritz.org/home/wp-content/uploads/2010/11/rec2.jpg)
+[![](./images/rec2.jpg "rec2")](./images/rec2.jpg)
 
-早く歌いたい気持ちでいっぱいだった私は、マイクの前に立って、じーん。
+<span style="color: #808000;">早く歌いたい気持ちでいっぱいだった私は、マイクの前に立って、じーん。</span>
 
-ヘッドフォンで聴く研ぎ澄まされた音に、そう、この感じ！と思う。
+<span style="color: #808000;">ヘッドフォンで聴く研ぎ澄まされた音に、そう、この感じ！と思う。</span>
 
 由于站着话筒之前，有种非常想快的唱歌的心情的我。
 
 在话筒的声音听着变得敏锐了，就是，这个的感觉！我这样想着。
 
-6月○日（火）
+<span style="color: #808000;">6月○日（火）</span>
 
-今度の林原めぐみさんのアルバムで私が作詞曲をしている「Good　Luck!」のコーラスに行く。
+<span style="color: #808000;">今度の林原めぐみさんのアルバムで私が作詞曲をしている「Good　Luck!」のコーラスに行く。</span>
 
-私は燃えた。
+<span style="color: #808000;">私は燃えた。</span>
 
-既に録られていた林原さんのVo.と光宗さんのサウンドに、魂が入っていたから。
+<span style="color: #808000;">既に録られていた林原さんのVo.と光宗さんのサウンドに、魂が入っていたから。</span>
 
-終わって一息ついていると、ビックリ！　ご本人の登場。
+<span style="color: #808000;">終わって一息ついていると、ビックリ！　ご本人の登場。</span>
 
-これから別の曲のレコーディングだそう。
+<span style="color: #808000;">これから別の曲のレコーディングだそう。</span>
 
-ちょっとおしゃべりしていて、レイちゃんと写ったのやらなにやらのプリクラを、「どれか好きなのあったら...」と、見せてくれた。
+<span style="color: #808000;">ちょっとおしゃべりしていて、レイちゃんと写ったのやらなにやらのプリクラを、「どれか好きなのあったら...」と、見せてくれた。</span>
 
-私は選 べなくて、「全部、って言ったら怒る？」と聞いたら、笑って６枚を全種類切り取ってくれた。港区あたりで、ひとりで堂々と撮ったらしい。
+<span style="color: #808000;">私は選 べなくて、「全部、って言ったら怒る？」と聞いたら、笑って６枚を全種類切り取ってくれた。港区あたりで、ひとりで堂々と撮ったらしい。</span>
 
-あいかわらず、可愛いくせにワハハ！な人だ。
+<span style="color: #808000;">あいかわらず、可愛いくせにワハハ！な人だ。</span>
 
 这次准备为林原めぐみ的下张专辑的音乐是我作词曲的"Good Luck!"的去参加合唱。
 

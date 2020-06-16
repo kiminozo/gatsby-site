@@ -1,9 +1,10 @@
 ---
 title: "Rain or Shine～降っても晴れても〜第12回"
 date: "2010-08-20"
-slug: "/rain-or-shine/rain-or-shine-12"
 categories: ["Rain or Shine"]
-tags: []
+slug: "/rain-or-shine/rain-or-shine-12"
+tags: ["旅行","沉重"]
+license: {type: "reproduced",author: "原版奶昔",reproduced-url: "http://spaces.msn.com/shinnsama/blog/cns!4E2F09F0EF53C369!1552.entry",reproduced-website: "あだち充の屋根裏部屋"}
 ---
 
 旅行的时候，你是习惯带大量的行李还是只带很少的一部分呢？ 十月在伦敦有个唱片大赏，为此准备去买个行李箱。是要个大一些的呢，或是个小点的？……我一直拿不定主意。 平时我很少会带着大量的行李旅行的，因为那样会很重。我很喜欢“轻装上阵”，即使是寒冷的冬天也尽量不让自己穿得太臃肿。

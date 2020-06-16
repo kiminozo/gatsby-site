@@ -1,16 +1,19 @@
 ---
 title: "キーボードがやって来た ['98.5.19]"
 date: "2010-11-07"
-coverImage: "who.jpg"
+categories: ["Photo日记"]
+slug: "/photo-diary/photo-06"
+tags: []
+license: {type: "translated",author: "岡崎律子",translator: "ココロの雨",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/photo/photo6.html",reproduced-website: "岡崎律子Book"}
 ---
 
 **キーボードがやって来た \['98.5.19\]**
 
 **●「夜の八重桜」**
 
-[![](images/dfcherry.jpg "dfcherry")](https://forritz.org/home/wp-content/uploads/2010/11/dfcherry.jpg)
+[![](./images/dfcherry.jpg "dfcherry")](./images/dfcherry.jpg)
 
-街灯に照らされて、ぷっくりと可愛らしかった八重桜。
+<span style="color: #808000;">街灯に照らされて、ぷっくりと可愛らしかった八重桜。</span>
 
 帰り道に撮りました。
 
@@ -24,9 +27,9 @@ coverImage: "who.jpg"
 
 **●「Who are you?」**
 
-[![](images/who.jpg "who")](https://forritz.org/home/wp-content/uploads/2010/11/who.jpg)
+[![](./images/who.jpg "who")](./images/who.jpg)
 
-私は視力がとても良いので、その昔、メガネ姿に憧れて、ひとつ買ってしまった。
+<span style="color: #808000;">私は視力がとても良いので、その昔、メガネ姿に憧れて、ひとつ買ってしまった。</span>
 
 それが、これです。
 
@@ -42,13 +45,13 @@ coverImage: "who.jpg"
 
 **● "电子琴来临了****"**
 
-[![](images/n1.jpg "n1")](https://forritz.org/home/wp-content/uploads/2010/11/n1.jpg)
+[![](./images/n1.jpg "n1")](./images/n1.jpg)
 
-これは、コルグのN1という機種。
+<span style="color: #808000;">これは、コルグのN1という機種。</span>
 
-音質もとても気に入っていますが、そのリアルさに笑い驚くのは、＜Gun Shot＞＜Applause＞＜Helicopter＞など。これらの音が出てくると、ヘッドフォンの中、私は突然、“ここはどこ？私は誰？！”になる。
+<span style="color: #808000;">音質もとても気に入っていますが、そのリアルさに笑い驚くのは、＜Gun Shot＞＜Applause＞＜Helicopter＞など。これらの音が出てくると、ヘッドフォンの中、私は突然、“ここはどこ？私は誰？！”になる。</span>
 
-このキーボードでの第１作めは、小森まなみさんへの曲でした。秋ごろに聴いていただけるのかも。
+<span style="color: #808000;">このキーボードでの第１作めは、小森まなみさんへの曲でした。秋ごろに聴いていただけるのかも。</span>
 
 这个是コルグ的N1这个的机种。
 

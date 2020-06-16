@@ -1,9 +1,10 @@
 ---
 title: "Rain or Shine～降っても晴れても〜第15回"
 date: "2010-08-20"
-slug: "/rain-or-shine/rain-or-shine-15"
 categories: ["Rain or Shine"]
-tags: []
+slug: "/rain-or-shine/rain-or-shine-15"
+tags: ["巴赫","留住记忆","记忆","音乐老师","音乐课","高中"]
+license: {type: "reproduced",author: "原版奶昔",reproduced-url: "http://spaces.msn.com/shinnsama/blog/cns!4E2F09F0EF53C369!1548.entry",reproduced-website: "あだち充の屋根裏部屋"}
 ---
 
 在广播里录制节目的时候，突然想起来高三的音乐课。 那时学校开了整整一个学期的音乐课，每堂课里有一半时间我们都在听《巴赫：勃兰登堡第五协奏曲》，现在想想确实有点奇怪。 学生们人手一册管弦乐团的总谱册，老师对我们说：“看得懂也好看不懂也好，总之你们就一边追着五线谱一边听吧。” 所以我们能做的就只有默默地听音乐。

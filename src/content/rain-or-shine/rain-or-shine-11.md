@@ -1,24 +1,25 @@
 ---
 title: "Rain or Shine～降っても晴れても〜第11回"
 date: "2010-08-20"
-slug: "/rain-or-shine/rain-or-shine-11"
 categories: ["Rain or Shine"]
-tags: []
+slug: "/rain-or-shine/rain-or-shine-11"
+tags: ["矛盾","秋秋公主","足球","迷茫"]
+license: {type: "reproduced",author: "原版奶昔",reproduced-url: "http://spaces.msn.com/shinnsama/blog/cns!4E2F09F0EF53C369!1553.entry",reproduced-website: "あだち充の屋根裏部屋"}
 ---
 
 有时候会产生这样的想法――无论到了哪里都觉得“这个地方并不属于我！” 感觉就像大家都习以为常的事，只有我一个做不好；或则被一个稀松平常的问题困扰住，无论如何也不能解决…… 有时即使脸上带着笑容装成很快乐的样子，内心深处还是会有很多复杂的滋味在翻滚着。自信与不安，快乐与痛苦。 两种心情明明是不同的极端，却微妙得仿如只隔了一层纸般地接近。 为什么我会同时感受到这两种矛盾的心情呢？ 而且连它们的强烈程度也是如此相似。 我现在的心情应该是迷茫吧。不过，我还是要试试看，也只能试试看了。
 
-“门的另一边到底有什么呢
+“<span style="color: #003300;">门的另一边到底有什么呢</span>
 
-好可怕啊不过还是想试着去打开
+<span style="color: #003300;">好可怕啊不过还是想试着去打开</span>
 
-如果会失去什么的话那就把它找回来好了
+<span style="color: #003300;">如果会失去什么的话那就把它找回来好了</span>
 
-我就是这样想的
+<span style="color: #003300;">我就是这样想的</span>
 
-即使会失去所有的一切
+<span style="color: #003300;">即使会失去所有的一切</span>
 
-也没关系” \*
+<span style="color: #003300;">也没关系</span>” \*
 
 ―――这大概就是我现在所能达到的觉悟了。
 

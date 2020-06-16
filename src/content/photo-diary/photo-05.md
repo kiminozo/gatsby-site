@@ -1,18 +1,21 @@
 ---
 title: "カラフル＆ポップなMyユビワと白モクレン ['98.2.1]"
 date: "2010-11-07"
-coverImage: "myring.jpg"
+categories: ["Photo日记"]
+slug: "/photo-diary/photo-05"
+tags: []
+license: {type: "translated",author: "岡崎律子",translator: "ココロの雨",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/photo/photo5.html",reproduced-website: "岡崎律子Book"}
 ---
 
-**●カラフル＆ポップなMyユビワ**
+<span style="color: #ff99cc;"><strong>●カラフル＆ポップなMyユビワ</strong></span>
 
 **●丰富多彩&嘭嘭的My首饰**
 
-[![](images/myring.jpg "myring")](https://forritz.org/home/wp-content/uploads/2010/11/myring.jpg)
+[![](./images/myring.jpg "myring")](./images/myring.jpg)
 
-左端の赤いのは、HMVでのイベントの時、右端の花の形の赤は、"A Happy Life"のプロモーションビデオ撮影のときにもつけていたもの。
+<span style="color: #808000;">左端の赤いのは、HMVでのイベントの時、右端の花の形の赤は、"A Happy Life"のプロモーションビデオ撮影のときにもつけていたもの。</span>
 
-ブルーのも木の葉の形のグリーンも、ぱっと見て、透明感があっていいなと思ったのでした。
+<span style="color: #808000;">ブルーのも木の葉の形のグリーンも、ぱっと見て、透明感があっていいなと思ったのでした。</span>
 
 左端红色的,是在HMV的时候戴的，右端的红的花型的，也是在视频"A Happy Life"的专辑摄影的时候戴的。
 
@@ -24,11 +27,11 @@ coverImage: "myring.jpg"
 
  
 
-[![](images/magnolia.jpg "magnolia")](https://forritz.org/home/wp-content/uploads/2010/11/magnolia.jpg)
+[![](./images/magnolia.jpg "magnolia")](./images/magnolia.jpg)
 
-晴れわたった空を見上げると、白もくれんの枝先に可愛い小さな芽がいっぱい。
+<span style="color: #808000;">晴れわたった空を見上げると、白もくれんの枝先に可愛い小さな芽がいっぱい。</span>
 
-こんなに寒くても、春は近し。
+<span style="color: #808000;">こんなに寒くても、春は近し。</span>
 
 当向上看晴空万里的天空的时候，覆着白色的树枝充满可爱小嫩芽。
 

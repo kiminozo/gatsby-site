@@ -1,9 +1,10 @@
 ---
 title: "Rain or Shine～降っても晴れても〜第14回"
 date: "2010-08-20"
-slug: "/rain-or-shine/rain-or-shine-14"
 categories: ["Rain or Shine"]
-tags: []
+slug: "/rain-or-shine/rain-or-shine-14-1"
+tags: ["life is lovely","回味","培养","灵感"]
+license: {type: "reproduced",author: "原版奶昔",reproduced-url: "http://spaces.msn.com/shinnsama/blog/cns!4E2F09F0EF53C369!1550.entry",reproduced-website: "あだち充の屋根裏部屋"}
 ---
 
 想事情的时候，你是习惯精心推敲得出结论，还是“啪”地就在脑子里浮现出灵感呢？

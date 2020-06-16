@@ -1,14 +1,17 @@
 ---
 title: "レコーディングPhoto日記 ['98.10.13]"
 date: "2010-11-07"
-coverImage: "recph241.jpg"
+categories: ["Photo日记"]
+slug: "/photo-diary/photo-07"
+tags: []
+license: {type: "translated",author: "岡崎律子",translator: "ココロの雨",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/photo/photo7.html",reproduced-website: "岡崎律子Book"}
 ---
 
 **レコーディングPhoto日記 \['98.10.13\]**
 
-[![](images/recph241.jpg "recph241")](https://forritz.org/home/wp-content/uploads/2010/11/recph241.jpg)
+[![](./images/recph241.jpg "recph241")](./images/recph241.jpg)
 
-毎日、違うお花が飾られていてうれしかったスタジオ
+<span style="color: #808000;">毎日、違うお花が飾られていてうれしかったスタジオ</span>
 
 この日は黄色のばらでした
 
@@ -16,9 +19,9 @@ coverImage: "recph241.jpg"
 
 这天是黄色的蔷薇
 
-[![](images/recph242.jpg "recph242")](https://forritz.org/home/wp-content/uploads/2010/11/recph242.jpg)
+[![](./images/recph242.jpg "recph242")](./images/recph242.jpg)
 
-ハセガワさん、ピアノを弾く
+<span style="color: #808000;">ハセガワさん、ピアノを弾く</span>
 
 楽しそう
 
@@ -26,9 +29,9 @@ coverImage: "recph241.jpg"
 
 很高兴的样子
 
-[![](images/recph243.jpg "recph243")](https://forritz.org/home/wp-content/uploads/2010/11/recph243.jpg)
+[![](./images/recph243.jpg "recph243")](./images/recph243.jpg)
 
-オカザキも、ピアノを弾く
+<span style="color: #808000;">オカザキも、ピアノを弾く</span>
 
 緊張してる
 
@@ -36,9 +39,9 @@ OKAZAKI（自称），也弹着钢琴
 
 很紧张的样子
 
-[![](images/recph244.jpg "recph244")](https://forritz.org/home/wp-content/uploads/2010/11/recph244.jpg)
+[![](./images/recph244.jpg "recph244")](./images/recph244.jpg)
 
-レコーディング終了で乾杯！
+<span style="color: #808000;">レコーディング終了で乾杯！</span>
 
 明け方の眠いからだに、
 

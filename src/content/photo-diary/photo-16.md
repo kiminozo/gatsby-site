@@ -1,16 +1,19 @@
 ---
 title: "●フルーツバスケットの大地丙太郎監督と対談[2001.7.16]"
 date: "2010-11-07"
-coverImage: "taidan1.jpg"
+categories: ["Photo日记"]
+slug: "/photo-diary/photo16"
+tags: []
+license: {type: "translated",author: "岡崎律子",translator: "ココロの雨",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/photo/photo16.html",reproduced-website: "岡崎律子Book"}
 ---
 
-[![](images/taidan1.jpg "taidan1")](https://forritz.org/home/wp-content/uploads/2010/11/taidan1.jpg)
+[![](./images/taidan1.jpg "taidan1")](./images/taidan1.jpg)
 
-2001年７月11日（水）
+<span style="color: #808000;">2001年７月11日（水）</span>
 
-都内某所にて
+<span style="color: #808000;">都内某所にて</span>
 
-フルーツバスケットの大地丙太郎監督と対談
+<span style="color: #808000;">フルーツバスケットの大地丙太郎監督と対談</span>
 
 2001年７月11日（水）
 
@@ -18,13 +21,13 @@ coverImage: "taidan1.jpg"
 
 与水果篮子的大地丙太郎监督的谈话
 
-はじめは緊張して、撮影でも“それじゃあガチガチのお見合い写真みたい！”と笑われていた私
+<span style="color: #808000;">はじめは緊張して、撮影でも“それじゃあガチガチのお見合い写真みたい！”と笑われていた私</span>
 
-対談も終わり、みなさんでの会話も弾みに弾んで…
+<span style="color: #808000;">対談も終わり、みなさんでの会話も弾みに弾んで…</span>
 
-時おりいい風が入る中、“仕事なのにこんなに楽しい気分でいいのでしょうか…”というところをパチリ
+<span style="color: #808000;">時おりいい風が入る中、“仕事なのにこんなに楽しい気分でいいのでしょうか…”というところをパチリ</span>
 
-なごんでおります
+<span style="color: #808000;">なごんでおります</span>
 
 开始感到紧张,甚至那照片“看着那么像僵硬的相亲照片！”我还被这样嘲笑了
 
@@ -32,4 +35,4 @@ coverImage: "taidan1.jpg"
 
 有时这样有感觉，“工作的时候有这样愉快的心情就好了…”正好这个的时候“咔嚓”的被照下来了
 
-[![](images/taidan2.jpg "taidan2")](https://forritz.org/home/wp-content/uploads/2010/11/taidan2.jpg)  そしてこちらは“フラッシュなしの方がいい感じに撮れるん です”との監督の言葉に従って 以及这个是“在闪光方向对好的方向拍下的” 监督是这么说的
+[![](./images/taidan2.jpg "taidan2")](./images/taidan2.jpg) <span style="color: #808000;"> そしてこちらは“フラッシュなしの方がいい感じに撮れるん です”との監督の言葉に従って</span> 以及这个是“在闪光方向对好的方向拍下的” 监督是这么说的

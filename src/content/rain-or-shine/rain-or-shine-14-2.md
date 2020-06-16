@@ -1,9 +1,10 @@
 ---
 title: "Rain or Shine～降っても晴れても〜第14回-2"
 date: "2010-08-20"
-slug: "/rain-or-shine/rain-or-shine-14-2"
 categories: ["Rain or Shine"]
-tags: []
+slug: "/rain-or-shine/rain-or-shine-14-2"
+tags: ["Ritzberry Fields","原动力","录制工作","演唱会","秋秋公主","逾期"]
+license: {type: "reproduced",author: "原版奶昔",reproduced-url: "http://spaces.msn.com/shinnsama/blog/cns!4E2F09F0EF53C369!1549.entry",reproduced-website: "あだち充の屋根裏部屋"}
 ---
 
 终于还是超过了约定的最后期限…..担当负责人的K先生，对不起。

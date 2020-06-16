@@ -3,7 +3,7 @@ import { graphql, PageProps, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import CC, { ReprintInfo } from "../components/CC"
+import CC, { License } from "../components/CC"
 
 import {
   Button, Grid, Header, Ref, Segment, Rail, Accordion,
@@ -34,8 +34,7 @@ type TemplateProps = {
         toc?: boolean;
         categories?: string[];
         tags?: string[];
-        provenance?: string
-        reprint?: ReprintInfo
+        license?: License
       }
       html: string;
       headings: Headings[]
@@ -139,7 +138,7 @@ class TemplatePage extends Component<TemplateProps, TemplateState> {
   renderTags() {
     const { markdownRemark } = this.props.data;
     const { frontmatter } = markdownRemark
-    const { categories, tags, reprint, provenance } = frontmatter
+    const { categories, tags, license } = frontmatter
 
     // const reprint = {
     //   site: "あだち充の屋根裏部屋",
@@ -167,7 +166,7 @@ class TemplatePage extends Component<TemplateProps, TemplateState> {
           }
         </Label.Group>
 
-        <CC reprint={reprint} provenance={provenance} />
+        <CC license={license} />
       </>
     )
   }
@@ -242,12 +241,13 @@ export const pageQuery = graphql`
         categories
         tags
         toc
-        provenance
-        reprint {
-            author
-            site
-            url
-          }
+        license {
+          type
+          author
+          translator
+          reproduced_url
+          reproduced_website
+        }
         
       }
       headings {

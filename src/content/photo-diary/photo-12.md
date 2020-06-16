@@ -1,61 +1,64 @@
 ---
 title: "●Private Concert Vol.3 ['99.12.22]"
 date: "2010-11-07"
-coverImage: "p-con993.jpg"
+categories: ["Photo日记"]
+slug: "/photo-diary/photo-12"
+tags: []
+license: {type: "translated",author: "岡崎律子",translator: "ココロの雨",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/photo/photo12.html",reproduced-website: "岡崎律子Book"}
 ---
 
-[![](images/flower991.jpg "flower991")](https://forritz.org/home/wp-content/uploads/2010/11/flower991.jpg)
+[![](./images/flower991.jpg "flower991")](./images/flower991.jpg)
 
-[![](images/p-con991.jpg "p-con991")](https://forritz.org/home/wp-content/uploads/2010/11/p-con991.jpg)
+[![](./images/p-con991.jpg "p-con991")](./images/p-con991.jpg)
 
-開演前のリハーサル
+<span style="color: #808000;">開演前のリハーサル</span>
 
-歌ってみつつ私も客席で聴いてみて確認
+<span style="color: #808000;">歌ってみつつ私も客席で聴いてみて確認</span>
 
 开演前面的彩排
 
 一边听自己唱歌，一边也在确认客席
 
-[![](images/p-con992.jpg "p-con992")](https://forritz.org/home/wp-content/uploads/2010/11/p-con992.jpg)
+<span style="color: #000000; font-family: tahoma; line-height: normal; font-size: 12px; -webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px;"><a href="./images/p-con992.jpg"><img class="alignnone size-full wp-image-458" title="p-con992" src="./images/p-con992.jpg" alt="" width="283" height="204"></a></span>
 
-寒がりだから「春」が好き
+<span style="line-height: 18px; -webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px;"><span style="color: #808000;">寒がりだから「春」が好き</span></span>
 
-因为怕冷所以喜欢"春天"
+<span style="line-height: 18px; -webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px;">因为怕冷所以喜欢"春天"</span>
 
-[![](images/p-con993.jpg "p-con993")](https://forritz.org/home/wp-content/uploads/2010/11/p-con993.jpg)
+<span style="-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px;"><span style="color: #000000; font-family: tahoma; line-height: normal; font-size: 12px;"><a href="./images/p-con993.jpg"><img class="alignnone size-full wp-image-459" title="p-con993" src="./images/p-con993.jpg" alt="" width="283" height="204"></a></span></span>
 
-派手な金髪ガッチャンのギターで
+<span style="-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px;"><span style="color: #808000;">派手な金髪ガッチャンのギターで</span></span>
 
-静かな「星空にお祈り」
+<span style="-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px;"><span style="color: #808000;">静かな「星空にお祈り」</span></span>
 
-有着花哨金发的吉他手
+<span style="-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px;">有着花哨金发的吉他手</span>
 
-弹着寂静的「星空にお祈り」
+<span style="-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px;">弹着寂静的「星空にお祈り」</span>
 
-[![](images/p-con994.jpg "p-con994")](https://forritz.org/home/wp-content/uploads/2010/11/p-con994.jpg)
+<span style="color: #000000; font-family: tahoma; line-height: normal; font-size: 12px; -webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px;"><a href="./images/p-con994.jpg"><img class="alignnone size-full wp-image-460" title="p-con994" src="./images/p-con994.jpg" alt="" width="283" height="204"></a></span>
 
-「Bon voyage!」を歌うと
+<span style="-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px;"><span style="color: #808000;">「Bon voyage!」を歌うと</span></span>
 
-もはや自然に足がステージから
+<span style="-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px;"><span style="color: #808000;">もはや自然に足がステージから</span></span>
 
-降りて歩いてしまう…？！
+<span style="-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px;"><span style="color: #808000;">降りて歩いてしまう…？！</span></span>
 
-唱着「Bon voyage!」
+<span style="-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px;">唱着「Bon voyage!」</span>
 
-脚已经自然而然的
+<span style="-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px;">脚已经自然而然的</span>
 
-从舞台走下来…？！
+<span style="-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px;">从舞台走下来…？！</span>
 
-[![](images/rehearsl.jpg "rehearsl")](https://forritz.org/home/wp-content/uploads/2010/11/rehearsl.jpg)
+<span style="-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px;"><span style="color: #000000; font-family: tahoma; line-height: normal; font-size: 12px;"><a href="./images/rehearsl.jpg"><img class="alignnone size-full wp-image-461" title="rehearsl" src="./images/rehearsl.jpg" alt="" width="567" height="193"></a></span></span>
 
-けやきホールでのおつとめを終えて
+<span style="line-height: 18px; -webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px;"><span style="color: #808000;">けやきホールでのおつとめを終えて</span></span>
 
-私と一緒に帰宅
+<span style="line-height: 18px; -webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px;"><span style="color: #808000;">私と一緒に帰宅</span></span>
 
-何事もなかったかのように部屋に鎮座するピアノ
+<span style="line-height: 18px; -webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px;"><span style="color: #808000;">何事もなかったかのように部屋に鎮座するピアノ</span></span>
 
-结束了今天的演出
+<span style="line-height: 18px; -webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px;">结束了今天的演出</span>
 
-和我一起回家的
+<span style="line-height: 18px; -webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px;">和我一起回家的</span>
 
-是没有任何事情的在房间坐镇的钢琴
+<span style="line-height: 18px; -webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px;">是没有任何事情的在房间坐镇的钢琴</span>

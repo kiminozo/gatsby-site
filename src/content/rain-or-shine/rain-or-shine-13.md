@@ -1,9 +1,10 @@
 ---
 title: "Rain or Shine～降っても晴れても〜第13回"
 date: "2010-08-20"
-slug: "/rain-or-shine/rain-or-shine-13"
 categories: ["Rain or Shine"]
-tags: []
+slug: "/rain-or-shine/rain-or-shine-13"
+tags: ["一天","伦敦","录制工作","料理"]
+license: {type: "reproduced",author: "原版奶昔",reproduced-url: "http://spaces.msn.com/shinnsama/blog/cns!4E2F09F0EF53C369!1551.entry",reproduced-website: "あだち充の屋根裏部屋"}
 ---
 
 在伦敦的录制终于圆满结束了。感觉……“太好了！”

@@ -34,10 +34,10 @@ const menusConfig: MenuConfig[] =
             link: "/demo/page-6/"
         }, {
             name: "rain-or-shine-9",
-            link: "/rain-or-shine/rain-or-shine-9"
+            link: "/rain-or-shine/rain-or-shine-09"
         }, {
             name: "photo-diary-1",
-            link: "/photo-diary/photo1"
+            link: "/photo-diary/photo-01"
         }]
     }, {
         name: "song-demo",

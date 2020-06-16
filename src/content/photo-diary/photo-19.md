@@ -1,24 +1,27 @@
 ---
 title: "●Private Concert Vol.5 ['02.4.12]"
 date: "2010-11-07"
-coverImage: "chi6.jpg"
+categories: ["Photo日记"]
+slug: "/photo-diary/photo-19"
+tags: []
+license: {type: "translated",author: "岡崎律子",translator: "ココロの雨",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/photo/photo19.html",reproduced-website: "岡崎律子Book"}
 ---
 
  
 
-[![](images/title-v51.jpg "title-v5")](https://forritz.org/home/wp-content/uploads/2010/11/title-v51.jpg)
+[![](./images/title-v51.jpg "title-v5")](./images/title-v51.jpg)
 
-[![](images/chi6.jpg "chi6")](https://forritz.org/home/wp-content/uploads/2010/11/chi6.jpg) [](https://forritz.org/home/wp-content/uploads/2010/11/title-v51.jpg) 
+[![](./images/chi6.jpg "chi6")](./images/chi6.jpg) [](./images/title-v51.jpg) 
 
-コンサートは「小さな祈り」でスタート
+<span style="color: #808000;">コンサートは「小さな祈り」でスタート</span>
 
-ところで、このワンピースについて
+<span style="color: #808000;">ところで、このワンピースについて</span>
 
-後日、“ひょう柄ですか？”との濡れ衣（?!）があって
+<span style="color: #808000;">後日、“ひょう柄ですか？”との濡れ衣（?!）があって</span>
 
-私は小さなショックを受けた
+<span style="color: #808000;">私は小さなショックを受けた</span>
 
-実際はlovelyな小花プリントよ
+<span style="color: #808000;">実際はlovelyな小花プリントよ</span>
 
 音乐会由《小さな祈り》开始
 
@@ -30,13 +33,13 @@ coverImage: "chi6.jpg"
 
 实际是lovely的小花图案
 
-[![](images/fb5.jpg "fb5")](https://forritz.org/home/wp-content/uploads/2010/11/fb5.jpg)
+[![](./images/fb5.jpg "fb5")](./images/fb5.jpg)
 
-ぐっと静かに「流星群の日」～「約束」
+<span style="color: #808000;">ぐっと静かに「流星群の日」～「約束」</span>
 
-この後、「リグレット」～「A merry December」
+<span style="color: #808000;">この後、「リグレット」～「A merry December」</span>
 
-でパワー全開！
+<span style="color: #808000;">でパワー全開！</span>
 
 静静的《流星群の日》～《約束》
 
@@ -44,23 +47,23 @@ coverImage: "chi6.jpg"
 
 马力全开！
 
-[![](images/ha1.jpg "ha1")](https://forritz.org/home/wp-content/uploads/2010/11/ha1.jpg)
+[![](./images/ha1.jpg "ha1")](./images/ha1.jpg)
 
-「セレナーデ」弾き語りを終えて
+<span style="color: #808000;">「セレナーデ」弾き語りを終えて</span>
 
-今年も一年アリガトウゴザイマシタ
+<span style="color: #808000;">今年も一年アリガトウゴザイマシタ</span>
 
 结束了《セレナーデ》弹唱
 
 今年也“谢谢大家了！”
 
-[![](images/ha-15.jpg "ha-15")](https://forritz.org/home/wp-content/uploads/2010/11/ha-15.jpg)
+[![](./images/ha-15.jpg "ha-15")](./images/ha-15.jpg)
 
-そして最後はやっぱり…
+<span style="color: #808000;">そして最後はやっぱり…</span>
 
-ウキウキとステージを降りてしまう私
+<span style="color: #808000;">ウキウキとステージを降りてしまう私</span>
 
-「春だもの！」を歌いながら
+<span style="color: #808000;">「春だもの！」を歌いながら</span>
 
 以及最后这张是…
 

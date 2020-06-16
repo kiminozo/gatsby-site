@@ -1,18 +1,21 @@
 ---
 title: "１月末の小さな旅行とスタジオ風景 ['99.2.13]"
 date: "2010-11-07"
-coverImage: "izu_2.jpg"
+categories: ["Photo日记"]
+slug: "/photo-diary/photo-08"
+tags: []
+license: {type: "translated",author: "岡崎律子",translator: "ココロの雨",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/photo/photo8.html",reproduced-website: "岡崎律子Book"}
 ---
 
 **●「１月末の小さな旅行」**
 
-[![](images/izu_1.jpg "izu_1")](https://forritz.org/home/wp-content/uploads/2010/11/izu_1.jpg)
+[![](./images/izu_1.jpg "izu_1")](./images/izu_1.jpg)
 
-平日なのですいているとはおもったが
+<span style="color: #808000;">平日なのですいているとはおもったが</span>
 
-着く頃にはとうとう貸し切り状態
+<span style="color: #808000;">着く頃にはとうとう貸し切り状態</span>
 
-飛行機のはずがこんな地味な電車に・・・
+<span style="color: #808000;">飛行機のはずがこんな地味な電車に・・・</span>
 
 这是平常少有的,
 
@@ -20,23 +23,23 @@ coverImage: "izu_2.jpg"
 
 发现不是飞机，而是这样的宁静的电气列车
 
-[![](images/izu_2.jpg "izu_2")](https://forritz.org/home/wp-content/uploads/2010/11/izu_2.jpg)
+[![](./images/izu_2.jpg "izu_2")](./images/izu_2.jpg)
 
-菜の花の黄色はいかにも“春”
+<span style="color: #808000;">菜の花の黄色はいかにも“春”</span>
 
-ここではもうすぐ桜が咲いちゃうそうだ
+<span style="color: #808000;">ここではもうすぐ桜が咲いちゃうそうだ</span>
 
 油菜花的黄色真的是"春天"啊~
 
 好象这里也马上要开满樱花了
 
-[![](images/izu_3.jpg "izu_3")](https://forritz.org/home/wp-content/uploads/2010/11/izu_3.jpg)
+[![](./images/izu_3.jpg "izu_3")](./images/izu_3.jpg)
 
-帰ってから庭に植えようと思い
+<span style="color: #808000;">帰ってから庭に植えようと思い</span>
 
-水仙をおみやげにした
+<span style="color: #808000;">水仙をおみやげにした</span>
 
-甘いいい匂いがしていました
+<span style="color: #808000;">甘いいい匂いがしていました</span>
 
 准备回家之后在院子里栽种的,
 
@@ -48,13 +51,13 @@ coverImage: "izu_2.jpg"
 
 **'98年12月末の喜久子さんと私**
 
-[![](images/kikko_1.jpg "kikko_1")](https://forritz.org/home/wp-content/uploads/2010/11/kikko_1.jpg)[![](images/kikko_2.jpg "kikko_2")](https://forritz.org/home/wp-content/uploads/2010/11/kikko_2.jpg)
+[![](./images/kikko_1.jpg "kikko_1")](./images/kikko_1.jpg)[![](./images/kikko_2.jpg "kikko_2")](./images/kikko_2.jpg)
 
-この日　喜久子さんは高性能の
+<span style="color: #808000;">この日　喜久子さんは高性能の</span>
 
-携帯電話に変えたとかで
+<span style="color: #808000;">携帯電話に変えたとかで</span>
 
-とてもうれしそう
+<span style="color: #808000;">とてもうれしそう</span>
 
 98年12月末的喜久子小姐和我
 
@@ -66,15 +69,15 @@ coverImage: "izu_2.jpg"
 
 **●「みんなのんびり顔」**
 
-[![](images/kikko_4.jpg "kikko_4")](https://forritz.org/home/wp-content/uploads/2010/11/kikko_4.jpg)
+[![](./images/kikko_4.jpg "kikko_4")](./images/kikko_4.jpg)
 
-'98年12月末
+<span style="color: #808000;">'98年12月末</span>
 
-年内最後のスタジオの日
+<span style="color: #808000;">年内最後のスタジオの日</span>
 
-ゆったりと弦楽器の録音を
+<span style="color: #808000;">ゆったりと弦楽器の録音を</span>
 
-終えてパチリ
+<span style="color: #808000;">終えてパチリ</span>
 
 98年12月末
 

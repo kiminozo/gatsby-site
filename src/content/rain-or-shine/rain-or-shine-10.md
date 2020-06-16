@@ -1,9 +1,10 @@
 ---
 title: "Rain or Shine～降っても晴れても〜第10回"
 date: "2010-08-20"
-slug: "/rain-or-shine/rain-or-shine-10"
 categories: ["Rain or Shine"]
-tags: []
+slug: "/rain-or-shine/rain-or-shine-10"
+tags: ["Melocure","专注","小学","忘却","成就感"]
+license: {}
 ---
 
 “……呼~” 痴迷于某样东西之后一下子回归自我时，会有一个快感降临的瞬间。这大概是专注所带来的成就感。

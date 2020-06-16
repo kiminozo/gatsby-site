@@ -1,18 +1,21 @@
 ---
 title: "97年夏の思い出 ＆ 遠い日のDancing岡崎 ['97.12.8]"
 date: "2010-11-07"
-coverImage: "chiba1.jpg"
+categories: ["Photo日记"]
+slug: "/photo-diary/photo-04"
+tags: []
+license: {type: "translated",author: "岡崎律子",translator: "ココロの雨",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/photo/photo4.html",reproduced-website: "岡崎律子Book"}
 ---
 
 **97年夏の思い出 ＆ 遠い日のDancing岡崎 \['97.12.8\]**
 
-[![](images/chiba1.jpg "chiba1")](https://forritz.org/home/wp-content/uploads/2010/11/chiba1.jpg)
+[![](./images/chiba1.jpg "chiba1")](./images/chiba1.jpg)
 
 **\-97年夏の思い出-**
 
 **\-97年夏天的回忆**
 
-８月の終わり、“Rain or Shine”の撮影を終えた海で、小さく乾杯。
+<span style="color: #808000;">８月の終わり、“Rain or Shine”の撮影を終えた海で、小さく乾杯。</span>
 
 このあとすぐ日が暮れて、ラジカセの音を聞きながら、
 
@@ -22,9 +25,9 @@ coverImage: "chiba1.jpg"
 
 一边观赏日落,一边听着海声，而且被海风吹着的心情非常舒畅啊。
 
-[![](images/chiba2.jpg "chiba2")](https://forritz.org/home/wp-content/uploads/2010/11/chiba2.jpg)
+[![](./images/chiba2.jpg "chiba2")](./images/chiba2.jpg)
 
-この笑顔が撮影の時にできれば・・・。
+<span style="color: #808000;">この笑顔が撮影の時にできれば・・・。</span>
 
 いつもそう思うのです。
 
@@ -36,9 +39,9 @@ coverImage: "chiba1.jpg"
 
 \-很久以前的Dancing岡崎
 
-[![](images/ohara.gif "ohara")](https://forritz.org/home/wp-content/uploads/2010/11/ohara.gif)
+[![](./images/ohara.gif "ohara")](./images/ohara.gif)
 
-この姿は大原女か、茶摘み娘だったか？
+<span style="color: #808000;">この姿は大原女か、茶摘み娘だったか？</span>
 
 たしか、このあと着物が好きになって、一週間くらいは“和風のおなご”になりきっていた私でした。
 
@@ -46,9 +49,9 @@ coverImage: "chiba1.jpg"
 
 确实,并且开始变得喜欢和服、大约1个星期我完全变成了和风的感觉。
 
-[![](images/vallet.gif "vallet")](https://forritz.org/home/wp-content/uploads/2010/11/vallet.gif)
+[![](./images/vallet.gif "vallet")](./images/vallet.gif)
 
-同じ振り付けのはずなのに、隣の子とポーズが違うのが謎だ。
+<span style="color: #808000;">同じ振り付けのはずなのに、隣の子とポーズが違うのが謎だ。</span>
 
 笑ってないのは、緊張している証拠。
 

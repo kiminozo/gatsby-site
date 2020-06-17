@@ -1,5 +1,6 @@
 ---
 title: "君に逢えてボクはボクになる"
+type: "song"
 date: "2017-02-04"
 order: 41001
 discography: ["Birth"]

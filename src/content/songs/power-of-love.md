@@ -1,5 +1,6 @@
 ---
 title: "POWER OF LOVE"
+type: "song"
 date: "2013-04-14"
 order: 390102
 discography: ["NONKO"]

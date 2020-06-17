@@ -1,5 +1,6 @@
 ---
 title: "仲なおり"
+type: "song"
 date: "2010-08-25"
 order: 10610
 discography: ["おはよう"]

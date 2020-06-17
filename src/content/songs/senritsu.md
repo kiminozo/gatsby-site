@@ -1,5 +1,6 @@
 ---
 title: "旋律"
+type: "song"
 date: "2013-04-07"
 order: 360910
 discography: ["Plain"]

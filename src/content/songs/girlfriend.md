@@ -1,5 +1,6 @@
 ---
 title: "Girlfriend"
+type: "song"
 date: "2010-08-19"
 order: 10108
 discography: ["Rain or Shine","Sincerely Yours","長距離電話"]

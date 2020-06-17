@@ -1,5 +1,6 @@
 ---
 title: "Rain or Shine－降っても晴れても－"
+type: "song"
 date: "2010-08-25"
 order: 10504
 discography: ["Rain or Shine","Rain or Shine～降っても晴れても〜"]

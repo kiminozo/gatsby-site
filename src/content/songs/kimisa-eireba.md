@@ -1,5 +1,6 @@
 ---
 title: "君さえいれば"
+type: "song"
 date: "2010-08-29"
 order: 10706
 discography: ["ラブひな OKAZAKI COLLECTION"]

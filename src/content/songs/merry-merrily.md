@@ -1,5 +1,6 @@
 ---
 title: "Merry Merrily"
+type: "song"
 date: "2013-04-14"
 order: 380101
 discography: ["Merry Merrily"]

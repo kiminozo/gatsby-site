@@ -1,5 +1,6 @@
 ---
 title: "幸せになろう"
+type: "song"
 date: "2010-08-19"
 order: 10106
 discography: ["Sincerely Yours"]

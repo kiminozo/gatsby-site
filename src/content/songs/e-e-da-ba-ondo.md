@@ -1,5 +1,6 @@
 ---
 title: "ええだば音頭"
+type: "song"
 date: "2017-02-05"
 order: 60026
 discography: ["MINKY MOMO LOVE STAGE"]

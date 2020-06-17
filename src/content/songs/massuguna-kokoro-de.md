@@ -1,5 +1,6 @@
 ---
 title: "まっすぐな心で"
+type: "song"
 date: "2010-08-19"
 order: 10110
 discography: ["Rain or Shine","Sincerely Yours"]

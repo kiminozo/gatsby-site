@@ -1,5 +1,6 @@
 ---
 title: "Starry Night"
+type: "song"
 date: "2010-08-22"
 order: 10208
 discography: ["Joyful Calendar"]

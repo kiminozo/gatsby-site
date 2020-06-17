@@ -1,5 +1,6 @@
 ---
 title: "どうぞよろしくね。"
+type: "song"
 date: "2013-03-25"
 order: 300106
 discography: ["みずうみ"]

@@ -1,5 +1,6 @@
 ---
 title: "セレナーデ"
+type: "song"
 date: "2010-08-29"
 order: 10813
 discography: ["Life is Lovely"]

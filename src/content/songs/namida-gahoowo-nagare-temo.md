@@ -1,5 +1,6 @@
 ---
 title: "涙がほおを流れても"
+type: "song"
 date: "2010-08-30"
 order: 10910
 discography: ["for RITZ"]

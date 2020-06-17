@@ -1,5 +1,6 @@
 ---
 title: "BLUE POINT"
+type: "song"
 date: "2010-08-22"
 order: 10302
 discography: ["A Happy Life","Rain or Shine"]

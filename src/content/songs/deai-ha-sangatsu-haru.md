@@ -1,5 +1,6 @@
 ---
 title: "出逢いは三月 春"
+type: "song"
 date: "2010-08-19"
 order: 10102
 discography: ["Sincerely Yours"]

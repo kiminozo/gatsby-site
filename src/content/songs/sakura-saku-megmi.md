@@ -1,5 +1,6 @@
 ---
 title: "サクラサク"
+type: "song"
 date: "2013-04-07"
 order: 360701
 discography: ["feel well","サクラサク"]

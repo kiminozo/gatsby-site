@@ -1,5 +1,6 @@
 ---
 title: "愛されて守られて"
+type: "song"
 date: "2010-08-24"
 order: 10411
 discography: ["Ritzberry Fields"]

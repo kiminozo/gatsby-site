@@ -1,5 +1,6 @@
 ---
 title: "ごめんね"
+type: "song"
 date: "2013-03-30"
 order: 320504
 discography: ["SMILE×SMILE"]

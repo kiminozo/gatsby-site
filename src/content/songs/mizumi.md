@@ -1,5 +1,6 @@
 ---
 title: "みずうみ"
+type: "song"
 date: "2013-03-25"
 order: 300105
 discography: ["みずうみ"]

@@ -1,5 +1,6 @@
 ---
 title: "Nowadays"
+type: "song"
 date: "2010-08-22"
 order: 10206
 discography: ["Joyful Calendar","Rain or Shine"]

@@ -1,5 +1,6 @@
 ---
 title: "同じ空の下"
+type: "song"
 date: "2010-08-22"
 order: 10210
 discography: ["Joyful Calendar"]

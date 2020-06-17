@@ -1,5 +1,6 @@
 ---
 title: "シークレット．ラブ"
+type: "song"
 date: "2017-02-05"
 order: 50011
 discography: ["Candy Game"]

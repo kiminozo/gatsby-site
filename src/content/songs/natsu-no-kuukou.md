@@ -1,5 +1,6 @@
 ---
 title: "夏の空港"
+type: "song"
 date: "2010-08-19"
 order: 10103
 discography: ["Sincerely Yours"]

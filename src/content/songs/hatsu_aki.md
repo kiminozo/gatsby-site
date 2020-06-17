@@ -1,5 +1,6 @@
 ---
 title: "初秋"
+type: "song"
 date: "2013-03-28"
 order: 300206
 discography: ["かたおもい"]

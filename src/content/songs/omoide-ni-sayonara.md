@@ -1,5 +1,6 @@
 ---
 title: "想い出にさよなら"
+type: "song"
 date: "2017-02-04"
 order: 40013
 discography: ["メッセージ"]

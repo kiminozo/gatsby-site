@@ -1,5 +1,6 @@
 ---
 title: "Good-bye Good Days"
+type: "song"
 date: "2017-02-04"
 order: 40016
 discography: ["メッセージ"]

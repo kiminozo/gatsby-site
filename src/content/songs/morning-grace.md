@@ -1,5 +1,6 @@
 ---
 title: "Morning Grace"
+type: "song"
 date: "2010-09-01"
 order: 20901
 discography: ["Morning Grace"]

@@ -1,5 +1,6 @@
 ---
 title: "なんてステキな"
+type: "song"
 date: "2010-08-29"
 order: 10707
 discography: ["ラブひな OKAZAKI COLLECTION"]

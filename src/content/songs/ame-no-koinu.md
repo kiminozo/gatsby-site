@@ -1,5 +1,6 @@
 ---
 title: "雨の小犬"
+type: "song"
 date: "2013-04-07"
 order: 361005
 discography: ["CHOICE"]

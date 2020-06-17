@@ -1,5 +1,6 @@
 ---
 title: "星のララバイ"
+type: "song"
 date: "2017-02-04"
 order: 40019
 discography: ["メッセージ"]

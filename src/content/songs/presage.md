@@ -1,5 +1,6 @@
 ---
 title: "Presage"
+type: "song"
 date: "2017-02-04"
 order: ""
 discography: ["Presage"]

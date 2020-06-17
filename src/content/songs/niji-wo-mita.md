@@ -1,5 +1,6 @@
 ---
 title: "「虹を見た」"
+type: "song"
 date: "2010-09-05"
 order: 30404
 discography: ["メロディック・ハード・キュア"]

@@ -1,5 +1,6 @@
 ---
 title: "Babyblue"
+type: "song"
 date: "2013-03-30"
 order: 300308
 discography: ["ミントと口笛"]

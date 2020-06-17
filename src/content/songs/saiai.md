@@ -1,5 +1,6 @@
 ---
 title: "最愛"
+type: "song"
 date: "2010-08-22"
 order: 10205
 discography: ["Joyful Calendar","Rain or Shine","最愛"]

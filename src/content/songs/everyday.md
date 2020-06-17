@@ -1,5 +1,6 @@
 ---
 title: "everyday"
+type: "song"
 date: "2013-03-30"
 order: 300312
 discography: ["ミントと口笛"]

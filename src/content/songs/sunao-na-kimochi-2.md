@@ -1,5 +1,6 @@
 ---
 title: "素直な気持ち"
+type: "song"
 date: "2013-04-05"
 order: 360208
 discography: ["SpHERE"]

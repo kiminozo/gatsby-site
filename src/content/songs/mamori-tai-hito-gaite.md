@@ -1,5 +1,6 @@
 ---
 title: "守りたい人がいて"
+type: "song"
 date: "2010-08-29"
 order: 10806
 discography: ["Life is Lovely"]

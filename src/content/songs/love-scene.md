@@ -1,5 +1,6 @@
 ---
 title: "Love Scene"
+type: "song"
 date: "2010-08-22"
 order: 10204
 discography: ["Joyful Calendar"]

@@ -1,5 +1,6 @@
 ---
 title: "明日に向かって"
+type: "song"
 date: "2010-08-22"
 order: 10305
 discography: ["A Happy Life","Rain or Shine"]

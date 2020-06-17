@@ -1,5 +1,6 @@
 ---
 title: "1993 年、春"
+type: "song"
 date: "2010-08-22"
 order: 10202
 discography: ["Joyful Calendar"]

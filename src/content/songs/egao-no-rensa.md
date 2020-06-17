@@ -1,5 +1,6 @@
 ---
 title: "笑顔の連鎖"
+type: "song"
 date: "2013-03-31"
 order: 350211
 discography: ["楽園"]

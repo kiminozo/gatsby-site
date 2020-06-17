@@ -1,5 +1,6 @@
 ---
 title: "星空にお祈り"
+type: "song"
 date: "2013-03-30"
 order: 320406
 discography: ["so loving"]

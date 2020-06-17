@@ -1,5 +1,6 @@
 ---
 title: "シンシア・愛する人"
+type: "song"
 date: "2010-08-25"
 order: 10605
 discography: ["おはよう"]

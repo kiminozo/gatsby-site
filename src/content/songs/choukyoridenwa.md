@@ -1,5 +1,6 @@
 ---
 title: "長距離電話"
+type: "song"
 date: "2010-08-22"
 order: 10203
 discography: ["Joyful Calendar","Rain or Shine","長距離電話"]

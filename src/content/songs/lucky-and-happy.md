@@ -1,5 +1,6 @@
 ---
 title: "Lucky ＆ Happy"
+type: "song"
 date: "2010-08-24"
 order: 10410
 discography: ["Ritzberry Fields"]

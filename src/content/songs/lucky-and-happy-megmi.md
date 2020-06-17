@@ -1,5 +1,6 @@
 ---
 title: "Lucky & Happy"
+type: "song"
 date: "2013-04-07"
 order: 361003
 discography: ["CHOICE"]

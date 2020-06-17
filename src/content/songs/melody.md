@@ -1,5 +1,6 @@
 ---
 title: "メロディー"
+type: "song"
 date: "2010-08-30"
 order: 10906
 discography: ["for RITZ"]

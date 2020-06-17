@@ -1,5 +1,6 @@
 ---
 title: "Sunday Sundae"
+type: "song"
 date: "2010-09-05"
 order: 30410
 discography: ["メロディック・ハード・キュア"]

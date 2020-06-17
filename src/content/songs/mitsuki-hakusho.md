@@ -1,5 +1,6 @@
 ---
 title: "三月白書"
+type: "song"
 date: "2017-02-04"
 order: ""
 discography: ["Presage"]

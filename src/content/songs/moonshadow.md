@@ -1,5 +1,6 @@
 ---
 title: "Moonshadow"
+type: "song"
 date: "2010-09-01"
 order: 11015
 discography: ["L'aquoiboniste～無造作紳士〜","Love&amp;Life〜private works 1999-2001〜"]

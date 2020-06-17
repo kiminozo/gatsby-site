@@ -1,5 +1,6 @@
 ---
 title: "愛してほしくて"
+type: "song"
 date: "2010-08-25"
 order: 10509
 discography: ["Rain or Shine"]

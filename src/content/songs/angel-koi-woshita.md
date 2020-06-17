@@ -1,5 +1,6 @@
 ---
 title: "Angel 恋をした"
+type: "song"
 date: "2013-03-31"
 order: 350109
 discography: ["sky"]

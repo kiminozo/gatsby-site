@@ -1,5 +1,6 @@
 ---
 title: "はじまりはここから"
+type: "song"
 date: "2013-04-07"
 order: 360804
 discography: ["feel well"]

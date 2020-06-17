@@ -1,5 +1,6 @@
 ---
 title: "Happy Happy Birthday"
+type: "song"
 date: "2017-02-04"
 order: ""
 discography: ["Tiny Angel"]

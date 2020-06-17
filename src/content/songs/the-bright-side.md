@@ -1,5 +1,6 @@
 ---
 title: "the bright side"
+type: "song"
 date: "2010-08-31"
 order: 11009
 discography: ["Love&amp;Life〜private works 1999-2001〜"]

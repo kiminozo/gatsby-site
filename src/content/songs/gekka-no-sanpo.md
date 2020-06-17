@@ -1,5 +1,6 @@
 ---
 title: "月下の散歩"
+type: "song"
 date: "2010-08-31"
 order: 11007
 discography: ["Love&amp;Life〜private works 1999-2001〜"]

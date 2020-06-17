@@ -1,5 +1,6 @@
 ---
 title: "Shall we step in the rain?"
+type: "song"
 date: "2013-03-27"
 order: 300109
 discography: ["みずうみ"]

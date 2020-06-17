@@ -1,5 +1,6 @@
 ---
 title: "Romantic Flight"
+type: "song"
 date: "2013-03-31"
 order: 350102
 discography: ["sky"]

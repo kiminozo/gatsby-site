@@ -1,5 +1,6 @@
 ---
 title: "1st Priority"
+type: "song"
 date: "2010-09-05"
 order: 30402
 discography: ["1st Priority","メロディック・ハード・キュア"]

@@ -1,5 +1,6 @@
 ---
 title: "夢みるハート"
+type: "song"
 date: "2017-02-05"
 order: 49021
 discography: ["Princess Collection"]

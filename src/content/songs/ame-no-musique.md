@@ -1,5 +1,6 @@
 ---
 title: "雨のmusique"
+type: "song"
 date: "2010-08-30"
 order: 10905
 discography: ["for RITZ"]

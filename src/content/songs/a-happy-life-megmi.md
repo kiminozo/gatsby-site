@@ -1,5 +1,6 @@
 ---
 title: "A Happy Life"
+type: "song"
 date: "2013-04-07"
 order: 361004
 discography: ["CHOICE"]

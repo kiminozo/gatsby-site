@@ -1,5 +1,6 @@
 ---
 title: "はじまりはここから"
+type: "song"
 date: "2010-08-29"
 order: 10702
 discography: ["ラブひな OKAZAKI COLLECTION"]

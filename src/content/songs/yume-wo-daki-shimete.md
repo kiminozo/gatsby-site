@@ -1,5 +1,6 @@
 ---
 title: "夢を抱きしめて"
+type: "song"
 date: "2013-04-05"
 order: 360105
 discography: ["MINKY MOMO LOVE STAGE","SHAMROCK","夢を抱きしめて"]

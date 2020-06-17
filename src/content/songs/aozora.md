@@ -1,5 +1,6 @@
 ---
 title: "青空"
+type: "song"
 date: "2010-08-25"
 order: 10606
 discography: ["おはよう"]

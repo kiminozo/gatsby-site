@@ -1,5 +1,6 @@
 ---
 title: "Pop Step Jump!"
+type: "song"
 date: "2010-09-05"
 order: 30401
 discography: ["メロディック・ハード・キュア"]

@@ -1,5 +1,6 @@
 ---
 title: "birthday girl"
+type: "song"
 date: "2010-09-05"
 order: 30408
 discography: ["メロディック・ハード・キュア"]

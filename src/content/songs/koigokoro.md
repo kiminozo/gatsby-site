@@ -1,5 +1,6 @@
 ---
 title: "恋心"
+type: "song"
 date: "2010-08-19"
 order: 10102
 discography: ["Rain or Shine","Sincerely Yours"]

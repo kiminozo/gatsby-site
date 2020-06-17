@@ -1,5 +1,6 @@
 ---
 title: "はなれていても"
+type: "song"
 date: "2013-04-05"
 order: 360303
 discography: ["bertemu～ブルトゥム～"]

@@ -1,5 +1,6 @@
 ---
 title: "Magie"
+type: "song"
 date: "2010-08-29"
 order: 10804
 discography: ["Life is Lovely"]

@@ -1,5 +1,6 @@
 ---
 title: "二人はチョコレート"
+type: "song"
 date: "2013-03-31"
 order: 340103
 discography: ["おかし"]

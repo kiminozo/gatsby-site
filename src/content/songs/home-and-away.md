@@ -1,5 +1,6 @@
 ---
 title: "ホーム＆アウェイ"
+type: "song"
 date: "2010-09-05"
 order: 30501
 discography: ["ホーム＆アウェイ"]

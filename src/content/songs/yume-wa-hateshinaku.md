@@ -1,5 +1,6 @@
 ---
 title: "夢ははてしなく"
+type: "song"
 date: "2010-08-31"
 order: 11006
 discography: ["Love&amp;Life〜private works 1999-2001〜"]

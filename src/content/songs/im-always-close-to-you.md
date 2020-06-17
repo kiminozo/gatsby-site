@@ -1,5 +1,6 @@
 ---
 title: "I'm always close to you"
+type: "song"
 date: "2010-08-30"
 order: 10902
 discography: ["for RITZ"]

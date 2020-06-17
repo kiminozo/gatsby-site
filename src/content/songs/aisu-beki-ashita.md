@@ -1,5 +1,6 @@
 ---
 title: "愛すべき明日"
+type: "song"
 date: "2010-08-25"
 order: 10602
 discography: ["おはよう"]

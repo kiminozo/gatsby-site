@@ -1,5 +1,6 @@
 ---
 title: "口笛でル·ラ·ラ"
+type: "song"
 date: "2013-03-28"
 order: 300208
 discography: ["かたおもい"]

@@ -1,5 +1,6 @@
 ---
 title: "素直な気持ち"
+type: "song"
 date: "2010-08-23"
 order: 10402
 discography: ["Ritzberry Fields"]

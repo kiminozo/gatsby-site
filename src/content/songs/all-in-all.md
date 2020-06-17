@@ -1,5 +1,6 @@
 ---
 title: "ALL IN ALL"
+type: "song"
 date: "2010-09-05"
 order: 30412
 discography: ["めぐり逢い","メロディック・ハード・キュア"]

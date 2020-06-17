@@ -1,5 +1,6 @@
 ---
 title: "イツマデモ♥ドコマデモ"
+type: "song"
 date: "2010-08-29"
 order: 10709
 discography: ["ラブひな OKAZAKI COLLECTION"]

@@ -1,5 +1,6 @@
 ---
 title: "Friendship"
+type: "song"
 date: "2010-08-29"
 order: 10703
 discography: ["ラブひな OKAZAKI COLLECTION"]

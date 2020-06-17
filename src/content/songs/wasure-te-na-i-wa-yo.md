@@ -1,5 +1,6 @@
 ---
 title: "忘れてないわよ"
+type: "song"
 date: "2017-02-04"
 order: 40015
 discography: ["メッセージ"]

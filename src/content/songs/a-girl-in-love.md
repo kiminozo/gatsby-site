@@ -1,5 +1,6 @@
 ---
 title: "A Girl in Love"
+type: "song"
 date: "2013-03-31"
 order: 350202
 discography: ["楽園"]

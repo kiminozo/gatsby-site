@@ -1,5 +1,6 @@
 ---
 title: "Merry Christmas to You"
+type: "song"
 date: "2010-08-29"
 order: 10710
 discography: ["ラブひな OKAZAKI COLLECTION"]

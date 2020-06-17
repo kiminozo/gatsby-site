@@ -1,5 +1,6 @@
 ---
 title: "リセエンヌ"
+type: "song"
 date: "2010-08-30"
 order: 10907
 discography: ["for RITZ"]

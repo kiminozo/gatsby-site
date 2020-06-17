@@ -1,5 +1,6 @@
 ---
 title: "素顔"
+type: "song"
 date: "2010-08-29"
 order: 10802
 discography: ["Life is Lovely"]

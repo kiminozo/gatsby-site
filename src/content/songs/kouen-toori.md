@@ -1,5 +1,6 @@
 ---
 title: "公園通り"
+type: "song"
 date: "2013-03-30"
 order: ""
 discography: ["10 love"]

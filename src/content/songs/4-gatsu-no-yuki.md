@@ -1,5 +1,6 @@
 ---
 title: "４月の雪"
+type: "song"
 date: "2010-08-23"
 order: 10405
 discography: ["Ritzberry Fields","リグレット～恋人なら～"]

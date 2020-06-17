@@ -1,5 +1,6 @@
 ---
 title: "君さえいれば"
+type: "song"
 date: "2013-04-07"
 order: 360702
 discography: ["サクラサク"]

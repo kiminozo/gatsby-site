@@ -1,5 +1,6 @@
 ---
 title: "引っ越し"
+type: "song"
 date: "2013-04-07"
 order: 360408
 discography: ["ふわり"]

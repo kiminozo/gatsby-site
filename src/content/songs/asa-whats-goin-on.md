@@ -1,5 +1,6 @@
 ---
 title: "朝～What's goin' on～"
+type: "song"
 date: "2010-08-19"
 order: 10101
 discography: ["Rain or Shine","Sincerely Yours"]

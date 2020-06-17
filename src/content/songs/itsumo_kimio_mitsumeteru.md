@@ -1,5 +1,6 @@
 ---
 title: "いつも君をみつめてる"
+type: "song"
 date: "2013-03-30"
 order: 300305
 discography: ["ミントと口笛"]

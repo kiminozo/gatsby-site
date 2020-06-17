@@ -1,5 +1,6 @@
 ---
 title: "春の歓び"
+type: "song"
 date: "2012-02-14"
 order: 10809
 discography: ["Life is Lovely"]

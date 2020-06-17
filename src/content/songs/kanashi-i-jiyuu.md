@@ -1,5 +1,6 @@
 ---
 title: "悲しい自由"
+type: "song"
 date: "2010-08-19"
 order: 10105
 discography: ["Rain or Shine","Sincerely Yours","悲しい自由"]

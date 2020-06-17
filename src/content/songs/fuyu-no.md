@@ -1,5 +1,6 @@
 ---
 title: "冬のないカレンダー"
+type: "song"
 date: "2010-08-24"
 order: 10409
 discography: ["Ritzberry Fields"]

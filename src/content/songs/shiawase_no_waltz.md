@@ -1,5 +1,6 @@
 ---
 title: "しあわせのワルツ"
+type: "song"
 date: "2013-03-24"
 order: 300103
 discography: ["みずうみ"]

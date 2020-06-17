@@ -1,5 +1,6 @@
 ---
 title: "―Life―"
+type: "song"
 date: "2010-08-24"
 order: 10407
 discography: ["Ritzberry Fields"]

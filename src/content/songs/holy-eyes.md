@@ -1,5 +1,6 @@
 ---
 title: "Holy Eyes ～君の夢はぼくの夢～"
+type: "song"
 date: "2017-02-04"
 order: ""
 discography: ["Courage"]

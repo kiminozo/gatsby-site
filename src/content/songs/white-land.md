@@ -1,5 +1,6 @@
 ---
 title: "White Land"
+type: "song"
 date: "2010-08-31"
 order: 11012
 discography: ["Love&amp;Life〜private works 1999-2001〜","Rain or Shine～降っても晴れても〜"]

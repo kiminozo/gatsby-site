@@ -1,5 +1,6 @@
 ---
 title: "年上"
+type: "song"
 date: "2017-02-04"
 order: 40014
 discography: ["メッセージ"]

@@ -1,5 +1,6 @@
 ---
 title: "散歩に出かけよう"
+type: "song"
 date: "2010-08-22"
 order: 10201
 discography: ["Joyful Calendar"]

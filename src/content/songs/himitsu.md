@@ -1,5 +1,6 @@
 ---
 title: "秘密"
+type: "song"
 date: "2010-08-30"
 order: 10903
 discography: ["for RITZ"]

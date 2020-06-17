@@ -1,5 +1,6 @@
 ---
 title: "あの頃"
+type: "song"
 date: "2013-04-07"
 order: 360404
 discography: ["ふわり"]

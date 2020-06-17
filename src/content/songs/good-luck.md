@@ -1,5 +1,6 @@
 ---
 title: "Good Luck！"
+type: "song"
 date: "2010-08-25"
 order: 10609
 discography: ["おはよう"]

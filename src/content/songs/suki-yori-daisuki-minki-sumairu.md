@@ -1,5 +1,6 @@
 ---
 title: "好きより大好きミンキースマイル！"
+type: "song"
 date: "2013-04-05"
 order: 360110
 discography: ["MINKY MOMO LOVE STAGE","SHAMROCK"]

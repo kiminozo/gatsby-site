@@ -1,5 +1,6 @@
 ---
 title: "春の海へ"
+type: "song"
 date: "2010-08-22"
 order: 10207
 discography: ["Joyful Calendar","Rain or Shine"]

@@ -1,5 +1,6 @@
 ---
 title: "シンシア・愛する人［Dearｒ つばめversion］"
+type: "song"
 date: "2013-04-07"
 order: 360813
 discography: ["feel well"]

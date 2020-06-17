@@ -1,5 +1,6 @@
 ---
 title: "リグレット"
+type: "song"
 date: "2010-08-22"
 order: 10304
 discography: ["A Happy Life","リグレット～恋人なら～"]

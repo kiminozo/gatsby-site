@@ -1,5 +1,6 @@
 ---
 title: "私の愛は小さいけれど"
+type: "song"
 date: "2010-09-01"
 order: 20902
 discography: ["Morning Grace"]

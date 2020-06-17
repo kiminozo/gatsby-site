@@ -1,5 +1,6 @@
 ---
 title: "ただ明日のために"
+type: "song"
 date: "2013-03-31"
 order: 330107
 discography: ["Stop,and Go"]

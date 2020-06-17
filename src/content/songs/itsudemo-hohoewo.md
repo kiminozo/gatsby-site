@@ -1,5 +1,6 @@
 ---
 title: "いつでも微笑を"
+type: "song"
 date: "2010-08-30"
 order: 10904
 discography: ["for RITZ"]

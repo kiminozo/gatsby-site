@@ -1,5 +1,6 @@
 ---
 title: "夜明けの青いソファー"
+type: "song"
 date: "2010-08-23"
 order: 10403
 discography: ["Ritzberry Fields"]

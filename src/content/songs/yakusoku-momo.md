@@ -1,5 +1,6 @@
 ---
 title: "約束"
+type: "song"
 date: "2017-02-05"
 order: 60025
 discography: ["MINKY MOMO LOVE STAGE"]

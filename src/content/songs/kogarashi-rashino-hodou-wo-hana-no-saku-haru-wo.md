@@ -1,5 +1,6 @@
 ---
 title: "木枯らしの舗道を 花の咲く春を"
+type: "song"
 date: "2010-09-05"
 order: 30405
 discography: ["メロディック・ハード・キュア"]

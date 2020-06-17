@@ -1,5 +1,6 @@
 ---
 title: "ノンシャランで行こう"
+type: "song"
 date: "2010-08-22"
 order: 10303
 discography: ["A Happy Life"]

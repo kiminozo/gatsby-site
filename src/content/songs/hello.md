@@ -1,5 +1,6 @@
 ---
 title: "Hello！"
+type: "song"
 date: "2010-08-30"
 order: 10908
 discography: ["for RITZ"]

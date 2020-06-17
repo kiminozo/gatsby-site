@@ -1,5 +1,6 @@
 ---
 title: "青い砂時計"
+type: "song"
 date: "2010-08-19"
 order: 10109
 discography: ["Sincerely Yours"]

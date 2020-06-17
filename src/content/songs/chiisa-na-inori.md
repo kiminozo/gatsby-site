@@ -1,5 +1,6 @@
 ---
 title: "小さな祈り"
+type: "song"
 date: "2010-09-01"
 order: 20802
 discography: ["For フルーツバスケット"]

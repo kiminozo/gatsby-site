@@ -1,5 +1,6 @@
 ---
 title: "Be happy, please！"
+type: "song"
 date: "2010-08-29"
 order: 10807
 discography: ["Life is Lovely"]

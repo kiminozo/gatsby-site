@@ -1,5 +1,6 @@
 ---
 title: "向日葵"
+type: "song"
 date: "2010-09-05"
 order: 30406
 discography: ["1st Priority","メロディック・ハード・キュア"]

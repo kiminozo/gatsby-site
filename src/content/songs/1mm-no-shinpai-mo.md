@@ -1,5 +1,6 @@
 ---
 title: "1mm の心配も…"
+type: "song"
 date: "2013-03-27"
 order: 300111
 discography: ["みずうみ"]

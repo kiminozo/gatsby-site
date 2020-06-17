@@ -1,5 +1,6 @@
 ---
 title: "愛しいかけら"
+type: "song"
 date: "2010-09-05"
 order: 30409
 discography: ["メロディック・ハード・キュア","愛しいかけら"]

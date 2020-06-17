@@ -1,5 +1,6 @@
 ---
 title: "心晴れて　夜も明けて"
+type: "song"
 date: "2013-03-31"
 order: 350210
 discography: ["楽園"]

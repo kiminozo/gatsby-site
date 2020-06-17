@@ -1,5 +1,6 @@
 ---
 title: "空の向こうに"
+type: "song"
 date: "2010-08-30"
 order: 10901
 discography: ["for RITZ"]

@@ -1,5 +1,6 @@
 ---
 title: "can you hear me?"
+type: "song"
 date: "2013-03-31"
 order: 330108
 discography: ["Stop,and Go"]

@@ -1,5 +1,6 @@
 ---
 title: "-Life-"
+type: "song"
 date: "2013-04-05"
 order: 360308
 discography: ["bertemu～ブルトゥム～"]

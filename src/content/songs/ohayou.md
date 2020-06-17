@@ -1,5 +1,6 @@
 ---
 title: "おはよう"
+type: "song"
 date: "2010-08-25"
 order: 10601
 discography: ["おはよう"]

@@ -1,5 +1,6 @@
 ---
 title: "勇気のクッキー"
+type: "song"
 date: "2013-03-31"
 order: 340101
 discography: ["おかし"]

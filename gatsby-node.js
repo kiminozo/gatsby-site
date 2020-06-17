@@ -9,7 +9,7 @@ const createBlogPages = async (createPage, graphql, reporter) => {
   const blogPostTemplate = require.resolve(`./src/templates/PageTemplate.tsx`)
   const result = await graphql(`
    {
-  allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, limit: 1000, filter: {frontmatter: {slug: {ne: null, regex: "/^(?!\\/songs).+/"}}}) {
+  allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, limit: 1000, filter: {frontmatter: {type: {eq: null}}}) {
     edges {
       node {
         frontmatter {
@@ -44,7 +44,7 @@ const createSongPages = async (createPage, graphql, reporter) => {
   const songTemplate = require.resolve(`./src/templates/SongTemplate.tsx`)
   const result = await graphql(`
 {
-  allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, limit: 1000, filter: {frontmatter: {slug: {ne: null, regex: "/(\\/songs).+/"}}}) {
+  allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, limit: 1000, filter: {frontmatter: {type: {eq: "song"}}}) {
     edges {
       node {
         frontmatter {

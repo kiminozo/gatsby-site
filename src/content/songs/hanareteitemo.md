@@ -1,5 +1,6 @@
 ---
 title: "はなれていても"
+type: "song"
 date: "2010-08-23"
 order: 10404
 discography: ["Ritzberry Fields"]

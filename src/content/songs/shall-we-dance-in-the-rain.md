@@ -1,5 +1,6 @@
 ---
 title: "Shall we dance in the rain？"
+type: "song"
 date: "2010-08-24"
 order: 10408
 discography: ["Ritzberry Fields"]

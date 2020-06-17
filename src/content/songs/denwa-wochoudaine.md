@@ -1,5 +1,6 @@
 ---
 title: "電話をちょうだいね"
+type: "song"
 date: "2010-08-25"
 order: 10607
 discography: ["おはよう"]

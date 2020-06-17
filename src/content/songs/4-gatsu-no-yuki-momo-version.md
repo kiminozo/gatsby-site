@@ -1,5 +1,6 @@
 ---
 title: "4月の雪"
+type: "song"
 date: "2013-04-05"
 order: 360104
 discography: ["MINKY MOMO LOVE STAGE","Plain","SHAMROCK"]

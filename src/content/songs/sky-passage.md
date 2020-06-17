@@ -1,5 +1,6 @@
 ---
 title: "青空のパッセージ"
+type: "song"
 date: "2017-02-04"
 order: ""
 discography: ["ユ・メ・ノ・チ・カ・ラ"]

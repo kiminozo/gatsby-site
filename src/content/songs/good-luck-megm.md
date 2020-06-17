@@ -1,5 +1,6 @@
 ---
 title: "Good Luck!"
+type: "song"
 date: "2013-04-05"
 order: 360601
 discography: ["Iravati"]

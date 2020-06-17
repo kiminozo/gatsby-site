@@ -1,5 +1,6 @@
 ---
 title: "Bon Voyage！"
+type: "song"
 date: "2010-08-23"
 order: 10401
 discography: ["Ritzberry Fields"]

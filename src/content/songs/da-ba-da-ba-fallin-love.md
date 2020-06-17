@@ -1,5 +1,6 @@
 ---
 title: "ダバダバFallin'Love"
+type: "song"
 date: "2017-02-05"
 order: 60027
 discography: ["MINKY MOMO LOVE STAGE"]

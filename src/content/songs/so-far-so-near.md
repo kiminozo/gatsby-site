@@ -1,5 +1,6 @@
 ---
 title: "So far, so near"
+type: "song"
 date: "2010-09-05"
 order: 30414
 discography: ["メロディック・ハード・キュア"]

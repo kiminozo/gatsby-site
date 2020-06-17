@@ -1,5 +1,6 @@
 ---
 title: "あのころ"
+type: "song"
 date: "2013-03-24"
 order: 30101
 discography: ["みずうみ"]

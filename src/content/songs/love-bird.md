@@ -1,5 +1,6 @@
 ---
 title: "Love Bird"
+type: "song"
 date: "2017-02-05"
 order: 50021
 discography: ["男の気持ち、わかりたいなら"]

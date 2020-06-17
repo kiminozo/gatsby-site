@@ -1,5 +1,6 @@
 ---
 title: "答えはここに"
+type: "song"
 date: "2013-03-24"
 order: 300102
 discography: ["みずうみ"]

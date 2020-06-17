@@ -1,5 +1,6 @@
 ---
 title: "rainbow kind of feeling"
+type: "song"
 date: "2010-09-05"
 order: 30413
 discography: ["メロディック・ハード・キュア"]

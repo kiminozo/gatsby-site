@@ -1,5 +1,6 @@
 ---
 title: "微笑みは愛の中で"
+type: "song"
 date: "2017-02-05"
 order: 50022
 discography: ["夢を紡ぐ季節"]

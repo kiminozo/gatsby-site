@@ -1,5 +1,6 @@
 ---
 title: "A Happy Life"
+type: "song"
 date: "2010-08-22"
 order: 10301
 discography: ["A Happy Life","A Happy Life","Rain or Shine"]

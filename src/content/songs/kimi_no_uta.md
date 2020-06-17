@@ -1,5 +1,6 @@
 ---
 title: "きみのうた"
+type: "song"
 date: "2013-03-27"
 order: 300107
 discography: ["みずうみ"]

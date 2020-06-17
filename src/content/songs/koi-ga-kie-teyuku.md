@@ -1,5 +1,6 @@
 ---
 title: "恋が、消えてゆく"
+type: "song"
 date: "2010-08-19"
 order: 10107
 discography: ["Sincerely Yours","悲しい自由"]

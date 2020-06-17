@@ -3,33 +3,34 @@ import { graphql, PageProps, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import CC, { License } from "../components/CC"
+
 import {
   Icon, Grid, Header, Container, Segment, Divider, Responsive
 } from 'semantic-ui-react'
 import _ from "lodash";
 
 // this prop will be injected by the GraphQL query below.
-type MarkdownRemarkEdges = {
-  node: {
-    frontmatter: {
-      title: string;
-      slug: string;
-      date: string;
-      lang: string;
-      songWriter: string;
-      lyricWriter: string;
-      singer: string;
-      arranger: string;
-    }
-    html: string;
+type MarkdownRemark = {
+  frontmatter: {
+    title: string;
+    slug: string;
+    date: string;
+    lang: string;
+    discography: string[];
+    discographyId: string[];
+    songwriter: string[];
+    lyricwriter: string[];
+    singer: string[];
+    arranger: string[];
+    license?: License
   }
+  html: string;
 }
 
 type TemplateProps = {
   data: {
-    allMarkdownRemark: {
-      edges: MarkdownRemarkEdges[]
-    }
+    markdownRemark: MarkdownRemark
   }
 }
 
@@ -51,7 +52,7 @@ class SongTemplatePage extends Component<TemplateProps, TemplateState> {
     this.state = { activeId: "" }
   }
 
-  renderMobile(title: string, html: string, zhHtml: string) {
+  renderMobile(title: string, jpHtml: string, zhHtml: string) {
     return (
       <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
         <Grid container>
@@ -59,7 +60,7 @@ class SongTemplatePage extends Component<TemplateProps, TemplateState> {
             <Header as="h1">{title}</Header>
             <div
               className="song-content"
-              dangerouslySetInnerHTML={{ __html: html }}
+              dangerouslySetInnerHTML={{ __html: jpHtml }}
             />
             <Divider horizontal >翻译</Divider>
             <div
@@ -72,7 +73,7 @@ class SongTemplatePage extends Component<TemplateProps, TemplateState> {
     );
   }
 
-  renderDesktop(title: string, html: string, zhHtml: string) {
+  renderDesktop(title: string, jpHtml: string, zhHtml: string) {
     return (<Responsive minWidth={Responsive.onlyTablet.minWidth}>
       <Grid container>
         <Grid.Column width={12}>
@@ -82,7 +83,7 @@ class SongTemplatePage extends Component<TemplateProps, TemplateState> {
               <Grid.Column>
                 <div
                   className="song-content"
-                  dangerouslySetInnerHTML={{ __html: html }}
+                  dangerouslySetInnerHTML={{ __html: jpHtml }}
                 />
               </Grid.Column>
               <Grid.Column>
@@ -100,24 +101,21 @@ class SongTemplatePage extends Component<TemplateProps, TemplateState> {
   }
 
   render() {
-    const { edges } = this.props.data.allMarkdownRemark; // data.markdownRemark holds your post data
-    const edge = _.find(edges, p => !p.node.frontmatter.lang);
-    if (!edge) {
+    const remark = this.props.data.markdownRemark; // data.markdownRemark holds your post data
+    if (!remark) {
       return;
     }
-    const { frontmatter, html } = edge.node;
+    const { frontmatter, html } = remark;
     const { title } = frontmatter;
-    const zhEdge = _.find(edges, p => p.node.frontmatter.lang != null);
-    if (!zhEdge) {
-      return;
-    }
-    const zhHtml = zhEdge.node.html;
+
+    const jpHtml = html;
+    const zhHtml = "zhhtml";//TODO
 
     return (
       <Layout>
         <SEO title={title} />
-        {this.renderDesktop(title, html, zhHtml)}
-        {this.renderMobile(title, html, zhHtml)}
+        {this.renderDesktop(title, jpHtml, zhHtml)}
+        {this.renderMobile(title, jpHtml, zhHtml)}
       </Layout>
     )
   }
@@ -129,21 +127,25 @@ export default function SongTemplate({ data }: TemplateProps) {
 
 export const pageQuery = graphql`
   query($slug: String!) {
-        allMarkdownRemark(filter: {frontmatter: {slug: {eq: $slug } }}) {
-        edges {
-        node {
-        html
-          frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-            slug
-            title
-            songWriter
-            lyricWriter
-            singer
-            arranger
-            lang
-       }
-        }
+  markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+    html
+    frontmatter {
+    date(formatString: "MMMM DD, YYYY")
+    slug
+    title
+    license {
+        type
+        author
+        translator
+        reproduced_url
+        reproduced_website
+      }
+      singer
+      songwriter
+      lyricwriter
+      arranger
+      discography
+      discographyId
       }
     }
   }

@@ -43,6 +43,20 @@ type HeaderInfo = {
   offset: number;
 }
 
+const splitKey = /<\!--\s+翻译\s+-->/g
+type Translator = {
+  jp: string
+  cn: string
+}
+
+function split(html: string): Translator {
+  const strings = html.split(splitKey);
+  if (strings && strings.length == 2) {
+    return { jp: strings[0], cn: strings[1] }
+  } else {
+    return { jp: html, cn: "" }
+  }
+}
 
 class SongTemplatePage extends Component<TemplateProps, TemplateState> {
   headerInfos: HeaderInfo[] = [];
@@ -108,14 +122,13 @@ class SongTemplatePage extends Component<TemplateProps, TemplateState> {
     const { frontmatter, html } = remark;
     const { title } = frontmatter;
 
-    const jpHtml = html;
-    const zhHtml = "zhhtml";//TODO
+    const { jp, cn } = split(html);
 
     return (
       <Layout>
         <SEO title={title} />
-        {this.renderDesktop(title, jpHtml, zhHtml)}
-        {this.renderMobile(title, jpHtml, zhHtml)}
+        {this.renderDesktop(title, jp, cn)}
+        {this.renderMobile(title, jp, cn)}
       </Layout>
     )
   }

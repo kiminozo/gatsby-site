@@ -50,6 +50,8 @@ license: {type: "translated",author: "岡崎律子",translator: "jogfi2002(镜�
 今日は少し弱気だっただけね
 平気だよね 明日は晴れるよね
 
+<!-- 翻译 -->
+
 雨中的街道 小小地蜷缩着
 孤单一人 要和我一起回去吗
 

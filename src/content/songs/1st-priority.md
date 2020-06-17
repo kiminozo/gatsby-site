@@ -24,8 +24,8 @@ license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.
 遠すぎた空に　あと１ｍｍの勇気  
 もぅ　逃げないと決めた   
 
-★ So on ！　一度しかない人生だから！ 
-何気に不安だけど … 
+★ So on ！　一度しかない人生だから！  
+何気に不安だけど …  
 最初(イマ)は思い込みでも　始めればいい 
 結果　all right！ ★ 
 

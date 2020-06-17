@@ -1,0 +1,24 @@
+---
+title: "小さな祈り"
+date: "2010-09-01"
+order: 20802
+discography: ["For フルーツバスケット"]
+discographyId: ["for-fruit-basket"]
+singer: ["岡崎律子"]
+songwriter: ["岡崎律子"]
+lyricwriter: ["岡崎律子"]
+arranger: ["村山達哉"]
+slug: "songs/chiisa-na-inori"
+tags: []
+license: {}
+---
+
+たのしい夕げ　さあ囲みましょう 今日涙は　ほら　明日の力にして
+
+la la la　素晴らしき love life la la la　愛すべき love life
+
+せいいっぱいだった一日に さよならとありがとう 笑って終えましょう それは小さな祈り
+
+春　花咲き　緑萌える頃 どんな涙も　ほら　風に流されてく
+
+la la la　素晴らしき love life la la la　愛すべき love life

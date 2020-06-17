@@ -1,0 +1,16 @@
+---
+title: "君さえいれば"
+date: "2013-04-07"
+order: 360702
+discography: ["サクラサク"]
+discographyId: ["sakurasaku"]
+singer: ["林原めぐみ"]
+songwriter: ["岡崎律子"]
+lyricwriter: ["岡崎律子"]
+arranger: ["十川知司"]
+slug: "songs/kimisa-eireba-megmi"
+tags: []
+license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net",reproduced-website: "織歌蟲"}
+---
+
+\[quote type='song' name='kimisa-eireba' /\]

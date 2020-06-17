@@ -1,0 +1,54 @@
+---
+title: "守りたい人がいて"
+date: "2010-08-29"
+order: 10806
+discography: ["Life is Lovely"]
+discographyId: ["life-is-lovely"]
+singer: ["岡崎律子"]
+songwriter: ["岡崎律子"]
+lyricwriter: ["岡崎律子"]
+arranger: ["村山達哉"]
+slug: "songs/mamori-tai-hito-gaite"
+tags: []
+license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
+---
+
+初めての春の日のこと 
+あなたに逢った 
+
+約束にはなやいだ胸 
+桜の坂道 
+
+恋をして　はじめて 
+生きる意味を知るの 
+今　私の奥で 
+夢が　明日が　はじまる 
+
+めぐりめぐる日々を 
+大切に思うよ 
+きっと守りたいの 
+好きな人のすべて　抱きたい 
+
+幸せにしたいの 
+あなたを守れたら 
+なんてうれしいと思うの
+
+初識於那年春天
+遇見了你
+
+因為跟你的約會而心花怒放
+在開滿櫻花的坡道上
+
+愛上你之後　我才第一次
+知道活著的意義
+此刻　在我內心
+夢想與明天即將鳴槍起跑
+
+我很珍惜
+巡迴反覆的每一天喲
+我一定會守護你
+我想擁抱我心愛人兒的一切
+
+我想讓你幸福
+若能守在你身旁
+我想那比什麼都令人欣喜

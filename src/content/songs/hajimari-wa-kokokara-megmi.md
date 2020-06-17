@@ -1,0 +1,16 @@
+---
+title: "はじまりはここから"
+date: "2013-04-07"
+order: 360804
+discography: ["feel well"]
+discographyId: ["feel-well"]
+singer: ["林原めぐみ"]
+songwriter: ["岡崎律子"]
+lyricwriter: ["岡崎律子"]
+arranger: ["十川知司"]
+slug: "songs/hajimari-wa-kokokara-megmi"
+tags: []
+license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net",reproduced-website: "織歌蟲"}
+---
+
+\[quote type='song' name='hajimari-wa-kokokara' /\]

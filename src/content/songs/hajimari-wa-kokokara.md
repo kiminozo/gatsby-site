@@ -1,0 +1,72 @@
+---
+title: "はじまりはここから"
+date: "2010-08-29"
+order: 10702
+discography: ["ラブひな OKAZAKI COLLECTION"]
+discographyId: ["lovehina-okazaki-collection"]
+singer: ["岡崎律子"]
+songwriter: ["岡崎律子"]
+lyricwriter: ["岡崎律子"]
+arranger: ["十川知司"]
+slug: "songs/hajimari-wa-kokokara"
+tags: []
+license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
+---
+
+新しい朝だ　また始まる Good Day 
+笑顔みせてハイホー！　青空によろしく 
+
+生きるってことは実験と冒険 
+まだまだまだだよ　ひた走る毎日 
+
+甘く優しく　強く激しく 
+さあ　もっと素敵な明日をめざそう 
+
+本当のはじまりはこれから 
+笑って　転んで　Night & Day 
+
+夜な夜な夢みる　終わりのない Lovesick 
+頭の中ハイホー！　永遠の迷路だ 
+
+探して求めて　傷ついても再生 
+心ははばたく　何度も何度でも 
+
+流した涙　無駄ではないさ 
+ほら　もっと素敵な明日を描こう 
+
+本当のはじまりはこれから 
+笑って　転んで　Night & Day 
+
+本当のはじまりはこれから 
+笑って　転んで　Night & Day 
+うれし　たのし　Everyday 
+笑って　転んで　I love you
+
+崭新的早晨　又是 Good Day (美好一天)的开始 
+笑眯眯大喊一声嗨荷！　蓝天你好啊 
+
+生活就是实验加冒险 
+还没还没达成目标啦　埋头冲刺的每一天 
+
+又甜蜜又温柔　又强劲又激烈 
+嘿　目标放在更缤纷的明天吧 
+
+真正的起点就在这裡 
+或欢笑　或跌倒　Night & Day (日日夜夜) 
+
+每晚都夜有所梦　没完没了的 Lovesick (相思病) 
+在脑袋裡大喊一声嗨荷！　永远的迷途羔羊 
+
+探索寻求　即使受挫还可东山再起 
+心会振翅而飞　一次又一次 
+
+你所流下的泪水不会白费的 
+来吧　让我们描绘更缤纷的明天吧 
+
+真正的起点就在这裡 
+或欢笑　或跌倒　Night & Day 
+
+真正的起点就在这裡 
+或欢笑　或跌倒　Night & Day (日日夜夜) 
+好高兴　好快乐　 Everyday (朝朝暮暮) 
+或欢笑　或跌倒　I love you

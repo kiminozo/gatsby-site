@@ -1,0 +1,56 @@
+---
+title: "君さえいれば"
+date: "2010-08-29"
+order: 10706
+discography: ["ラブひな OKAZAKI COLLECTION"]
+discographyId: ["lovehina-okazaki-collection"]
+singer: ["岡崎律子"]
+songwriter: ["岡崎律子"]
+lyricwriter: ["岡崎律子"]
+arranger: ["十川知司"]
+slug: "songs/kimisa-eireba"
+tags: []
+license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
+---
+
+I'm a dreamer 
+夜明けの光そそぐ彼の地はどこ？ 
+
+I'm a dreamer 
+ほの白いその微笑み　どうか触らせて 
+
+ここは陽の当たらない場所 
+ひとりきりで泣く時の秘密の場所 
+叫ぶように名前呼ぶんだ 
+君がいなけりゃ　君さえいれば 
+
+きっと行くよ　陽の当たる場所 
+このままじゃ終われない　約束がある 
+遠い道　ひとすじの道 
+君がいなけりゃ　君さえいれば 
+
+きっと行くよ　陽の当たる場所 
+このままじゃ終われない　約束がある 
+遠い道　ひとすじの光 
+君がいるから　君さえいれば
+
+I'm a dreamer
+破晓晨光所倾注的那一端究竟在何方？ 
+
+I'm a dreamer 
+请让我碰一下　你略微苍白的微笑 
+
+这是个阳光照射不到的地方 
+是我暗自饮泣时的祕密基地 
+近乎嘶喊般地呼唤你的名字 
+我不能没有你　只要有你 
+
+我一定会去到　一个阳光直射的地方 
+我们约定好　要照这样下去永不终结 
+漫漫长路　一条笔直的小径 
+我不能没有你　只要有你 
+
+我一定会去到　一个阳光直射的地方 
+我们约定好　要照这样下去永不终结 
+漫漫长路　一道直射的光芒 
+因为有你　只要有你

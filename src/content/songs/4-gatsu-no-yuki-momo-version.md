@@ -1,0 +1,16 @@
+---
+title: "4月の雪"
+date: "2013-04-05"
+order: 360104
+discography: ["MINKY MOMO LOVE STAGE","Plain","SHAMROCK"]
+discographyId: ["minky-momo-love-stage","plain","shamrock"]
+singer: ["林原めぐみ"]
+songwriter: ["岡崎律子"]
+lyricwriter: ["岡崎律子"]
+arranger: ["西脇辰弥"]
+slug: "songs/4-gatsu-no-yuki-momo-version"
+tags: []
+license: {}
+---
+
+\[quote type='song' name='4-gatsu-no-yuki' /\]

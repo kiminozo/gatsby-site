@@ -1,0 +1,72 @@
+---
+title: "ホーム＆アウェイ"
+date: "2010-09-05"
+order: 30501
+discography: ["ホーム＆アウェイ"]
+discographyId: ["home-and-away"]
+singer: ["メロキュア"]
+songwriter: ["日向めぐみ"]
+lyricwriter: ["日向めぐみ"]
+arranger: ["水島康貴"]
+slug: "songs/home-and-away"
+tags: []
+license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
+---
+
+★ 今日も　明日も 
+見守ってて　HOME ＆ AWAY 
+どこにいても　ここにいるよ 
+
+やっと過去の意味がわかった 
+we were meant to be 
+夢の続きを叶えるため ★ 
+
+いつの時も変わらないから 
+これだけ　忘れないで 
+君がいたから僕がいる 
+
+◆ i と you(愛と言う)ピッチの上で 
+ベストコンディション！ ◆ 
+
+★ Repeat 
+
+いくつもの小さな奇跡を起こして 
+君と僕の旅は　まだまだ終わらない 
+
+きっと大丈夫 
+世界を敵に回しても 
+
+★ Repeat 
+
+◆ Repeat 
+
+★ Repeat 
+
+★ 今天也好　明天也好
+请守护着我　HOME ＆ AWAY 
+无论你身在何方　我都会在这裡喔
+
+我终于了解过往所代表的意义
+we were meant to be (我们所意味的便是)
+为了让梦想能够延续下去 ★ 
+
+因为这是永远都不会改变的
+只有一点　请你别忘记
+是因为有你所以才会有我
+
+◆在 i 和 you( 日文谐音：爱之宣言 ) 的调性(pitch)上 
+已达到最佳状态！ ◆ 
+
+★ Repeat 
+
+我们创造了许多的小小奇蹟
+你跟我的旅程　还没结束呢
+
+一定会没事的
+纵使敌人包围整个世界
+
+★ Repeat 
+
+◆ Repeat 
+
+★ Repeat

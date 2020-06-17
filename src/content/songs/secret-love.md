@@ -1,0 +1,68 @@
+---
+title: "シークレット．ラブ"
+date: "2017-02-05"
+order: 50011
+discography: ["Candy Game"]
+discographyId: ["candy-game"]
+singer: ["鮎川麻弥"]
+songwriter: ["岡崎律子"]
+lyricwriter: ["鮎川麻弥"]
+arranger: ["渡辺博也"]
+slug: "songs/secret-love"
+tags: []
+license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net",reproduced-website: "織歌蟲"}
+---
+
+★ 青く　ゆらぐ　炎のように
+誰にも　気づかれぬように　シークレット．ラブ ★
+
+月の光　そそぎのむ
+A.M 2:00のラブ．ゾーン　あやしく溶けはじめるの
+
+How do you please me now？　見えない指先　重なって
+How do you love me now？　ウインク　ひとつで分かり合う
+
+★ Repeat
+
+◆ 囁く　さざ波のように
+彼も彼女も知らないまま　シークレット．ラブ ◆
+
+夏の日のダブルデートで
+お互いの甘い視線にめまい感じたからよ
+
+How do you please me now？　ステディーと違う
+How do you love me now？　似た者同士のシンパシィー
+危げなつなぎめは　心を秘かに燃やす
+How do you please me now？
+ハートの　かたすみ　くすぐって
+How do you love me now？
+求め合うものは　同じなの
+
+◆ Repeat
+
+★ 就像搖曳不定的藍色火焰
+彷彿誰也沒發現的　Secret Love ★
+
+月光傾注在
+凌晨兩點的love zone　開始奇異地溶化了
+
+How do you please me now？　交疊起看不見的指尖
+How do you love me now？　一個眨眼便心靈相通
+
+★ Repeat
+
+◆ 猶如竊竊私語的漣漪
+他和她都一無所知的 Secret Love ◆
+
+夏日的 double date(雙對約會)
+在彼此的甜蜜視線中　感覺暈眩了呀
+
+How do you please me now？　跟固定(steady)的男女朋友不同
+How do you love me now？　惺惺相惜的共鳴(sympathy)
+危險的連結　在心中偷偷地燃燒
+How do you please me now？
+搔弄著心愛的一角
+How do you love me now？
+我們彼此渴求　所見略同
+
+◆ Repeat

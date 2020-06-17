@@ -1,0 +1,16 @@
+---
+title: "素直な気持ち"
+date: "2013-04-05"
+order: 360208
+discography: ["SpHERE"]
+discographyId: ["sphere"]
+singer: ["林原めぐみ"]
+songwriter: ["岡崎律子"]
+lyricwriter: ["岡崎律子"]
+arranger: ["丸尾めぐみ"]
+slug: "songs/sunao-na-kimochi-2"
+tags: []
+license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net",reproduced-website: "織歌蟲"}
+---
+
+\[quote type='song' name='sunao-na-kimochi' /\]

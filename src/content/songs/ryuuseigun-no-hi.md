@@ -1,0 +1,46 @@
+---
+title: "流星群の日"
+date: "2010-08-31"
+order: 11004
+discography: ["Love&amp;Life〜private works 1999-2001〜"]
+discographyId: ["love-and-life"]
+singer: ["岡崎律子"]
+songwriter: ["岡崎律子"]
+lyricwriter: ["岡崎律子"]
+arranger: ["長谷川智樹"]
+slug: "songs/ryuuseigun-no-hi"
+tags: []
+license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
+---
+
+今日のたのしかったこと　浮かべて 
+今日は眠ろう　明日のために 
+
+今日を終えるだけで　もう　せいいっぱい 
+大丈夫だって　全部を抱きしめてほしい 
+こぼれる時がある 
+
+“流星群　みえるよ　寒いけど起きて” 
+
+受話器の声　一番欲しかったんだ 
+ありがとう　おんなじ夜空の下ね　 
+
+みえた　みえるよ　いくつも飛んでる 
+あなたが　声がとても近いよ 
+とても　今　近いよ
+
+脑海中浮现　今天所发生的　教人开心的事 
+今天就睡吧　为了明天 
+
+光要过完今天　就已经竭尽我所能 
+但没关係　我渴望拥抱世间万物 
+满出来也无所谓 
+
+\\"看得到流星群耶　冷归冷快爬起来看吧\\" 
+　　　　　　 
+话筒那端传来你的声音　是我最渴望听见的 
+谢谢你　与我同在一片夜空下 
+
+　　 看到了　又看到了　数不清的流星划过天际 
+你的声音如此之近 
+现在　好近　好近喔

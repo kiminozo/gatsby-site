@@ -1,0 +1,14 @@
+---
+id: "rain-or-shine-single"
+title: "Rain or Shine－降っても晴れても－"
+date: "2010-09-01"
+recordNo: "TADT-1002"
+recordPrice: ""
+recordReleaseDate: "1997.11.24"
+recordPublisher: "NU TAURUS"
+recordType: "6th Single"
+order: 26
+slug: "discography/rain-or-shine-single"
+---
+
+

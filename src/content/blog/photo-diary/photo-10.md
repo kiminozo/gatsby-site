@@ -8,13 +8,18 @@ license: {type: "translated",author: "岡崎律子",translator: "ココロの雨
 ---
 
 [![](./images/no-7.jpg "no-7")](./images/no-7.jpg)  
+
   
 <span style="color: #808000;">ひなたでひとやすみ</span>  
+
   
 在朝阳的地方休息一下  
+
   
 [![](./images/no-17.jpg "no-17")](./images/no-17.jpg)  
+
   
 <span style="color: #808000;">日陰でひとやすみ</span>  
+
   
 在背阴处休息一下

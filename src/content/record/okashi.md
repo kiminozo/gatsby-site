@@ -1,6 +1,7 @@
 ---
 id: "okashi"
 title: "おかし"
+type: "record"
 date: "2013-03-31"
 recordNo: "FSCA-10098"
 recordPrice: "2,190円"

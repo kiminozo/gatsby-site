@@ -1,6 +1,7 @@
 ---
 id: "a-happy-life"
 title: "A Happy Life"
+type: "record"
 date: "2010-08-22"
 recordNo: "TACP-1004"
 recordPrice: "1,942円"

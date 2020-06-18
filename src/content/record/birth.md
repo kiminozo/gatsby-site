@@ -1,6 +1,7 @@
 ---
 id: "birth"
 title: "Birth"
+type: "record"
 date: "2017-02-04"
 recordNo: ""
 recordPrice: ""

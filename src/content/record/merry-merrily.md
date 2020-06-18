@@ -1,6 +1,7 @@
 ---
 id: "merry-merrily"
 title: "Merry Merrily"
+type: "record"
 date: "2013-04-14"
 recordNo: "KICM-3006"
 recordPrice: ""

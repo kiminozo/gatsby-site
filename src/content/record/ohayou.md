@@ -1,6 +1,7 @@
 ---
 id: "ohayou"
 title: "おはよう"
+type: "record"
 date: "2010-08-25"
 recordNo: "KICS-703"
 recordPrice: "2,857円"

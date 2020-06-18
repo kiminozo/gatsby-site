@@ -1,6 +1,7 @@
 ---
 id: "feel-well"
 title: "feel well"
+type: "record"
 date: "2013-04-05"
 recordNo: "KICS-955"
 recordPrice: "2,857円"

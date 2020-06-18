@@ -1,6 +1,7 @@
 ---
 id: "kanashi-i-jiyuu"
 title: "悲しい自由/恋が、消えてゆく"
+type: "record"
 date: "2010-08-23"
 recordNo: "TADX-7358"
 recordPrice: ""

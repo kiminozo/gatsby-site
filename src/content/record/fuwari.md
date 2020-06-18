@@ -1,6 +1,7 @@
 ---
 id: "fuwari"
 title: "ふわり"
+type: "record"
 date: "2013-04-05"
 recordNo: "KICS-755"
 recordPrice: "2,913円"

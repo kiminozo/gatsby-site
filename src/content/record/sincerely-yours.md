@@ -1,6 +1,7 @@
 ---
 id: "sincerely-yours"
 title: "Sincerely yours"
+type: "record"
 date: "2010-08-19"
 recordNo: "TACX-2391"
 recordPrice: "2,913円"

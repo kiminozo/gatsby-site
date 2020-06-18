@@ -1,6 +1,7 @@
 ---
 id: "stop-and-go"
 title: "Stop,and Go"
+type: "record"
 date: "2013-03-31"
 recordNo: "LACA-5184"
 recordPrice: "Lantis"

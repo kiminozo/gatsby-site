@@ -1,6 +1,7 @@
 ---
 id: "itoshii-kakera"
 title: "愛しいかけら"
+type: "record"
 date: "2010-09-06"
 recordNo: "COCC-15431"
 recordPrice: "1,200円"

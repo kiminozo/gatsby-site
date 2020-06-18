@@ -1,6 +1,7 @@
 ---
 id: "sakurasaku"
 title: "サクラサク"
+type: "record"
 date: "2013-04-05"
 recordNo: "KICA-506"
 recordPrice: "971円"

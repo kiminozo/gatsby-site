@@ -1,6 +1,7 @@
 ---
 id: "for-ritz"
 title: "for RITZ"
+type: "record"
 date: "2010-08-30"
 recordNo: "KICS-1089"
 recordPrice: "2,857円"

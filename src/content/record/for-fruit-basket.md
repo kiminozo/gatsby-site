@@ -1,6 +1,7 @@
 ---
 id: "for-fruit-basket"
 title: "For フルーツバスケット"
+type: "record"
 date: "2010-09-01"
 recordNo: "KICM-3014"
 recordPrice: "971円"

@@ -1,6 +1,7 @@
 ---
 id: "sky"
 title: "sky"
+type: "record"
 date: "2013-03-31"
 recordNo: "KICS-1023"
 recordPrice: "2,857円"

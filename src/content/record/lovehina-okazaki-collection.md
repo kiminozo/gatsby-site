@@ -1,6 +1,7 @@
 ---
 id: "lovehina-okazaki-collection"
 title: "ラブひな OKAZAKI COLLECTION"
+type: "record"
 date: "2010-08-29"
 recordNo: "KICA-563"
 recordPrice: "2,857円"

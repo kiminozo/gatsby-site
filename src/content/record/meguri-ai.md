@@ -1,6 +1,7 @@
 ---
 id: "meguri-ai"
 title: "めぐり逢い"
+type: "record"
 date: "2010-09-06"
 recordNo: "COCC-15591"
 recordPrice: "1,200円"

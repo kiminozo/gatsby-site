@@ -1,6 +1,7 @@
 ---
 id: "plain"
 title: "Plain"
+type: "record"
 date: "2013-04-05"
 recordNo: "KICS-91303"
 recordPrice: "3,500円"

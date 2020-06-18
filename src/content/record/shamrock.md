@@ -1,6 +1,7 @@
 ---
 id: "shamrock"
 title: "SHAMROCK"
+type: "record"
 date: "2013-04-05"
 recordNo: "KICS-345"
 recordPrice: "2,913円"

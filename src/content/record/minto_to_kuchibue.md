@@ -1,6 +1,7 @@
 ---
 id: "minto_to_kuchibue"
 title: "ミントと口笛"
+type: "record"
 date: "2013-03-28"
 recordNo: "PICA-1180"
 recordPrice: "Album"

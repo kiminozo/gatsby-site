@@ -1,6 +1,7 @@
 ---
 id: "ritzberry-fields"
 title: "Ritzberry Fields"
+type: "record"
 date: "2010-08-23"
 recordNo: "KICS-639"
 recordPrice: "2,857円"

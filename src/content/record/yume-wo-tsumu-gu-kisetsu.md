@@ -1,6 +1,7 @@
 ---
 id: "yume-wo-tsumu-gu-kisetsu"
 title: "夢を紡ぐ季節"
+type: "record"
 date: "2017-02-05"
 recordNo: ""
 recordPrice: ""

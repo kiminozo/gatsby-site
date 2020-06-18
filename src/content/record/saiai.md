@@ -1,6 +1,7 @@
 ---
 id: "saiai"
 title: "最愛"
+type: "record"
 date: "2010-09-01"
 recordNo: "TADX-7372"
 recordPrice: ""

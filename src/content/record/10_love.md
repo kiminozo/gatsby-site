@@ -1,6 +1,7 @@
 ---
 id: "10_love"
 title: "10 love"
+type: "record"
 date: "2013-03-30"
 recordNo: "TKCA-73111"
 recordPrice: "2,913円"

@@ -1,6 +1,7 @@
 ---
 id: "regret-koibito-nara"
 title: "リグレット～恋人なら～"
+type: "record"
 date: "2010-09-01"
 recordNo: "TADP-1005"
 recordPrice: ""

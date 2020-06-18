@@ -1,6 +1,7 @@
 ---
 id: "choukyoridenwa"
 title: "長距離電話"
+type: "record"
 date: "2010-09-01"
 recordNo: "TADX-7394"
 recordPrice: ""

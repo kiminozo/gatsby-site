@@ -1,6 +1,7 @@
 ---
 id: "yume-wo-da-ki-shi-me-te"
 title: "夢みるハート"
+type: "record"
 date: "2017-02-05"
 recordNo: ""
 recordPrice: "1,000"

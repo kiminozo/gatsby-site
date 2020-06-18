@@ -1,6 +1,7 @@
 ---
 id: "yu-me-no-chi-ka-ra"
 title: "ユ・メ・ノ・チ・カ・ラ"
+type: "record"
 date: "2017-02-04"
 recordNo: ""
 recordPrice: ""

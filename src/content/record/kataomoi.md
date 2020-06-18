@@ -1,6 +1,7 @@
 ---
 id: "kataomoi"
 title: "かたおもい"
+type: "record"
 date: "2013-03-28"
 recordNo: "PICA-1148"
 recordPrice: "2,914円"

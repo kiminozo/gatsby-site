@@ -1,6 +1,7 @@
 ---
 id: "minky-momo-love-stage"
 title: "MINKY MOMO LOVE STAGE"
+type: "record"
 date: "2017-02-05"
 recordNo: "KICA-131"
 recordPrice: ""

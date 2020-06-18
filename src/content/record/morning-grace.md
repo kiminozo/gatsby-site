@@ -1,6 +1,7 @@
 ---
 id: "morning-grace"
 title: "Morning Grace"
+type: "record"
 date: "2010-09-01"
 recordNo: "KICM-3037"
 recordPrice: "1,000円"

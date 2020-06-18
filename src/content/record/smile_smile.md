@@ -1,6 +1,7 @@
 ---
 id: "smile_smile"
 title: "SMILE×SMILE"
+type: "record"
 date: "2013-03-30"
 recordNo: "TKCA-72568"
 recordPrice: "2,913円"

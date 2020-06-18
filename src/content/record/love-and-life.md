@@ -1,6 +1,7 @@
 ---
 id: "love-and-life"
 title: "love & Life private works 1999-2001"
+type: "record"
 date: "2010-08-31"
 recordNo: "UPCH-1405"
 recordPrice: "2,913円"

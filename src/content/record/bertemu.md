@@ -1,6 +1,7 @@
 ---
 id: "bertemu"
 title: "bertemu～ブルトゥム～"
+type: "record"
 date: "2013-04-05"
 recordNo: "KICS-590"
 recordPrice: "2,913円"

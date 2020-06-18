@@ -1,6 +1,7 @@
 ---
 id: "otoko-no-kimochi"
 title: "男の気持ち、わかりたいなら"
+type: "record"
 date: "2017-02-05"
 recordNo: ""
 recordPrice: ""

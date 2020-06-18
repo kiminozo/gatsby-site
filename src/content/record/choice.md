@@ -1,6 +1,7 @@
 ---
 id: "choice"
 title: "CHOICE"
+type: "record"
 date: "2013-04-05"
 recordNo: "KICS-91548"
 recordPrice: "3,500円"

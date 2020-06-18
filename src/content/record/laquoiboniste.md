@@ -1,6 +1,7 @@
 ---
 id: "laquoiboniste"
 title: "L’aqouiboniste(無造作紳士)～日本語カヴァー～"
+type: "record"
 date: "2010-09-01"
 recordNo: "PHDL-1204"
 recordPrice: ""

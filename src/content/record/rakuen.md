@@ -1,6 +1,7 @@
 ---
 id: "rakuen"
 title: "楽園"
+type: "record"
 date: "2013-03-31"
 recordNo: "KICS-91077"
 recordPrice: "2,190円"

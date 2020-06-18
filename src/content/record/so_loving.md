@@ -1,6 +1,7 @@
 ---
 id: "so_loving"
 title: "so loving"
+type: "record"
 date: "2013-03-30"
 recordNo: "PICA-1193"
 recordPrice: "2,913円"

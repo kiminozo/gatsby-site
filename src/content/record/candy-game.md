@@ -1,6 +1,7 @@
 ---
 id: "candy-game"
 title: "Candy Game"
+type: "record"
 date: "2017-02-05"
 recordNo: ""
 recordPrice: ""

@@ -1,6 +1,7 @@
 ---
 id: "presage"
 title: "Presage"
+type: "record"
 date: "2017-02-04"
 recordNo: ""
 recordPrice: ""

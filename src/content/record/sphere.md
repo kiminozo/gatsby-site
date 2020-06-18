@@ -1,6 +1,7 @@
 ---
 id: "sphere"
 title: "SPHERE"
+type: "record"
 date: "2013-04-05"
 recordNo: "KICS-430"
 recordPrice: "2,913円"

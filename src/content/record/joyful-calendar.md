@@ -1,6 +1,7 @@
 ---
 id: "joyful-calendar"
 title: "Joyful Calendar"
+type: "record"
 date: "2010-08-19"
 recordNo: "TACX-2420"
 recordPrice: "2,913円"

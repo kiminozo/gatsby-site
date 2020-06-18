@@ -1,6 +1,7 @@
 ---
 id: "home-and-away"
 title: "ホーム＆アウェイ"
+type: "record"
 date: "2010-09-06"
 recordNo: "COCC-15786"
 recordPrice: "1,200円"

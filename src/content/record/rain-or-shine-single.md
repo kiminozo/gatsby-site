@@ -1,6 +1,7 @@
 ---
 id: "rain-or-shine-single"
 title: "Rain or Shine－降っても晴れても－"
+type: "record"
 date: "2010-09-01"
 recordNo: "TADT-1002"
 recordPrice: ""

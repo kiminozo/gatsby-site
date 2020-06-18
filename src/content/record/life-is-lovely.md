@@ -1,6 +1,7 @@
 ---
 id: "life-is-lovely"
 title: "life is lovely."
+type: "record"
 date: "2010-08-29"
 recordNo: "KICA-591"
 recordPrice: "2,857円"

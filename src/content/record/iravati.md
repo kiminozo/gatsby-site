@@ -1,6 +1,7 @@
 ---
 id: "iravati"
 title: "Iravati"
+type: "record"
 date: "2013-04-05"
 recordNo: "[KICS-640"
 recordPrice: "2,858円"

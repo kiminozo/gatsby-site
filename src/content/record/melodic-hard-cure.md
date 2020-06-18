@@ -1,6 +1,7 @@
 ---
 id: "melodic-hard-cure"
 title: "メロディック・ハード・キュア"
+type: "record"
 date: "2010-09-05"
 recordNo: "COCX-32653"
 recordPrice: "2,900円"

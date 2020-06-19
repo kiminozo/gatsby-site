@@ -4,7 +4,9 @@ import kebabCase from "lodash/kebabCase"
 // Components
 import { Link, graphql } from "gatsby"
 import { SEO, Layout } from "../components";
-
+import {
+    Menu, Label, List
+} from 'semantic-ui-react'
 type CategoriesGroup = {
     fieldValue: string;
     totalCount: number;
@@ -34,17 +36,16 @@ const CategoriesPage = (props: CategoriesPageProp) => {
             <SEO title={title} />
             <div>
                 <h1>Categories</h1>
-                <ul>
+                <Menu vertical>
                     {group.map(category => (
-                        <li key={category.fieldValue}>
-                            <Link to={`/categories/${kebabCase(category.fieldValue)}/`}>
-                                {category.fieldValue} ({category.totalCount})
-                            </Link>
-                        </li>
+                        <Menu.Item as={Link} to={`/categories/${kebabCase(category.fieldValue)}/`} >
+                            {category.fieldValue}
+                            <Label circular color='teal' >{category.totalCount} </Label>
+                        </Menu.Item>
                     ))}
-                </ul>
+                </Menu>
             </div>
-        </Layout>
+        </Layout >
     )
 }
 export default CategoriesPage

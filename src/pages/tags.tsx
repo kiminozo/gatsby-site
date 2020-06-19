@@ -4,7 +4,9 @@ import kebabCase from "lodash/kebabCase"
 // Components
 import { Link, graphql } from "gatsby"
 import { SEO, Layout } from "../components";
-
+import {
+    Label, Icon
+} from 'semantic-ui-react'
 type TagGroup = {
     fieldValue: string;
     totalCount: number;
@@ -34,15 +36,16 @@ const TagsPage = (props: TagsPageProp) => {
             <SEO title={title} />
             <div>
                 <h1>Tags</h1>
-                <ul>
+                <Label.Group >
                     {group.map(tag => (
-                        <li key={tag.fieldValue}>
-                            <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-                                {tag.fieldValue} ({tag.totalCount})
-            </Link>
-                        </li>
+                        <Label as={Link}
+                            key={tag.fieldValue}
+                            to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+                            {tag.fieldValue}
+                            <Label.Detail>{tag.totalCount}</Label.Detail>
+                        </Label>
                     ))}
-                </ul>
+                </Label.Group>
             </div>
         </Layout>
     )

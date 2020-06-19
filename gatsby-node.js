@@ -6,11 +6,14 @@
 const _ = require("lodash")
 
 
-const createBlogPages = async (createPage, graphql, reporter) => {
+const createPages = async (createPage, graphql, reporter) => {
   const blogPostTemplate = require.resolve(`./src/templates/PageTemplate.tsx`)
+  const songTemplate = require.resolve(`./src/templates/SongTemplate.tsx`)
+  const tagTemplate = require.resolve("./src/templates/TagsTemplate.tsx")
+
   const result = await graphql(`
    {
-  allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, limit: 1000, filter: {frontmatter: {type: {eq: null}}}) {
+  posts:allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, limit: 1000, filter: {frontmatter: {type: {eq: null}}}) {
     edges {
       node {
         frontmatter {
@@ -19,6 +22,20 @@ const createBlogPages = async (createPage, graphql, reporter) => {
       }
     }
   }
+  songs:allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, limit: 1000, filter: {frontmatter: {type: {eq: "song"}}}) {
+    edges {
+      node {
+        frontmatter {
+          slug
+        }
+      }
+    }
+  }
+   tagsGroup: allMarkdownRemark(limit: 2000) {
+        group(field: frontmatter___tags) {
+          fieldValue
+        }
+      }
 }
 `)
   // Handle errors
@@ -26,9 +43,9 @@ const createBlogPages = async (createPage, graphql, reporter) => {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
   }
-  result.data.allMarkdownRemark.edges.forEach(({
-    node
-  }) => {
+
+  const posts = result.data.posts.edges;
+  posts.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.slug,
       component: blogPostTemplate,
@@ -38,32 +55,8 @@ const createBlogPages = async (createPage, graphql, reporter) => {
       },
     })
   })
-}
-
-
-const createSongPages = async (createPage, graphql, reporter) => {
-  const songTemplate = require.resolve(`./src/templates/SongTemplate.tsx`)
-  const result = await graphql(`
-{
-  allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, limit: 1000, filter: {frontmatter: {type: {eq: "song"}}}) {
-    edges {
-      node {
-        frontmatter {
-          slug
-        }
-      }
-    }
-  }
-}
-`)
-  // Handle errors
-  if (result.errors) {
-    reporter.panicOnBuild(`Error while running GraphQL query.`)
-    return
-  }
-  result.data.allMarkdownRemark.edges.forEach(({
-    node
-  }) => {
+  const songs = result.data.songs.edges;
+  songs.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.slug,
       component: songTemplate,
@@ -73,26 +66,8 @@ const createSongPages = async (createPage, graphql, reporter) => {
       },
     })
   })
-}
 
-const createTagPages = async (createPage, graphql, reporter) => {
-  const tagTemplate = require.resolve("./src/templates/TagsTemplate.tsx")
-  const result = await graphql(`
-    {
-      tagsGroup: allMarkdownRemark(limit: 2000) {
-        group(field: frontmatter___tags) {
-          fieldValue
-        }
-      }
-    }
-  `)
-  // handle errors
-  if (result.errors) {
-    reporter.panicOnBuild(`Error while running GraphQL query.`)
-    return
-  }
-  // Extract tag data from query
-  const tags = result.data.tagsGroup.group
+  const tags = result.data.tagsGroup.group;
   // Make tag pages
   tags.forEach(tag => {
     createPage({
@@ -103,7 +78,10 @@ const createTagPages = async (createPage, graphql, reporter) => {
       },
     })
   })
+
 }
+
+
 
 
 exports.createPages = async ({
@@ -115,9 +93,7 @@ exports.createPages = async ({
     createPage
   } = actions
 
-  await createBlogPages(createPage, graphql, reporter);
-  await createSongPages(createPage, graphql, reporter);
-  await createTagPages(createPage, graphql, reporter);
+  await createPages(createPage, graphql, reporter);
 
 }
 

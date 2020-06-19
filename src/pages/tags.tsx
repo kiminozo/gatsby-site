@@ -2,8 +2,9 @@ import React from "react"
 // Utilities
 import kebabCase from "lodash/kebabCase"
 // Components
-import { Helmet } from "react-helmet"
 import { Link, graphql } from "gatsby"
+import { SEO, Layout } from "../components";
+
 type TagGroup = {
     fieldValue: string;
     totalCount: number;
@@ -29,8 +30,8 @@ const TagsPage = (props: TagsPageProp) => {
         }
     } = props;
     return (
-        <div>
-            <Helmet title={title} />
+        <Layout>
+            <SEO title={title} />
             <div>
                 <h1>Tags</h1>
                 <ul>
@@ -43,7 +44,7 @@ const TagsPage = (props: TagsPageProp) => {
                     ))}
                 </ul>
             </div>
-        </div>
+        </Layout>
     )
 }
 export default TagsPage

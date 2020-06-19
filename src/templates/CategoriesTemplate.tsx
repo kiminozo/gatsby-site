@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import PropTypes from "prop-types"
 // Components
 import { Link, graphql } from "gatsby"
+import { SEO, Layout } from "../components";
 
 type CategoriesEdge = {
     node: {
@@ -35,7 +36,8 @@ class CategoriesTemplatePage extends Component<TemplateProps> {
             totalCount === 1 ? "" : "s"
             } category with "${category}"`
         return (
-            <div>
+            <Layout>
+                <SEO title="tags" />
                 <h1>{tagHeader}</h1>
                 <ul>
                     {edges.map(({ node }) => {
@@ -53,7 +55,7 @@ class CategoriesTemplatePage extends Component<TemplateProps> {
               You'll come back to it!
             */}
                 <Link to="/categories">All Categories</Link>
-            </div>
+            </Layout>
         )
     }
 }

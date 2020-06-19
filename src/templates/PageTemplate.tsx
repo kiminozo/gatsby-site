@@ -1,8 +1,7 @@
 import React, { Component, createRef } from "react"
 import { graphql, PageProps, Link } from "gatsby"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import { SEO, Layout } from "../components";
 import CC, { License } from "../components/CC"
 
 import {

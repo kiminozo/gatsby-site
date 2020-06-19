@@ -1,6 +1,5 @@
 // Gatsby supports TypeScript natively!
 import React, { Component } from "react"
-import { PageProps, Link } from "gatsby"
 import PropTypes from 'prop-types'
 import {
   Button,

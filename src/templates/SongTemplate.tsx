@@ -1,8 +1,7 @@
 import React, { Component } from "react"
 import { graphql, PageProps, Link } from "gatsby"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import { SEO, Layout } from "../components";
 import CC, { License } from "../components/CC"
 
 import {
@@ -19,8 +18,8 @@ type MarkdownRemark = {
     lang: string;
     discography: string[];
     discographyId: string[];
-    songwriter: string[];
-    lyricwriter: string[];
+    songWriter: string[];
+    lyricWriter: string[];
     singer: string[];
     arranger: string[];
     license?: License
@@ -154,8 +153,8 @@ export const pageQuery = graphql`
         reproduced_website
       }
       singer
-      songwriter
-      lyricwriter
+      songWriter:songwriter
+      lyricWriter:lyricwriter
       arranger
       discography
       discographyId

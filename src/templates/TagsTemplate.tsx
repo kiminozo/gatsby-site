@@ -1,7 +1,7 @@
 import React, { Component } from "react"
-import PropTypes from "prop-types"
 // Components
 import { Link, graphql } from "gatsby"
+import { SEO, Layout } from "../components";
 
 type TagEdge = {
     node: {
@@ -58,7 +58,8 @@ class TagsTemplatePage extends Component<TemplateProps> {
             totalCount === 1 ? "" : "s"
             } tagged with "${tag}"`
         return (
-            <div>
+            <Layout>
+                <SEO title="tags" />
                 <h1>{tagHeader}</h1>
                 <ul>
                     {edges.map(({ node }) => {
@@ -76,7 +77,7 @@ class TagsTemplatePage extends Component<TemplateProps> {
               You'll come back to it!
             */}
                 <Link to="/tags">All tags</Link>
-            </div>
+            </Layout>
         )
     }
 }

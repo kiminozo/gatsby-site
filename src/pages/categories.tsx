@@ -2,8 +2,9 @@ import React from "react"
 // Utilities
 import kebabCase from "lodash/kebabCase"
 // Components
-import { Helmet } from "react-helmet"
 import { Link, graphql } from "gatsby"
+import { SEO, Layout } from "../components";
+
 type CategoriesGroup = {
     fieldValue: string;
     totalCount: number;
@@ -22,15 +23,15 @@ type CategoriesPageProp = {
     }
 }
 
-const TagsPage = (props: CategoriesPageProp) => {
+const CategoriesPage = (props: CategoriesPageProp) => {
     const {
         data: { allMarkdownRemark: { group },
             site: { siteMetadata: { title } }
         }
     } = props;
     return (
-        <div>
-            <Helmet title={title} />
+        <Layout>
+            <SEO title={title} />
             <div>
                 <h1>Categories</h1>
                 <ul>
@@ -43,10 +44,10 @@ const TagsPage = (props: CategoriesPageProp) => {
                     ))}
                 </ul>
             </div>
-        </div>
+        </Layout>
     )
 }
-export default TagsPage
+export default CategoriesPage
 
 export const CategoriesQuery = graphql`
   query {

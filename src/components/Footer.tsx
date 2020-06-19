@@ -13,7 +13,7 @@ const Footer = () => (
             <a href="https://forritz.org">For RITZ</a>
             {` `}All rights reserved.
          </Container> */}
-        <Segment as="footer" vertical >
+        <Segment as="footer" vertical style={{ padding: 10 }}>
             <Container>
                 <Grid divided stackable>
                     <Grid.Row>

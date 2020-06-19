@@ -1,11 +1,15 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import { Menu, Container, Dropdown, Divider } from 'semantic-ui-react'
+import { Menu, Container, Dropdown, Divider, Header as UIHeader, Icon, Image }
+  from 'semantic-ui-react'
 
 import "./header.sass"
 import styles from "./header.module.sass"
 import { menusConfig } from "../menu";
+
+import logo from "../assets/logo.jpg"
+
 
 type Props = {
   siteTitle: string;
@@ -27,8 +31,17 @@ class Header extends React.Component<Props, State> {
 
     return (
       <header>
+
         <Container>
-          <h1>For RITZ</h1>
+          <UIHeader as="h2" style={{ paddingTop: 10 }}>
+            {/* <Icon name='settings' /> */}
+            <Image src={logo} size="big" />
+            <UIHeader.Content>
+              For RITZ
+            <UIHeader.Subheader>岡崎律子的非官方中文资料站</UIHeader.Subheader>
+            </UIHeader.Content>
+          </UIHeader>
+
         </Container>
         <Menu secondary pointing color="pink" size='large'>
           <Container>
@@ -43,7 +56,7 @@ class Header extends React.Component<Props, State> {
             }
           </Container>
         </Menu>
-        <Menu inverted pointing >
+        <Menu inverted pointing size="small" style={{ marginBottom: 20 }}>
           <Container>
             {
               menus.map(item => item.sub ?
@@ -77,7 +90,6 @@ class Header extends React.Component<Props, State> {
             }
           </Container>
         </Menu>
-        <Divider hidden />
 
       </header>
 

@@ -3,12 +3,6 @@ import { Message, Icon } from 'semantic-ui-react'
 
 const byncsa = "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-Hans"
 
-export type ReprintInfo = {
-    site: string
-    url?: string
-    author: string
-}
-
 export type License = {
     type: string
     author: string

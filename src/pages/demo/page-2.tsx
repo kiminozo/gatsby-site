@@ -3,8 +3,8 @@ import React, { Component, createRef } from "react"
 import { PageProps, Link } from "gatsby"
 import { Button, Grid, Header, Ref, Segment, Rail, Accordion, Menu, Icon } from 'semantic-ui-react'
 
-import Layout from "../../components/layout"
-import SEO from "../../components/seo"
+import Layout from "../../components/Layout"
+import SEO from "../../components/SEO"
 import _ from "lodash";
 
 const sidebarStyle = {

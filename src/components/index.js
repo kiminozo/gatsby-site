@@ -4,15 +4,15 @@ export {
 
 export {
     default as SEO
-} from './seo'
+} from './SEO'
 
 export {
     default as Header
-} from './header'
+} from './Header'
 
 export {
     default as Layout
-} from './layout'
+} from './Layout'
 
 export {
     default as TagsLine
@@ -20,5 +20,4 @@ export {
 
 export {
     default as CC,
-    License
 } from './CC'

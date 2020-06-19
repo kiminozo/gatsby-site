@@ -1,7 +1,7 @@
 import React, { Component, createRef } from "react"
 import { graphql, PageProps, Link } from "gatsby"
 
-import { SEO, Layout } from "../components";
+import { SEO, Layout, TagsLine } from "../components";
 import CC, { License } from "../components/CC"
 
 import {
@@ -139,32 +139,10 @@ class TemplatePage extends Component<TemplateProps, TemplateState> {
     const { frontmatter } = markdownRemark
     const { categories, tags, license } = frontmatter
 
-    // const reprint = {
-    //   site: "あだち充の屋根裏部屋",
-    //   url: "http://spaces.msn.com/shinnsama/blog/cns!4E2F09F0EF53C369!1555.entry",
-    //   author: "原版奶昔"
-    // };
-
     return (
       <>
         <Divider />
-        <Label.Group >
-          {
-            categories &&
-            categories.map(category =>
-              (<Label as='a' color='teal'>
-                <Icon name='bookmark' />{category}
-              </Label>)
-            )
-          }
-          {
-            tags &&
-            tags.map(tag =>
-              (<Label as='a'>{tag}</Label>)
-            )
-          }
-        </Label.Group>
-
+        <TagsLine categories={categories} tags={tags} />
         <CC license={license} />
       </>
     )

@@ -13,3 +13,12 @@ export {
 export {
     default as Layout
 } from './layout'
+
+export {
+    default as TagsLine
+} from './TagsLine'
+
+export {
+    default as CC,
+    License
+} from './CC'

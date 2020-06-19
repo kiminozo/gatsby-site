@@ -33,6 +33,12 @@ const menusConfig: MenuConfig[] =
             name: "page-6",
             link: "/demo/page-6/"
         }, {
+            name: "tags",
+            link: "/tags"
+        }, {
+            name: "categories",
+            link: "/categories"
+        }, {
             name: "rain-or-shine-9",
             link: "/rain-or-shine/rain-or-shine-09"
         }, {

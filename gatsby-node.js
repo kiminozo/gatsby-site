@@ -7,9 +7,6 @@ const _ = require("lodash")
 
 
 const createPages = async (createPage, graphql, reporter) => {
-  const blogPostTemplate = require.resolve(`./src/templates/PageTemplate.tsx`)
-  const songTemplate = require.resolve(`./src/templates/SongTemplate.tsx`)
-  const tagTemplate = require.resolve("./src/templates/TagsTemplate.tsx")
 
   const result = await graphql(`
    {
@@ -31,11 +28,16 @@ const createPages = async (createPage, graphql, reporter) => {
       }
     }
   }
-   tagsGroup: allMarkdownRemark(limit: 2000) {
+  tagsGroup: allMarkdownRemark(limit: 2000) {
         group(field: frontmatter___tags) {
           fieldValue
         }
-      }
+  }
+  categoriesGroup: allMarkdownRemark(limit: 2000) {
+    group(field: frontmatter___categories) {
+      fieldValue
+    }
+  }
 }
 `)
   // Handle errors
@@ -44,6 +46,7 @@ const createPages = async (createPage, graphql, reporter) => {
     return
   }
 
+  const blogPostTemplate = require.resolve(`./src/templates/PageTemplate.tsx`)
   const posts = result.data.posts.edges;
   posts.forEach(({ node }) => {
     createPage({
@@ -55,6 +58,8 @@ const createPages = async (createPage, graphql, reporter) => {
       },
     })
   })
+
+  const songTemplate = require.resolve(`./src/templates/SongTemplate.tsx`)
   const songs = result.data.songs.edges;
   songs.forEach(({ node }) => {
     createPage({
@@ -67,6 +72,7 @@ const createPages = async (createPage, graphql, reporter) => {
     })
   })
 
+  const tagTemplate = require.resolve("./src/templates/TagsTemplate.tsx")
   const tags = result.data.tagsGroup.group;
   // Make tag pages
   tags.forEach(tag => {
@@ -75,6 +81,19 @@ const createPages = async (createPage, graphql, reporter) => {
       component: tagTemplate,
       context: {
         tag: tag.fieldValue,
+      },
+    })
+  })
+
+  const categoryTemplate = require.resolve("./src/templates/CategoriesTemplate.tsx")
+  const categories = result.data.categoriesGroup.group;
+  // Make tag pages
+  categories.forEach(category => {
+    createPage({
+      path: `/categories/${_.kebabCase(category.fieldValue)}/`,
+      component: categoryTemplate,
+      context: {
+        category: category.fieldValue,
       },
     })
   })

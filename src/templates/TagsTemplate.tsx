@@ -5,10 +5,8 @@ import { Link, graphql } from "gatsby"
 
 type TagEdge = {
     node: {
-        fields: {
-            slug: string;
-        }
         frontmatter: {
+            slug: string;
             title: string
         }
     }
@@ -50,7 +48,7 @@ type TemplateProps = {
 //     }),
 // }
 
-class TagsTemplate extends Component<TemplateProps> {
+class TagsTemplatePage extends Component<TemplateProps> {
 
 
     render() {
@@ -64,7 +62,7 @@ class TagsTemplate extends Component<TemplateProps> {
                 <h1>{tagHeader}</h1>
                 <ul>
                     {edges.map(({ node }) => {
-                        const { slug } = node.fields
+                        const { slug } = node.frontmatter
                         const { title } = node.frontmatter
                         return (
                             <li key={slug}>
@@ -83,8 +81,10 @@ class TagsTemplate extends Component<TemplateProps> {
     }
 }
 
+export default function TagsTemplate({ pageContext, data }: TemplateProps) {
+    return (<TagsTemplatePage pageContext={pageContext} data={data} />)
+}
 
-export default TagsTemplate
 export const pageQuery = graphql`
   query($tag: String) {
     allMarkdownRemark(
@@ -95,10 +95,8 @@ export const pageQuery = graphql`
       totalCount
       edges {
         node {
-          fields {
-            slug
-          }
           frontmatter {
+            slug
             title
           }
         }

@@ -3,6 +3,7 @@
  *
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
+const _ = require("lodash")
 
 
 const createBlogPages = async (createPage, graphql, reporter) => {
@@ -75,7 +76,7 @@ const createSongPages = async (createPage, graphql, reporter) => {
 }
 
 const createTagPages = async (createPage, graphql, reporter) => {
-  const tagTemplate = path.resolve("src/templates/TagTemplate.tsx")
+  const tagTemplate = require.resolve("./src/templates/TagsTemplate.tsx")
   const result = await graphql(`
     {
       tagsGroup: allMarkdownRemark(limit: 2000) {
@@ -116,5 +117,7 @@ exports.createPages = async ({
 
   await createBlogPages(createPage, graphql, reporter);
   await createSongPages(createPage, graphql, reporter);
+  await createTagPages(createPage, graphql, reporter);
+
 }
 

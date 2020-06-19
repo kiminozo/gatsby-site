@@ -1,11 +1,16 @@
 $primary-color: #fc81aa
+$side: 50px
 
 .ui.inverted.menu
     background: $primary-color
 .ui.menu:not(.secondary):not(.text):not(.tabular):not(.borderless)>.container>.item:not(.right):not(.borderless):first-child
     border-left: 0px
-.ui.borderless.menu
+.ui.inverted.menu
     margin-top: 0
+.ui.secondary.menu
+    margin-bottom: 0
+.ui.secondary.pointing.menu
+    border-bottom: 2px solid #fff
 
 .ui.inverted.pointing.menu .active.item:after
     background-color: white !important

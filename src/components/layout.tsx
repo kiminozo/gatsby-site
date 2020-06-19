@@ -18,6 +18,7 @@ import {
   Segment
 } from "semantic-ui-react";
 import Header from "./header"
+import Footer from "./Footer"
 import "./layout.sass"
 
 interface LayoutProps {
@@ -38,17 +39,11 @@ const Layout = ({ children }: LayoutProps) => {
   const data = useStaticQuery(LayoutQuery)
 
   return (
-    <div>
+    <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <Container as="main">{children}</Container>
-      <Divider />
-
-      <Container textAlign="center" style={{ height: 48 }}>
-        © 2006-{new Date().getFullYear()},
-        <a href="https://forritz.org">For RITZ</a>
-        {` `}All rights reserved.
-      </Container>
-    </div>
+      <Footer />
+    </>
   )
 }
 

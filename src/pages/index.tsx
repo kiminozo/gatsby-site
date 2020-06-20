@@ -63,10 +63,10 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Grid>
-      <Grid.Column width={4} mobile={15} computer={4} tablet={5}>
+      <Grid.Column width={4} mobile={16} computer={4} tablet={5}>
         <RitzCard />
       </Grid.Column>
-      <Grid.Column width={12} mobile={15} computer={10} tablet={10}>
+      <Grid.Column width={12} mobile={16} computer={12} tablet={12}>
         <p>●她于1959年12月29日,在日本长崎县出生。<br />
         大约1982年，开始创作广告配乐。当时，曾以森野律及RITZ为名提供乐曲。<br />
         1991年，为OVA动画「1月にはChristmas」演唱OP和ED成为律子跨入动漫界的第一步作品。</p>

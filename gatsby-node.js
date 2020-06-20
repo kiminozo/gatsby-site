@@ -46,7 +46,7 @@ const createPages = async (createPage, graphql, reporter) => {
     return
   }
 
-  const blogPostTemplate = require.resolve(`./src/templates/PageTemplate.tsx`)
+  const blogPostTemplate = require.resolve(`./src/templates/PostTemplate.tsx`)
   const posts = result.data.posts.edges;
   posts.forEach(({ node }) => {
     createPage({

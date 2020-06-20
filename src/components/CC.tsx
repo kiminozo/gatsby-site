@@ -1,5 +1,7 @@
 import React, { Component } from "react"
 import { Message, Icon } from 'semantic-ui-react'
+import "./CC.sass"
+
 
 const byncsa = "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-Hans"
 
@@ -18,7 +20,7 @@ type CCProps = {
 const CC = (props: CCProps) => {
     const { license } = props;
     return (
-        <Message info>
+        <Message info >
             <Message.Header>
                 <Icon name='cc' size="large" />
                 <a href={byncsa}>BY-NC-SA 4.0</a>

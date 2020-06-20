@@ -2,7 +2,7 @@
 title: "Presage"
 type: "song"
 date: "2017-02-04"
-order: ""
+order: 0
 discography: ["Presage"]
 discographyId: ["presage"]
 singer: ["小森まなみ"]

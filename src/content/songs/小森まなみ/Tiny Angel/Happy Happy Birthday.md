@@ -2,7 +2,7 @@
 title: "Happy Happy Birthday"
 type: "song"
 date: "2017-02-04"
-order: ""
+order: 0
 discography: ["Tiny Angel"]
 discographyId: ["tiny-angel"]
 singer: ["小森まなみ"]

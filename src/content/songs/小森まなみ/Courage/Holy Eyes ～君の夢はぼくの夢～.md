@@ -2,7 +2,7 @@
 title: "Holy Eyes ～君の夢はぼくの夢～"
 type: "song"
 date: "2017-02-04"
-order: ""
+order: 0
 discography: ["Courage"]
 discographyId: ["courage"]
 singer: ["小森まなみ"]

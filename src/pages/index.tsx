@@ -2,7 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import { Card, Icon, Image, Button, Grid, Divider, Header, List, Container } from 'semantic-ui-react'
 
-import { SEO, Layout, AvatarImage } from "../components";
+import { SEO, Layout } from "../components";
+import AvatarImage from "../components/AvatarImage";
 
 //import logo from "../images/avatar/steps.jpg"
 import demo from "../images/demo.png"

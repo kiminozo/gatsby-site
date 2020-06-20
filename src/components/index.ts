@@ -1,19 +1,9 @@
-export {
-    default as AvatarImage
-} from './AvatarImage'
+import Layout from "./Layout"
+import TagsLine from "./TagsLine"
+import CC from "./CC"
+import SEO from "./SEO"
 
+//export default Layout
 export {
-    default as SEO
-} from './SEO'
-
-export {
-    default as Layout
-} from './Layout'
-
-export {
-    default as TagsLine
-} from './TagsLine'
-
-export {
-    default as CC,
-} from './CC'
+    Layout, TagsLine, CC, SEO
+}

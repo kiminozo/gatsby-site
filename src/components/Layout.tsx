@@ -17,7 +17,7 @@ import {
   Menu,
   Segment
 } from "semantic-ui-react";
-import Header from "./header"
+import Header from "./Header"
 import "./layout.sass"
 
 interface LayoutProps {

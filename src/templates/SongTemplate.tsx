@@ -5,10 +5,13 @@ import { SEO, Layout } from "../components";
 import CC, { License } from "../components/CC"
 
 import {
-  Icon, Grid, Header, Container, Segment, Divider, Responsive
+  Icon, Grid, Header, Container, Segment, Divider, Responsive,
+  Button, Card, Image, Label
 } from 'semantic-ui-react'
 import _ from "lodash";
 
+
+import demo from "../images/demo.png"
 // this prop will be injected by the GraphQL query below.
 type MarkdownRemark = {
   frontmatter: {
@@ -57,6 +60,35 @@ function split(html: string): Translator {
   }
 }
 
+
+const CardExampleGroups = () => (
+  <Card.Group doubling>
+    {/* <Card image={demo} >
+      <Label attached='bottom'>CSS</Label>
+    </Card>
+
+    <Card image={demo} /> */}
+
+    <Card>
+      <Image
+        src={demo}
+      />
+      <Label attached='bottom left'>Rain or Shine</Label>
+      {/* <Card.Content>
+        <Card.Header>Rain or Shine</Card.Header>
+      </Card.Content> */}
+    </Card>
+
+    <Card>
+      <Image
+        src={demo}
+      />
+      <Label attached='bottom left'>Rain or Shine</Label>
+
+    </Card>
+  </Card.Group >
+)
+
 class SongTemplatePage extends Component<TemplateProps, TemplateState> {
   headerInfos: HeaderInfo[] = [];
 
@@ -86,39 +118,40 @@ class SongTemplatePage extends Component<TemplateProps, TemplateState> {
   //   );
   // }
 
-  renderDesktop(title: string, jpHtml: string, zhHtml: string) {
-    return (
-      <Grid  >
-        <Grid.Column width={16} mobile={16} computer={16} tablet={16}>
-          <Header as="h1">{title}</Header>
+  // renderDesktop(title: string, jpHtml: string, zhHtml: string) {
+  //   return (
+  //     <Grid  >
+  //       <Grid.Column width={16} mobile={16} computer={16} tablet={16}>
+  //         <Header as="h1">{title}</Header>
 
-          <Segment style={{ fontSize: "1.2rem" }}>
-            <Grid columns={2} centered stackable>
-              <Grid.Column>
-                <div
-                  className="song-content"
-                  dangerouslySetInnerHTML={{ __html: jpHtml }}
-                />
-              </Grid.Column>
-              <Divider vertical>翻译</Divider>
-              <Grid.Column>
-                <div
-                  className="song-content"
-                  dangerouslySetInnerHTML={{ __html: zhHtml }}
-                />
+  //         <Segment style={{ fontSize: "1.2rem" }}>
+  //           <Grid columns={2} centered stackable>
+  //             <Grid.Column>
+  //               <div
+  //                 className="song-content"
+  //                 dangerouslySetInnerHTML={{ __html: jpHtml }}
+  //               />
+  //             </Grid.Column>
+  //             <Divider vertical>翻译</Divider>
+  //             <Grid.Column>
+  //               <div
+  //                 className="song-content"
+  //                 dangerouslySetInnerHTML={{ __html: zhHtml }}
+  //               />
 
-              </Grid.Column>
+  //             </Grid.Column>
 
-            </Grid>
+  //           </Grid>
 
-            {/* <Divider vertical>翻译</Divider> */}
+  //           {/* <Divider vertical>翻译</Divider> */}
 
-          </Segment>
+  //         </Segment>
 
-        </Grid.Column>
-      </Grid>
-    )
-  }
+  //       </Grid.Column>
+
+  //     </Grid>
+  //   )
+  // }
 
   render() {
     const remark = this.props.data.markdownRemark; // data.markdownRemark holds your post data
@@ -133,7 +166,37 @@ class SongTemplatePage extends Component<TemplateProps, TemplateState> {
     return (
       <Layout>
         <SEO title={title} />
-        {this.renderDesktop(title, jp, cn)}
+        <Grid  >
+          <Grid.Column width={16} mobile={16} computer={13} tablet={16}>
+            <Header as="h1">{title}</Header>
+            <Segment style={{ fontSize: "1.2rem" }}>
+              <Grid columns={2} centered stackable>
+                <Grid.Column>
+                  <div
+                    className="song-content"
+                    dangerouslySetInnerHTML={{ __html: jp }}
+                  />
+                </Grid.Column>
+                <Divider vertical>翻译</Divider>
+                <Grid.Column>
+                  <div
+                    className="song-content"
+                    dangerouslySetInnerHTML={{ __html: cn }}
+                  />
+
+                </Grid.Column>
+
+              </Grid>
+
+              {/* <Divider vertical>翻译</Divider> */}
+
+            </Segment>
+
+          </Grid.Column>
+          <Grid.Column width={16} mobile={16} computer={3} tablet={16}>
+            <CardExampleGroups />
+          </Grid.Column>
+        </Grid>
       </Layout>
     )
   }

@@ -43,7 +43,7 @@ class Header extends React.Component<Props, State> {
           </UIHeader>
 
         </Container>
-        <Menu secondary pointing color="pink" size='large'>
+        <Menu secondary pointing color="pink" size='large' style={{ marginBottom: 20 }}>
           <Container>
             {
               menus.map(item =>
@@ -56,7 +56,7 @@ class Header extends React.Component<Props, State> {
             }
           </Container>
         </Menu>
-        <Menu inverted pointing size="small" style={{ marginBottom: 20 }}>
+        {/* <Menu inverted pointing size="small" style={{ marginBottom: 20 }}>
           <Container>
             {
               menus.map(item => item.sub ?
@@ -89,7 +89,7 @@ class Header extends React.Component<Props, State> {
               // />))
             }
           </Container>
-        </Menu>
+        </Menu> */}
 
       </header>
 

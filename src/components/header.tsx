@@ -43,16 +43,26 @@ class Header extends React.Component<Props, State> {
           </UIHeader>
 
         </Container>
-        <Menu secondary pointing color="pink" size='large' style={{ marginBottom: 20 }}>
+        <Menu secondary pointing color="pink" size='large'>
           <Container>
-            {
-              menus.map(item =>
-                (<Menu.Item as={Link}
-                  name={item.name}
-                  activeClassName='active'
-                  link={true}
-                  to={item.link}
-                />))
+            {menus.map(item => item.sub ?
+              (
+                <Dropdown text={item.name} className='link item' >
+                  <Dropdown.Menu>{
+                    item.sub.map(sub => (
+                      <Dropdown.Item as={Link} to={sub.link}>{sub.name}</Dropdown.Item>
+                    ))
+                  }
+                  </Dropdown.Menu>
+                </Dropdown>
+              )
+              :
+              (<Menu.Item as={Link}
+                name={item.name}
+                activeClassName='active'
+                link={true}
+                to={item.link}
+              />))
             }
           </Container>
         </Menu>

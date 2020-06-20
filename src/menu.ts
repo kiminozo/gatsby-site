@@ -21,18 +21,6 @@ const menusConfig: MenuConfig[] =
             name: "page-2",
             link: "/demo/page-2/"
         }, {
-            name: "page-3",
-            link: "/demo/page-3/"
-        }, {
-            name: "page-4",
-            link: "/demo/page-4/"
-        }, {
-            name: "page-5",
-            link: "/demo/page-5/"
-        }, {
-            name: "page-6",
-            link: "/demo/page-6/"
-        }, {
             name: "tags",
             link: "/tags"
         }, {

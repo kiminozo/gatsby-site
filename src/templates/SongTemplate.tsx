@@ -65,52 +65,59 @@ class SongTemplatePage extends Component<TemplateProps, TemplateState> {
     this.state = { activeId: "" }
   }
 
-  renderMobile(title: string, jpHtml: string, zhHtml: string) {
-    return (
-      <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
-        <Grid container>
-          <Grid.Column>
-            <Header as="h1">{title}</Header>
-            <div
-              className="song-content"
-              dangerouslySetInnerHTML={{ __html: jpHtml }}
-            />
-            <Divider horizontal >翻译</Divider>
-            <div
-              className="song-content-zh"
-              dangerouslySetInnerHTML={{ __html: zhHtml }}
-            />
-          </Grid.Column>
-        </Grid>
-      </Responsive >
-    );
-  }
+  // renderMobile(title: string, jpHtml: string, zhHtml: string) {
+  //   return (
+  //     <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
+  //       <Grid container>
+  //         <Grid.Column>
+  //           <Header as="h1">{title}</Header>
+  //           <div
+  //             className="song-content"
+  //             dangerouslySetInnerHTML={{ __html: jpHtml }}
+  //           />
+  //           <Divider horizontal >翻译</Divider>
+  //           <div
+  //             className="song-content-zh"
+  //             dangerouslySetInnerHTML={{ __html: zhHtml }}
+  //           />
+  //         </Grid.Column>
+  //       </Grid>
+  //     </Responsive >
+  //   );
+  // }
 
   renderDesktop(title: string, jpHtml: string, zhHtml: string) {
-    return (<Responsive minWidth={Responsive.onlyTablet.minWidth}>
-      <Grid container>
-        <Grid.Column width={12}>
+    return (
+      <Grid  >
+        <Grid.Column width={16} mobile={16} computer={16} tablet={16}>
           <Header as="h1">{title}</Header>
-          <Segment basic>
-            <Grid columns={2} relaxed='very'>
+
+          <Segment style={{ fontSize: "1.2rem" }}>
+            <Grid columns={2} centered stackable>
               <Grid.Column>
                 <div
                   className="song-content"
                   dangerouslySetInnerHTML={{ __html: jpHtml }}
                 />
               </Grid.Column>
+              <Divider vertical>翻译</Divider>
               <Grid.Column>
                 <div
-                  className="song-content-zh"
+                  className="song-content"
                   dangerouslySetInnerHTML={{ __html: zhHtml }}
                 />
+
               </Grid.Column>
+
             </Grid>
-            <Divider vertical >翻译</Divider>
+
+            {/* <Divider vertical>翻译</Divider> */}
+
           </Segment>
+
         </Grid.Column>
       </Grid>
-    </Responsive>)
+    )
   }
 
   render() {
@@ -127,7 +134,6 @@ class SongTemplatePage extends Component<TemplateProps, TemplateState> {
       <Layout>
         <SEO title={title} />
         {this.renderDesktop(title, jp, cn)}
-        {this.renderMobile(title, jp, cn)}
       </Layout>
     )
   }

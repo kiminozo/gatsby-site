@@ -1,6 +1,7 @@
 type MenuConfig = {
     name: string;
     link: string;
+    active?: string[];
     sub?: MenuConfig[];
 }
 
@@ -9,33 +10,40 @@ const menusConfig: MenuConfig[] =
         name: "首页",
         link: "/"
     }, {
-        name: "bio",
-        link: "/biography",
-    }, {
-        name: "post",
-        link: "/blog/my-first-post/"
-    }, {
-        name: "demos",
-        link: "/biography",
+        name: "介绍",
+        link: "",
         sub: [{
-            name: "page-2",
-            link: "/demo/page-2/"
+            name: "详细生平",
+            link: "/biography"
         }, {
-            name: "tags",
-            link: "/tags"
+            name: "音乐年表",
+            link: "/performance"
         }, {
-            name: "categories",
-            link: "/categories"
-        }, {
-            name: "rain-or-shine-9",
-            link: "/rain-or-shine/rain-or-shine-09"
-        }, {
-            name: "photo-diary-1",
-            link: "/photo-diary/photo-01"
+            name: "Ritzstar",
+            link: "/ritzstar"
         }]
     }, {
+        name: "文章",
+        link: "/categories",
+        sub: [{
+            name: "岡崎Today",
+            active: ["okazaki-today"],
+            link: "/categories/岡崎-today/"
+        }, {
+            name: "Rain or Shine",
+            active: ["rain-or-shine"],
+            link: "/categories/rain-or-shine"
+        }, {
+            name: "Photo日记",
+            active: ["photo-diary"],
+            link: "/categories/photo日记"
+        }]
+    }, {
+        name: "唱片集",
+        link: "/discography"
+    }, {
         name: "song-demo",
-        link: "/songs/asa-whats-goin-on"
+        link: "songs/asa-whats-goin-on"
     }];
 
 export { MenuConfig, menusConfig }

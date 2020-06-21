@@ -6,7 +6,7 @@
  */
 
 import React, { ReactNode } from "react"
-import PropTypes from "prop-types"
+import { WindowLocation } from "@reach/router"
 import { useStaticQuery, graphql } from "gatsby"
 import {
   Button,
@@ -21,6 +21,7 @@ import Header from "./Header"
 import "./layout.sass"
 
 interface LayoutProps {
+  path?: string
   children: ReactNode
 }
 
@@ -34,12 +35,12 @@ const LayoutQuery = graphql`
   }
 `
 
-const Layout = ({ children }: LayoutProps) => {
+const Layout = ({ children, path }: LayoutProps) => {
   const data = useStaticQuery(LayoutQuery)
 
   return (
     <div>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle={data.site.siteMetadata.title} pathName={path ?? ""} />
       <Container as="main">{children}</Container>
       <Divider />
 

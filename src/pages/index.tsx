@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, PageProps } from "gatsby"
 import { Card, Icon, Image, Button, Grid, Divider, Header, List, Container } from 'semantic-ui-react'
 
 import { SEO, Layout } from "../components";
@@ -60,8 +60,8 @@ const AlbumCard = () => (
   </Card.Group>
 )
 
-const IndexPage = () => (
-  <Layout>
+const IndexPage = (props: PageProps) => (
+  <Layout path={props.location.pathname}>
     <SEO title="Home" />
     <Grid>
       <Grid.Column width={4} mobile={16} computer={4} tablet={5}>

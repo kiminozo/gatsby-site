@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 // Components
 import { Link, graphql } from "gatsby"
 import { SEO, Layout } from "../components";
+import kebabCase from "lodash/kebabCase"
 
 type CategoriesEdge = {
     node: {
@@ -36,7 +37,7 @@ class CategoriesTemplatePage extends Component<TemplateProps> {
             totalCount === 1 ? "" : "s"
             } category with "${category}"`
         return (
-            <Layout>
+            <Layout path={`/categories/${kebabCase(category)}/`}>
                 <SEO title="tags" />
                 <h1>{tagHeader}</h1>
                 <ul>

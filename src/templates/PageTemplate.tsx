@@ -207,31 +207,31 @@ export default function Template({ data }: TemplateProps) {
   return (<TemplatePage data={data} />)
 }
 
-export const pageQuery = graphql`
-  query($slug: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
-      html
-      frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        slug
-        title
-        categories
-        tags
-        toc
-        license {
-          type
-          author
-          translator
-          reproduced_url
-          reproduced_website
-        }
-        
-      }
-      headings {
-        depth
-        id
-        value
-      }
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   query($slug: String!) {
+//     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+//       html
+//       frontmatter {
+//         date(formatString: "MMMM DD, YYYY")
+//         slug
+//         title
+//         categories
+//         tags
+//         toc
+//         license {
+//           type
+//           author
+//           translator
+//           reproduced_url
+//           reproduced_website
+//         }
+
+//       }
+//       headings {
+//         depth
+//         id
+//         value
+//       }
+//     }
+//   }
+// `

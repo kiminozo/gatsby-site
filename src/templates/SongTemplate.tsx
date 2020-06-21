@@ -164,7 +164,7 @@ class SongTemplatePage extends Component<TemplateProps, TemplateState> {
     const { jp, cn } = split(html);
 
     return (
-      <Layout>
+      <Layout path={frontmatter.slug}>
         <SEO title={title} />
         <Grid  >
           <Grid.Column width={16} mobile={16} computer={13} tablet={16}>

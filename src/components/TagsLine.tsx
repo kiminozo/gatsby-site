@@ -18,7 +18,7 @@ export default class TagsLine extends Component<Props> {
                 {
                     categories &&
                     categories.map(category =>
-                        (<Label as={Link} color='teal' to={`/categories/${kebabCase(category)}/`} >
+                        (<Label as={Link} key={category} color='teal' to={`/categories/${kebabCase(category)}/`} >
                             <Icon name='bookmark' />{category}
                         </Label>)
                     )
@@ -26,7 +26,7 @@ export default class TagsLine extends Component<Props> {
                 {
                     tags &&
                     tags.map(tag =>
-                        (<Label as={Link} to={`/tags/${kebabCase(tag)}/`}>{tag}</Label>)
+                        (<Label as={Link} key={tag} to={`/tags/${kebabCase(tag)}/`}>{tag}</Label>)
                     )
                 }
             </Label.Group>

@@ -64,7 +64,7 @@ class PostTemplate extends Component<TemplateProps> {
 
 
     return (
-      <Layout>
+      <Layout path={frontmatter.slug}>
         <SEO title={frontmatter.title} />
         <Grid>
           <Grid.Column width={16} mobile={16} computer={11} tablet={11}>

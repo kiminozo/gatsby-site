@@ -4,6 +4,7 @@ import PropTypes from "prop-types"
 import { Link, graphql } from "gatsby"
 import { SEO, Layout } from "../components";
 import kebabCase from "lodash/kebabCase"
+import { Pagination } from "semantic-ui-react";
 
 type CategoriesEdge = {
     node: {
@@ -17,6 +18,8 @@ type CategoriesEdge = {
 type TemplateProps = {
     pageContext: {
         category: string;
+        activePage: number,
+        totalPages: number
     }
     data: {
         allMarkdownRemark: {
@@ -31,14 +34,14 @@ class CategoriesTemplatePage extends Component<TemplateProps> {
 
 
     render() {
-        const { category } = this.props.pageContext;
+        const { category, activePage, totalPages } = this.props.pageContext;
         const { edges, totalCount } = this.props.data.allMarkdownRemark
         const tagHeader = `${totalCount} post${
             totalCount === 1 ? "" : "s"
             } category with "${category}"`
         return (
             <Layout path={`/categories/${kebabCase(category)}/`}>
-                <SEO title="tags" />
+                <SEO title="categories" />
                 <h1>{tagHeader}</h1>
                 <ul>
                     {edges.map(({ node }) => {
@@ -55,6 +58,12 @@ class CategoriesTemplatePage extends Component<TemplateProps> {
               This links to a page that does not yet exist.
               You'll come back to it!
             */}
+                <Pagination
+                    firstItem={null}
+                    lastItem={null}
+                    activePage={activePage}
+                    totalPages={totalPages} />
+                <br />
                 <Link to="/categories">All Categories</Link>
             </Layout>
         )
@@ -66,9 +75,13 @@ export default function CategoriesTemplate({ pageContext, data }: TemplateProps)
 }
 
 export const query = graphql`
-  query($category: String) {
-    allMarkdownRemark(limit: 2000, sort: {fields: [frontmatter___date], order: DESC},
-     filter: {frontmatter: {categories: {in: [$category]}}}) {
+  query($category: String, $skip: Int!, $limit: Int!) {
+    allMarkdownRemark(
+       limit: $limit,
+       skip: $skip,
+       sort: {fields: [frontmatter___slug], order: ASC},
+       filter: {frontmatter: {categories: {in: [$category]}}}
+    ){
       totalCount
       edges {
         node {

@@ -31,11 +31,13 @@ const createPages = async (createPage, graphql, reporter) => {
   tagsGroup: allMarkdownRemark(limit: 2000) {
         group(field: frontmatter___tags) {
           fieldValue
+          totalCount
         }
   }
   categoriesGroup: allMarkdownRemark(limit: 2000) {
     group(field: frontmatter___categories) {
       fieldValue
+      totalCount
     }
   }
 }
@@ -87,14 +89,24 @@ const createPages = async (createPage, graphql, reporter) => {
 
   const categoryTemplate = require.resolve("./src/templates/CategoriesTemplate.tsx")
   const categories = result.data.categoriesGroup.group;
-  // Make tag pages
+  // Make categorie pages
+  const postsPerPage = 6
+
   categories.forEach(category => {
-    createPage({
-      path: `/categories/${_.kebabCase(category.fieldValue)}/`,
-      component: categoryTemplate,
-      context: {
-        category: category.fieldValue,
-      },
+    const numPages = Math.ceil(category.totalCount / postsPerPage);
+    const path = `/categories/${_.kebabCase(category.fieldValue)}`
+    Array.from({ length: numPages }).forEach((_, i) => {
+      createPage({
+        path: i === 0 ? path : `${path}/${i + 1}`,
+        component: categoryTemplate,
+        context: {
+          category: category.fieldValue,
+          limit: postsPerPage,
+          skip: i * postsPerPage,
+          totalPages: numPages,
+          activePage: i + 1
+        },
+      })
     })
   })
 

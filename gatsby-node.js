@@ -90,7 +90,7 @@ const createPages = async (createPage, graphql, reporter) => {
   const categoryTemplate = require.resolve("./src/templates/CategoriesTemplate.tsx")
   const categories = result.data.categoriesGroup.group;
   // Make categorie pages
-  const postsPerPage = 6
+  const postsPerPage = 10
 
   categories.forEach(category => {
     const numPages = Math.ceil(category.totalCount / postsPerPage);

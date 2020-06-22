@@ -1,10 +1,10 @@
 import React, { Component } from "react"
 import PropTypes from "prop-types"
 // Components
-import { Link, graphql } from "gatsby"
+import { Link, graphql, navigate } from "gatsby"
 import { SEO, Layout } from "../components";
 import kebabCase from "lodash/kebabCase"
-import { Pagination } from "semantic-ui-react";
+import { Pagination, Grid } from "semantic-ui-react";
 
 type CategoriesEdge = {
     node: {
@@ -30,17 +30,23 @@ type TemplateProps = {
     }
 };
 
+function getPath(category: string, activePage: string | number | undefined) {
+    const categoryPath = `/categories/${kebabCase(category)}`;
+    const path = (activePage === 1 || activePage === "1")
+        ? categoryPath : categoryPath + "/" + activePage;
+    return path;
+}
+
 class CategoriesTemplatePage extends Component<TemplateProps> {
-
-
     render() {
         const { category, activePage, totalPages } = this.props.pageContext;
         const { edges, totalCount } = this.props.data.allMarkdownRemark
         const tagHeader = `${totalCount} post${
             totalCount === 1 ? "" : "s"
             } category with "${category}"`
+
         return (
-            <Layout path={`/categories/${kebabCase(category)}/`}>
+            <Layout path={getPath(category, 1)}>
                 <SEO title="categories" />
                 <h1>{tagHeader}</h1>
                 <ul>
@@ -54,16 +60,25 @@ class CategoriesTemplatePage extends Component<TemplateProps> {
                         )
                     })}
                 </ul>
+                {totalPages > 1 &&
+                    (
+                        <div>
+                            <Pagination
+                                onPageChange={(e, { activePage }) => { navigate(getPath(category, activePage)) }}
+                                firstItem={null}
+                                lastItem={null}
+                                prevItem={activePage === 1 ? null : undefined}
+                                nextItem={activePage === totalPages ? null : undefined}
+                                activePage={activePage}
+                                totalPages={totalPages} />
+                        </div>
+                    )
+                }
+
                 {/*
               This links to a page that does not yet exist.
               You'll come back to it!
             */}
-                <Pagination
-                    firstItem={null}
-                    lastItem={null}
-                    activePage={activePage}
-                    totalPages={totalPages} />
-                <br />
                 <Link to="/categories">All Categories</Link>
             </Layout>
         )

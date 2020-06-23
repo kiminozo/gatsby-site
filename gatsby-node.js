@@ -10,7 +10,7 @@ const createPages = async (createPage, graphql, reporter) => {
 
   const result = await graphql(`
    {
-  posts:allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, limit: 1000, filter: {frontmatter: {type: {eq: null}}}) {
+  posts:allMarkdownRemark(sort: {order: ASC, fields: [frontmatter___slug]}, limit: 1000, filter: {frontmatter: {type: {eq: null}}}) {
     edges {
       node {
         frontmatter {
@@ -50,13 +50,15 @@ const createPages = async (createPage, graphql, reporter) => {
 
   const blogPostTemplate = require.resolve(`./src/templates/PostTemplate.tsx`)
   const posts = result.data.posts.edges;
-  posts.forEach(({ node }) => {
+  posts.forEach(({ node }, index, posts) => {
     createPage({
       path: node.frontmatter.slug,
       component: blogPostTemplate,
       context: {
         // additional data can be passed via context
         slug: node.frontmatter.slug,
+        previous: index !== 0 ? posts[index - 1].node.frontmatter.slug : null,
+        next: index + 1 !== posts.length ? posts[index + 1].node.frontmatter.slug : null,
       },
     })
   })

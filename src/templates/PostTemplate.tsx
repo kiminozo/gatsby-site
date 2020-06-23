@@ -6,11 +6,16 @@ import CC, { License } from "../components/CC"
 
 import {
   Button, Grid, Header, Ref, Segment, Rail, Accordion,
-  Label, Divider, Message,
+  Label, Divider, Message
 } from 'semantic-ui-react'
 import _ from "lodash";
 
 type TemplateProps = {
+  pageContext: {
+    slug: string;
+    previous?: string,
+    next?: string
+  }
   data: {
     markdownRemark: {
       frontmatter: {
@@ -59,6 +64,7 @@ class PostTemplate extends Component<TemplateProps> {
   }
 
   render() {
+    const { previous, next } = this.props.pageContext;
     const { markdownRemark } = this.props.data; // data.markdownRemark holds your post data
     const { frontmatter, html } = markdownRemark
 
@@ -75,18 +81,25 @@ class PostTemplate extends Component<TemplateProps> {
               dangerouslySetInnerHTML={{ __html: html }}
             />
             {this.renderTags()}
+            <div>
+              <Button.Group floated='left' >
+                <Button as={Link} to={previous} disabled={!previous} basic color='blue' icon='angle left' content="上一篇" labelPosition='left' />
+              </Button.Group>
+              <Button.Group floated='right' >
+                <Button as={Link} to={next} disabled={!next} basic color='blue' icon='angle right' content="下一篇" labelPosition='right' />
+              </Button.Group>
+            </div>
           </Grid.Column>
-          <Grid.Column width={16} mobile={16} computer={5} tablet={5} style={{ background: '#Faa' }}>
+          <Grid.Column width={16} mobile={16} computer={5} tablet={5} >
           </Grid.Column>
-
         </Grid>
       </Layout>
     )
   }
 }
 
-export default function Template({ data }: TemplateProps) {
-  return (<PostTemplate data={data} />)
+export default function Template({ pageContext, data }: TemplateProps) {
+  return (<PostTemplate pageContext={pageContext} data={data} />)
 }
 
 export const pageQuery = graphql`

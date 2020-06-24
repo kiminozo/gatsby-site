@@ -11,21 +11,48 @@ import {
 import _ from "lodash";
 import demo from "../images/demo.png"
 
+type RecordInfo = {
+  coverImage: string;
+  recordNo: string;
+  recordPrice: string;
+  recordPublisher: string;
+  recordType: string;
+  recordReleaseDate: string;
+}
+
 type TemplateProps = {
   pageContext: {
     slug: string;
   }
   data: {
     markdownRemark: {
-      frontmatter: {
+      frontmatter: RecordInfo & {
         title: string;
         slug: string;
-        coverImage: string
       }
       html: string;
     }
   }
 }
+
+const Record = ({ title, info }: { title: string, info: RecordInfo }) => (
+  <Item.Group>
+    <Item>
+      <Item.Image src={demo} />
+      <Item.Content>
+        <Item.Header>{title}</Item.Header>
+        <Item.Meta>编号:{info.recordNo}</Item.Meta>
+        <Item.Meta>艺术家:岡崎律子</Item.Meta>
+        <Item.Meta>唱片类型:{info.recordType}</Item.Meta>
+        <Item.Meta>发售日期:{info.recordReleaseDate}</Item.Meta>
+        <Item.Meta>发行商:{info.recordPublisher}</Item.Meta>
+        {info.recordPrice && <Item.Meta>售价:{info.recordPrice}</Item.Meta>}
+        <Item.Description>
+        </Item.Description>
+      </Item.Content>
+    </Item>
+  </Item.Group>
+)
 
 class RecordTemplate extends Component<TemplateProps> {
 
@@ -37,30 +64,14 @@ class RecordTemplate extends Component<TemplateProps> {
 
   render() {
     const { markdownRemark } = this.props.data; // data.markdownRemark holds your post data
-    const { frontmatter: { title, slug, coverImage }, html } = markdownRemark
-
-
+    const { frontmatter, html } = markdownRemark
+    const { title, slug } = frontmatter;
     return (
       <Layout path={slug}>
         <SEO title={title} />
         <Grid>
           <Grid.Column width={16} mobile={16} computer={11} tablet={11}>
-            <Item.Group>
-              <Item>
-                <Item.Image src={demo} />
-                <Item.Content>
-                  <Item.Header>{title}</Item.Header>
-                  <Item.Meta>编号:TACX-2391</Item.Meta>
-                  <Item.Meta>艺术家:岡崎律子</Item.Meta>
-                  <Item.Meta>唱片类型:Album</Item.Meta>
-                  <Item.Meta>发售日期:1993.03.24</Item.Meta>
-                  <Item.Meta>发行商:TAURUS RECORDS</Item.Meta>
-                  <Item.Meta>售价:2,913円</Item.Meta>
-                  <Item.Description>
-                  </Item.Description>
-                </Item.Content>
-              </Item>
-            </Item.Group>
+            <Record title={title} info={frontmatter} />
             <h1>简介</h1>
             <div
               className="blog-post-content"
@@ -89,6 +100,11 @@ export const pageQuery = graphql`
         slug
         title
         coverImage
+        recordNo
+        recordPrice
+        recordPublisher
+        recordType
+        recordReleaseDate
       }
     }
   }

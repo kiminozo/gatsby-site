@@ -10,7 +10,6 @@ import { WindowLocation } from "@reach/router"
 
 import logo from "../assets/logo.jpg"
 import _ from "lodash";
-import { dir } from "console"
 
 
 type Props = {

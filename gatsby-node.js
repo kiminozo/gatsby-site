@@ -28,6 +28,15 @@ const createPages = async (createPage, graphql, reporter) => {
       }
     }
   }
+  records:allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, limit: 1000, filter: {frontmatter: {type: {eq: "record"}}}) {
+    edges {
+      node {
+        frontmatter {
+          slug
+        }
+      }
+    }
+  }
   tagsGroup: allMarkdownRemark(limit: 2000) {
         group(field: frontmatter___tags) {
           fieldValue
@@ -69,6 +78,19 @@ const createPages = async (createPage, graphql, reporter) => {
     createPage({
       path: node.frontmatter.slug,
       component: songTemplate,
+      context: {
+        // additional data can be passed via context
+        slug: node.frontmatter.slug,
+      },
+    })
+  })
+
+  const recordTemplate = require.resolve(`./src/templates/RecordTemplate.tsx`)
+  const records = result.data.records.edges;
+  records.forEach(({ node }) => {
+    createPage({
+      path: node.frontmatter.slug,
+      component: recordTemplate,
       context: {
         // additional data can be passed via context
         slug: node.frontmatter.slug,

@@ -85,14 +85,14 @@ const StaffList = ({ staff }: { staff: Staff }) => (
   </List>
 )
 
-const CardExampleGroups = () => (
+const Records = () => (
   <Card.Group doubling>
     {/* <Card image={demo} >
       <Label attached='bottom'>CSS</Label>
     </Card>
 
     <Card image={demo} /> */}
-    <Card>
+    <Card as={Link} to="/discography/sincerely-yours">
       <Image
         src={demo}
       />
@@ -102,7 +102,7 @@ const CardExampleGroups = () => (
       </Card.Content> */}
     </Card>
 
-    <Card>
+    <Card as={Link} to="/discography/rain-or-shine">
       <Image
         src={demo}
       />
@@ -157,13 +157,11 @@ class SongTemplatePage extends Component<TemplateProps, TemplateState> {
 
               </Grid>
 
-              {/* <Divider vertical>翻译</Divider> */}
-
             </Segment>
 
           </Grid.Column>
           <Grid.Column width={16} mobile={16} computer={3} tablet={16}>
-            <CardExampleGroups />
+            <Records />
           </Grid.Column>
         </Grid>
       </Layout >
@@ -184,7 +182,7 @@ export const pageQuery = graphql`
     slug
     title
     license {
-            type
+        type
         author
         translator
         reproduced_url

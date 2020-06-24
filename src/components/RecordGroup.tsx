@@ -7,50 +7,22 @@ import {
     Button, Card, Image, Label, Item, List
 } from 'semantic-ui-react'
 import _ from "lodash";
+import { useRecordsData } from "../hooks/useRecordsData"
+
 import demo from "../images/demo.png"
 
 type Props = {
     discographyId: string[];
 }
-interface Data {
-    records: {
-        edges: {
-            node: {
-                frontmatter: {
-                    id: string
-                    title: string
-                    coverImage: string
-                    slug: string
-                }
-            }
-        }[]
-    }
-}
+
 
 const RecordGroup = (props: Props) => {
     const { discographyId } = props;
 
-    const data = useStaticQuery<Data>(graphql`
-      {
-        records: allMarkdownRemark(filter: 
-          {frontmatter: {type: {eq: "record"}}}) {
-          edges {
-              node {
-               frontmatter {
-                id
-                title
-                coverImage
-                slug
-              }
-            }
-          }
-         }
-      }
-    `)
-    console.log(data.records.edges.length);
+    const records = useRecordsData();
+
     //return <div></div>
-    const list = data.records.edges.filter(p => discographyId.indexOf(p.node.frontmatter.id) >= 0)
-        .map(p => p.node.frontmatter);
+    const list = records.filter(p => discographyId.indexOf(p.id) >= 0);
     return (
         <Card.Group doubling>
             {list.map(item => (

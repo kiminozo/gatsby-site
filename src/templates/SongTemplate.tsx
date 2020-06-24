@@ -6,25 +6,31 @@ import CC, { License } from "../components/CC"
 
 import {
   Icon, Grid, Header, Container, Segment, Divider, Responsive,
-  Button, Card, Image, Label
+  Button, Card, Image, Label, Item, List
 } from 'semantic-ui-react'
 import _ from "lodash";
 
 
 import demo from "../images/demo.png"
 // this prop will be injected by the GraphQL query below.
+interface Staff {
+  songWriter: string[];
+  lyricWriter: string[];
+  singer: string[];
+  arranger: string[];
+}
+
+interface Record {
+  discography: string[];
+  discographyId: string[];
+}
+
 type MarkdownRemark = {
-  frontmatter: {
+  frontmatter: Staff & Record & {
     title: string;
     slug: string;
     date: string;
     lang: string;
-    discography: string[];
-    discographyId: string[];
-    songWriter: string[];
-    lyricWriter: string[];
-    singer: string[];
-    arranger: string[];
     license?: License
   }
   html: string;
@@ -60,6 +66,24 @@ function split(html: string): Translator {
   }
 }
 
+const StaffLink = ({ type, names }: { type: string, names: string[] }) => (
+  <>
+    {
+      names.map((name, i) => (
+        <Link to={`/${type}/${name}`}>{name}</Link>
+      ))
+    }
+  </>
+)
+
+const StaffList = ({ staff }: { staff: Staff }) => (
+  <List horizontal >
+    <List.Item ><b>作曲</b> <StaffLink type="song-writer" names={staff.songWriter} /> </List.Item>
+    <List.Item><b>作词</b> <StaffLink type="lyric-writer" names={staff.lyricWriter} /></List.Item>
+    <List.Item><b>演唱</b> <StaffLink type="singer" names={staff.singer} /></List.Item>
+    <List.Item><b>编曲</b> <StaffLink type="arranger" names={staff.arranger} /></List.Item>
+  </List>
+)
 
 const CardExampleGroups = () => (
   <Card.Group doubling>
@@ -68,7 +92,6 @@ const CardExampleGroups = () => (
     </Card>
 
     <Card image={demo} /> */}
-
     <Card>
       <Image
         src={demo}
@@ -97,61 +120,6 @@ class SongTemplatePage extends Component<TemplateProps, TemplateState> {
     this.state = { activeId: "" }
   }
 
-  // renderMobile(title: string, jpHtml: string, zhHtml: string) {
-  //   return (
-  //     <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
-  //       <Grid container>
-  //         <Grid.Column>
-  //           <Header as="h1">{title}</Header>
-  //           <div
-  //             className="song-content"
-  //             dangerouslySetInnerHTML={{ __html: jpHtml }}
-  //           />
-  //           <Divider horizontal >翻译</Divider>
-  //           <div
-  //             className="song-content-zh"
-  //             dangerouslySetInnerHTML={{ __html: zhHtml }}
-  //           />
-  //         </Grid.Column>
-  //       </Grid>
-  //     </Responsive >
-  //   );
-  // }
-
-  // renderDesktop(title: string, jpHtml: string, zhHtml: string) {
-  //   return (
-  //     <Grid  >
-  //       <Grid.Column width={16} mobile={16} computer={16} tablet={16}>
-  //         <Header as="h1">{title}</Header>
-
-  //         <Segment style={{ fontSize: "1.2rem" }}>
-  //           <Grid columns={2} centered stackable>
-  //             <Grid.Column>
-  //               <div
-  //                 className="song-content"
-  //                 dangerouslySetInnerHTML={{ __html: jpHtml }}
-  //               />
-  //             </Grid.Column>
-  //             <Divider vertical>翻译</Divider>
-  //             <Grid.Column>
-  //               <div
-  //                 className="song-content"
-  //                 dangerouslySetInnerHTML={{ __html: zhHtml }}
-  //               />
-
-  //             </Grid.Column>
-
-  //           </Grid>
-
-  //           {/* <Divider vertical>翻译</Divider> */}
-
-  //         </Segment>
-
-  //       </Grid.Column>
-
-  //     </Grid>
-  //   )
-  // }
 
   render() {
     const remark = this.props.data.markdownRemark; // data.markdownRemark holds your post data
@@ -166,9 +134,10 @@ class SongTemplatePage extends Component<TemplateProps, TemplateState> {
     return (
       <Layout path={frontmatter.slug}>
         <SEO title={title} />
-        <Grid  >
+        <Grid>
           <Grid.Column width={16} mobile={16} computer={13} tablet={16}>
             <Header as="h1">{title}</Header>
+            <StaffList staff={frontmatter} />
             <Segment style={{ fontSize: "1.2rem" }}>
               <Grid columns={2} centered stackable>
                 <Grid.Column>
@@ -197,7 +166,7 @@ class SongTemplatePage extends Component<TemplateProps, TemplateState> {
             <CardExampleGroups />
           </Grid.Column>
         </Grid>
-      </Layout>
+      </Layout >
     )
   }
 }
@@ -208,14 +177,14 @@ export default function SongTemplate({ data }: TemplateProps) {
 
 export const pageQuery = graphql`
   query($slug: String!) {
-  markdownRemark(frontmatter: { slug: { eq: $slug } }) {
-    html
+            markdownRemark(frontmatter: {slug: {eq: $slug } }) {
+            html
     frontmatter {
-    date(formatString: "MMMM DD, YYYY")
+            date(formatString: "MMMM DD, YYYY")
     slug
     title
     license {
-        type
+            type
         author
         translator
         reproduced_url

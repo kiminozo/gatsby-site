@@ -1,15 +1,15 @@
 import React, { Component } from "react"
-import { graphql, PageProps, Link } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
 
 import { SEO, Layout } from "../components";
 import CC, { License } from "../components/CC"
+import RecordGroup from "../components/RecordGroup"
 
 import {
   Icon, Grid, Header, Container, Segment, Divider, Responsive,
   Button, Card, Image, Label, Item, List
 } from 'semantic-ui-react'
 import _ from "lodash";
-
 
 import demo from "../images/demo.png"
 // this prop will be injected by the GraphQL query below.
@@ -85,32 +85,6 @@ const StaffList = ({ staff }: { staff: Staff }) => (
   </List>
 )
 
-const Records = () => (
-  <Card.Group doubling>
-    {/* <Card image={demo} >
-      <Label attached='bottom'>CSS</Label>
-    </Card>
-
-    <Card image={demo} /> */}
-    <Card as={Link} to="/discography/sincerely-yours">
-      <Image
-        src={demo}
-      />
-      <Label attached='bottom left'>Rain or Shine</Label>
-      {/* <Card.Content>
-        <Card.Header>Rain or Shine</Card.Header>
-      </Card.Content> */}
-    </Card>
-
-    <Card as={Link} to="/discography/rain-or-shine">
-      <Image
-        src={demo}
-      />
-      <Label attached='bottom left'>Rain or Shine</Label>
-
-    </Card>
-  </Card.Group >
-)
 
 class SongTemplatePage extends Component<TemplateProps, TemplateState> {
   headerInfos: HeaderInfo[] = [];
@@ -127,7 +101,7 @@ class SongTemplatePage extends Component<TemplateProps, TemplateState> {
       return;
     }
     const { frontmatter, html } = remark;
-    const { title } = frontmatter;
+    const { title, discographyId } = frontmatter;
 
     const { jp, cn } = split(html);
 
@@ -161,7 +135,7 @@ class SongTemplatePage extends Component<TemplateProps, TemplateState> {
 
           </Grid.Column>
           <Grid.Column width={16} mobile={16} computer={3} tablet={16}>
-            <Records />
+            <RecordGroup discographyId={discographyId} />
           </Grid.Column>
         </Grid>
       </Layout >

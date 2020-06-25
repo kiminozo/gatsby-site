@@ -43,6 +43,8 @@ I'll fly to baby.
   
 ★ Repeat × 2   
   
+  <!-- 翻译 -->
+
 ★ Would you call me if you need my love?   
 无论你身在何方我都会听见  
 你所给我的 Agapé   

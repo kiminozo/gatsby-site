@@ -57,6 +57,8 @@ it's birhday night
   
 ◆ Repeat  
   
+  <!-- 翻译 -->
+
 特别的夜晚　此刻将降临我身  
 let's have some fun (让我们尽情欢乐)  
 feel every love (用心感受每份爱)  

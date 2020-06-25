@@ -45,6 +45,8 @@ White Land
 （Merry Christmas to You...   
 It's my life ... ）  
   
+  <!-- 翻译 -->
+
 背靠着若有所待的牆壁　已经懒得再瞄时钟   
 期待与失落　反覆交错的１２月   
   

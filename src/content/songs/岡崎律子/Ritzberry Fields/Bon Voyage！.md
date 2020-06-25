@@ -45,6 +45,8 @@ license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.
   
 <span style="color: #008080;">● ミンキーモモ「旅立ちの駅」より ● Welcome to Ritzberry Fields!</span>  
   
+  <!-- 翻译 -->
+
 （若你想念你的梦想 ）  
 美梦成真的瞬间　搞不好就在今天  
 你不妨如此相信   

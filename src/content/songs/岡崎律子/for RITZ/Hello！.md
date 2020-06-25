@@ -50,6 +50,8 @@ license: {}
 どこまでも行けそう   
 Like a bird, I will fly to you   
   
+  <!-- 翻译 -->
+
 迷路在没有地图的街上   
 冰冷指尖无法动弹 是啊 来歌唱吧   
   

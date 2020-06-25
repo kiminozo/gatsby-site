@@ -58,6 +58,8 @@ license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.
   
 生きてゆくしかないの  
   
+  <!-- 翻译 -->
+
 暗夜　月光   
 在我独自远眺的夜色彼端   
   

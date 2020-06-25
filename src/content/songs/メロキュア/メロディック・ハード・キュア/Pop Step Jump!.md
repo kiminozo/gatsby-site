@@ -42,6 +42,8 @@ license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.
   
 ★ Repeat  
   
+  <!-- 翻译 -->
+
 犹如横越窗外蓝天的飞机一般  
 我做过好多飞翔的梦  
 飞得又高又远　无远弗届  

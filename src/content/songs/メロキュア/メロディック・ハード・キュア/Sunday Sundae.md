@@ -38,6 +38,8 @@ Break this silence, please
   
 Now I need you.  
   
+  <!-- 翻译 -->
+
 I just wanna be with you on Sunday (星期天我只想跟你腻在一块儿)  
 我恋爱了　Sunday　也是我所梦想的　Sunday   
 Don't let me leave alone (别丢下我一人)  

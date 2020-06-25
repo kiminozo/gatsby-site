@@ -18,6 +18,8 @@ Welcome to Ritzberry Fields
 Hello hello good day   
 Welcome to Ritzberry Fields  
   
+  <!-- 翻译 -->
+
 欢迎来到Ritzberry Fields   
 哈喽哈喽　美好的一天   
 欢迎来到Ritzberry Fields

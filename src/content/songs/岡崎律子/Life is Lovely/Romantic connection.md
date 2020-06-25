@@ -41,6 +41,8 @@ license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.
 明日などいらない　今　時を止めて   
 今　この Romance に飛びこんできて  
   
+  <!-- 翻译 -->
+
 那时我真的好希望　能在你身边多待一会儿  
 满天繁星的归途　实在太短了啦  
   

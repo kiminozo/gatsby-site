@@ -41,6 +41,8 @@ license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.
   
 ● 愛天使伝説ウエディングピーチ より ● 今はどの辺りだろう 立ち止まる時あり　つっ走る時があり 未来へ向かっている  
   
+  <!-- 翻译 -->
+
 现在的 Lucky　要好好珍惜　为了让 Happy 源源不绝   
 认真过日子吧   
   

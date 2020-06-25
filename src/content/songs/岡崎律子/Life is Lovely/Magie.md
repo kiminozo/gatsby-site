@@ -42,6 +42,8 @@ license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.
 それは夢じゃない   
 愛の Myster  
   
+  <!-- 翻译 -->
+
 所谓的未来　只是一面反映你心灵的镜子  
 不知不觉间就变成人们所说的 “预言” 了   
   

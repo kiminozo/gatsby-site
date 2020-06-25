@@ -33,6 +33,8 @@ license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.
 そっと瞼にキス   
 …and "Sweet dreams"  
   
+  <!-- 翻译 -->
+
 夜幕已垂  
 星星飞降的天空  
 肩倚着肩好 sweet (甜蜜)  

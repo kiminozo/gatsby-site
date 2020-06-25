@@ -41,6 +41,8 @@ Time is now
   
 ★ Repeat × 4   
   
+  <!-- 翻译 -->
+
 ★ Would you call me if you need my love (若需要我的爱时就喊我好吗)?  
 无论你身在何方我都会听见  
 你所给我的 Agapé   

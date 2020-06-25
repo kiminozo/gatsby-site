@@ -42,6 +42,8 @@ license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.
 知っていたのに　なぜ   
 私にはその覚悟がなくて  
   
+  <!-- 翻译 -->
+
 走在春风徐徐吹来的路上  
 一想起你　尽是甜蜜的记忆  
   

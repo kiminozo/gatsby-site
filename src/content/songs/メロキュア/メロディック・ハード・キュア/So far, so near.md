@@ -50,6 +50,8 @@ maybe it can be so near ★
   
 ★ Repeat  
   
+  <!-- 翻译 -->
+
 我们所能看见的一切  
 现在　就在这儿  
 在无人能洞悉的深处  

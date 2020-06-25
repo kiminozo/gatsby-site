@@ -45,6 +45,8 @@ license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.
 苦しみも幸せも秘密も　だから　なげないで抱きしめていこう　ずっと   
 It's My Life だから  
   
+<!-- 翻译 -->
+
 看吧　就算再回头张望　也已经不在了呀   
 "时机这玩意儿　就是这麽回事"   
 即使周围的人如此鼓吹　还是有无法付诸行动的时候   

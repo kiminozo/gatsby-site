@@ -18,7 +18,7 @@ license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.
 最終が出たあとの　誰もいないホームに   
 二人だけの靴音がとまどうように響いて   
   
-Don\\'t tell me why   
+Don't tell me why   
 All for love   
 風も止まる Starry Night   
   
@@ -26,12 +26,14 @@ Step に腰かけて　夜明けまでこのまま
 いつもならのみこんだ　言葉さえこぼれるの   
 本当に好きもしも時が止まるのなら　今がいい   
   
-Don\\'t ask me why   
+Don't ask me why   
 All for love   
 二人きりね Starry Night   
   
 ......I love you   
 街も眠る Starry Night  
+
+<!-- 翻译 -->
   
 从我们并肩漫步的街道　看得到车站的灯光哇   
 末班电车开出之后　在空无一人的月台上   

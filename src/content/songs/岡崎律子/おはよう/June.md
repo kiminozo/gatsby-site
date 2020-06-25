@@ -36,6 +36,8 @@ license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.
 どうしても泣きたくなる時には あなたを思って　  
 心ふるい立たせる それが約束と思うから  
   
+  <!-- 翻译 -->
+
 六月的霪雨霏霏　让我不由得眷恋起你   
 你的声音　手指和头髮　  
 所有的都令我着迷不已   

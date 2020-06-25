@@ -38,6 +38,8 @@ license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.
   
 ★ Repeat  
   
+  <!-- 翻译 -->
+
 今年入冬以来第一次穿上外套　出门去吧  
 比其他任何人都更早  
 今天故意将手套忘在家裡  

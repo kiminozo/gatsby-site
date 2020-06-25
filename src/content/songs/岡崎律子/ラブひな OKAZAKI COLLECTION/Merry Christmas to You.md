@@ -50,6 +50,8 @@ license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.
   
 （I wish you a merry Christmas）  
   
+  <!-- 翻译 -->
+
 像这样的下雪之夜还把你叫出来　真不好意思   
 一盏两盏渐渐熄灭的城市灯火　真美   
   

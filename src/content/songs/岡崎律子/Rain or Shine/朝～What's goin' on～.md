@@ -24,6 +24,8 @@ license: {type: "translated",translator: "loverritz"}
 でもね　愛してるあの人が見ててくれる  
 そう思えば　Um…　 がんばれる  
   
+  <!-- 翻译 -->
+
 What's goin' on  
 陽気に　声をかわして　今日も始めよう  
 What's goin' on　  

@@ -15,8 +15,11 @@ export interface StaffInfo {
 export const StaffLink = ({ type, names }: { type: string, names: string[] }) => (
     <>
         {
-            names.map((name, i) => (
-                <Link to={`/${type}/${name}`}>{name}</Link>
+            names.map((name, i, { length }) => (
+                <>
+                    <Link to={`/${type}/${name}`}>{name}</Link>
+                    {i != length - 1 ? " " : null}
+                </>
             ))
         }
     </>

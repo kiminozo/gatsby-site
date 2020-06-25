@@ -11,7 +11,7 @@ interface Props {
 const CoverImage = ({ coverImage }: Props) => {
   const data = useCoverImagesData();
   const imageInfo = data.filter(p => p.base === coverImage)[0];
-  console.log(imageInfo);
+  //console.log(imageInfo);
   if (imageInfo) {
     return imageInfo.image ?
       <Img fluid={imageInfo.image.fluid} />

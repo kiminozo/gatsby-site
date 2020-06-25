@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { graphql, Link } from "gatsby"
 
-import { SEO, Layout, TagsLine } from "../components";
+import { SEO, Layout, TagsLine, CoverImage } from "../components";
 import CC, { License } from "../components/CC"
 
 import {
@@ -38,7 +38,9 @@ type TemplateProps = {
 const Record = ({ title, info }: { title: string, info: RecordInfo }) => (
   <Item.Group>
     <Item>
-      <Item.Image src={demo} />
+      <Item.Image>
+        <CoverImage coverImage={info.coverImage} />
+      </Item.Image>
       <Item.Content>
         <Item.Header>{title}</Item.Header>
         <Item.Meta>编号:{info.recordNo}</Item.Meta>

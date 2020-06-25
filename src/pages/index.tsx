@@ -1,14 +1,29 @@
 import React from "react"
-import { Link, PageProps } from "gatsby"
-import { Card, Icon, Image, Button, Grid, Divider, Header, List, Container } from 'semantic-ui-react'
+import { Link, PageProps, graphql } from "gatsby"
+import { Card, Icon, Image, Label, Button, Grid, Divider, Header, List, Container } from 'semantic-ui-react'
 
-import { SEO, Layout } from "../components";
+import { SEO, Layout, CoverImage } from "../components";
 import AvatarImage from "../components/AvatarImage";
 
 //import logo from "../images/avatar/steps.jpg"
 import demo from "../images/demo.png"
 
 import "./index.sass"
+interface Record {
+  coverImage: string
+  title: string
+  slug: string
+}
+
+interface Props extends PageProps {
+  data: {
+    records: {
+      nodes: {
+        frontmatter: Record
+      }[]
+    }
+  }
+}
 
 const RitzCard = () => (
   <Card centered>
@@ -43,24 +58,22 @@ const RitzCard = () => (
 )
 
 
-const AlbumCard = () => (
+const AlbumCard = ({ records }: { records: Record[] }) => (
   <Card.Group itemsPerRow={6} doubling>
-    <Card image={demo} />
-    <Card image={demo} />
-    <Card image={demo} />
-    <Card image={demo} />
-    <Card image={demo} />
-    <Card image={demo} />
-    <Card image={demo} />
-    <Card image={demo} />
-    <Card image={demo} />
-    <Card image={demo} />
-    <Card image={demo} />
-    <Card image={demo} />
+    {records.map(item =>
+      (
+        <Card as={Link} key={item.title} to={item.slug}>
+          <CoverImage key={item.title} coverImage={item.coverImage} />
+          {/* <Label attached='bottom left'>{item.title}</Label> */}
+        </Card>
+      )
+    )}
+    {/* <Card image={demo} />
+    <Card image={demo} />*/}
   </Card.Group>
 )
 
-const IndexPage = (props: PageProps) => (
+const IndexPage = (props: Props) => (
   <Layout path={props.location.pathname}>
     <SEO title="Home" />
     <Grid>
@@ -99,7 +112,7 @@ const IndexPage = (props: PageProps) => (
         </List>
         <Divider />
         <Header as='h2' content="唱片集" />
-        <AlbumCard />
+        <AlbumCard records={props.data.records.nodes.map(p => p.frontmatter)} />
         <Divider hidden />
 
         <Button as={Link} to="/biography" icon labelPosition='right'>
@@ -113,3 +126,19 @@ const IndexPage = (props: PageProps) => (
 )
 
 export default IndexPage
+
+export const query = graphql`
+  {
+    records:allMarkdownRemark(filter: {frontmatter: {id: {in: ["sincerely-yours","joyful-calendar", "a-happy-life",
+    "ritzberry-fields","rain-or-shine","ohayou","lovehina-okazaki-collection","life-is-lovely","for-ritz",
+    "love-and-life","morning-grace","melodic-hard-cure"]}, type: {eq: "record"}}}, sort: {fields: frontmatter___order}) {
+      nodes {
+        frontmatter {
+          coverImage
+          title
+          slug
+        }
+      }
+    }
+  }
+`

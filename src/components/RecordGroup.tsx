@@ -8,6 +8,8 @@ import {
 } from 'semantic-ui-react'
 import _ from "lodash";
 import { useRecordsData } from "../hooks/useRecordsData"
+import CoverImage from './CoverImage'
+
 
 import demo from "../images/demo.png"
 
@@ -26,10 +28,8 @@ const RecordGroup = (props: Props) => {
     return (
         <Card.Group doubling>
             {list.map(item => (
-                <Card as={Link} to={item.slug}>
-                    <Image
-                        src={demo}
-                    />
+                <Card as={Link} key={item.id} to={item.slug}>
+                    <CoverImage key={item.id} coverImage={item.coverImage} />
                     <Label attached='bottom left'>{item.title}</Label>
                 </Card>
             ))

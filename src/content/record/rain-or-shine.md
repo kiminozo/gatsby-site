@@ -10,7 +10,7 @@ recordPublisher: "NU TAURUS"
 recordType: "5th Best Album"
 order: 5
 slug: "discography/rain-or-shine"
-coverImage: "tacp1008.gif"
+coverImage: "tacp1008.jpg"
 ---
 
 新曲２曲を含む、初のベスト盤。 私はだんだん明るさや強さも知ってきているけれど、 「愛してほしくて」の切なさや胸いっぱいのくるおしさは、 きっといつまでも変わらないでしょう。  

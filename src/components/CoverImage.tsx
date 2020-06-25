@@ -15,7 +15,7 @@ const CoverImage = ({ coverImage }: Props) => {
   if (imageInfo) {
     return imageInfo.image ?
       <Img fluid={imageInfo.image.fluid} />
-      : <Image src={imageInfo.publicURL} ></Image>
+      : <Image src={imageInfo.publicURL} />
   }
   return <Image src={demo} ></Image>
 }

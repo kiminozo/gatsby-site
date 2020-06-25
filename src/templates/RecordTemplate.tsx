@@ -21,9 +21,6 @@ type RecordInfo = {
 }
 
 interface TemplateProps {
-  pageContext: {
-    //    slug: string;
-  }
   data: {
     record: {
       frontmatter: RecordInfo & {
@@ -73,7 +70,6 @@ class RecordTemplate extends Component<TemplateProps> {
 
 
   render() {
-    console.log(this.props)
     const { record: { frontmatter, html }, songs: { nodes } } = this.props.data; // data.markdownRemark holds your post data
     const { title, slug } = frontmatter;
     const songs = nodes.map(p => p.frontmatter)
@@ -117,8 +113,8 @@ class RecordTemplate extends Component<TemplateProps> {
   }
 }
 
-export default function Template({ pageContext, data }: TemplateProps) {
-  return (<RecordTemplate pageContext={pageContext} data={data} />)
+export default function Template({ data }: TemplateProps) {
+  return (<RecordTemplate data={data} />)
 }
 
 

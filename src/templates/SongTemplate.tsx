@@ -4,7 +4,7 @@ import { graphql, useStaticQuery, Link } from "gatsby"
 import { SEO, Layout } from "../components";
 import CC, { License } from "../components/CC"
 import RecordGroup from "../components/RecordGroup"
-
+import StaffList, { StaffInfo } from '../components/StaffList'
 import {
   Icon, Grid, Header, Container, Segment, Divider, Responsive,
   Button, Card, Image, Label, Item, List
@@ -13,20 +13,15 @@ import _ from "lodash";
 
 import demo from "../images/demo.png"
 // this prop will be injected by the GraphQL query below.
-interface Staff {
-  songWriter: string[];
-  lyricWriter: string[];
-  singer: string[];
-  arranger: string[];
-}
+
 
 interface Record {
   discography: string[];
   discographyId: string[];
 }
 
-type MarkdownRemark = {
-  frontmatter: Staff & Record & {
+interface MarkdownRemark {
+  frontmatter: StaffInfo & Record & {
     title: string;
     slug: string;
     date: string;
@@ -36,19 +31,10 @@ type MarkdownRemark = {
   html: string;
 }
 
-type TemplateProps = {
+interface TemplateProps {
   data: {
     markdownRemark: MarkdownRemark
   }
-}
-
-type TemplateState = {
-  activeId: string
-}
-
-type HeaderInfo = {
-  id: string;
-  offset: number;
 }
 
 const splitKey = /<\!--\s+翻译\s+-->/g
@@ -66,28 +52,7 @@ function split(html: string): Translator {
   }
 }
 
-const StaffLink = ({ type, names }: { type: string, names: string[] }) => (
-  <>
-    {
-      names.map((name, i) => (
-        <Link to={`/${type}/${name}`}>{name}</Link>
-      ))
-    }
-  </>
-)
-
-const StaffList = ({ staff }: { staff: Staff }) => (
-  <List horizontal >
-    <List.Item ><b>作曲</b> <StaffLink type="song-writer" names={staff.songWriter} /> </List.Item>
-    <List.Item><b>作词</b> <StaffLink type="lyric-writer" names={staff.lyricWriter} /></List.Item>
-    <List.Item><b>演唱</b> <StaffLink type="singer" names={staff.singer} /></List.Item>
-    <List.Item><b>编曲</b> <StaffLink type="arranger" names={staff.arranger} /></List.Item>
-  </List>
-)
-
-
-class SongTemplatePage extends Component<TemplateProps, TemplateState> {
-  headerInfos: HeaderInfo[] = [];
+class SongTemplatePage extends Component<TemplateProps> {
 
   constructor(props: Readonly<TemplateProps>) {
     super(props);

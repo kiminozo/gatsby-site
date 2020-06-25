@@ -2,11 +2,11 @@ import React, { Component } from "react"
 import { graphql, Link } from "gatsby"
 
 import { SEO, Layout, TagsLine, CoverImage } from "../components";
-import CC, { License } from "../components/CC"
+import StaffList, { StaffInfo } from '../components/StaffList'
 
 import {
   Button, Grid, Header, Ref, Segment, Rail, Accordion,
-  Label, Divider, Item
+  Label, Divider, Item, List
 } from 'semantic-ui-react'
 import _ from "lodash";
 import demo from "../images/demo.png"
@@ -20,17 +20,25 @@ type RecordInfo = {
   recordReleaseDate: string;
 }
 
-type TemplateProps = {
+interface TemplateProps {
   pageContext: {
-    slug: string;
+    //    slug: string;
   }
   data: {
-    markdownRemark: {
+    record: {
       frontmatter: RecordInfo & {
         title: string;
         slug: string;
       }
       html: string;
+    }
+    songs: {
+      nodes: {
+        frontmatter: StaffInfo & {
+          title: string;
+          slug: string;
+        }
+      }[]
     }
   }
 }
@@ -65,14 +73,15 @@ class RecordTemplate extends Component<TemplateProps> {
 
 
   render() {
-    const { markdownRemark } = this.props.data; // data.markdownRemark holds your post data
-    const { frontmatter, html } = markdownRemark
+    console.log(this.props)
+    const { record: { frontmatter, html }, songs: { nodes } } = this.props.data; // data.markdownRemark holds your post data
     const { title, slug } = frontmatter;
+    const songs = nodes.map(p => p.frontmatter)
     return (
       <Layout path={slug}>
         <SEO title={title} />
         <Grid>
-          <Grid.Column width={16} mobile={16} computer={11} tablet={11}>
+          <Grid.Column mobile={16} computer={11} tablet={11}>
             <Record title={title} info={frontmatter} />
             <h1>简介</h1>
             <div
@@ -81,8 +90,26 @@ class RecordTemplate extends Component<TemplateProps> {
             />
             <Divider />
             <h1>曲目列表</h1>
+            <List divided relaxed>
+              {songs.map(song =>
+                (
+                  <List.Item >
+                    <List.Icon name="music" size="large" color='blue' />
+                    <List.Content>
+                      <List.Header as="h3">
+                        <Link to={song.slug}>{song.title}</Link>
+                      </List.Header>
+                      <List.Description>
+                        <StaffList staff={song} />
+                      </List.Description>
+                    </List.Content>
+                  </List.Item>
+                ))
+              }
+            </List>
           </Grid.Column>
-          <Grid.Column width={16} mobile={16} computer={5} tablet={5} >
+          <Grid.Column mobile={16} computer={5} tablet={5} >
+
           </Grid.Column>
         </Grid>
       </Layout>
@@ -94,11 +121,13 @@ export default function Template({ pageContext, data }: TemplateProps) {
   return (<RecordTemplate pageContext={pageContext} data={data} />)
 }
 
+
 export const pageQuery = graphql`
-  query($slug: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+  query($id: String!){
+    record: markdownRemark(frontmatter: {id: {eq: $id}}) {
       html
       frontmatter {
+        id
         slug
         title
         coverImage
@@ -107,6 +136,18 @@ export const pageQuery = graphql`
         recordPublisher
         recordType
         recordReleaseDate
+      }
+    }
+    songs: allMarkdownRemark(filter: {frontmatter: {type: {eq: "song"}, discographyId: {glob: "joyful-calendar"}}}, sort: {fields: frontmatter___order}) {
+      nodes {
+        frontmatter {
+          title
+          slug
+          songWriter:songwriter
+          lyricWriter:lyricwriter
+          singer
+          arranger
+        }
       }
     }
   }

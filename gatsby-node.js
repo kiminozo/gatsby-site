@@ -5,6 +5,12 @@
  */
 const _ = require("lodash")
 
+// function getId(path) {
+//   let pathName = path;
+//   const end = pathName.endsWith("/") ? pathName.length - 1 : pathName.length;
+//   const start = pathName.substring(0, end).lastIndexOf('/')
+//   return pathName.substring(start, end);
+// }
 
 const createPages = async (createPage, graphql, reporter) => {
 
@@ -32,6 +38,7 @@ const createPages = async (createPage, graphql, reporter) => {
     edges {
       node {
         frontmatter {
+          id
           slug
         }
       }
@@ -92,8 +99,9 @@ const createPages = async (createPage, graphql, reporter) => {
       path: node.frontmatter.slug,
       component: recordTemplate,
       context: {
+        id: node.frontmatter.id
         // additional data can be passed via context
-        slug: node.frontmatter.slug,
+        //slug: node.frontmatter.slug,
       },
     })
   })

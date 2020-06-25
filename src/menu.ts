@@ -40,10 +40,8 @@ const menusConfig: MenuConfig[] =
         }]
     }, {
         name: "唱片集",
+        active: ["songs"],
         link: "/discography"
-    }, {
-        name: "song-demo",
-        link: "songs/asa-whats-goin-on"
     }];
 
 export { MenuConfig, menusConfig }

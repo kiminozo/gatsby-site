@@ -43,7 +43,8 @@ function isActive(item: MenuConfig, pathName: string): boolean {
       || _.findIndex(item.sub, p => part(p.active)) >= 0
   }
   return item.link === pathName
-    || getPath(item.link) === dir;
+    || getPath(item.link) === dir
+    || part(item.active);
 }
 
 class Header extends React.Component<Props> {

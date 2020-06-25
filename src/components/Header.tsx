@@ -33,7 +33,7 @@ function isActive(item: MenuConfig, pathName: string): boolean {
     _.findIndex(array, x => x === dir) >= 0 : false;
 
   //console.log("dir:" + dir);
-  // console.log(pathName);
+  //console.log(pathName);
   // console.log("getPath:" + getPath("/categories/rain-or-shine"));
 
   // console.log(path === getPath("/categories/rain-or-shine"));

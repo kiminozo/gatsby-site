@@ -2,7 +2,7 @@ import React from "react"
 // Utilities
 import kebabCase from "lodash/kebabCase"
 // Components
-import { Link, graphql } from "gatsby"
+import { Link, graphql, PageProps } from "gatsby"
 import { SEO, Layout, CoverImage } from "../components";
 import {
     Card
@@ -10,7 +10,7 @@ import {
 import { string } from "prop-types";
 
 
-interface PageProps {
+interface Props extends PageProps {
     data: {
         records: {
             nodes: {
@@ -26,12 +26,12 @@ interface PageProps {
 }
 
 
-const DiscographyPage = (props: PageProps) => {
+const DiscographyPage = (props: Props) => {
     const { data: { records: { nodes } } } = props;
     const records = nodes.map(p => p.frontmatter);
     const cardSize = { width: 150, height: 150 };
     return (
-        <Layout>
+        <Layout path={props.location.pathname}>
             <SEO title="唱片集" />
             <div>
                 <h1>唱片集</h1>

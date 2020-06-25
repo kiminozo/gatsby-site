@@ -134,7 +134,7 @@ export const pageQuery = graphql`
         recordReleaseDate
       }
     }
-    songs: allMarkdownRemark(filter: {frontmatter: {type: {eq: "song"}, discographyId: {glob: "joyful-calendar"}}}, sort: {fields: frontmatter___order}) {
+    songs: allMarkdownRemark(filter: {frontmatter: {type: {eq: "song"}, discographyId: {glob: $id}}}, sort: {fields: frontmatter___order}) {
       nodes {
         frontmatter {
           title

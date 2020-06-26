@@ -56,6 +56,30 @@ const createPages = async (createPage, graphql, reporter) => {
       totalCount
     }
   }
+  singers: allMarkdownRemark(limit: 2000) {
+    group(field: frontmatter___singer) {
+      fieldValue
+      totalCount
+    }
+  }
+  songWriters: allMarkdownRemark(limit: 2000) {
+    group(field: frontmatter___songwriter) {
+      fieldValue
+      totalCount
+    }
+  }
+  lyricWriters: allMarkdownRemark(limit: 2000) {
+    group(field: frontmatter___lyricwriter) {
+      fieldValue
+      totalCount
+    }
+  }
+  arrangers: allMarkdownRemark(limit: 2000) {
+    group(field: frontmatter___arranger) {
+      fieldValue
+      totalCount
+    }
+  }
 }
 `)
   // Handle errors
@@ -142,6 +166,51 @@ const createPages = async (createPage, graphql, reporter) => {
     })
   })
 
+
+  const staffTemplate = require.resolve("./src/templates/staff/SingerTemplate.tsx")
+  const singers = result.data.singers.group;
+  singers.forEach(staff => {
+    createPage({
+      path: `/singer/${_.kebabCase(staff.fieldValue)}/`,
+      component: staffTemplate,
+      context: {
+        staff: staff.fieldValue,
+      },
+    })
+  })
+  const lyricWriterTemplate = require.resolve("./src/templates/staff/LyricWriterTemplate.tsx")
+  const lyricWriters = result.data.lyricWriters.group;
+  lyricWriters.forEach(staff => {
+    createPage({
+      path: `/lyric-writer/${_.kebabCase(staff.fieldValue)}/`,
+      component: lyricWriterTemplate,
+      context: {
+        staff: staff.fieldValue,
+      },
+    })
+  })
+  const songWriterTemplate = require.resolve("./src/templates/staff/SongWriterTemplate.tsx")
+  const songWriters = result.data.songWriters.group;
+  songWriters.forEach(staff => {
+    createPage({
+      path: `/song-writer/${_.kebabCase(staff.fieldValue)}/`,
+      component: songWriterTemplate,
+      context: {
+        staff: staff.fieldValue,
+      },
+    })
+  })
+  const arrangerTemplate = require.resolve("./src/templates/staff/ArrangerTemplate.tsx")
+  const arrangers = result.data.arrangers.group;
+  arrangers.forEach(staff => {
+    createPage({
+      path: `/arranger/${_.kebabCase(staff.fieldValue)}/`,
+      component: arrangerTemplate,
+      context: {
+        staff: staff.fieldValue,
+      },
+    })
+  })
 }
 
 

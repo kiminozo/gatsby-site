@@ -9,7 +9,7 @@ singer: ["日高のり子"]
 songwriter: ["岸村正実"]
 lyricwriter: ["岡崎律子"]
 arranger: ["梅村圭"]
-slug: "songs/power-of-love"
+slug: "/songs/power-of-love"
 tags: []
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net",reproduced-website: "織歌蟲"}
 ---

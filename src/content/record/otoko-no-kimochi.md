@@ -9,7 +9,7 @@ recordReleaseDate: "1987.11.21"
 recordPublisher: ""
 recordType: ""
 order: 4905
-slug: "discography/otoko-no-kimochi"
+slug: "/discography/otoko-no-kimochi"
 coverImage: "男の気持わかりたいなら.png"
 ---
 

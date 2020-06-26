@@ -9,7 +9,7 @@ singer: ["岡崎律子"]
 songwriter: ["岡崎律子"]
 lyricwriter: ["岡崎律子"]
 arranger: ["岩本正樹"]
-slug: "songs/life"
+slug: "/songs/life"
 tags: []
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---

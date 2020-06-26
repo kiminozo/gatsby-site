@@ -9,7 +9,7 @@ recordReleaseDate: "1985.05.21"
 recordPublisher: ""
 recordType: ""
 order: 5001
-slug: "discography/candy-game"
+slug: "/discography/candy-game"
 coverImage: "CANDY-GAME.png"
 ---
 

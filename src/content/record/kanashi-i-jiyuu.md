@@ -9,7 +9,7 @@ recordReleaseDate: "1993.03.03"
 recordPublisher: "TAURUS RECORDS"
 recordType: "1st Single"
 order: 21
-slug: "discography/kanashi-i-jiyuu"
+slug: "/discography/kanashi-i-jiyuu"
 coverImage: "1stsg.gif"
 ---
 

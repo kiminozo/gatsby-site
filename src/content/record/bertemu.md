@@ -9,7 +9,7 @@ recordReleaseDate: "1996.11.01"
 recordPublisher: "KING RECORDS"
 recordType: "Album"
 order: 3603
-slug: "discography/bertemu"
+slug: "/discography/bertemu"
 coverImage: "bertemu-burutoumu.jpg"
 ---
 

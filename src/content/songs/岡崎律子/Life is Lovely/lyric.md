@@ -9,7 +9,7 @@ singer: []
 songwriter: ["岡崎律子"]
 lyricwriter: []
 arranger: ["村山達哉"]
-slug: "songs/lyric"
+slug: "/songs/lyric"
 tags: []
 license: {}
 ---

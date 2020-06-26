@@ -9,7 +9,7 @@ recordReleaseDate: "1994.09.16"
 recordPublisher: "TAURUS RECORDS"
 recordType: "3rd Single"
 order: 23
-slug: "discography/choukyoridenwa"
+slug: "/discography/choukyoridenwa"
 ---
 
 

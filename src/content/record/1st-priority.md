@@ -9,7 +9,7 @@ recordReleaseDate: "2003.02.01"
 recordPublisher: "COLUMBIA MUSIC ENTERTAINMENT"
 recordType: "2nd Maxi Single"
 order: 302
-slug: "discography/1st-priority"
+slug: "/discography/1st-priority"
 ---
 
 

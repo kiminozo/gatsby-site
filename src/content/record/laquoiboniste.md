@@ -9,7 +9,7 @@ recordReleaseDate: "1999.12.08"
 recordPublisher: "Mercury Music Entertainment"
 recordType: "7th Single"
 order: 27
-slug: "discography/laquoiboniste"
+slug: "/discography/laquoiboniste"
 ---
 
 

@@ -9,7 +9,7 @@ recordReleaseDate: "1991.07.21"
 recordPublisher: ""
 recordType: ""
 order: 4001
-slug: "discography/message"
+slug: "/discography/message"
 coverImage: "メッセージ.jpg"
 ---
 

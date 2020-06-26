@@ -9,7 +9,7 @@ recordReleaseDate: "1993.03.24"
 recordPublisher: "TAURUS RECORDS"
 recordType: "Album"
 order: 1
-slug: "discography/sincerely-yours"
+slug: "/discography/sincerely-yours"
 coverImage: "sincere.jpg"
 ---
 

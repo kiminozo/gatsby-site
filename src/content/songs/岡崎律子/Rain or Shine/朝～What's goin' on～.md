@@ -9,7 +9,7 @@ singer: ["岡崎律子"]
 songwriter: ["岡崎律子"]
 lyricwriter: ["岡崎律子"]
 arranger: ["京田誠一"]
-slug: "songs/asa-whats-goin-on"
+slug: "/songs/asa-whats-goin-on"
 tags: []
 license: {type: "translated",translator: "loverritz"}
 ---
@@ -24,8 +24,6 @@ license: {type: "translated",translator: "loverritz"}
 でもね　愛してるあの人が見ててくれる  
 そう思えば　Um…　 がんばれる  
   
-  <!-- 翻译 -->
-
 What's goin' on  
 陽気に　声をかわして　今日も始めよう  
 What's goin' on　  

@@ -9,7 +9,7 @@ singer: ["メロキュア"]
 songwriter: ["岡崎律子"]
 lyricwriter: ["岡崎律子"]
 arranger: ["西脇辰弥"]
-slug: "songs/so-far-so-near"
+slug: "/songs/so-far-so-near"
 tags: []
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---

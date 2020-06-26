@@ -9,7 +9,7 @@ recordReleaseDate: "1997.11.24"
 recordPublisher: "NU TAURUS"
 recordType: "6th Single"
 order: 26
-slug: "discography/rain-or-shine-single"
+slug: "/discography/rain-or-shine-single"
 ---
 
 

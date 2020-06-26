@@ -9,7 +9,7 @@ recordReleaseDate: "2003.10.22"
 recordPublisher: "COLUMBIA MUSIC ENTERTAINMENT"
 recordType: "3rd Maxi Single"
 order: 303
-slug: "discography/meguri-ai"
+slug: "/discography/meguri-ai"
 ---
 
 

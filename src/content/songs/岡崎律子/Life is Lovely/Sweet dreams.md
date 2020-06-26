@@ -9,7 +9,7 @@ singer: ["岡崎律子"]
 songwriter: ["岡崎律子"]
 lyricwriter: ["岡崎律子"]
 arranger: ["村山達哉"]
-slug: "songs/sweet-dreams"
+slug: "/songs/sweet-dreams"
 tags: []
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---

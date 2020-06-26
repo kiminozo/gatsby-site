@@ -9,7 +9,7 @@ recordReleaseDate: "1994.07.02"
 recordPublisher: "KING RECORDS"
 recordType: "Album"
 order: 3602
-slug: "discography/sphere"
+slug: "/discography/sphere"
 coverImage: "sphere.jpg"
 ---
 

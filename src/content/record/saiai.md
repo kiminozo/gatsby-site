@@ -9,7 +9,7 @@ recordReleaseDate: "1994.02.23"
 recordPublisher: "TAURUS RECORDS"
 recordType: "2nd Single"
 order: 22
-slug: "discography/saiai"
+slug: "/discography/saiai"
 ---
 
 

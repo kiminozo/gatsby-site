@@ -9,7 +9,7 @@ recordReleaseDate: "2004.07.22"
 recordPublisher: ""
 recordType: ""
 order: 4500
-slug: "discography/yu-me-no-chi-ka-ra"
+slug: "/discography/yu-me-no-chi-ka-ra"
 coverImage: "ユ・メ・ノ・チ・カ・ラ.jpg"
 ---
 

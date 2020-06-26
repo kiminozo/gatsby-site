@@ -9,7 +9,7 @@ singer: ["メロキュア"]
 songwriter: ["日向めぐみ"]
 lyricwriter: ["日向めぐみ"]
 arranger: ["Papa Daisuke"]
-slug: "songs/birthday-girl"
+slug: "/songs/birthday-girl"
 tags: []
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---

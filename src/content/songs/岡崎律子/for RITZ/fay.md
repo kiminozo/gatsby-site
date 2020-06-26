@@ -9,7 +9,7 @@ singer: ["岡崎律子"]
 songwriter: ["岡崎律子"]
 lyricwriter: ["岡崎律子"]
 arranger: ["長谷川智樹"]
-slug: "songs/fay"
+slug: "/songs/fay"
 tags: []
 license: {}
 ---

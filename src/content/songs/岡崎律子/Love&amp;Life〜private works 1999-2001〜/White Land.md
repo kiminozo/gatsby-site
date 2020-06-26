@@ -9,7 +9,7 @@ singer: ["岡崎律子"]
 songwriter: ["岡崎律子"]
 lyricwriter: ["岡崎律子"]
 arranger: ["蓮沼健介"]
-slug: "songs/white-land"
+slug: "/songs/white-land"
 tags: []
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---

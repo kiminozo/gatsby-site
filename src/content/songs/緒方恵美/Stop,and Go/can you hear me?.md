@@ -9,7 +9,7 @@ singer: ["緒方恵美"]
 songwriter: ["岡崎律子"]
 lyricwriter: ["岡崎律子"]
 arranger: ["AKIO"]
-slug: "songs/can-you-hear-me"
+slug: "/songs/can-you-hear-me"
 tags: []
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net",reproduced-website: "織歌蟲"}
 ---

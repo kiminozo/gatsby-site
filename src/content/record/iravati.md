@@ -9,7 +9,7 @@ recordReleaseDate: "1997.08.06"
 recordPublisher: "KING RECORDS"
 recordType: "Album"
 order: 3606
-slug: "discography/iravati"
+slug: "/discography/iravati"
 coverImage: "iravati.jpg"
 ---
 

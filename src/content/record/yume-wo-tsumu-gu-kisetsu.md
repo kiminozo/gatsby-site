@@ -9,7 +9,7 @@ recordReleaseDate: "1991.08.05"
 recordPublisher: ""
 recordType: ""
 order: 5002
-slug: "discography/yume-wo-tsumu-gu-kisetsu"
+slug: "/discography/yume-wo-tsumu-gu-kisetsu"
 coverImage: "夢を紡ぐ季節.png"
 ---
 

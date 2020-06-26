@@ -9,7 +9,7 @@ recordReleaseDate: "1999.04.21"
 recordPublisher: "meldac"
 recordType: "Album"
 order: 3901
-slug: "discography/nonko"
+slug: "/discography/nonko"
 coverImage: "NONKO.jpg"
 ---
 

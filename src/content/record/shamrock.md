@@ -9,7 +9,7 @@ recordReleaseDate: "1993.08.21"
 recordPublisher: "KING RECORDS"
 recordType: "Album"
 order: 3601
-slug: "discography/shamrock"
+slug: "/discography/shamrock"
 coverImage: "shamrock.jpg"
 ---
 

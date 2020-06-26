@@ -9,7 +9,7 @@ singer: ["井上喜久子"]
 songwriter: ["岡崎律子"]
 lyricwriter: ["岡崎律子"]
 arranger: ["島健"]
-slug: "songs/shall-we-step-in-the-rain"
+slug: "/songs/shall-we-step-in-the-rain"
 tags: []
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net",reproduced-website: "織歌蟲"}
 ---

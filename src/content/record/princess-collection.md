@@ -9,7 +9,7 @@ recordReleaseDate: "1992-04-22"
 recordPublisher: ""
 recordType: ""
 order: 4902
-slug: "discography/princess-collection"
+slug: "/discography/princess-collection"
 coverImage: "Princess-Collection.jpg"
 ---
 

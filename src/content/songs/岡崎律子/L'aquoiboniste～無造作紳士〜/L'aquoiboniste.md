@@ -9,7 +9,7 @@ singer: ["岡崎律子"]
 songwriter: ["Serge Gainsbourg"]
 lyricwriter: ["Serge Gainsbourg"]
 arranger: ["門倉聡"]
-slug: "songs/laquoiboniste"
+slug: "/songs/laquoiboniste"
 tags: []
 license: {}
 ---

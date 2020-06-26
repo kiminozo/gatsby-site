@@ -9,7 +9,7 @@ recordReleaseDate: "2003.07.02"
 recordPublisher: ""
 recordType: "Album"
 order: 3301
-slug: "discography/stop-and-go"
+slug: "/discography/stop-and-go"
 coverImage: "stop-and-go.jpg"
 ---
 

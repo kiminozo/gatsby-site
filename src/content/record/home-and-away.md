@@ -9,7 +9,7 @@ recordReleaseDate: "2005.08.27"
 recordPublisher: "COLUMBIA MUSIC ENTERTAINMENT"
 recordType: "Maxi Single"
 order: 305
-slug: "discography/home-and-away"
+slug: "/discography/home-and-away"
 ---
 
 

@@ -9,7 +9,7 @@ singer: ["伊藤敏博"]
 songwriter: ["森野律"]
 lyricwriter: ["伊藤敏博"]
 arranger: ["山本健司"]
-slug: "songs/love-bird"
+slug: "/songs/love-bird"
 tags: []
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net",reproduced-website: "織歌蟲"}
 ---

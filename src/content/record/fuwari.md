@@ -9,7 +9,7 @@ recordReleaseDate: "1999.10.27"
 recordPublisher: "KING RECORDS"
 recordType: "Album"
 order: 3604
-slug: "discography/fuwari"
+slug: "/discography/fuwari"
 coverImage: "fuwari.jpg"
 ---
 

@@ -9,7 +9,7 @@ singer: ["小森まなみ"]
 songwriter: ["池間史規"]
 lyricwriter: ["小森まなみ"]
 arranger: ["池間史規"]
-slug: "songs/i-love-you"
+slug: "/songs/i-love-you"
 tags: []
 license: {}
 ---

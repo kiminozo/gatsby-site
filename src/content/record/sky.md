@@ -9,7 +9,7 @@ recordReleaseDate: "2003.07.24"
 recordPublisher: "KING RECORDS"
 recordType: "Album"
 order: 3501
-slug: "discography/sky"
+slug: "/discography/sky"
 coverImage: "sky.jpg"
 ---
 

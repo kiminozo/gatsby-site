@@ -9,7 +9,7 @@ singer: ["小森まなみ"]
 songwriter: ["岡崎律子"]
 lyricwriter: ["小森まなみ"]
 arranger: ["丸尾めぐみ"]
-slug: "songs/happy-happy-birthday"
+slug: "/songs/happy-happy-birthday"
 tags: []
 license: {}
 ---

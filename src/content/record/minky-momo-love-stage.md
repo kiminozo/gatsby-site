@@ -9,7 +9,7 @@ recordReleaseDate: "1993.03.05"
 recordPublisher: "KING RECORDS"
 recordType: "album"
 order: 6002
-slug: "discography/minky-momo-love-stage"
+slug: "/discography/minky-momo-love-stage"
 coverImage: "2Q.jpg"
 ---
 

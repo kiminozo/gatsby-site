@@ -9,7 +9,7 @@ recordReleaseDate: "2002.06.26"
 recordPublisher: "KING RECORDS"
 recordType: "Album"
 order: 3607
-slug: "discography/feel-well"
+slug: "/discography/feel-well"
 coverImage: "fee-well.jpg"
 ---
 

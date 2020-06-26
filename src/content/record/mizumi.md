@@ -9,7 +9,7 @@ recordReleaseDate: "1999/3/17"
 recordPublisher: "ポニーキャニオン"
 recordType: "Album"
 order: 3001
-slug: "discography/mizumi"
+slug: "/discography/mizumi"
 coverImage: "mizumi.jpg"
 ---
 

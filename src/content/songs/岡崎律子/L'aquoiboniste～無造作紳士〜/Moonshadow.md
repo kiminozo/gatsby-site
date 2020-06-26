@@ -9,7 +9,7 @@ singer: ["岡崎律子"]
 songwriter: ["村山達哉"]
 lyricwriter: ["岡崎律子"]
 arranger: ["加藤敏樹","加藤道明","村山達哉","磯江俊道"]
-slug: "songs/moonshadow"
+slug: "/songs/moonshadow"
 tags: []
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---

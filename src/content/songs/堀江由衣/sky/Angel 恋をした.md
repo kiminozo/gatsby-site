@@ -9,7 +9,7 @@ singer: ["堀江由衣"]
 songwriter: ["岡崎律子"]
 lyricwriter: ["岡崎律子"]
 arranger: ["松浦有希"]
-slug: "songs/angel-koi-woshita"
+slug: "/songs/angel-koi-woshita"
 tags: []
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net",reproduced-website: "織歌蟲"}
 ---

@@ -9,7 +9,7 @@ singer: ["岡崎律子"]
 songwriter: ["岡崎律子"]
 lyricwriter: ["岡崎律子"]
 arranger: ["村山達哉"]
-slug: "songs/for-fruits-basket"
+slug: "/songs/for-fruits-basket"
 tags: []
 license: {}
 ---

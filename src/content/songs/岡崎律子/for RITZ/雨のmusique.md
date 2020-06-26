@@ -9,7 +9,7 @@ singer: ["岡崎律子"]
 songwriter: ["岡崎律子"]
 lyricwriter: ["岡崎律子"]
 arranger: ["鳥山雄司"]
-slug: "songs/ame-no-musique"
+slug: "/songs/ame-no-musique"
 tags: []
 license: {}
 ---

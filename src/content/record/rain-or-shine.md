@@ -9,7 +9,7 @@ recordReleaseDate: "1997.10.25"
 recordPublisher: "NU TAURUS"
 recordType: "5th Best Album"
 order: 5
-slug: "discography/rain-or-shine"
+slug: "/discography/rain-or-shine"
 coverImage: "tacp1008.jpg"
 ---
 

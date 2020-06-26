@@ -9,7 +9,7 @@ recordReleaseDate: "1994.12.16"
 recordPublisher: ""
 recordType: ""
 order: 5000
-slug: "discography/birth"
+slug: "/discography/birth"
 coverImage: "252998010.jpg"
 ---
 

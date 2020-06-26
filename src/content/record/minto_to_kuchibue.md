@@ -9,7 +9,7 @@ recordReleaseDate: "1998.09.23"
 recordPublisher: "PIONEER LDC"
 recordType: "2,913円"
 order: 3202
-slug: "discography/minto_to_kuchibue"
+slug: "/discography/minto_to_kuchibue"
 coverImage: "minto_to_kuchibue.jpg"
 ---
 

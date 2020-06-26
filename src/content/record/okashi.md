@@ -9,7 +9,7 @@ recordReleaseDate: "1999.08.04"
 recordPublisher: "PONY CANYON"
 recordType: "Album"
 order: 3401
-slug: "discography/okashi"
+slug: "/discography/okashi"
 coverImage: "okashi.jpg"
 ---
 

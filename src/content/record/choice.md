@@ -9,7 +9,7 @@ recordReleaseDate: "2010.7.21"
 recordPublisher: "KING RECORDS"
 recordType: "Album"
 order: 3608
-slug: "discography/choice"
+slug: "/discography/choice"
 ---
 
 

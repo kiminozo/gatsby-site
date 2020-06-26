@@ -9,7 +9,7 @@ singer: ["岡崎律子"]
 songwriter: ["岡崎律子"]
 lyricwriter: ["岡崎律子"]
 arranger: ["村山達哉"]
-slug: "songs/morning-grace"
+slug: "/songs/morning-grace"
 tags: []
 license: {type: "translated",author: "岡崎律子",translator: "ココロの雨"}
 ---

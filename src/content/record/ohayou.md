@@ -9,7 +9,7 @@ recordReleaseDate: "1998.11.06"
 recordPublisher: "KING RECORDS"
 recordType: "6th Album"
 order: 6
-slug: "discography/ohayou"
+slug: "/discography/ohayou"
 coverImage: "kics703.jpg"
 ---
 

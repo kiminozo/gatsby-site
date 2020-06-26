@@ -9,7 +9,7 @@ recordReleaseDate: "1996.01.25"
 recordPublisher: "TAURUS RECORDS"
 recordType: "4th Single"
 order: 24
-slug: "discography/regret-koibito-nara"
+slug: "/discography/regret-koibito-nara"
 ---
 
 

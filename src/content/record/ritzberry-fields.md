@@ -9,7 +9,7 @@ recordReleaseDate: "1997.08.21"
 recordPublisher: "KING RECORDS"
 recordType: "Cover Album"
 order: 4
-slug: "discography/ritzberry-fields"
+slug: "/discography/ritzberry-fields"
 coverImage: "kics639.gif"
 ---
 

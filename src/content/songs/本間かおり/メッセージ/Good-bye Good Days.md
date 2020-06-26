@@ -9,7 +9,7 @@ singer: ["本間かおり"]
 songwriter: ["岡崎律子"]
 lyricwriter: ["森野律"]
 arranger: ["飛沢宏元"]
-slug: "songs/good-bye-good-days"
+slug: "/songs/good-bye-good-days"
 tags: []
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net",reproduced-website: "織歌蟲"}
 ---

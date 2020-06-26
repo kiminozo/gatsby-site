@@ -9,7 +9,7 @@ recordReleaseDate: "1996.08.25"
 recordPublisher: "TAURUS RECORDS"
 recordType: "5th Single"
 order: 25
-slug: "discography/a-happy-life-single"
+slug: "/discography/a-happy-life-single"
 coverImage: "5thsg.gif"
 ---
 

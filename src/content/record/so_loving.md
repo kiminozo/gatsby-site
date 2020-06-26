@@ -9,7 +9,7 @@ recordReleaseDate: "1999.07.23"
 recordPublisher: "PIONEER LDC"
 recordType: "Album"
 order: 3203
-slug: "discography/so_loving"
+slug: "/discography/so_loving"
 coverImage: "so_loving.jpg"
 ---
 

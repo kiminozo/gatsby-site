@@ -9,7 +9,7 @@ recordReleaseDate: "2002.10.23"
 recordPublisher: "KING RECORDS"
 recordType: "9th Single"
 order: 29
-slug: "discography/morning-grace"
+slug: "/discography/morning-grace"
 ---
 
 

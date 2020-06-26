@@ -9,7 +9,7 @@ singer: ["岡崎律子"]
 songwriter: ["岡崎律子"]
 lyricwriter: ["岡崎律子"]
 arranger: ["京田誠一"]
-slug: "songs/girlfriend"
+slug: "/songs/girlfriend"
 tags: []
 license: {type: "translated",translator: "loveritz"}
 ---

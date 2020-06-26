@@ -9,7 +9,7 @@ recordReleaseDate: "2000.05.24"
 recordPublisher: "KING RECORDS"
 recordType: "Sinlge"
 order: 3605
-slug: "discography/sakurasaku"
+slug: "/discography/sakurasaku"
 coverImage: "sakurasaku.jpg"
 ---
 

@@ -9,7 +9,7 @@ recordReleaseDate: "2004.04.28"
 recordPublisher: "KING RECORDS"
 recordType: "Album"
 order: 3502
-slug: "discography/rakuen"
+slug: "/discography/rakuen"
 ---
 
 

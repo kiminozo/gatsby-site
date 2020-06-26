@@ -9,7 +9,7 @@ singer: ["林原めぐみ"]
 songwriter: ["岡崎律子"]
 lyricwriter: ["岡崎律子"]
 arranger: ["光宗信吉"]
-slug: "songs/good-luck-megm"
+slug: "/songs/good-luck-megm"
 tags: []
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net",reproduced-website: "織歌蟲"}
 ---

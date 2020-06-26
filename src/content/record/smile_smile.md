@@ -9,7 +9,7 @@ recordReleaseDate: "2003.07.24"
 recordPublisher: "TOKUMA JAPAN COMMUNICATIONS"
 recordType: "Album"
 order: 3205
-slug: "discography/smile_smile"
+slug: "/discography/smile_smile"
 coverImage: "SMILE×SMILE1.jpg"
 ---
 

@@ -9,7 +9,7 @@ recordReleaseDate: "1992-06-24"
 recordPublisher: "STAR CHILD"
 recordType: "Single"
 order: 6001
-slug: "discography/yume-wo-da-ki-shi-me-te"
+slug: "/discography/yume-wo-da-ki-shi-me-te"
 coverImage: "96644_61kTi.jpg"
 ---
 

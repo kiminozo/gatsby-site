@@ -9,7 +9,7 @@ singer: ["小森まなみ"]
 songwriter: ["岡崎律子"]
 lyricwriter: ["小森まなみ"]
 arranger: ["池間史規"]
-slug: "songs/holy-eyes"
+slug: "/songs/holy-eyes"
 tags: []
 license: {}
 ---

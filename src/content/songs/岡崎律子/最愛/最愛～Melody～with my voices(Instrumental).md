@@ -9,7 +9,7 @@ singer: []
 songwriter: ["岡崎律子"]
 lyricwriter: ["岡崎律子"]
 arranger: ["村山達哉"]
-slug: "songs/saiai-melody"
+slug: "/songs/saiai-melody"
 tags: []
 license: {}
 ---

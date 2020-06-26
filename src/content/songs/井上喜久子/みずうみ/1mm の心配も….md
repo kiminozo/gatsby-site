@@ -9,7 +9,7 @@ singer: ["井上喜久子"]
 songwriter: ["岡崎律子"]
 lyricwriter: ["岡崎律子"]
 arranger: ["長谷川智樹"]
-slug: "songs/1mm-no-shinpai-mo"
+slug: "/songs/1mm-no-shinpai-mo"
 tags: []
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net",reproduced-website: "織歌蟲"}
 ---

@@ -9,7 +9,7 @@ recordReleaseDate: ""
 recordPublisher: ""
 recordType: ""
 order: 4400
-slug: "discography/presage"
+slug: "/discography/presage"
 coverImage: "Presage.png"
 ---
 

@@ -9,7 +9,7 @@ recordReleaseDate: "2001.07.25"
 recordPublisher: "KING RECORDS"
 recordType: "8th Single"
 order: 28
-slug: "discography/for-fruit-basket"
+slug: "/discography/for-fruit-basket"
 ---
 
 

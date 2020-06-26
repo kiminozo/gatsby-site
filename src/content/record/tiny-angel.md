@@ -9,7 +9,7 @@ recordReleaseDate: "1997.10.03"
 recordPublisher: ""
 recordType: ""
 order: 4300
-slug: "discography/tiny-angel"
+slug: "/discography/tiny-angel"
 coverImage: "Tiny-Angel.jpg"
 ---
 

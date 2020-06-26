@@ -9,7 +9,7 @@ recordReleaseDate: "2001.12.16"
 recordPublisher: "KING RECORDS"
 recordType: "MaxiSCD"
 order: 3801
-slug: "discography/merry-merrily"
+slug: "/discography/merry-merrily"
 coverImage: "Merry_Merrily.jpg"
 ---
 

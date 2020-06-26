@@ -9,7 +9,7 @@ singer: ["岡崎律子"]
 songwriter: ["岡崎律子"]
 lyricwriter: ["岡崎律子"]
 arranger: ["岡崎律子"]
-slug: "songs/welcome-to-ritzberry-fields"
+slug: "/songs/welcome-to-ritzberry-fields"
 tags: []
 license: {}
 ---

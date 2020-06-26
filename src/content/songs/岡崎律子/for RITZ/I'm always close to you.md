@@ -9,7 +9,7 @@ singer: ["岡崎律子"]
 songwriter: ["岡崎律子"]
 lyricwriter: ["岡崎律子"]
 arranger: ["村山達哉","礒江俊道"]
-slug: "songs/im-always-close-to-you"
+slug: "/songs/im-always-close-to-you"
 tags: []
 license: {}
 ---

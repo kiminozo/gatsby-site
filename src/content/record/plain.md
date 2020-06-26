@@ -9,7 +9,7 @@ recordReleaseDate: "2007.4.21"
 recordPublisher: "KING RECORDS"
 recordType: "Album"
 order: 3607
-slug: "discography/plain"
+slug: "/discography/plain"
 coverImage: "Plain.jpg"
 ---
 

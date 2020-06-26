@@ -9,7 +9,7 @@ recordReleaseDate: "1996.05.25"
 recordPublisher: "TAURUS RECORDS"
 recordType: "Album"
 order: 3
-slug: "discography/a-happy-life"
+slug: "/discography/a-happy-life"
 coverImage: "happy.gif"
 ---
 

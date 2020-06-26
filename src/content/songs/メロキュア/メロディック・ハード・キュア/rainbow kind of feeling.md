@@ -9,7 +9,7 @@ singer: ["メロキュア"]
 songwriter: ["日向めぐみ"]
 lyricwriter: ["日向めぐみ"]
 arranger: ["関淳二郎"]
-slug: "songs/rainbow-kind-of-feeling"
+slug: "/songs/rainbow-kind-of-feeling"
 tags: []
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---

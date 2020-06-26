@@ -9,7 +9,7 @@ recordReleaseDate: "1994.03.23"
 recordPublisher: "TAURUS RECORDS"
 recordType: "Album"
 order: 2
-slug: "discography/joyful-calendar"
+slug: "/discography/joyful-calendar"
 coverImage: "joyful.gif"
 ---
 

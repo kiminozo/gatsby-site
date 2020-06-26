@@ -12,6 +12,7 @@ recordPublisher: "Mercury Music Entertainment"
 recordType: "7th Single"
 order: 27
 slug: "/discography/laquoiboniste"
+coverImage: "phdl1204.jpg"
 ---
 
 

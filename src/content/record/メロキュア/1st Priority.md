@@ -12,6 +12,7 @@ recordPublisher: "COLUMBIA MUSIC ENTERTAINMENT"
 recordType: "2nd Maxi Single"
 order: 302
 slug: "/discography/1st-priority"
+coverImage: "COCC-15453.jpg"
 ---
 
 

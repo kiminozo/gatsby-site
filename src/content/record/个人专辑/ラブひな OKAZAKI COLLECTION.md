@@ -12,6 +12,7 @@ recordPublisher: "KING RECORDS"
 recordType: "7th Cover Album"
 order: 7
 slug: "/discography/lovehina-okazaki-collection"
+coverImage: "lovehina.jpg"
 ---
 
 由为动画lovehina作曲的歌曲组成的一张专辑

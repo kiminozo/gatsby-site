@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import { StaffTemplatePage, TemplateProps } from './StaffTemplatePage'
 
 export default function SongWriterTemplate({ pageContext, data }: TemplateProps) {
-  return (<StaffTemplatePage title={`${pageContext.staff} 编写的歌曲`}
+  return (<StaffTemplatePage title={`${pageContext.staff} 作曲的歌曲`}
     pageContext={pageContext} data={data} />)
 }
 

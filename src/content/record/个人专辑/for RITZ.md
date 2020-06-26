@@ -12,7 +12,7 @@ recordPublisher: "KING RECORDS"
 recordType: "9th Cover Album"
 order: 9
 slug: "/discography/for-ritz"
-coverImage: "For_RITZ.jpg"
+coverImage: "for RITZ.png"
 ---
 
 あの悲しい出来事から約半年。本当に突然の悲劇が彼女を襲った。  

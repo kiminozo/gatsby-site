@@ -12,7 +12,7 @@ recordPublisher: "KING RECORDS"
 recordType: "8th Cover Album"
 order: 8
 slug: "/discography/life-is-lovely"
-coverImage: "life_is_lovely.jpg"
+coverImage: "Life Is Lovely.jpg"
 ---
 
 动画 \[ シスター・プリンセス　Re Pure（妹妹公主 Re Pure） \] 片尾曲集 + 2曲

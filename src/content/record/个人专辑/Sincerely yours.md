@@ -12,7 +12,7 @@ recordPublisher: "TAURUS RECORDS"
 recordType: "Album"
 order: 1
 slug: "/discography/sincerely-yours"
-coverImage: "sincere.gif"
+coverImage: "Sincerely yours.jpg"
 ---
 
 切なくやさしい気持ちの多いアルバム。「まっすぐな心で」は、現在も本人が一番好きな曲。  

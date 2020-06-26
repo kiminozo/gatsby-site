@@ -12,7 +12,7 @@ recordPublisher: "TAURUS RECORDS"
 recordType: "Album"
 order: 3
 slug: "/discography/a-happy-life"
-coverImage: "happy.gif"
+coverImage: "A Happy Life.jpg"
 ---
 
 悩み多き素晴しい人生。  

@@ -12,7 +12,7 @@ recordPublisher: "KING RECORDS"
 recordType: "Cover Album"
 order: 4
 slug: "/discography/ritzberry-fields"
-coverImage: "kics639.gif"
+coverImage: "Ritzberry Fields.png"
 ---
 
 林原さんのアルバム・ミンキーモモ・ウエディングピーチ・１月にはクリスマスからのベストセレクション。  

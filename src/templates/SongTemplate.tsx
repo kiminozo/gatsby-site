@@ -74,7 +74,7 @@ class SongTemplatePage extends Component<TemplateProps> {
       <Layout path={frontmatter.slug}>
         <SEO title={title} />
         <Grid>
-          <Grid.Column width={16} mobile={16} computer={13} tablet={16}>
+          <Grid.Column mobile={16} computer={13} tablet={16}>
             <Header as="h1">{title}</Header>
             <StaffList staff={frontmatter} />
             <Segment style={{ fontSize: "1.2rem" }}>
@@ -99,7 +99,7 @@ class SongTemplatePage extends Component<TemplateProps> {
             </Segment>
 
           </Grid.Column>
-          <Grid.Column width={16} mobile={16} computer={3} tablet={16}>
+          <Grid.Column mobile={16} computer={3} tablet={16}>
             <RecordGroup discographyId={discographyId} />
           </Grid.Column>
         </Grid>

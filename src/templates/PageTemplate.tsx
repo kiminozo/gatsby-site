@@ -154,7 +154,7 @@ class TemplatePage extends Component<TemplateProps, TemplateState> {
 
     const body = (<Grid container>
       <Ref innerRef={this.contextRef}>
-        <Grid.Column width={10} mobile={16} computer={10}>
+        <Grid.Column mobile={16} computer={10}>
           <Header as="h1">{frontmatter.title}</Header>
           <Divider />
           {/* <p>{frontmatter.date}</p> */}

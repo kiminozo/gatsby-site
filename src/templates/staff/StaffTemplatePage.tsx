@@ -34,21 +34,21 @@ export class StaffTemplatePage extends Component<TemplateProps> {
         //     totalCount === 1 ? "" : "s"
         //     } tagged with "${staff}"`
         return (
-            <Layout>
+            <Layout path="songs">
                 <SEO title={title} />
                 <h1>{title}</h1>
                 <h1>曲目列表</h1>
                 <List divided relaxed>
                     {nodes.map(({ song }) =>
                         (
-                            <List.Item >
+                            <List.Item key={song.slug}>
                                 <List.Icon name="music" size="large" color='blue' />
                                 <List.Content>
                                     <List.Header as="h3">
                                         <Link to={song.slug}>{song.title}</Link>
                                     </List.Header>
                                     <List.Description>
-                                        <StaffList staff={song} />
+                                        <StaffList key={song.slug} staff={song} />
                                     </List.Description>
                                 </List.Content>
                             </List.Item>

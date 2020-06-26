@@ -89,7 +89,7 @@ class RecordTemplate extends Component<TemplateProps> {
             <List divided relaxed>
               {songs.map(song =>
                 (
-                  <List.Item >
+                  <List.Item key={song.slug}>
                     <List.Icon name="music" size="large" color='blue' />
                     <List.Content>
                       <List.Header as="h3">

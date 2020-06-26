@@ -73,7 +73,7 @@ class PostTemplate extends Component<TemplateProps> {
       <Layout path={frontmatter.slug}>
         <SEO title={frontmatter.title} />
         <Grid>
-          <Grid.Column width={16} mobile={16} computer={11} tablet={11}>
+          <Grid.Column mobile={16} computer={11} tablet={11}>
             <Header as="h1">{frontmatter.title}</Header>
             <Divider />
             <div
@@ -83,14 +83,14 @@ class PostTemplate extends Component<TemplateProps> {
             {this.renderTags()}
             <div>
               <Button.Group floated='left' >
-                <Button as={Link} to={previous} disabled={!previous} basic color='blue' icon='angle left' content="上一篇" labelPosition='left' />
+                <Button as={Link} to={previous ?? '/'} disabled={!previous} basic color='blue' icon='angle left' content="上一篇" labelPosition='left' />
               </Button.Group>
               <Button.Group floated='right' >
-                <Button as={Link} to={next} disabled={!next} basic color='blue' icon='angle right' content="下一篇" labelPosition='right' />
+                <Button as={Link} to={next ?? '/'} disabled={!next} basic color='blue' icon='angle right' content="下一篇" labelPosition='right' />
               </Button.Group>
             </div>
           </Grid.Column>
-          <Grid.Column width={16} mobile={16} computer={5} tablet={5} >
+          <Grid.Column mobile={16} computer={5} tablet={5} >
           </Grid.Column>
         </Grid>
       </Layout>

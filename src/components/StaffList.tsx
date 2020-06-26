@@ -4,26 +4,12 @@ import {
     List
 } from 'semantic-ui-react'
 
-export interface StaffInfo {
+interface StaffInfo {
     songWriter: string[];
     lyricWriter: string[];
     singer: string[];
     arranger: string[];
 }
-
-
-export const StaffLink = ({ type, names }: { type: string, names: string[] }) => (
-    <>
-        {
-            names.map((name, i, { length }) => (
-                <>
-                    <Link to={`/${type}/${name}`}>{name}</Link>
-                    {i != length - 1 ? " " : null}
-                </>
-            ))
-        }
-    </>
-)
 
 const StaffList = ({ staff }: { staff: StaffInfo }) => (
     <List horizontal >
@@ -34,4 +20,21 @@ const StaffList = ({ staff }: { staff: StaffInfo }) => (
     </List>
 )
 
+const StaffLink = ({ type, names }: { type: string, names: string[] }) => (
+    <>
+        {
+            names.map((name, i, { length }) => {
+                const path = `/${type}/${name}`;
+                return (
+                    <React.Fragment key={path}>
+                        <Link to={path}>{name}</Link>
+                        {i != length - 1 ? " " : null}
+                    </React.Fragment>
+                )
+            })
+        }
+    </>
+)
+
+export { StaffInfo, StaffLink }
 export default StaffList;

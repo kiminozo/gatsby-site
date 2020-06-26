@@ -5,8 +5,7 @@ import { SEO, Layout, TagsLine } from "../components";
 import CC, { License } from "../components/CC"
 
 import {
-  Button, Grid, Header, Ref, Segment, Rail, Accordion,
-  Label, Divider, Message
+  Button, Grid, Header, Divider
 } from 'semantic-ui-react'
 import _ from "lodash";
 

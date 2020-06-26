@@ -12,6 +12,7 @@ recordPublisher: "KING RECORDS"
 recordType: "Album"
 order: 3608
 slug: "/discography/choice"
+coverImage: "CHOICE.jpg"
 ---
 
 

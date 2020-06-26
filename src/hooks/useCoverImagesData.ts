@@ -21,7 +21,7 @@ interface Data {
 
 export const query = graphql`
   {
-    coverImages: allFile(filter: {relativeDirectory: {eq: "record/images"}}) {
+    coverImages: allFile(filter: {relativeDirectory: {regex: "/record.+/"}}) {
       nodes {
         name
         publicURL

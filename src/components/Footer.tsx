@@ -4,6 +4,10 @@ import { Menu, Container, Divider, Segment, Grid, List, Header } from 'semantic-
 
 import "./footer.sass"
 
+//Build with GatsbyJS and React 16.12.0. Hosted on V
+//The code is open source and available at 
+//Copyright ©forritz Theme by kiminozo
+
 const Footer = () => (
     <>
         <Divider />
@@ -13,6 +17,7 @@ const Footer = () => (
             <a href="https://forritz.org">For RITZ</a>
             {` `}All rights reserved.
          </Container> */}
+
         <Segment as="footer" vertical style={{ padding: 10 }}>
             <Container>
                 <Grid divided stackable>

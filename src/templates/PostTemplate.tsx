@@ -1,7 +1,7 @@
 import React, { Component, createRef } from "react"
 import { graphql, PageProps, Link } from "gatsby"
 
-import { SEO, Layout, TagsLine } from "../components";
+import { SEO, Layout, TagsLine, SideBar } from "../components";
 import CC, { License } from "../components/CC"
 
 import {
@@ -21,7 +21,6 @@ type TemplateProps = {
         title: string;
         slug: string;
         date?: string;
-        toc?: boolean;
         categories?: string[];
         tags?: string[];
         license?: License
@@ -90,6 +89,7 @@ class PostTemplate extends Component<TemplateProps> {
             </div>
           </Grid.Column>
           <Grid.Column mobile={16} computer={5} tablet={5} >
+            <SideBar />
           </Grid.Column>
         </Grid>
       </Layout>
@@ -111,7 +111,6 @@ export const pageQuery = graphql`
         title
         categories
         tags
-        toc
         license {
           type
           author

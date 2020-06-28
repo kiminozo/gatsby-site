@@ -1,4 +1,4 @@
-type MenuConfig = {
+interface MenuConfig {
     name: string;
     link: string;
     active?: string[];

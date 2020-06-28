@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { graphql, Link } from "gatsby"
 
-import { SEO, Layout, TagsLine, CoverImage } from "../components";
+import { SEO, Layout, SideBar, CoverImage } from "../components";
 import StaffList, { StaffInfo } from '../components/StaffList'
 
 import {
@@ -105,7 +105,7 @@ class RecordTemplate extends Component<TemplateProps> {
             </List>
           </Grid.Column>
           <Grid.Column mobile={16} computer={5} tablet={5} >
-
+            <SideBar />
           </Grid.Column>
         </Grid>
       </Layout>

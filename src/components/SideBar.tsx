@@ -37,7 +37,6 @@ const query = graphql`
 
 const SideBar = () => {
     const data = useStaticQuery<QueryData>(query);
-    console.log(data)
     const { record: { recordList }, post: { postList } } = data;
     return (
         <Menu vertical size='massive'>

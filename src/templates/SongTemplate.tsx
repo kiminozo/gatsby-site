@@ -1,8 +1,7 @@
 import React, { Component } from "react"
 import { graphql, useStaticQuery, Link } from "gatsby"
 
-import { SEO, Layout } from "../components";
-import CC, { License } from "../components/CC"
+import { SEO, Layout, CC, License } from "../components";
 import RecordGroup from "../components/RecordGroup"
 import StaffList, { StaffInfo } from '../components/StaffList'
 import {
@@ -66,18 +65,17 @@ class SongTemplatePage extends Component<TemplateProps> {
       return;
     }
     const { frontmatter, html } = remark;
-    const { title, discographyId } = frontmatter;
-
+    const { title, discographyId, license, slug } = frontmatter;
     const { jp, cn } = split(html);
 
     return (
-      <Layout path={frontmatter.slug}>
+      <Layout path={slug}>
         <SEO title={title} />
         <Grid>
           <Grid.Column mobile={16} computer={13} tablet={16}>
             <Header as="h1">{title}</Header>
             <StaffList staff={frontmatter} />
-            <Segment style={{ fontSize: "1.2rem" }}>
+            <Segment style={{ fontSize: "1.1rem" }} >
               <Grid columns={2} centered stackable>
                 <Grid.Column>
                   <div
@@ -93,11 +91,10 @@ class SongTemplatePage extends Component<TemplateProps> {
                   />
 
                 </Grid.Column>
-
               </Grid>
-
             </Segment>
-
+            <Divider hidden />
+            <CC license={license} />
           </Grid.Column>
           <Grid.Column mobile={16} computer={3} tablet={16}>
             <RecordGroup discographyId={discographyId} />

@@ -75,7 +75,7 @@ class SongTemplatePage extends Component<TemplateProps> {
           <Grid.Column mobile={16} computer={13} tablet={16}>
             <Header as="h1">{title}</Header>
             <StaffList staff={frontmatter} />
-            <Segment style={{ fontSize: "1.1rem" }} >
+            <Segment style={{ fontSize: "1.1rem", lineHeight: 2 }} >
               <Grid columns={2} centered stackable>
                 <Grid.Column>
                   <div

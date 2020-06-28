@@ -1,17 +1,10 @@
 import React, { Component } from "react"
 import { Message, Icon } from 'semantic-ui-react'
 import "./CC.sass"
-
+import { License } from "./License";
 
 const byncsa = "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-Hans"
 
-export interface License {
-    type: string
-    author: string
-    reproduced_url: string
-    reproduced_website: string
-    translator: string
-}
 
 const CC = ({ license }: { license?: License }) => (
     <Message info >
@@ -36,4 +29,5 @@ const CC = ({ license }: { license?: License }) => (
     </Message >
 );
 
+export { License }
 export default CC

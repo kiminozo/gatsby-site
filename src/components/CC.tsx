@@ -19,7 +19,7 @@ const CC = ({ license }: { license?: License }) => (
                 )
                 : license.translator ?
                     (
-                        <> 本文是翻译内容。翻译自<a href={license.reproduced_url}>岡崎律子BOOK</a>, 译者:{license.translator}。</>
+                        <> 本文是翻译内容。翻译自<a href={license.reproduced_url}>{license.reproduced_website}</a>, 译者:{license.translator}。</>
                     )
                     :
                     (

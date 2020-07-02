@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import { graphql, Link } from "gatsby"
 
 import { SEO, Layout, SideBar, CoverImage } from "../components";
-import StaffList, { StaffInfo } from '../components/StaffList'
+import StaffList, { StaffInfo, StaffLink } from '../components/StaffList'
 
 import {
   Button, Grid, Header, Ref, Segment, Rail, Accordion,
@@ -40,7 +40,7 @@ interface TemplateProps {
   }
 }
 
-const Record = ({ title, info }: { title: string, info: RecordInfo }) => (
+const Record = ({ title, info, artist }: { title: string, info: RecordInfo, artist: string[] }) => (
   <Item.Group>
     <Item>
       <Item.Image>
@@ -49,7 +49,7 @@ const Record = ({ title, info }: { title: string, info: RecordInfo }) => (
       <Item.Content>
         <Item.Header>{title}</Item.Header>
         <Item.Meta>编号:{info.recordNo}</Item.Meta>
-        <Item.Meta>艺术家:岡崎律子</Item.Meta>
+        <Item.Meta>艺术家:<StaffLink type="singer" names={artist} /></Item.Meta>
         <Item.Meta>唱片类型:{info.recordType}</Item.Meta>
         <Item.Meta>发售日期:{info.recordReleaseDate}</Item.Meta>
         <Item.Meta>发行商:{info.recordPublisher}</Item.Meta>
@@ -73,12 +73,13 @@ class RecordTemplate extends Component<TemplateProps> {
     const { record: { frontmatter, html }, songs: { nodes } } = this.props.data; // data.markdownRemark holds your post data
     const { title, slug } = frontmatter;
     const songs = nodes.map(p => p.frontmatter)
+    const artist = [...new Set<string>(songs.flatMap(p => p.singer))]
     return (
       <Layout path={slug}>
         <SEO title={title} />
         <Grid>
           <Grid.Column mobile={16} computer={11} tablet={11}>
-            <Record title={title} info={frontmatter} />
+            <Record title={title} artist={artist} info={frontmatter} />
             <h1>简介</h1>
             <div
               className="blog-post-content"

@@ -30,7 +30,10 @@ const RecordGroup = (props: Props) => {
             {list.map(item => (
                 <Card as={Link} key={item.id} to={item.slug}>
                     <CoverImage key={item.id} coverImage={item.coverImage} />
-                    <Label attached='bottom left'>{item.title}</Label>
+                    <Label attached='bottom left' color='black'>{item.title}</Label>
+                    {/* <Card.Content>
+                        <Card.Header as="span">{item.title}</Card.Header>
+                    </Card.Content> */}
                 </Card>
             ))
             }

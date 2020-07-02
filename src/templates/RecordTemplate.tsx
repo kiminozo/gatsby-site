@@ -6,7 +6,7 @@ import StaffList, { StaffInfo, StaffLink } from '../components/StaffList'
 
 import {
   Button, Grid, Header, Ref, Segment, Rail, Accordion,
-  Label, Divider, Item, List
+  Label, Divider, Item, List, Card
 } from 'semantic-ui-react'
 import _ from "lodash";
 import demo from "../images/demo.png"
@@ -41,24 +41,22 @@ interface TemplateProps {
 }
 
 const Record = ({ title, info, artist }: { title: string, info: RecordInfo, artist: string[] }) => (
-  <Item.Group>
-    <Item>
-      <Item.Image>
-        <CoverImage coverImage={info.coverImage} />
-      </Item.Image>
-      <Item.Content>
-        <Item.Header>{title}</Item.Header>
-        <Item.Meta>编号:{info.recordNo}</Item.Meta>
-        <Item.Meta>艺术家:<StaffLink type="singer" names={artist} /></Item.Meta>
-        <Item.Meta>唱片类型:{info.recordType}</Item.Meta>
-        <Item.Meta>发售日期:{info.recordReleaseDate}</Item.Meta>
-        <Item.Meta>发行商:{info.recordPublisher}</Item.Meta>
-        {info.recordPrice && <Item.Meta>售价:{info.recordPrice}</Item.Meta>}
-        <Item.Description>
-        </Item.Description>
-      </Item.Content>
-    </Item>
-  </Item.Group>
+  <Card.Group>
+    <Card>
+      <CoverImage coverImage={info.coverImage} />
+      <Card.Content>
+        <Card.Header>{title}</Card.Header>
+        <Card.Meta>编号:{info.recordNo}</Card.Meta>
+        <Card.Meta>艺术家:<StaffLink type="singer" names={artist} /></Card.Meta>
+        <Card.Meta>唱片类型:{info.recordType}</Card.Meta>
+        <Card.Meta>发售日期:{info.recordReleaseDate}</Card.Meta>
+        <Card.Meta>发行商:{info.recordPublisher}</Card.Meta>
+        {info.recordPrice && <Card.Meta>售价:{info.recordPrice}</Card.Meta>}
+        <Card.Description>
+        </Card.Description>
+      </Card.Content>
+    </Card>
+  </Card.Group>
 )
 
 class RecordTemplate extends Component<TemplateProps> {
@@ -78,8 +76,10 @@ class RecordTemplate extends Component<TemplateProps> {
       <Layout path={slug}>
         <SEO title={title} />
         <Grid>
-          <Grid.Column mobile={16} computer={11} tablet={11}>
+          <Grid.Column mobile={16} computer={4} tablet={3}>
             <Record title={title} artist={artist} info={frontmatter} />
+          </Grid.Column>
+          <Grid.Column mobile={16} computer={12} tablet={3}>
             <h1>简介</h1>
             <div
               className="blog-post-content"
@@ -105,9 +105,9 @@ class RecordTemplate extends Component<TemplateProps> {
               }
             </List>
           </Grid.Column>
-          <Grid.Column mobile={16} computer={5} tablet={5} >
+          {/* <Grid.Column mobile={16} computer={3} tablet={5} >
             <SideBar />
-          </Grid.Column>
+          </Grid.Column> */}
         </Grid>
       </Layout>
     )

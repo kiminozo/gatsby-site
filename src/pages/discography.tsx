@@ -28,14 +28,46 @@ interface Props extends PageProps {
 }
 
 //const cardSize = { width: 150, height: 150 };
+interface RecordsProp {
+    category: string;
+    artists: {
+        artist: string;
+        records: RecordInfo[];
+    }[]
+}
 
+const Records = ({ category, artists }: RecordsProp) => (
+    <>
+        <h2>{category}</h2>
+        {
+            artists.map(({ artist, records }) => (
+                <>
+                    {artists.length > 1 && (<h3>{artist}</h3>)}
+                    <Card.Group itemsPerRow={5} doubling>
+                        {records.map(item =>
+                            (
+                                <Card as={Link} key={item.id} to={item.slug}>
+                                    <CoverImage key={item.id} coverImage={item.coverImage} />
+                                </Card>
+                            )
+                        )}
+                    </Card.Group>
+                </>
+            ))
+        }
+    </>
+)
 
 const DiscographyPage = (props: Props) => {
     const { data: { records: { nodes } } } = props;
     const records = nodes.map(p => p.frontmatter);
 
     const group = _.groupBy(records, p => p.categories[0]);
-    const categories = _.map(group, (value, key) => ({ category: key, records: value }));
+    const groupArtist = (records: RecordInfo[]) => {
+        const g = _.groupBy(records, p => p.artist);
+        return _.map(g, (value, key) => ({ artist: key, records: value }))
+    }
+    const categories = _.map(group, (value, key) => ({ category: key, artists: groupArtist(value) }));
     return (
         <Layout path={props.location.pathname}>
             <SEO title="唱片集" />
@@ -44,20 +76,8 @@ const DiscographyPage = (props: Props) => {
                     <h1>唱片集</h1>
                     <Divider />
                     {
-                        categories.map(({ category, records }) => (
-                            <>
-                                <h2>{category}</h2>
-                                <Card.Group itemsPerRow={5} doubling>
-                                    {records.map(item =>
-                                        (
-                                            <Card as={Link} key={item.id} to={item.slug}>
-                                                <CoverImage key={item.id} coverImage={item.coverImage} />
-                                                {/* <Label attached='bottom left'>{item.title}</Label> */}
-                                            </Card>
-                                        )
-                                    )}
-                                </Card.Group>
-                            </>
+                        categories.map(props => (
+                            <Records {...props} />
                         ))
                     }
                 </Grid.Column>

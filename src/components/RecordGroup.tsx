@@ -28,12 +28,12 @@ const RecordGroup = (props: Props) => {
     return (
         <Card.Group doubling>
             {list.map(item => (
-                <Card as={Link} key={item.id} to={item.slug}>
+                <Card fluid color='teal' as={Link} key={item.id} to={item.slug}>
                     <CoverImage key={item.id} coverImage={item.coverImage} />
-                    <Label attached='bottom left' color='black'>{item.title}</Label>
-                    {/* <Card.Content>
-                        <Card.Header as="span">{item.title}</Card.Header>
-                    </Card.Content> */}
+                    {/* <Label attached='bottom left' color='black'>{item.title}</Label> */}
+                    <Card.Content>
+                        <Card.Header>{item.title}</Card.Header>
+                    </Card.Content>
                 </Card>
             ))
             }

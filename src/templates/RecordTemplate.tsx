@@ -40,19 +40,25 @@ interface TemplateProps {
   }
 }
 
+const MetaItem = ({ meta, name }: { meta: string, name: string }) => (
+  name ? <List.Item>{meta}: {name}</List.Item> : <></>
+)
+
 const Record = ({ title, info, artist }: { title: string, info: RecordInfo, artist: string[] }) => (
   <Card.Group>
     <Card>
       <CoverImage coverImage={info.coverImage} />
       <Card.Content>
         <Card.Header>{title}</Card.Header>
-        <Card.Meta>编号:{info.recordNo}</Card.Meta>
-        <Card.Meta>艺术家:<StaffLink type="singer" names={artist} /></Card.Meta>
-        <Card.Meta>唱片类型:{info.recordType}</Card.Meta>
-        <Card.Meta>发售日期:{info.recordReleaseDate}</Card.Meta>
-        <Card.Meta>发行商:{info.recordPublisher}</Card.Meta>
-        {info.recordPrice && <Card.Meta>售价:{info.recordPrice}</Card.Meta>}
+        <Card.Meta><StaffLink type="singer" names={artist} /></Card.Meta>
         <Card.Description>
+          <List>
+            <MetaItem meta='编号' name={info.recordNo} />
+            <MetaItem meta='唱片类型' name={info.recordType} />
+            <MetaItem meta='发售日期' name={info.recordReleaseDate} />
+            <MetaItem meta='发行商' name={info.recordPublisher} />
+            <MetaItem meta='售价' name={info.recordPrice} />
+          </List>
         </Card.Description>
       </Card.Content>
     </Card>

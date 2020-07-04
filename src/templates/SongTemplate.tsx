@@ -72,9 +72,7 @@ class SongTemplatePage extends Component<TemplateProps> {
       <Layout path={slug}>
         <SEO title={title} />
         <Grid>
-          <Grid.Column mobile={16} computer={3} tablet={16}>
-            <RecordGroup discographyId={discographyId} />
-          </Grid.Column>
+
           <Grid.Column mobile={16} computer={13} tablet={16}>
             <Header as="h1">{title}</Header>
             <StaffList staff={frontmatter} />
@@ -98,6 +96,10 @@ class SongTemplatePage extends Component<TemplateProps> {
             </Segment>
             <Divider hidden />
             <CC license={license} />
+          </Grid.Column>
+
+          <Grid.Column mobile={16} computer={3} tablet={16}>
+            <RecordGroup discographyId={discographyId} />
           </Grid.Column>
         </Grid>
       </Layout >

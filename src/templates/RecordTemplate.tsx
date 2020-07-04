@@ -76,10 +76,10 @@ class RecordTemplate extends Component<TemplateProps> {
       <Layout path={slug}>
         <SEO title={title} />
         <Grid>
-          <Grid.Column mobile={16} computer={4} tablet={3}>
+          <Grid.Column mobile={16} computer={4} tablet={4}>
             <Record title={title} artist={artist} info={frontmatter} />
           </Grid.Column>
-          <Grid.Column mobile={16} computer={12} tablet={13}>
+          <Grid.Column mobile={16} computer={12} tablet={12}>
             <h1>简介</h1>
             <div
               className="blog-post-content"

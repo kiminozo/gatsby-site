@@ -12,7 +12,7 @@ recordPublisher: "NU TAURUS"
 recordType: "6th Single"
 order: 26
 slug: "/discography/rain-or-shine-single"
-coverImage: "6thsg.gif"
+coverImage: "rain-or-shine-single.jpg"
 ---
 
 

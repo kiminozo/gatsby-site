@@ -12,7 +12,7 @@ recordPublisher: "KING RECORDS"
 recordType: "8th Single"
 order: 28
 slug: "/discography/for-fruit-basket"
-coverImage: "fb-shiki.jpg"
+coverImage: "for-fruit-basket.jpg"
 ---
 
 

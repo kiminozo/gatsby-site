@@ -26,14 +26,15 @@ const RecordGroup = (props: Props) => {
     //return <div></div>
     const list = records.filter(p => discographyId.indexOf(p.id) >= 0);
     return (
-        <Card.Group doubling>
+        <Card.Group doubling centered>
             {list.map(item => (
                 <Card fluid color='teal' as={Link} key={item.id} to={item.slug}>
-                    <CoverImage key={item.id} coverImage={item.coverImage} />
+                    {/* <CoverImage key={item.id} coverImage={item.coverImage} />
                     {/* <Label attached='bottom left' color='black'>{item.title}</Label> */}
-                    <Card.Content>
-                        <Card.Header>{item.title}</Card.Header>
-                    </Card.Content>
+                    <CoverImage key={item.id} coverImage={item.coverImage} />
+                    {/* <Card.Content>
+                        <Card.Meta>{item.title}</Card.v>
+                    </Card.Content> */}
                 </Card>
             ))
             }

@@ -43,7 +43,7 @@ const Records = ({ category, artists }: RecordsProp) => (
             artists.map(({ artist, records }) => (
                 <>
                     {artists.length > 1 && (<h3>{artist}</h3>)}
-                    <Card.Group itemsPerRow={5} doubling>
+                    <Card.Group fluid itemsPerRow={5} doubling>
                         {records.map(item =>
                             (
                                 <Card as={Link} key={item.id} to={item.slug}>

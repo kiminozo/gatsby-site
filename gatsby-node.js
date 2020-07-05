@@ -228,17 +228,18 @@ const createPages = async (createPage, graphql, reporter) => {
   const recordListTemplate = require.resolve("./src/templates/RecordListTemplate.tsx")
   const recordGroups = result.data.recordList.group;
   recordGroups.forEach(recordGroup => {
-    const title = recordGroup.fieldValue;
+    const category = recordGroup.fieldValue;
     const frontmatters = recordGroup.nodes.map(p => p.frontmatter);
     const g = _.groupBy(frontmatters, p => p.artist);
     const recordsMap = _.map(g, (value, key) => ({ artist: key, records: value }));
     if (recordsMap.length == 1) {
       const { artist, records } = recordsMap[0];
       createPage({
-        path: `/discography/${_.kebabCase(title)}/`,
+        path: `/discography/${_.kebabCase(category)}/`,
         component: recordListTemplate,
         context: {
-          category: title,
+          title: category,
+          category: category,
           artist: artist,
           discographyIds: records.map(p => p.id)
         },
@@ -247,9 +248,10 @@ const createPages = async (createPage, graphql, reporter) => {
       recordsMap.forEach(({ artist, records }) => {
         createPage({
           path: `/discography/${_.kebabCase(artist)}/`,
-          component: arrangerTemplate,
+          component: recordListTemplate,
           context: {
-            category: title,
+            title: artist,
+            category: category,
             artist: artist,
             discographyIds: records.map(p => p.id)
           },

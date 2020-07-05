@@ -1,12 +1,10 @@
-import React, { Component } from "react"
+import React from "react"
 import { graphql, Link } from "gatsby"
 
 import { SEO, Layout, SideBar, CoverImage } from "../components";
-import StaffList, { StaffInfo, StaffLink } from '../components/StaffList'
 
 import {
-  Button, Grid, Header, Ref, Segment, Rail, Accordion,
-  Label, Divider, Item, List, Card, Image
+  Grid, Header, Divider, Item, List
 } from 'semantic-ui-react'
 import _ from "lodash";
 
@@ -30,6 +28,8 @@ interface SongInfo {
 interface TemplateProps {
   pageContext: {
     category: string
+    artist: string
+    title: string
   }
   data: {
     records: {
@@ -52,23 +52,23 @@ interface TemplateProps {
 
 
 const RecordListTemplate = (props: TemplateProps) => {
-  const { pageContext: { category }, data } = props;
+  const { pageContext: { artist, title }, data } = props;
   const { records: { recordGroup }, songs: { songGroup } } = data;
   const records = recordGroup.map(p => p.frontmatter);
   const songs = songGroup.map(p => p.frontmatter);
   return (
-    <Layout path={`/discography/${_.kebabCase(category)}/`}>
-      <SEO title={category} />
+    <Layout path={`/discography/${_.kebabCase(title)}/`}>
+      <SEO title={title} />
       <Grid>
         <Grid.Column mobile={16} computer={11} tablet={11}>
-          <Header as="h1">{category}</Header>
+          <Header as="h1">{title}</Header>
           <Divider />
           {/* <CoverImage size="small" coverimage={"Sincerely yours.jpg"} /> */}
 
           <Item.Group divided relaxed>
             {
               records.map(({ title, id, slug, coverImage, recordPublisher, recordReleaseDate }) => {
-                const artist = [...new Set<string>(songs.flatMap(p => p.singer))]
+                //const artist = [...new Set<string>(songs.flatMap(p => p.singer))]
                 return (
                   <Item key={id}>
                     <Item.Image size="small" as={Link} to={slug}>
@@ -77,7 +77,7 @@ const RecordListTemplate = (props: TemplateProps) => {
                     <Item.Content>
                       <Item.Header as={Link} to={slug}>{title}</Item.Header>
                       <Item.Meta>
-                        艺术家:<StaffLink type="singer" names={artist} /> |
+                        艺术家:<Link to={`/singer/${_.kebabCase(artist)}`}>{artist}</Link> |
                         发售日期:{recordReleaseDate} |
                         发行商:{recordPublisher}
                       </Item.Meta>
@@ -113,12 +113,14 @@ export default function Template(props: TemplateProps) {
 }
 
 export const pageQuery = graphql`
-  query ($category: String,$discographyIds:[String]) {
-          records: allMarkdownRemark(sort: {fields: [frontmatter___order], order: ASC}, filter: {frontmatter: {categories: {in: [$category]}}}) {
-          totalCount
+query ($category: String, $artist:String, $discographyIds:[String]) {
+  records: allMarkdownRemark(
+      sort: {fields: [frontmatter___order], order: ASC}, 
+      filter: {frontmatter: {categories: {in: [$category]}, artist: {eq: $artist}}}) {
+    totalCount
     recordGroup: nodes {
-          frontmatter {
-          id
+      frontmatter {
+        id
         slug
         title
         coverImage
@@ -130,6 +132,7 @@ export const pageQuery = graphql`
       }
     }
   }
+
   songs:allMarkdownRemark(sort: {fields: [frontmatter___order], order: ASC}, filter: {frontmatter: {type: {eq: "song"}, discographyId: {in: $discographyIds}}}) {
           totalCount
     songGroup: nodes {

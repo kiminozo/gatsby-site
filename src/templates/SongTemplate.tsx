@@ -72,30 +72,33 @@ class SongTemplatePage extends Component<TemplateProps> {
       <Layout path={slug}>
         <SEO title={title} />
         <Grid>
-
           <Grid.Column mobile={16} computer={14} tablet={14}>
             <Header as="h1">{title}</Header>
             <StaffList staff={frontmatter} />
-            <Segment style={{ fontSize: "1.2rem" }} >
-              <Grid columns={2} centered stackable>
-                <Grid.Column>
-                  <div
-                    className="song-content"
-                    dangerouslySetInnerHTML={{ __html: jp }}
-                  />
-                </Grid.Column>
-                <Divider vertical>翻译</Divider>
-                <Grid.Column>
-                  <div
-                    className="song-content"
-                    dangerouslySetInnerHTML={{ __html: cn }}
-                  />
+            {html &&
+              <>
+                <Segment style={{ fontSize: "1.2rem" }} >
+                  <Grid columns={2} centered stackable>
+                    <Grid.Column>
+                      <div
+                        className="song-content"
+                        dangerouslySetInnerHTML={{ __html: jp }}
+                      />
+                    </Grid.Column>
+                    <Divider vertical>翻译</Divider>
+                    <Grid.Column>
+                      <div
+                        className="song-content"
+                        dangerouslySetInnerHTML={{ __html: cn }}
+                      />
 
-                </Grid.Column>
-              </Grid>
-            </Segment>
-            <Divider hidden />
-            <CC license={license} />
+                    </Grid.Column>
+                  </Grid>
+                </Segment>
+                <Divider hidden />
+                <CC license={license} />
+              </>
+            }
           </Grid.Column>
 
           <Grid.Column mobile={16} computer={2} tablet={14}>

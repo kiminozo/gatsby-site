@@ -115,7 +115,7 @@ const IndexPage = (props: Props) => (
         <AlbumCard records={props.data.records.nodes.map(p => p.frontmatter)} />
         <Divider hidden />
 
-        <Button as={Link} to="/biography" icon labelPosition='right'>
+        <Button as={Link} basic color='blue' to="/discography" icon labelPosition='right'>
           了解更多
           <Icon name='arrow right' />
         </Button>

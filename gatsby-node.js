@@ -4,6 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 const _ = require("lodash")
+const { group } = require("console")
 
 // function getId(path) {
 //   let pathName = path;
@@ -50,7 +51,7 @@ const createPages = async (createPage, graphql, reporter) => {
           totalCount
         }
   }
-  categoriesGroup: allMarkdownRemark(limit: 2000) {
+  categoriesGroup: allMarkdownRemark(limit: 2000, filter: {frontmatter: { type: {eq: null}}}) {
     group(field: frontmatter___categories) {
       fieldValue
       totalCount
@@ -78,6 +79,18 @@ const createPages = async (createPage, graphql, reporter) => {
     group(field: frontmatter___arranger) {
       fieldValue
       totalCount
+    }
+  }
+  recordList: allMarkdownRemark(limit: 2000, filter: {frontmatter: {type: {eq: "record"}}}) {
+    group(field: frontmatter___categories) {
+      fieldValue
+      totalCount
+      nodes {
+        frontmatter {
+          id
+          artist
+        }
+      }
     }
   }
 }
@@ -211,6 +224,40 @@ const createPages = async (createPage, graphql, reporter) => {
       },
     })
   })
+
+  const recordListTemplate = require.resolve("./src/templates/RecordListTemplate.tsx")
+  const recordGroups = result.data.recordList.group;
+  recordGroups.forEach(recordGroup => {
+    const title = recordGroup.fieldValue;
+    const frontmatters = recordGroup.nodes.map(p => p.frontmatter);
+    const g = _.groupBy(frontmatters, p => p.artist);
+    const recordsMap = _.map(g, (value, key) => ({ artist: key, records: value }));
+    if (recordsMap.length == 1) {
+      const { artist, records } = recordsMap[0];
+      createPage({
+        path: `/discography/${_.kebabCase(title)}/`,
+        component: recordListTemplate,
+        context: {
+          category: title,
+          artist: artist,
+          discographyIds: records.map(p => p.id)
+        },
+      })
+    } else {
+      recordsMap.forEach(({ artist, records }) => {
+        createPage({
+          path: `/discography/${_.kebabCase(artist)}/`,
+          component: arrangerTemplate,
+          context: {
+            category: title,
+            artist: artist,
+            discographyIds: records.map(p => p.id)
+          },
+        })
+      })
+    }
+  })
+
 }
 
 

@@ -45,7 +45,7 @@ const SideBar = () => {
                 <Menu.Menu>
                     {
                         recordList.map(({ fieldValue, totalCount }) => (
-                            <Menu.Item as={Link} key={fieldValue} to={`/categories/${kebabCase(fieldValue)}/`} >
+                            <Menu.Item as={Link} key={fieldValue} to={`/discography/${kebabCase(fieldValue)}/`} >
                                 {fieldValue}
                                 <Label color='teal' circular>{totalCount} </Label>
                             </Menu.Item>

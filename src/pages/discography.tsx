@@ -38,11 +38,18 @@ interface RecordsProp {
 
 const Records = ({ category, artists }: RecordsProp) => (
     <>
-        <h2>{category}</h2>
+        <h2>{
+            artists.length == 1 ?
+                <Link to={`/discography/${_.kebabCase(category)}/`}>{category}</Link>
+                : <>{category}</>
+        }
+        </h2>
         {
             artists.map(({ artist, records }) => (
                 <>
-                    {artists.length > 1 && (<h3>{artist}</h3>)}
+                    {artists.length > 1 && (
+                        <h3><Link to={`/discography/${_.kebabCase(artist)}/`}>{artist}</Link></h3>
+                    )}
                     <Card.Group fluid itemsPerRow={5} doubling>
                         {records.map(item =>
                             (

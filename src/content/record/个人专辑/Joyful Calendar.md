@@ -12,7 +12,7 @@ recordPublisher: "TAURUS RECORDS"
 recordType: "Album"
 order: 2
 slug: "/discography/joyful-calendar"
-coverImage: "Joyful Calendar.png"
+coverImage: "Joyful Calendar.jpg"
 ---
 
 恋愛についていろいろと想いをめぐらしている。　喜んだりかなしんだり。目指しているのはやっぱりメロディアスなもの。  

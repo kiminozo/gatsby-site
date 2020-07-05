@@ -3,9 +3,10 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img, { FluidObject } from "gatsby-image"
 import { useCoverImagesData } from '../hooks/useCoverImagesData'
 import demo from "../images/demo.png"
-import { Image, ImageProps } from 'semantic-ui-react'
-interface Props extends ImageProps {
-  coverImage: string
+import { Image, ImageProps, SemanticSIZES } from 'semantic-ui-react'
+interface Props {
+  coverimage: string
+  size?: SemanticSIZES
 }
 
 const imgStyle = { maxHeight: 200 }
@@ -14,17 +15,15 @@ const imgStyle = { maxHeight: 200 }
 
 const CoverImage = (props: Props) => {
   const data = useCoverImagesData();
-  const { coverImage } = props;
+  const { coverimage: coverImage, size } = props;
   const imageInfo = data.filter(p => p.base === coverImage)[0];
-  //console.log(imageInfo);
+  const className: string = "ui image " + (size ? size : "medium");
   if (imageInfo) {
     return imageInfo.image ?
-      <Image {...props}>
-        <Img fluid={{ ...imageInfo.image.fluid, aspectRatio: 1 }} />
-      </Image>
-      : <Image src={imageInfo.publicURL} />
+      <Img className={className} fluid={{ ...imageInfo.image.fluid, aspectRatio: 1 }} />
+      : <Image size={size} src={imageInfo.publicURL} />
   }
-  return <Image style={imgStyle} src={demo} ></Image>
+  return <Image size={size} style={imgStyle} src={demo} ></Image>
 }
 
 export default CoverImage

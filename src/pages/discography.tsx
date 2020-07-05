@@ -54,7 +54,7 @@ const Records = ({ category, artists }: RecordsProp) => (
                         {records.map(item =>
                             (
                                 <Card as={Link} key={item.id} to={item.slug}>
-                                    <CoverImage key={item.id} coverImage={item.coverImage} />
+                                    <CoverImage key={item.id} coverimage={item.coverImage} />
                                 </Card>
                             )
                         )}

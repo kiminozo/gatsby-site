@@ -63,7 +63,7 @@ const AlbumCard = ({ records }: { records: Record[] }) => (
     {records.map(item =>
       (
         <Card as={Link} key={item.title} to={item.slug}>
-          <CoverImage key={item.title} coverImage={item.coverImage} />
+          <CoverImage key={item.title} coverimage={item.coverImage} />
           {/* <Label attached='bottom left'>{item.title}</Label> */}
         </Card>
       )

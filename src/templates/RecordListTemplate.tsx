@@ -6,10 +6,9 @@ import StaffList, { StaffInfo, StaffLink } from '../components/StaffList'
 
 import {
   Button, Grid, Header, Ref, Segment, Rail, Accordion,
-  Label, Divider, Item, List, Card
+  Label, Divider, Item, List, Card, Image
 } from 'semantic-ui-react'
 import _ from "lodash";
-import demo from "../images/demo.png"
 
 interface RecordInfo {
   id: string;
@@ -24,8 +23,8 @@ interface RecordInfo {
 interface SongInfo {
   slug: string;
   title: string;
-  discographyId: string[];
-  discography: string[];
+  singer: string;
+  discographyId: string[]
 }
 
 interface TemplateProps {
@@ -61,25 +60,48 @@ const RecordListTemplate = (props: TemplateProps) => {
     <Layout path={`/discography/${_.kebabCase(category)}/`}>
       <SEO title={category} />
       <Grid>
-        <Grid.Column mobile={16} computer={12} tablet={12}>
-          <h1>{category}</h1>
-          <ul>
-            {
-              records.map(({ title, id }) => (
-                <li>{title}
-                  <ol>
-                    {
-                      songs.filter(p => p.discographyId.includes(id))
-                        .map(({ title }) => (
-                          <li>{title}</li>
-                        ))
-                    }
-                  </ol>
-                </li>
+        <Grid.Column mobile={16} computer={11} tablet={11}>
+          <Header as="h1">{category}</Header>
+          <Divider />
+          {/* <CoverImage size="small" coverimage={"Sincerely yours.jpg"} /> */}
 
-              ))
+          <Item.Group divided relaxed>
+            {
+              records.map(({ title, id, slug, coverImage, recordPublisher, recordReleaseDate }) => {
+                const artist = [...new Set<string>(songs.flatMap(p => p.singer))]
+                return (
+                  <Item key={id}>
+                    <Item.Image size="small" as={Link} to={slug}>
+                      <CoverImage size="small" coverimage={coverImage} />
+                    </Item.Image>
+                    <Item.Content>
+                      <Item.Header as={Link} to={slug}>{title}</Item.Header>
+                      <Item.Meta>
+                        艺术家:<StaffLink type="singer" names={artist} /> |
+                        发售日期:{recordReleaseDate} |
+                        发行商:{recordPublisher}
+                      </Item.Meta>
+                      <Item.Description>
+                        <List ordered selection relaxed>
+                          {
+                            songs.filter(p => p.discographyId.includes(id))
+                              .map(({ title, slug }) => (
+                                <List.Item as={Link} key={title} to={slug}>
+                                  {title}
+                                </List.Item>
+                              ))
+                          }
+                        </List>
+                      </Item.Description>
+                    </Item.Content>
+                  </Item>
+                )
+              })
             }
-          </ul>
+          </Item.Group>
+        </Grid.Column>
+        <Grid.Column mobile={16} computer={5} tablet={5} >
+          <SideBar />
         </Grid.Column>
       </Grid>
     </Layout >
@@ -92,11 +114,11 @@ export default function Template(props: TemplateProps) {
 
 export const pageQuery = graphql`
   query ($category: String,$discographyIds:[String]) {
-  records: allMarkdownRemark(sort: {fields: [frontmatter___order], order: ASC}, filter: {frontmatter: {categories: {in: [$category]}}}) {
-    totalCount
+          records: allMarkdownRemark(sort: {fields: [frontmatter___order], order: ASC}, filter: {frontmatter: {categories: {in: [$category]}}}) {
+          totalCount
     recordGroup: nodes {
-      frontmatter {
-        id
+          frontmatter {
+          id
         slug
         title
         coverImage
@@ -109,13 +131,13 @@ export const pageQuery = graphql`
     }
   }
   songs:allMarkdownRemark(sort: {fields: [frontmatter___order], order: ASC}, filter: {frontmatter: {type: {eq: "song"}, discographyId: {in: $discographyIds}}}) {
-    totalCount
+          totalCount
     songGroup: nodes {
-      frontmatter {
-        slug
-        title
-        discographyId
-        discography
+          frontmatter {
+            slug
+            title
+            singer
+            discographyId
       }
     }
   }

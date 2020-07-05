@@ -63,12 +63,10 @@ const RecordListTemplate = (props: TemplateProps) => {
         <Grid.Column mobile={16} computer={11} tablet={11}>
           <Header as="h1">{title}</Header>
           <Divider />
-          {/* <CoverImage size="small" coverimage={"Sincerely yours.jpg"} /> */}
 
           <Item.Group divided relaxed>
             {
               records.map(({ title, id, slug, coverImage, recordPublisher, recordReleaseDate }) => {
-                //const artist = [...new Set<string>(songs.flatMap(p => p.singer))]
                 return (
                   <Item key={id}>
                     <Item.Image size="small" as={Link} to={slug}>
@@ -77,9 +75,11 @@ const RecordListTemplate = (props: TemplateProps) => {
                     <Item.Content>
                       <Item.Header as={Link} to={slug}>{title}</Item.Header>
                       <Item.Meta>
-                        艺术家:<Link to={`/singer/${_.kebabCase(artist)}`}>{artist}</Link> |
-                        发售日期:{recordReleaseDate} |
-                        发行商:{recordPublisher}
+                        <Link to={`/singer/${_.kebabCase(artist)}`}>{artist}</Link>
+                        {" | "}
+                        {recordReleaseDate}
+                        {" | "}
+                        {recordPublisher}
                       </Item.Meta>
                       <Item.Description>
                         <List ordered selection relaxed>

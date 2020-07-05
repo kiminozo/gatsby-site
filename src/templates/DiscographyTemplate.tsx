@@ -5,7 +5,7 @@ import _ from "lodash"
 import { Link, graphql, PageProps } from "gatsby"
 import { SEO, Layout, CoverImage, SideBar } from "../components";
 import {
-    Card, Divider, Grid
+    Card, Divider, Grid, Header
 } from 'semantic-ui-react'
 
 interface RecordInfo {
@@ -17,7 +17,15 @@ interface RecordInfo {
     categories: string[]
 }
 
+interface ContextProps {
+    pageContext: {
+        category: string
+    }
+}
+
 interface TemplateProps {
+    title: string;
+    path: string;
     data: {
         records: {
             nodes: {
@@ -29,6 +37,7 @@ interface TemplateProps {
 
 //const cardSize = { width: 150, height: 150 };
 interface RecordsProp {
+    single?: boolean;
     category: string;
     artists: {
         artist: string;
@@ -36,19 +45,23 @@ interface RecordsProp {
     }[]
 }
 
-const Records = ({ category, artists }: RecordsProp) => (
+const Records = ({ single, category, artists }: RecordsProp) => (
     <>
-        <h2>{
-            artists.length == 1 ?
-                <Link to={`/discography/${_.kebabCase(category)}/`}>{category}</Link>
-                : <>{category}</>
+        {!single &&
+            <Header as='h2'>
+                {artists.length == 1 ?
+                    <Link to={`/discography/${_.kebabCase(category)}/`}>{category}</Link>
+                    : <>{category}</>
+                }
+            </Header>
         }
-        </h2>
         {
             artists.map(({ artist, records }) => (
                 <>
                     {artists.length > 1 && (
-                        <h3><Link to={`/discography/${_.kebabCase(artist)}/`}>{artist}</Link></h3>
+                        <Header as={single ? 'h2' : "h3"}>
+                            <Link to={`/discography/${_.kebabCase(artist)}/`}>{artist}</Link>
+                        </Header>
                     )}
                     <Card.Group fluid itemsPerRow={5} doubling>
                         {records.map(item =>
@@ -66,7 +79,7 @@ const Records = ({ category, artists }: RecordsProp) => (
 )
 
 const DiscographyTemplate = (props: TemplateProps) => {
-    const { data: { records: { nodes } } } = props;
+    const { title, path, data: { records: { nodes } } } = props;
     const records = nodes.map(p => p.frontmatter);
 
     const group = _.groupBy(records, p => p.categories[0]);
@@ -76,29 +89,35 @@ const DiscographyTemplate = (props: TemplateProps) => {
     }
     const categories = _.map(group, (value, key) => ({ category: key, artists: groupArtist(value) }));
     return (
-        <Layout path=''>
-            <SEO title="唱片集" />
+        <Layout path={path}>
+            <SEO title={title} />
             <Grid>
                 <Grid.Column mobile={16} computer={13} tablet={14}>
-                    <h1>唱片集</h1>
+                    <h1>{title}</h1>
                     <Divider />
                     {
-                        categories.map(props => (
-                            <Records {...props} />
-                        ))
+                        categories.length == 1 ?
+                            <Records single {...categories[0]} />
+                            : categories.map(props => (
+                                <Records {...props} />
+                            ))
                     }
                 </Grid.Column>
             </Grid>
         </Layout>
     )
 }
-export default function Template(props: TemplateProps) {
-    return (<DiscographyTemplate {...props} />)
+
+//export { DiscographyTemplate, TemplateProps };
+export default function Template(props: TemplateProps & ContextProps) {
+    const category = props.pageContext.category;
+    const path = `/discography/${_.kebabCase(category)}/`
+    return (<DiscographyTemplate {...props} path={path} title={category} />)
 }
 
 export const query = graphql`
-  {
-    records: allMarkdownRemark(filter: {frontmatter: {type: {eq: "record"}}}, sort: {fields: frontmatter___order}) {
+  query ($category: String) {
+    records: allMarkdownRemark(filter: {frontmatter: {type: {eq: "record"}, categories: {glob: $category}}}, sort: {fields: frontmatter___order}) {
       nodes {
         frontmatter {
           coverImage

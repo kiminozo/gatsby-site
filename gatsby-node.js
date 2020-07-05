@@ -226,6 +226,7 @@ const createPages = async (createPage, graphql, reporter) => {
   })
 
   const recordListTemplate = require.resolve("./src/templates/RecordListTemplate.tsx")
+  const discographyTemplate = require.resolve("./src/templates/DiscographyTemplate.tsx")
   const recordGroups = result.data.recordList.group;
   recordGroups.forEach(recordGroup => {
     const category = recordGroup.fieldValue;
@@ -233,6 +234,7 @@ const createPages = async (createPage, graphql, reporter) => {
     const g = _.groupBy(frontmatters, p => p.artist);
     const recordsMap = _.map(g, (value, key) => ({ artist: key, records: value }));
     if (recordsMap.length == 1) {
+      //单一分类
       const { artist, records } = recordsMap[0];
       createPage({
         path: `/discography/${_.kebabCase(category)}/`,
@@ -245,6 +247,15 @@ const createPages = async (createPage, graphql, reporter) => {
         },
       })
     } else {
+      //分类
+      createPage({
+        path: `/discography/${_.kebabCase(category)}/`,
+        component: discographyTemplate,
+        context: {
+          category: category
+        },
+      });
+      //歌手
       recordsMap.forEach(({ artist, records }) => {
         createPage({
           path: `/discography/${_.kebabCase(artist)}/`,
@@ -256,7 +267,8 @@ const createPages = async (createPage, graphql, reporter) => {
             discographyIds: records.map(p => p.id)
           },
         })
-      })
+      });
+
     }
   })
 

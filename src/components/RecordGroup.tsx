@@ -24,7 +24,7 @@ const RecordGroup = (props: Props) => {
     return (
         <Card.Group stackable centered >
             {list.map(item => (
-                <Card fluid color='teal' as={Link} key={item.id} to={item.slug}>
+                <Card fluid as={Link} key={item.id} to={item.slug}>
                     <CoverImage key={item.id} coverimage={item.coverImage} />
                     <Label size="tiny" style={lableStyle} attached='bottom'>{item.title}</Label>
                 </Card>

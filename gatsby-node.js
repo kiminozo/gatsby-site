@@ -21,7 +21,26 @@ Map.prototype.addListValue = function (key, value) {
   values.push(value);
 }
 
+
+
 const createPages = async (createPage, graphql, reporter) => {
+  const createPageWithPagination = ({ path, component, context, postsPerPage, totalCount }) => {
+    const numPages = Math.ceil(totalCount / postsPerPage);
+    Array.from({ length: numPages }).forEach((_, i) => {
+      createPage({
+        path: i === 0 ? path : `${path}/${i + 1}`,
+        component: component,
+        context: {
+          ...context,
+          limit: postsPerPage,
+          skip: i * postsPerPage,
+          totalPages: numPages,
+          activePage: i + 1
+        },
+      })
+    })
+  }
+
 
   const result = await graphql(`
    {
@@ -167,25 +186,37 @@ const createPages = async (createPage, graphql, reporter) => {
   const categoryTemplate = require.resolve("./src/templates/CategoriesTemplate.tsx")
   const categories = result.data.categoriesGroup.group;
   // Make categorie pages
-  const postsPerPage = 10
+  //const postsPerPage = 10
 
   categories.forEach(category => {
-    const numPages = Math.ceil(category.totalCount / postsPerPage);
-    const path = `/categories/${_.kebabCase(category.fieldValue)}`
-    Array.from({ length: numPages }).forEach((_, i) => {
-      createPage({
-        path: i === 0 ? path : `${path}/${i + 1}`,
-        component: categoryTemplate,
-        context: {
-          category: category.fieldValue,
-          limit: postsPerPage,
-          skip: i * postsPerPage,
-          totalPages: numPages,
-          activePage: i + 1
-        },
-      })
+    createPageWithPagination({
+      path: `/categories/${_.kebabCase(category.fieldValue)}`,
+      component: categoryTemplate,
+      context: {
+        category: category.fieldValue
+      },
+      postsPerPage: 10,
+      totalCount: category.totalCount
     })
   })
+
+  // categories.forEach(category => {
+  //   const numPages = Math.ceil(category.totalCount / postsPerPage);
+  //   const path = `/categories/${_.kebabCase(category.fieldValue)}`
+  //   Array.from({ length: numPages }).forEach((_, i) => {
+  //     createPage({
+  //       path: i === 0 ? path : `${path}/${i + 1}`,
+  //       component: categoryTemplate,
+  //       context: {
+  //         category: category.fieldValue,
+  //         limit: postsPerPage,
+  //         skip: i * postsPerPage,
+  //         totalPages: numPages,
+  //         activePage: i + 1
+  //       },
+  //     })
+  //   })
+  // })
 
 
   const staffTemplate = require.resolve("./src/templates/staff/SingerTemplate.tsx")

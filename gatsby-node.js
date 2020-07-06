@@ -32,6 +32,7 @@ const createPages = async (createPage, graphql, reporter) => {
         component: component,
         context: {
           ...context,
+          basePath: path,
           limit: postsPerPage,
           skip: i * postsPerPage,
           totalPages: numPages,
@@ -200,67 +201,59 @@ const createPages = async (createPage, graphql, reporter) => {
     })
   })
 
-  // categories.forEach(category => {
-  //   const numPages = Math.ceil(category.totalCount / postsPerPage);
-  //   const path = `/categories/${_.kebabCase(category.fieldValue)}`
-  //   Array.from({ length: numPages }).forEach((_, i) => {
-  //     createPage({
-  //       path: i === 0 ? path : `${path}/${i + 1}`,
-  //       component: categoryTemplate,
-  //       context: {
-  //         category: category.fieldValue,
-  //         limit: postsPerPage,
-  //         skip: i * postsPerPage,
-  //         totalPages: numPages,
-  //         activePage: i + 1
-  //       },
-  //     })
-  //   })
-  // })
-
-
+  const staffPerPage = 20;
   const staffTemplate = require.resolve("./src/templates/staff/SingerTemplate.tsx")
   const singers = result.data.singers.group;
   singers.forEach(staff => {
-    createPage({
-      path: `/singer/${_.kebabCase(staff.fieldValue)}/`,
+    createPageWithPagination({
+      path: `/singer/${_.kebabCase(staff.fieldValue)}`,
       component: staffTemplate,
       context: {
         staff: staff.fieldValue,
       },
+      postsPerPage: staffPerPage,
+      totalCount: staff.totalCount
     })
   })
   const lyricWriterTemplate = require.resolve("./src/templates/staff/LyricWriterTemplate.tsx")
   const lyricWriters = result.data.lyricWriters.group;
   lyricWriters.forEach(staff => {
-    createPage({
-      path: `/lyric-writer/${_.kebabCase(staff.fieldValue)}/`,
+    createPageWithPagination({
+      path: `/lyric-writer/${_.kebabCase(staff.fieldValue)}`,
       component: lyricWriterTemplate,
       context: {
         staff: staff.fieldValue,
       },
+      postsPerPage: staffPerPage,
+      totalCount: staff.totalCount
     })
   })
+
+
   const songWriterTemplate = require.resolve("./src/templates/staff/SongWriterTemplate.tsx")
   const songWriters = result.data.songWriters.group;
   songWriters.forEach(staff => {
-    createPage({
-      path: `/song-writer/${_.kebabCase(staff.fieldValue)}/`,
+    createPageWithPagination({
+      path: `/song-writer/${_.kebabCase(staff.fieldValue)}`,
       component: songWriterTemplate,
       context: {
         staff: staff.fieldValue,
       },
+      postsPerPage: staffPerPage,
+      totalCount: staff.totalCount
     })
   })
   const arrangerTemplate = require.resolve("./src/templates/staff/ArrangerTemplate.tsx")
   const arrangers = result.data.arrangers.group;
   arrangers.forEach(staff => {
-    createPage({
-      path: `/arranger/${_.kebabCase(staff.fieldValue)}/`,
+    createPageWithPagination({
+      path: `/arranger/${_.kebabCase(staff.fieldValue)}`,
       component: arrangerTemplate,
       context: {
         staff: staff.fieldValue,
       },
+      postsPerPage: staffPerPage,
+      totalCount: staff.totalCount
     })
   })
 

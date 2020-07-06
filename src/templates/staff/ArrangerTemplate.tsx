@@ -8,9 +8,10 @@ export default function ArrangerTemplate({ pageContext, data }: TemplateProps) {
 }
 
 export const pageQuery = graphql`
-  query($staff: String) {
+  query($staff: String, $skip: Int!, $limit: Int!) {
     songs: allMarkdownRemark(
-        limit: 2000, 
+        limit: $limit,
+        skip: $skip,
         filter: {frontmatter: {arranger: {in: [$staff]}}},
         sort: {fields: frontmatter___order}
         ) {

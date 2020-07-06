@@ -1,15 +1,19 @@
 import React, { Component } from "react"
 // Components
-import { Link, graphql } from "gatsby"
+import { Link, navigate } from "gatsby"
 import { SEO, Layout } from "../../components";
 import StaffList, { StaffInfo } from '../../components/StaffList'
-import { List } from "semantic-ui-react";
+import { List, Pagination } from "semantic-ui-react";
+import { kebabCase } from "lodash";
 
 
 export interface TemplateProps {
     title: string
     pageContext: {
         staff: string;
+        basePath: string;
+        activePage: number,
+        totalPages: number
     }
     data: {
         songs: {
@@ -24,10 +28,16 @@ export interface TemplateProps {
     }
 };
 
+function getPath(basePath: string, activePage: string | number | undefined) {
+    const path = (activePage === 1 || activePage === "1")
+        ? basePath : basePath + "/" + activePage;
+    return path;
+}
+
 export class StaffTemplatePage extends Component<TemplateProps> {
     render() {
         const { title,
-            pageContext: { staff },
+            pageContext: { basePath, activePage, totalPages },
             data: { songs: { nodes, totalCount } } } = this.props;
 
         // const staffHeader = `${totalCount} post${
@@ -55,6 +65,20 @@ export class StaffTemplatePage extends Component<TemplateProps> {
                         ))
                     }
                 </List>
+                {totalPages > 1 &&
+                    (
+                        <div>
+                            <Pagination
+                                onPageChange={(e, { activePage }) => { navigate(getPath(basePath, activePage)) }}
+                                firstItem={null}
+                                lastItem={null}
+                                prevItem={activePage === 1 ? null : undefined}
+                                nextItem={activePage === totalPages ? null : undefined}
+                                activePage={activePage}
+                                totalPages={totalPages} />
+                        </div>
+                    )
+                }
             </Layout>
         )
     }

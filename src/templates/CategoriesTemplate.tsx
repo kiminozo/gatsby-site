@@ -18,6 +18,7 @@ type CategoriesEdge = {
 type TemplateProps = {
     pageContext: {
         category: string;
+        basePath: string
         activePage: number,
         totalPages: number
     }
@@ -30,23 +31,22 @@ type TemplateProps = {
     }
 };
 
-function getPath(category: string, activePage: string | number | undefined) {
-    const categoryPath = `/categories/${kebabCase(category)}`;
+function getPath(basePath: string, activePage: string | number | undefined) {
     const path = (activePage === 1 || activePage === "1")
-        ? categoryPath : categoryPath + "/" + activePage;
+        ? basePath : basePath + "/" + activePage;
     return path;
 }
 
 class CategoriesTemplatePage extends Component<TemplateProps> {
     render() {
-        const { category, activePage, totalPages } = this.props.pageContext;
+        const { category, basePath, activePage, totalPages } = this.props.pageContext;
         const { edges, totalCount } = this.props.data.allMarkdownRemark
         const tagHeader = `${totalCount} post${
             totalCount === 1 ? "" : "s"
             } category with "${category}"`
 
         return (
-            <Layout path={getPath(category, 1)}>
+            <Layout path={getPath(basePath, 1)}>
                 <SEO title="categories" />
                 <h1>{tagHeader}</h1>
                 <ul>
@@ -64,7 +64,7 @@ class CategoriesTemplatePage extends Component<TemplateProps> {
                     (
                         <div>
                             <Pagination
-                                onPageChange={(e, { activePage }) => { navigate(getPath(category, activePage)) }}
+                                onPageChange={(e, { activePage }) => { navigate(getPath(basePath, activePage)) }}
                                 firstItem={null}
                                 lastItem={null}
                                 prevItem={activePage === 1 ? null : undefined}

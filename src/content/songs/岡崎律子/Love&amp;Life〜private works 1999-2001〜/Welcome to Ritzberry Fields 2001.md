@@ -11,15 +11,16 @@ lyricwriter: ["岡崎律子"]
 arranger: ["岡崎律子"]
 slug: "/songs/welcome-to-ritzberry-fields-2001"
 tags: []
+remarks: ""
 license: {}
 ---
 
-Welcome to Ritzberry Fields   
-Hello hello good day   
-Welcome to Ritzberry Fields  
-  
-  <!-- 翻译 -->
+Welcome to Ritzberry Fields 
+Hello hello good day 
+Welcome to Ritzberry Fields
 
-欢迎来到Ritzberry Fields   
-哈喽哈喽　美好的一天   
+<!-- 翻译 -->
+
+欢迎来到Ritzberry Fields 
+哈喽哈喽　美好的一天 
 欢迎来到Ritzberry Fields

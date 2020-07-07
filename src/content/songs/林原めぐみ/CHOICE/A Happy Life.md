@@ -11,7 +11,8 @@ lyricwriter: ["岡崎律子"]
 arranger: ["たかはしごう"]
 slug: "/songs/a-happy-life-megmi"
 tags: []
+remarks: ""
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net",reproduced-website: "織歌蟲"}
 ---
 
-\[quote type='song' name='a-happy-life' /\]
+[quote type='song' name='a-happy-life' /\]

@@ -11,5 +11,8 @@ lyricwriter: []
 arranger: ["村山達哉"]
 slug: "/songs/lyric"
 tags: []
+remarks: "Piano・Chorus"
+license: {}
 ---
+
 

@@ -1,5 +1,6 @@
 ---
 title: "Welcome to Ritzberry Fields 2001"
+titlech: ""
 type: "song"
 date: "2010-08-31"
 order: 11001
@@ -15,12 +16,12 @@ remarks: ""
 license: {}
 ---
 
-Welcome to Ritzberry Fields 
-Hello hello good day 
-Welcome to Ritzberry Fields
+Welcome to Ritzberry Fields   
+Hello hello good day   
+Welcome to Ritzberry Fields  
 
 <!-- 翻译 -->
 
-欢迎来到Ritzberry Fields 
-哈喽哈喽　美好的一天 
+欢迎来到Ritzberry Fields   
+哈喽哈喽　美好的一天   
 欢迎来到Ritzberry Fields

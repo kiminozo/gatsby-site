@@ -1,5 +1,6 @@
 ---
 title: "Lucky & Happy"
+titlech: ""
 type: "song"
 date: "2013-04-07"
 order: 361003

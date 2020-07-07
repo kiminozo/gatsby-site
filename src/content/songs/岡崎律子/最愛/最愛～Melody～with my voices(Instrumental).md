@@ -1,5 +1,6 @@
 ---
 title: "最愛～Melody～with my voices(Instrumental)"
+titlech: ""
 type: "song"
 date: "2010-09-01"
 order: 20202

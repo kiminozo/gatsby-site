@@ -1,5 +1,6 @@
 ---
 title: "４月の雪(Album mix version)"
+titlech: ""
 type: "song"
 date: "2010-08-22"
 order: 10306

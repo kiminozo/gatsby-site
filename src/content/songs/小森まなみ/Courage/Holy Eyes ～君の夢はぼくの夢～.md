@@ -1,8 +1,9 @@
 ---
 title: "Holy Eyes ～君の夢はぼくの夢～"
+titlech: "Holy Eyes ～你的夢想就是我的夢想～"
 type: "song"
 date: "2017-02-04"
-order: 0
+order: 100000
 discography: ["Courage"]
 discographyId: ["courage"]
 singer: ["小森まなみ"]
@@ -11,6 +12,7 @@ lyricwriter: ["小森まなみ"]
 arranger: ["池間史規"]
 slug: "/songs/holy-eyes"
 tags: []
+remarks: "[ ３×３ EYES ～吸精公主～ ] ED"
 license: {}
 ---
 
@@ -44,7 +46,9 @@ license: {}
 ★ Repeat  
   
 その笑顔守るからね  
-  
+
+<!-- 翻译 -->
+
 夾雜沙塵的風迎面襲來  
 撫弄著毫無防備的臉頰  
 我一直都比朋友更親近地  

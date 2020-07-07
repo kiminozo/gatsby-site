@@ -1,5 +1,6 @@
 ---
 title: "Angel 恋をした"
+titlech: "戀上 Angel"
 type: "song"
 date: "2013-03-31"
 order: 350109
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["松浦有希"]
 slug: "/songs/angel-koi-woshita"
 tags: []
+remarks: ""
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net",reproduced-website: "織歌蟲"}
 ---
 
@@ -41,6 +43,9 @@ Angel 恋をした
   
 ★ Repeat   
   
+
+<!-- 翻译 -->
+
 在萬籟俱寂的深夜　悄悄思念著你  
 我愛上了一個 Angel  
   

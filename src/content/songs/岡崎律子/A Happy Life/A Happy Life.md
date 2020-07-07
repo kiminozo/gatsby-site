@@ -1,5 +1,6 @@
 ---
 title: "A Happy Life"
+titlech: ""
 type: "song"
 date: "2010-08-22"
 order: 10301
@@ -11,6 +12,8 @@ lyricwriter: ["岡崎律子"]
 arranger: ["長谷川智樹"]
 slug: "/songs/a-happy-life"
 tags: []
+remarks: "Chorus・Chorus Arrange
+テレビ東京系「情報ソースが決め手」ED"
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---
 
@@ -44,7 +47,7 @@ license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.
 あとでわかるよ　全ての意味が　今はわからなくても   
 苦しみも幸せも秘密も　だから　なげないで抱きしめていこう　ずっと   
 It's My Life だから  
-  
+
 <!-- 翻译 -->
 
 看吧　就算再回头张望　也已经不在了呀   

@@ -1,5 +1,6 @@
 ---
 title: "So far, so near"
+titlech: ""
 type: "song"
 date: "2010-09-05"
 order: 30414
@@ -11,6 +12,8 @@ lyricwriter: ["岡崎律子"]
 arranger: ["西脇辰弥"]
 slug: "/songs/so-far-so-near"
 tags: []
+remarks: "Chorus)・Main Vocal:岡崎律子
+『STRATOS 4』插曲"
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---
 
@@ -49,8 +52,8 @@ maybe it can be so near ★
 僕らは未来へ   
   
 ★ Repeat  
-  
-  <!-- 翻译 -->
+
+<!-- 翻译 -->
 
 我们所能看见的一切  
 现在　就在这儿  

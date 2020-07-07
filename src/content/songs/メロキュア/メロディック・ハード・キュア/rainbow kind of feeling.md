@@ -1,5 +1,6 @@
 ---
 title: "rainbow kind of feeling"
+titlech: ""
 type: "song"
 date: "2010-09-05"
 order: 30413
@@ -11,6 +12,8 @@ lyricwriter: ["日向めぐみ"]
 arranger: ["関淳二郎"]
 slug: "/songs/rainbow-kind-of-feeling"
 tags: []
+remarks: "Chorus・Main Vocal:日向めぐみ
+OVA『STRATOS 』ED"
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---
 
@@ -37,9 +40,10 @@ license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.
 どんなに冷たい北風も　楽しめる強さであふれてる   
   
 ★ Repeat  
-  
-  <!-- 翻译 -->
 
+<!-- 翻译 -->
+
+  
 今年入冬以来第一次穿上外套　出门去吧  
 比其他任何人都更早  
 今天故意将手套忘在家裡  

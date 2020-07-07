@@ -1,5 +1,6 @@
 ---
 title: "Good-bye Good Days"
+titlech: ""
 type: "song"
 date: "2017-02-04"
 order: 40016
@@ -11,6 +12,7 @@ lyricwriter: ["森野律"]
 arranger: ["飛沢宏元"]
 slug: "/songs/good-bye-good-days"
 tags: []
+remarks: ""
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net",reproduced-website: "織歌蟲"}
 ---
 
@@ -39,7 +41,9 @@ Back To My Good Days
   
 Ｇood Luck My Good Days  
 約束よ　素敵になって　また逢おう  
-  
+
+<!-- 翻译 -->
+
 穿過地下鐵的剪票口　一年不見的熟悉臉孔全都到齊了  
 電話答錄機裡　令人雀躍的留言  
 懷念的聲音　是畢業後頭一遭吧  

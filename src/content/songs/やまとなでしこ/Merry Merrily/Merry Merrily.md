@@ -1,5 +1,6 @@
 ---
 title: "Merry Merrily"
+titlech: ""
 type: "song"
 date: "2013-04-14"
 order: 380101
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["十川知司"]
 slug: "/songs/merry-merrily"
 tags: []
+remarks: ""
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net",reproduced-website: "織歌蟲"}
 ---
 
@@ -61,6 +63,10 @@ license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.
 叶えたい夢がある   
 私は夢がある   
 輝く未来がある   
+  
+
+<!-- 翻译 -->
+
   
 燦爛的未來一定在等著我們  
 每個地方都去闖闖看吧  

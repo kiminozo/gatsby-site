@@ -1,5 +1,6 @@
 ---
 title: "Agapé"
+titlech: "无偿的爱"
 type: "song"
 date: "2010-09-05"
 order: 30407
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["西脇辰弥"]
 slug: "/songs/agape"
 tags: []
+remarks: "Chorus・Main Vocal:日向めぐみ"
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---
 
@@ -40,8 +42,8 @@ Time is now
 （どこまでも愛は果てなく）  
   
 ★ Repeat × 4   
-  
-  <!-- 翻译 -->
+
+<!-- 翻译 -->
 
 ★ Would you call me if you need my love (若需要我的爱时就喊我好吗)?  
 无论你身在何方我都会听见  

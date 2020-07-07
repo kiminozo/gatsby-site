@@ -1,5 +1,6 @@
 ---
 title: "Good Luck！"
+titlech: ""
 type: "song"
 date: "2010-08-25"
 order: 10609
@@ -11,6 +12,8 @@ lyricwriter: ["岡崎律子"]
 arranger: ["光宗信吉"]
 slug: "/songs/good-luck"
 tags: []
+remarks: "Chorus
+林原めぐみ『Iravati』"
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---
 
@@ -39,8 +42,8 @@ Good Luck！　旅立って　一番輝く場所へ
   
 Good Luck！　どんな時も　その目を閉じないで   
 全てを見届けよう　それはきっと力になる  
-  
-  <!-- 翻译 -->
+
+<!-- 翻译 -->
 
 Good Luck！　启程到最灿烂的地方去   
   
@@ -52,6 +55,7 @@ Good Luck！　启程到最灿烂的地方去
   
 为每个人准备好的　最能让自己发光发热的地方   
 但是光坐着等待它是不会到来的　要自己动身前往   
+  
   
 不理睬那些在拥挤人潮中穿梭鑽营的人   
 心情浮动不安　一不留神就会被孤独击垮   

@@ -1,8 +1,9 @@
 ---
 title: "Little Courage ～うちへおいでよ～"
+titlech: "Little Courage ～就到我家來吧～"
 type: "song"
 date: "2017-02-04"
-order: 0
+order: 100000
 discography: ["Courage"]
 discographyId: ["courage"]
 singer: ["小森まなみ"]
@@ -11,6 +12,7 @@ lyricwriter: ["小森まなみ"]
 arranger: ["丸尾めぐみ"]
 slug: "/songs/little-courage"
 tags: []
+remarks: ""
 license: {}
 ---
 
@@ -58,7 +60,9 @@ You can do,you can do,you can do ◆
   
 Are you fine？ You can do it  
 You can do...  
-  
+
+<!-- 翻译 -->
+
 ★ Don't be afraid！　你心中也擁有這樣的力量  
 Little Courage！　沒問題 … 我一直深信 … ★  
   

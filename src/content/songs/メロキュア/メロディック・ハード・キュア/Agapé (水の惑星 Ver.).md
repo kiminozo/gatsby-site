@@ -1,5 +1,6 @@
 ---
 title: "Agapé (水の惑星 Ver.)"
+titlech: "无偿的爱(水星版)"
 type: "song"
 date: "2010-09-05"
 order: 30416
@@ -11,6 +12,8 @@ lyricwriter: ["岡崎律子"]
 arranger: ["西脇辰弥"]
 slug: "/songs/agape-mizu-no-wakusei-ver"
 tags: []
+remarks: "Chorus・Main Vocal:岡崎律子
+圆盘皇女OVA插曲"
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---
 
@@ -42,8 +45,8 @@ I'll fly to baby.
 どこまでも愛は果てなく」   
   
 ★ Repeat × 2   
-  
-  <!-- 翻译 -->
+
+<!-- 翻译 -->
 
 ★ Would you call me if you need my love?   
 无论你身在何方我都会听见  

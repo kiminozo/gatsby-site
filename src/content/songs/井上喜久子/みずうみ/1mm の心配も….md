@@ -1,5 +1,6 @@
 ---
 title: "1mm の心配も…"
+titlech: "1mm的担心"
 type: "song"
 date: "2013-03-27"
 order: 300111
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["長谷川智樹"]
 slug: "/songs/1mm-no-shinpai-mo"
 tags: []
+remarks: ""
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net",reproduced-website: "織歌蟲"}
 ---
 
@@ -50,6 +52,9 @@ license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.
   
 そこは安心の場所よ   
   
+
+<!-- 翻译 -->
+
 在雜沓的人群中　不知怎地突然淚如泉湧　真傷腦筋  
 停下腳步　屏息仰望天空  
   

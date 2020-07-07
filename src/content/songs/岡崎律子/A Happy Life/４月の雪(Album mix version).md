@@ -1,5 +1,6 @@
 ---
 title: "４月の雪(Album mix version)"
+titlech: ""
 type: "song"
 date: "2010-08-22"
 order: 10306
@@ -11,7 +12,9 @@ lyricwriter: ["岡崎律子"]
 arranger: ["長谷川智樹"]
 slug: "/songs/4-gatsu-no-yuki-mix"
 tags: []
+remarks: "Chorus・Chorus Arrange
+Bonus Track"
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---
 
-\[quote type='song' name='4-gatsu-no-yuki' /\]
+[quote type='song' name='4-gatsu-no-yuki' /\]

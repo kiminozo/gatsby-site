@@ -1,8 +1,9 @@
 ---
 title: "Happy Happy Birthday"
+titlech: ""
 type: "song"
 date: "2017-02-04"
-order: 0
+order: 100000
 discography: ["Tiny Angel"]
 discographyId: ["tiny-angel"]
 singer: ["小森まなみ"]
@@ -11,6 +12,7 @@ lyricwriter: ["小森まなみ"]
 arranger: ["丸尾めぐみ"]
 slug: "/songs/happy-happy-birthday"
 tags: []
+remarks: ""
 license: {}
 ---
 
@@ -36,7 +38,9 @@ HAPPY BIRTHDAY HAPPY BIRTHDAY
 時間のダイアリー綴りたいの With You……   
   
 HAPPY BIRTHDAY Dear.My Lover…  
-  
+
+<!-- 翻译 -->
+
 從遙遠的銀河　有一顆星星漂流而來  
 你是獅子座的王子殿下　我們兩人能在這裡凝視著彼此  
 是何其珍貴　這偶然間的因緣際會啊  

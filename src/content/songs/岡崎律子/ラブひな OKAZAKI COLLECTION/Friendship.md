@@ -1,5 +1,6 @@
 ---
 title: "Friendship"
+titlech: ""
 type: "song"
 date: "2010-08-29"
 order: 10703
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["重実徹"]
 slug: "/songs/friendship"
 tags: []
+remarks: ""
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---
 
@@ -47,8 +49,8 @@ Memories　真冬の帰り道
 ◆ Repeat   
   
 ずっとずっと信じてる  
-  
-  <!-- 翻译 -->
+
+<!-- 翻译 -->
 
 Yesterday (昨天)　没能好好聊上几句   
 就算只是与你匆匆擦身而过   

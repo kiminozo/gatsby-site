@@ -1,5 +1,6 @@
 ---
 title: "Babyblue"
+titlech: "嫩藍色"
 type: "song"
 date: "2013-03-30"
 order: 300308
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["長谷川智樹"]
 slug: "/songs/babyblue"
 tags: []
+remarks: ""
 license: {type: "reproduced",translator: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net",reproduced-website: "織歌蟲"}
 ---
 
@@ -44,6 +46,9 @@ Babyblue　未来は　ほら　ガラスの向こう
   
 一緒に行こうね　これから  
   
+
+<!-- 翻译 -->
+
 夏日微風徐徐吹來  
 走在陽光灑落的林蔭道上  
 我一個人走著　心頭滿是你　哪　滿滿的  

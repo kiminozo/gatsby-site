@@ -1,5 +1,6 @@
 ---
 title: "reminiscence"
+titlech: "追忆"
 type: "song"
 date: "2010-08-29"
 order: 10803
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["村山達哉"]
 slug: "/songs/reminiscence"
 tags: []
+remarks: "Keyboard・Chorus"
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---
 
@@ -41,8 +43,8 @@ license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.
 今　この指を決して離してはだめ   
 知っていたのに　なぜ   
 私にはその覚悟がなくて  
-  
-  <!-- 翻译 -->
+
+<!-- 翻译 -->
 
 走在春风徐徐吹来的路上  
 一想起你　尽是甜蜜的记忆  

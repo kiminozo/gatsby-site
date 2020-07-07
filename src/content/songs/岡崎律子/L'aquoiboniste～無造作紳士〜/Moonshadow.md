@@ -1,5 +1,6 @@
 ---
 title: "Moonshadow"
+titlech: ""
 type: "song"
 date: "2010-09-01"
 order: 11015
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["加藤敏樹","加藤道明","村山達哉","磯江俊道"]
 slug: "/songs/moonshadow"
 tags: []
+remarks: ""
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---
 
@@ -57,8 +59,8 @@ license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.
 それなら　今を生きてみるだけ   
   
 生きてゆくしかないの  
-  
-  <!-- 翻译 -->
+
+<!-- 翻译 -->
 
 暗夜　月光   
 在我独自远眺的夜色彼端   

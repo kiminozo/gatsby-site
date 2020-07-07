@@ -1,5 +1,6 @@
 ---
 title: "can you hear me?"
+titlech: ""
 type: "song"
 date: "2013-03-31"
 order: 330108
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["AKIO"]
 slug: "/songs/can-you-hear-me"
 tags: []
+remarks: ""
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net",reproduced-website: "織歌蟲"}
 ---
 
@@ -53,6 +55,9 @@ Can you hear me?
   
 愛してるんだ  
   
+
+<!-- 翻译 -->
+
 過去我總以為時間要多少有多少  
 至今我才明白我錯了  
   

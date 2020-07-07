@@ -1,5 +1,6 @@
 ---
 title: "fay"
+titlech: ""
 type: "song"
 date: "2010-08-30"
 order: 10909
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["長谷川智樹"]
 slug: "/songs/fay"
 tags: []
+remarks: "Chorus"
 license: {}
 ---
 
@@ -25,7 +27,7 @@ Because of only love
 みつけて そうよ　あなたのありのまま   
   
 その笑顔　なによりのウレシイ gift   
-I don\\'t ask for any rewards   
+I don\'t ask for any rewards   
 Because of only love   
   
 微笑みが　なによりのウレシイ gift   
@@ -40,8 +42,8 @@ Because ...
 ほら，見て　素敵な gift   
 求めない　なにひとつも   
 Only love  
-  
-  <!-- 翻译 -->
+
+<!-- 翻译 -->
 
 只有一个心愿 我想帮助你   
 寻找吧 现在这一刻 紧跟着我来   

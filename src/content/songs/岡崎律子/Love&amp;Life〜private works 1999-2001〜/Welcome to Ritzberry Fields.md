@@ -1,5 +1,6 @@
 ---
 title: "Welcome to Ritzberry Fields"
+titlech: ""
 type: "song"
 date: "2010-08-31"
 order: 11011
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["岡崎律子"]
 slug: "/songs/welcome-to-ritzberry-fields"
 tags: []
+remarks: ""
 license: {}
 ---
 

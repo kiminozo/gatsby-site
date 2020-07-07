@@ -1,8 +1,9 @@
 ---
 title: "Presage"
+titlech: "預兆"
 type: "song"
 date: "2017-02-04"
-order: 0
+order: 100000
 discography: ["Presage"]
 discographyId: ["presage"]
 singer: ["小森まなみ"]
@@ -11,6 +12,7 @@ lyricwriter: ["小森まなみ"]
 arranger: ["京田誠一"]
 slug: "/songs/presage"
 tags: []
+remarks: ""
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net",reproduced-website: "織歌蟲"}
 ---
 
@@ -54,7 +56,9 @@ license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.
 はじまりはそこから  
 誰にでも　あるはず  
 明日を決める　myself  
-  
+
+<!-- 翻译 -->
+
 從東方的天空　嶄新的黎明  
 已經悄然到來了呢　季節也變換了  
   

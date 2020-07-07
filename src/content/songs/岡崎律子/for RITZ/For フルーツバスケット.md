@@ -1,5 +1,6 @@
 ---
 title: "For フルーツバスケット"
+titlech: "致水果篮子"
 type: "song"
 date: "2010-08-30"
 order: 10911
@@ -11,6 +12,8 @@ lyricwriter: ["岡崎律子"]
 arranger: ["村山達哉"]
 slug: "/songs/for-fruits-basket"
 tags: []
+remarks: "Chorus
+フルーツバスケット OP"
 license: {}
 ---
 
@@ -47,8 +50,11 @@ Let's stay together 　いつも ★
 心ごとすべてなげだせたなら   
   
 ★ Repeat   
+  
 
-  <!-- 翻译 -->
+  
+
+<!-- 翻译 -->
 
 我非常地高兴 你能笑容相迎  
 用那把一切都能融化的微笑  

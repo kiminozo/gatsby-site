@@ -1,5 +1,6 @@
 ---
 title: "White Land"
+titlech: ""
 type: "song"
 date: "2010-08-31"
 order: 11012
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["蓮沼健介"]
 slug: "/songs/white-land"
 tags: []
+remarks: ""
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---
 
@@ -44,8 +46,8 @@ White Land
   
 （Merry Christmas to You...   
 It's my life ... ）  
-  
-  <!-- 翻译 -->
+
+<!-- 翻译 -->
 
 背靠着若有所待的牆壁　已经懒得再瞄时钟   
 期待与失落　反覆交错的１２月   

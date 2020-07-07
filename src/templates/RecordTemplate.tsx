@@ -36,6 +36,7 @@ interface TemplateProps {
         frontmatter: StaffInfo & {
           title: string;
           slug: string;
+          remarks: string;
         }
       }[]
     }
@@ -153,6 +154,7 @@ export const pageQuery = graphql`
           lyricWriter:lyricwriter
           singer
           arranger
+          remarks
         }
       }
     }

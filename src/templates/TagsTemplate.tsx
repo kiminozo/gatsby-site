@@ -1,26 +1,23 @@
 import React, { Component } from "react"
 // Components
 import { Link, graphql } from "gatsby"
-import { SEO, Layout } from "../components";
+import { SEO, Layout, SideBar } from "../components";
+import { Header, Divider, List, Button, Icon, Grid, Label } from "semantic-ui-react";
 
-type TagEdge = {
-    node: {
-        frontmatter: {
-            slug: string;
-            title: string
-        }
-    }
-}
 
-type TemplateProps = {
+interface TemplateProps {
     pageContext: {
         tag: string;
     }
     data: {
         allMarkdownRemark: {
             totalCount: number
-            edges: TagEdge[]
-
+            nodes: {
+                frontmatter: {
+                    slug: string;
+                    title: string
+                }
+            }[]
         }
     }
 };
@@ -48,38 +45,40 @@ type TemplateProps = {
 //     }),
 // }
 
-class TagsTemplatePage extends Component<TemplateProps> {
+const TagsTemplatePage = (props: TemplateProps) => {
 
+    const { pageContext: { tag },
+        data: { allMarkdownRemark: { nodes, totalCount } } } = props;
+    return (
+        <Layout>
+            <SEO title={tag} />
+            <Grid container stackable>
+                <Grid.Column mobile={16} computer={11} tablet={11}>
+                    <Header as="h1">
+                        {tag}
+                        <Label color='teal'>{totalCount}</Label>
+                    </Header>
+                    <Divider />
 
-    render() {
-        const { tag } = this.props.pageContext;
-        const { edges, totalCount } = this.props.data.allMarkdownRemark
-        const tagHeader = `${totalCount} post${
-            totalCount === 1 ? "" : "s"
-            } tagged with "${tag}"`
-        return (
-            <Layout>
-                <SEO title="tags" />
-                <h1>{tagHeader}</h1>
-                <ul>
-                    {edges.map(({ node }) => {
-                        const { slug } = node.frontmatter
-                        const { title } = node.frontmatter
-                        return (
-                            <li key={slug}>
+                    <List>
+                        {nodes.map(({ frontmatter: { slug, title } }) => (
+                            <List.Item key={slug}>
                                 <Link to={slug}>{title}</Link>
-                            </li>
-                        )
-                    })}
-                </ul>
-                {/*
-              This links to a page that does not yet exist.
-              You'll come back to it!
-            */}
-                <Link to="/tags">All tags</Link>
-            </Layout>
-        )
-    }
+                            </List.Item>
+                        ))}
+                    </List>
+                    <Button as={Link} basic color='blue' to="/tags" icon labelPosition='left'>
+                        全部标签
+                            <Icon name='arrow left' />
+                    </Button>
+                </Grid.Column>
+                <Grid.Column mobile={16} computer={5} tablet={5} >
+                    <SideBar />
+                </Grid.Column>
+            </Grid>
+        </Layout>
+    )
+
 }
 
 export default function TagsTemplate({ pageContext, data }: TemplateProps) {
@@ -94,13 +93,11 @@ export const pageQuery = graphql`
       filter: { frontmatter: { tags: { in: [$tag] } } }
     ) {
       totalCount
-      edges {
-        node {
+      nodes {
           frontmatter {
             slug
             title
           }
-        }
       }
     }
   }

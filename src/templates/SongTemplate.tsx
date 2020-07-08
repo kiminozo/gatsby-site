@@ -22,6 +22,7 @@ interface Record {
 interface MarkdownRemark {
   frontmatter: StaffInfo & Record & {
     title: string;
+    titlech?: string;
     slug: string;
     date: string;
     lang: string;
@@ -65,7 +66,7 @@ class SongTemplatePage extends Component<TemplateProps> {
       return;
     }
     const { frontmatter, html } = remark;
-    const { title, discographyId, license, slug } = frontmatter;
+    const { title, titlech, discographyId, license, slug } = frontmatter;
     const { jp, cn } = split(html);
 
     return (
@@ -73,7 +74,10 @@ class SongTemplatePage extends Component<TemplateProps> {
         <SEO title={title} />
         <Grid>
           <Grid.Column mobile={16} computer={14} tablet={14}>
-            <Header as="h1">{title}</Header>
+            <Header as="h1">
+              {title}
+              {titlech && <Label basic size='large'>{titlech}</Label>}
+            </Header>
             <StaffList staff={frontmatter} />
             {html &&
               <>
@@ -122,6 +126,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
     slug
     title
+    titlech
     license {
         type
         author

@@ -14,6 +14,7 @@ slug: "/songs/lucky-and-happy-megmi"
 tags: []
 remarks: ""
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net",reproduced-website: "織歌蟲"}
+quote: "/songs/lucky-and-happy"
+
 ---
 
-[quote type='song' name='lucky-and-happy' /\]

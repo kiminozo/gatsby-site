@@ -12,43 +12,42 @@ const Footer = () => (
     <>
         <Divider />
 
-        {/* <Container textAlign="center" style={{ height: 48 }}>
-            © 2006-{new Date().getFullYear()},
-            <a href="https://forritz.org">For RITZ</a>
-            {` `}All rights reserved.
-         </Container> */}
-
         <Segment as="footer" vertical style={{ padding: 10 }}>
             <Container>
                 <Grid divided stackable>
                     <Grid.Row>
                         <Grid.Column width={3}>
-                            <Header as='h4' content='About' />
+                            <Header as='h4' content='社区' />
                             <List link >
-                                <List.Item as='a'>Sitemap</List.Item>
-                                <List.Item as='a'>Contact Us</List.Item>
-                                <List.Item as='a'>Religious Ceremonies</List.Item>
-                                <List.Item as='a'>Gazebo Plans</List.Item>
+                                <List.Item as='a' href="https://bbs.forritz.org" >加入讨论</List.Item>
+                                <List.Item as={Link} to='/about'>特别感谢</List.Item>
+                                <List.Item as='a'>网站地图</List.Item>
                             </List>
                         </Grid.Column>
                         <Grid.Column width={3}>
-                            <Header as='h4' content='Services' />
+                            <Header as='h4' content='技术' />
                             <List link >
-                                <List.Item as='a'>Banana Pre-Order</List.Item>
-                                <List.Item as='a'>DNA FAQ</List.Item>
-                                <List.Item as='a'>How To Access</List.Item>
-                                <List.Item as='a'>Favorite X-Men</List.Item>
+                                <List.Item as='a' href="https://github.com/kiminozo/forritz.org" target="_Blank">Source Code</List.Item>
+                                <List.Item as='a' href="https://react.semantic-ui.com" target="_Blank">Semantic UI React</List.Item>
+                                <List.Item as='a' href="https://www.gatsbyjs.org/" target="_Blank">GatsbyJS</List.Item>
                             </List>
                         </Grid.Column>
-                        <Grid.Column width={7}>
-                            <Header as='h4' >
-                                Footer Header
-                             </Header>
-                            <p>
-                                © 2006-{new Date().getFullYear()},
+                        <Grid.Column width={10}>
+                            <Header as='h4' content='关于' />
+                            <List link >
+                                {/* <List.Item>
+                                    这里是已故音乐唱作歌手岡崎律子小姐的非官方中文资料站，
+                                </List.Item> */}
+                                <List.Item>
+                                    © 2006-{new Date().getFullYear()},
                                  <Link to="/">For RITZ</Link>
-                                {` `}All rights reserved.
-                           </p>
+                                    {` `}All rights reserved.
+                                </List.Item>
+                                <List.Item>
+                                    Open Source (MIT)
+                                </List.Item>
+
+                            </List>
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>

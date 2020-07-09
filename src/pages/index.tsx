@@ -51,7 +51,7 @@ const RitzCard = () => (
     </Card.Content>
     <Card.Content extra>
       <Button as="a" basic color='blue'
-        href="http://www.ne.jp/asahi/okazaki/book/"
+        href="http://www.ne.jp/asahi/okazaki/book/" target="_Blank"
         icon='world' content='岡崎律子Book' labelPosition='left' />
     </Card.Content>
   </Card >
@@ -75,7 +75,7 @@ const AlbumCard = ({ records }: { records: Record[] }) => (
 
 const IndexPage = (props: Props) => (
   <Layout path={props.location.pathname}>
-    <SEO title="Home" />
+    <SEO title="首页" />
     <Grid>
       <Grid.Column mobile={16} computer={4} tablet={5}>
         <RitzCard />

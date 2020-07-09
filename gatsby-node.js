@@ -59,6 +59,7 @@ const createPages = async (createPage, graphql, reporter) => {
       node {
         frontmatter {
           slug
+          quote
         }
       }
     }
@@ -151,8 +152,8 @@ const createPages = async (createPage, graphql, reporter) => {
       path: node.frontmatter.slug,
       component: songTemplate,
       context: {
-        // additional data can be passed via context
         slug: node.frontmatter.slug,
+        quote: node.frontmatter.quote,
       },
     })
   })
@@ -165,8 +166,6 @@ const createPages = async (createPage, graphql, reporter) => {
       component: recordTemplate,
       context: {
         id: node.frontmatter.id
-        // additional data can be passed via context
-        //slug: node.frontmatter.slug,
       },
     })
   })

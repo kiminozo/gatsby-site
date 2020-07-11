@@ -25,7 +25,7 @@ const CC = ({ license }: { license?: License }) => {
         <Message info >
             <Message.Header>
                 <Icon name='cc' size="large" />
-                <a href={byncsa}>BY-NC-SA 4.0</a>
+                <a href={byncsa} target="_Blank">BY-NC-SA 4.0</a>
             </Message.Header>
             <Message.Content>
                 {content}

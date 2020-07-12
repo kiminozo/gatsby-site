@@ -7,6 +7,7 @@ import { SEO, Layout } from "../components";
 import {
     Menu, Label, List
 } from 'semantic-ui-react'
+import { getMetaId } from "../hooks/useMetaData";
 type CategoriesGroup = {
     fieldValue: string;
     totalCount: number;
@@ -38,7 +39,7 @@ const CategoriesPage = (props: CategoriesPageProp) => {
                 <h1>Categories</h1>
                 <Menu vertical>
                     {group.map(category => (
-                        <Menu.Item as={Link} to={`/categories/${kebabCase(category.fieldValue)}/`} >
+                        <Menu.Item as={Link} to={`/category/${getMetaId(category.fieldValue)}/`} >
                             {category.fieldValue}
                             <Label circular color='teal' >{category.totalCount} </Label>
                         </Menu.Item>

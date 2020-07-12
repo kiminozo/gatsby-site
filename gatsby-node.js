@@ -4,7 +4,8 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 const _ = require("lodash")
-const { group } = require("console")
+const { group } = require("console");
+const { title } = require("process");
 
 // function getId(path) {
 //   let pathName = path;
@@ -45,6 +46,14 @@ const createPages = async (createPage, graphql, reporter) => {
 
   const result = await graphql(`
    {
+  metas:allMarkdownRemark(limit: 2000, filter: {frontmatter: {type: {eq: "meta"}}}) {
+    nodes {
+      frontmatter {
+        title
+        id
+      }
+    }
+  }
   posts:allMarkdownRemark(sort: {order: ASC, fields: [frontmatter___slug]}, limit: 1000, filter: {frontmatter: {type: {eq: null}}}) {
     edges {
       node {
@@ -130,6 +139,11 @@ const createPages = async (createPage, graphql, reporter) => {
     return
   }
 
+
+  const metas = result.data.metas.nodes.map(p => p.frontmatter);
+  const getMetaId = (title => metas.filter(p => p.title === title)
+    .map(p => p.id)[0] || _.kebabCase(title))
+
   const blogPostTemplate = require.resolve(`./src/templates/PostTemplate.tsx`)
   const posts = result.data.posts.edges;
   posts.forEach(({ node }, index, posts) => {
@@ -190,7 +204,7 @@ const createPages = async (createPage, graphql, reporter) => {
 
   categories.forEach(category => {
     createPageWithPagination({
-      path: `/categories/${_.kebabCase(category.fieldValue)}`,
+      path: `/category/${getMetaId(category.fieldValue)}`,
       component: categoryTemplate,
       context: {
         category: category.fieldValue

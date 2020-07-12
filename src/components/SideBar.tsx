@@ -1,7 +1,7 @@
 import React from "react"
 import { Menu, Label } from "semantic-ui-react"
 import { graphql, useStaticQuery, Link } from "gatsby"
-import kebabCase from "lodash/kebabCase"
+import { getMetaId } from "../hooks/useMetaData"
 
 interface CategoriesGroup {
     fieldValue: string;
@@ -15,6 +15,14 @@ interface QueryData {
     },
     post: {
         postList: CategoriesGroup[]
+    }
+    metas: {
+        metaList: {
+            frontmatter: {
+                title: string
+                id: string
+            }
+        }
     }
 }
 
@@ -35,6 +43,9 @@ const query = graphql`
   }
 `
 
+
+
+
 const SideBar = () => {
     const data = useStaticQuery<QueryData>(query);
     const { record: { recordList }, post: { postList } } = data;
@@ -45,7 +56,7 @@ const SideBar = () => {
                 <Menu.Menu>
                     {
                         recordList.map(({ fieldValue, totalCount }) => (
-                            <Menu.Item as={Link} key={fieldValue} to={`/discography/${kebabCase(fieldValue)}/`} >
+                            <Menu.Item as={Link} key={fieldValue} to={`/discography/${getMetaId(fieldValue)}/`} >
                                 {fieldValue}
                                 <Label color='teal' circular>{totalCount} </Label>
                             </Menu.Item>
@@ -59,7 +70,7 @@ const SideBar = () => {
                 <Menu.Menu>
                     {
                         postList.map(({ fieldValue, totalCount }) => (
-                            <Menu.Item as={Link} key={fieldValue} to={`/categories/${kebabCase(fieldValue)}/`} >
+                            <Menu.Item as={Link} key={fieldValue} to={`/category/${getMetaId(fieldValue)}/`} >
                                 {fieldValue}
                                 <Label color='teal' circular >{totalCount} </Label>
                             </Menu.Item>

@@ -28,15 +28,15 @@ const menusConfig: MenuConfig[] =
         sub: [{
             name: "岡崎Today",
             active: ["okazaki-today"],
-            link: "/categories/岡崎-today/"
+            link: "/category/okazaki-today/"
         }, {
             name: "Rain or Shine",
             active: ["rain-or-shine"],
-            link: "/categories/rain-or-shine"
+            link: "/category/rain-or-shine"
         }, {
             name: "Photo日记",
             active: ["photo-diary"],
-            link: "/categories/photo日记"
+            link: "/category/photo-diary"
         }]
     }, {
         name: "唱片集",

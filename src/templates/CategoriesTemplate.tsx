@@ -6,14 +6,6 @@ import { SEO, Layout, SideBar, TagsLine } from "../components";
 import kebabCase from "lodash/kebabCase"
 import { Pagination, Grid, Header, List, Divider, Segment, Label } from "semantic-ui-react";
 
-type CategoriesEdge = {
-    node: {
-        frontmatter: {
-            slug: string;
-            title: string
-        }
-    }
-}
 
 interface TemplateProps {
     pageContext: {
@@ -23,7 +15,15 @@ interface TemplateProps {
         totalPages: number;
     }
     data: {
-        allMarkdownRemark: {
+
+        meta: {
+            frontmatter: {
+                id: string;
+                title: string;
+            },
+            info: string;
+        }
+        posts: {
             totalCount: number;
             nodes: {
                 frontmatter: {
@@ -47,7 +47,10 @@ function getPath(basePath: string, activePage: string | number | undefined) {
 const CategoriesTemplatePage = (props: TemplateProps) => {
     const {
         pageContext: { category, basePath, activePage, totalPages },
-        data: { allMarkdownRemark: { totalCount, nodes } }
+        data: {
+            meta: { info },
+            posts: { totalCount, nodes }
+        }
     } = props;
     return (
         <Layout path={getPath(basePath, 1)}>
@@ -60,22 +63,24 @@ const CategoriesTemplatePage = (props: TemplateProps) => {
                         <Label color='teal'>{totalCount}</Label>
                     </Header>
                     <Divider />
-
-
-
-
+                    <Header as="h2" >简介</Header>
+                    <div
+                        className="blog-post-content"
+                        dangerouslySetInnerHTML={{ __html: info }}
+                    />
+                    <Divider />
                     <Header as="h2" >文章列表</Header>
                     <Divider hidden />
 
                     {
-                        nodes.map(({ frontmatter: { slug, title, categories, tags }, excerpt }) => (
+                        nodes.map(({ frontmatter: { slug, title, tags }, excerpt }) => (
                             <React.Fragment key={slug}>
                                 <Header as="h3" size='medium'>
                                     <Header.Content><Link to={slug}>{title}</Link></Header.Content>
                                 </Header>
 
                                 <p>{excerpt}</p>
-                                <TagsLine categories={[]} tags={tags} />
+                                <TagsLine tags={tags} />
 
                                 <Divider hidden />
                                 <Divider hidden />
@@ -116,22 +121,24 @@ export default function CategoriesTemplate({ pageContext, data }: TemplateProps)
 
 export const query = graphql`
   query($category: String, $skip: Int!, $limit: Int!) {
-    allMarkdownRemark(
-       limit: $limit,
-       skip: $skip,
-       sort: {fields: [frontmatter___slug], order: ASC},
-       filter: {frontmatter: {categories: {in: [$category]}}}
-    ){
-    totalCount
-    nodes {
+     meta: markdownRemark(frontmatter: {type: {eq: "meta"}, title: {eq: $category}}) {
       frontmatter {
-        slug
+        id
         title
-        categories
-        tags
       }
-      excerpt(truncate: true)
+      info:html
     }
+    posts: allMarkdownRemark(limit: $limit, skip: $skip, sort: {fields: [frontmatter___slug], order: ASC}, filter: {frontmatter: {categories: {in: [$category]}}}) {
+      totalCount
+      nodes {
+        frontmatter {
+          slug
+          title
+          categories
+          tags
+        }
+        excerpt(truncate: true)
+      }
     }
-}
+  }
 `

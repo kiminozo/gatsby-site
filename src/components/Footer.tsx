@@ -21,7 +21,7 @@ const Footer = () => (
                             <List link >
                                 <List.Item as='a' href="https://bbs.forritz.org" >加入讨论</List.Item>
                                 <List.Item as={Link} to='/about'>特别感谢</List.Item>
-                                <List.Item as='a'>网站地图</List.Item>
+                                <List.Item as='a' href='/sitemap.xml'>网站地图</List.Item>
                             </List>
                         </Grid.Column>
                         <Grid.Column width={3}>

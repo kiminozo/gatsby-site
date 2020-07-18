@@ -36,7 +36,7 @@ interface TemplateProps {
         frontmatter: StaffInfo & {
           title: string;
           slug: string;
-          remarks: string;
+          remarks?: string;
         }
       }[]
     }
@@ -110,6 +110,12 @@ class RecordTemplate extends Component<TemplateProps> {
                       <List.Description>
                         <StaffList staff={song} />
                       </List.Description>
+                      {
+                        song.remarks &&
+                        <List.Description>
+                          <Label basic color='teal'>{song.remarks}</Label>
+                        </List.Description>
+                      }
                     </List.Content>
                   </List.Item>
                 ))

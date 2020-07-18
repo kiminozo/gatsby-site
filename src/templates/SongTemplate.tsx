@@ -28,6 +28,7 @@ interface MarkdownRemark {
     lang: string;
     license?: License
     quote?: string;
+    remarks?: string
   }
   html: string;
 }
@@ -60,7 +61,7 @@ function split(html: string): Translator {
 const SongTemplatePage = ({ data }: TemplateProps) => {
 
   const { markdownRemark: { frontmatter, html } } = data;
-  const { title, titlech, discographyId, license, slug, quote } = frontmatter;
+  const { title, titlech, discographyId, license, slug, quote, remarks } = frontmatter;
   const { quoteData } = data;
   const htmlData = (quote && quoteData && quoteData.html) ? quoteData.html : html;
   const { jp, cn } = split(htmlData);
@@ -136,6 +137,7 @@ export const query = graphql`
         discography
         discographyId
         quote
+        remarks
       }
     }
     quoteData: markdownRemark(frontmatter: {slug: {eq: $quote}}) {

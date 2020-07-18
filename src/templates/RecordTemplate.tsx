@@ -50,7 +50,7 @@ const MetaItem = ({ meta, name }: { meta: string, name: string }) => (
 const Record = ({ title, info, artist }: { title: string, info: RecordInfo, artist: string }) => (
   <Card.Group centered>
     <Card>
-      <CoverImage coverimage={info.coverImage} />
+      <CoverImage alt={title} coverimage={info.coverImage} />
       <Card.Content>
         <Card.Header>{title}</Card.Header>
         <Card.Meta>

@@ -70,7 +70,7 @@ const RecordListTemplate = (props: TemplateProps) => {
                 return (
                   <Item key={id}>
                     <Item.Image size="small" as={Link} to={slug}>
-                      <CoverImage bordered rounded size="small" coverimage={coverImage} />
+                      <CoverImage alt={title} bordered rounded size="small" coverimage={coverImage} />
                     </Item.Image>
                     <Item.Content>
                       <Item.Header as={Link} to={slug}>{title}</Item.Header>

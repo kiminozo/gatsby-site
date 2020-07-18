@@ -11,6 +11,7 @@ interface Props {
   size?: SemanticSIZES
   bordered?: boolean
   rounded?: boolean
+  alt?: string
 }
 
 const imgStyle = { maxHeight: 200 }
@@ -19,7 +20,7 @@ const useKeyOnly = (val: any, key: string) => val && key;
 
 const CoverImage = (props: Props) => {
   const data = useCoverImagesData();
-  const { coverimage: coverImage, size, bordered, rounded } = props;
+  const { coverimage: coverImage, size, bordered, rounded, alt } = props;
   const imageInfo = data.filter(p => p.base === coverImage)[0];
   const className = cx(
     'ui',
@@ -30,7 +31,7 @@ const CoverImage = (props: Props) => {
   )
   if (imageInfo) {
     return imageInfo.image ?
-      <Img className={className} fluid={{ ...imageInfo.image.fluid, aspectRatio: 1 }} />
+      <Img className={className} alt={alt} fluid={{ ...imageInfo.image.fluid, aspectRatio: 1 }} />
       : <Image size={size} src={imageInfo.publicURL} />
   }
   return <Image size={size} style={imgStyle} src={demo} ></Image>

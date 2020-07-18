@@ -3,7 +3,7 @@ module.exports = {
     title: `For RITZ`,
     description: `岡崎律子的非官方中文资料站`,
     author: `@kiminozo`,
-    siteUrl: `https://n.forritz.org`,
+    siteUrl: `https://www.forritz.org`,
   },
   plugins: [
     `gatsby-plugin-typescript`,

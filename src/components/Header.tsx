@@ -65,7 +65,7 @@ class Header extends React.Component<Props> {
         <Container>
           <UIHeader as="h2" style={{ paddingTop: 10 }}>
             {/* <Icon name='settings' /> */}
-            <Image src={logo} size="big" />
+            <Image src={logo} size="big" alt='logo' />
             <UIHeader.Content>
               For RITZ
             <UIHeader.Subheader>岡崎律子的非官方中文资料站</UIHeader.Subheader>

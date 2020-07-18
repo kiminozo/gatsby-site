@@ -1,7 +1,16 @@
-import React from "react"
+import React, { useRef } from "react"
 import PropTypes from "prop-types"
 
+const cssUrl = "https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css";
+
 export default function HTML(props) {
+  // const linkRef = useRef(null);
+  // const onLoad = () => {
+  //   linkRef.onLoad = null;
+  //   linkRef.rel = 'stylesheet'
+  //   alert('onload')
+  // };
+
   return (
     <html {...props.htmlAttributes}>
       <head>
@@ -11,7 +20,6 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <link rel="preload" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

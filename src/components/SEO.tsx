@@ -12,7 +12,7 @@ interface SEOProps {
   title: string
 }
 
-function SEO({ description, lang = `cn`, meta = [], title }: SEOProps): any {
+function SEO({ description, lang = `zh-CN`, meta = [], title }: SEOProps): any {
   const { site } = useStaticQuery(
     graphql`
       query SiteMeta {

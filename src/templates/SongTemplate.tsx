@@ -22,10 +22,13 @@ interface Record {
 interface MarkdownRemark {
   frontmatter: StaffInfo & Record & {
     title: string;
+    titlech?: string;
     slug: string;
     date: string;
     lang: string;
     license?: License
+    quote?: string;
+    remarks?: string
   }
   html: string;
 }
@@ -33,11 +36,15 @@ interface MarkdownRemark {
 interface TemplateProps {
   data: {
     markdownRemark: MarkdownRemark
+    quoteData: {
+      html: string;
+    }
   }
 }
 
 const splitKey = /<\!--\s+翻译\s+-->/g
-type Translator = {
+
+interface Translator {
   jp: string
   cn: string
 }
@@ -51,86 +58,90 @@ function split(html: string): Translator {
   }
 }
 
-class SongTemplatePage extends Component<TemplateProps> {
+const SongTemplatePage = ({ data }: TemplateProps) => {
 
-  constructor(props: Readonly<TemplateProps>) {
-    super(props);
-    this.state = { activeId: "" }
-  }
+  const { markdownRemark: { frontmatter, html } } = data;
+  const { title, titlech, discographyId, license, slug, quote, remarks } = frontmatter;
+  const { quoteData } = data;
+  const htmlData = (quote && quoteData && quoteData.html) ? quoteData.html : html;
+  const { jp, cn } = split(htmlData);
 
+  return (
+    <Layout path={slug}>
+      <SEO title={title} />
+      <Grid>
+        <Grid.Column mobile={16} computer={14} tablet={14}>
+          <Header as="h1">
+            {title}
+            {titlech && <Label basic size='large'>{titlech}</Label>}
+          </Header>
+          <StaffList staff={frontmatter} />
+          {htmlData &&
+            <>
+              <Segment style={{ fontSize: "1.2rem" }} >
+                <Grid columns={2} centered stackable>
+                  <Grid.Column>
+                    <div
+                      className="song-content"
+                      dangerouslySetInnerHTML={{ __html: jp }}
+                    />
+                  </Grid.Column>
+                  <Divider vertical>翻译</Divider>
+                  <Grid.Column>
+                    <div
+                      className="song-content"
+                      dangerouslySetInnerHTML={{ __html: cn }}
+                    />
 
-  render() {
-    const remark = this.props.data.markdownRemark; // data.markdownRemark holds your post data
-    if (!remark) {
-      return;
-    }
-    const { frontmatter, html } = remark;
-    const { title, discographyId, license, slug } = frontmatter;
-    const { jp, cn } = split(html);
+                  </Grid.Column>
+                </Grid>
+              </Segment>
+              <Divider hidden />
+              <CC license={license} />
+            </>
+          }
+        </Grid.Column>
 
-    return (
-      <Layout path={slug}>
-        <SEO title={title} />
-        <Grid>
-          <Grid.Column mobile={16} computer={13} tablet={16}>
-            <Header as="h1">{title}</Header>
-            <StaffList staff={frontmatter} />
-            <Segment style={{ fontSize: "1.1rem", lineHeight: 2 }} >
-              <Grid columns={2} centered stackable>
-                <Grid.Column>
-                  <div
-                    className="song-content"
-                    dangerouslySetInnerHTML={{ __html: jp }}
-                  />
-                </Grid.Column>
-                <Divider vertical>翻译</Divider>
-                <Grid.Column>
-                  <div
-                    className="song-content"
-                    dangerouslySetInnerHTML={{ __html: cn }}
-                  />
-
-                </Grid.Column>
-              </Grid>
-            </Segment>
-            <Divider hidden />
-            <CC license={license} />
-          </Grid.Column>
-          <Grid.Column mobile={16} computer={3} tablet={16}>
-            <RecordGroup discographyId={discographyId} />
-          </Grid.Column>
-        </Grid>
-      </Layout >
-    )
-  }
+        <Grid.Column mobile={16} computer={2} tablet={14}>
+          <RecordGroup discographyId={discographyId} />
+        </Grid.Column>
+      </Grid>
+    </Layout >
+  )
 }
 
 export default function SongTemplate({ data }: TemplateProps) {
   return (<SongTemplatePage data={data} />)
 }
 
-export const pageQuery = graphql`
-  query($slug: String!) {
-            markdownRemark(frontmatter: {slug: {eq: $slug } }) {
-            html
-    frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-    slug
-    title
-    license {
-        type
-        author
-        translator
-        reproduced_url
-        reproduced_website
+export const query = graphql`
+  query($slug: String!,$quote: String) {
+    markdownRemark(frontmatter: {slug: {eq: $slug}}) {
+      html
+      frontmatter {
+        date(formatString: "MMMM DD, YYYY")
+        slug
+        title
+        titlech
+        license {
+          type
+          author
+          translator
+          reproduced_url
+          reproduced_website
+        }
+        singer
+        songWriter: songwriter
+        lyricWriter: lyricwriter
+        arranger
+        discography
+        discographyId
+        quote
+        remarks
       }
-      singer
-      songWriter:songwriter
-      lyricWriter:lyricwriter
-      arranger
-      discography
-      discographyId
-      }
+    }
+    quoteData: markdownRemark(frontmatter: {slug: {eq: $quote}}) {
+      html
     }
   }
 `

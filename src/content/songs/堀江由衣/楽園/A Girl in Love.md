@@ -1,5 +1,6 @@
 ---
 title: "A Girl in Love"
+titlech: ""
 type: "song"
 date: "2013-03-31"
 order: 350202
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["村山達哉","礒江俊道"]
 slug: "/songs/a-girl-in-love"
 tags: []
+remarks: "《妹妹公主》的Op完整版"
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net",reproduced-website: "織歌蟲"}
 ---
 
@@ -66,6 +68,9 @@ Just a lucky girl
 素晴らしき　毎日   
 バラ色　My days  
   
+
+<!-- 翻译 -->
+
 I am a girl in love (我是個陷入愛河的女孩)   
 Just a girl in love (只是個陷入愛河的女孩)   
 也有徹夜垂淚的時候  

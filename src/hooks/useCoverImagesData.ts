@@ -9,6 +9,7 @@ interface CoverImageInfo {
   base: string
   image: {
     fluid: FluidObject
+    size: FluidObject
   }
 }
 
@@ -18,18 +19,27 @@ interface Data {
   }
 }
 
+// export const squareImage = graphql`
+//   fragment squareImage on File {
+//     childImageSharp {
+//       fluid(maxWidth: 200, maxHeight: 200) {
+//         ...GatsbyImageSharpFluid
+//       }
+//     }
+//   }
+// `
 
 export const query = graphql`
   {
-    coverImages: allFile(filter: {relativeDirectory: {regex: "/record.+/"}}) {
+    coverImages: allFile(filter: {relativeDirectory: {regex: "/record.+/"}, extension: {in: ["png","jpg"]}}) {
       nodes {
         name
         publicURL
         extension
         base
         image:childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
+          fluid(maxWidth: 300, maxHeight: 300, cropFocus: CENTER) {
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }

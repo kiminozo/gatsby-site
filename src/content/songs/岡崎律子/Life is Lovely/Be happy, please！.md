@@ -1,5 +1,6 @@
 ---
 title: "Be happy, please！"
+titlech: ""
 type: "song"
 date: "2010-08-29"
 order: 10807
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["村山達哉"]
 slug: "/songs/be-happy-please"
 tags: []
+remarks: "Keyboard・Chorus"
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---
 
@@ -51,8 +53,8 @@ I wish,
 もし　そのココロ悩ますものあるなら   
 すぐにだって   
 みつけだしてみせましょう  
-  
-  <!-- 翻译 -->
+
+<!-- 翻译 -->
 
 I wish, (我希望)  
 ★ 能让你欢喜　能让你快乐  

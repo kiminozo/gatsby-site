@@ -1,5 +1,6 @@
 ---
 title: "Bon Voyage！"
+titlech: ""
 type: "song"
 date: "2010-08-23"
 order: 10401
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["岩本正樹"]
 slug: "/songs/bon-voyage"
 tags: []
+remarks: "Chorus・Chorus Arrange"
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---
 
@@ -41,11 +43,17 @@ license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.
   
 "Bon Voyage！"   
   
-信じていていいんだからね  
+信じていていいんだからね
+
   
-<span style="color: #008080;">● ミンキーモモ「旅立ちの駅」より ● Welcome to Ritzberry Fields!</span>  
   
-  <!-- 翻译 -->
+
+<span style="color: #008080;">● ミンキーモモ「旅立ちの駅」より ●<br>Welcome to Ritzberry Fields!</span>
+
+  
+  
+
+<!-- 翻译 -->
 
 （若你想念你的梦想 ）  
 美梦成真的瞬间　搞不好就在今天  
@@ -74,6 +82,9 @@ license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.
   
 "Bon Voyage！"   
   
-你不妨如此相信  
+你不妨如此相信
+
   
-<span style="color: #008080;">● 出自動畫Vedio [ MINKYMOMO IN 旅立ちの駅 ] ● Welcome to Ritzberry Fields!</span>
+  
+
+<span style="color: #008080;">● 出自動畫Vedio [ MINKYMOMO IN 旅立ちの駅 ] ●<br>Welcome to Ritzberry Fields!</span>

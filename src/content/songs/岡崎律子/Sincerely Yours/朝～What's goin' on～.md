@@ -1,5 +1,6 @@
 ---
 title: "朝～What's goin' on～"
+titlech: ""
 type: "song"
 date: "2010-08-19"
 order: 10101
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["京田誠一"]
 slug: "/songs/asa-whats-goin-on"
 tags: []
+remarks: "Chorus・Backing Vocal・Voice Arrangement"
 license: {type: "translated",translator: "loverritz"}
 ---
 
@@ -37,6 +39,7 @@ What's goin' on　
 What's goin' on  
 感じる　新しい朝　光あふれる  
   
+
 <!-- 翻译 -->
 
 半梦半醒中伸出手去关上那恼人的闹钟   
@@ -60,4 +63,4 @@ What's goin' on
 What's goin' on   
 兴高采烈地与你互致问候 又要开始新的一天了   
 What's goin' on   
-真心度过的每一天 都有阳光铺洒左右  
+真心度过的每一天 都有阳光铺洒左右

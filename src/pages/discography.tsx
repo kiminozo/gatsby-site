@@ -1,51 +1,43 @@
 import React from "react"
 // Utilities
-import kebabCase from "lodash/kebabCase"
+import _ from "lodash"
 // Components
 import { Link, graphql, PageProps } from "gatsby"
-import { SEO, Layout, CoverImage } from "../components";
+import { SEO, Layout, CoverImage, SideBar } from "../components";
 import {
-    Card
+    Card, Divider, Grid
 } from 'semantic-ui-react'
-import { string } from "prop-types";
-
+import DiscographyLayout, { DiscographyInfo } from "../components/DiscographyLayout";
 
 interface Props extends PageProps {
     data: {
         records: {
             nodes: {
-                frontmatter: {
-                    coverImage: string;
-                    id: string;
-                    title: string;
-                    slug: string;
-                }
+                frontmatter: DiscographyInfo
             }[],
         }
     }
 }
 
 
+
 const DiscographyPage = (props: Props) => {
     const { data: { records: { nodes } } } = props;
     const records = nodes.map(p => p.frontmatter);
-    const cardSize = { width: 150, height: 150 };
+
     return (
         <Layout path={props.location.pathname}>
             <SEO title="唱片集" />
-            <div>
-                <h1>唱片集</h1>
-                <Card.Group itemsPerRow={6} doubling>
-                    {records.map(item =>
-                        (
-                            <Card raised style={cardSize} as={Link} key={item.id} to={item.slug}>
-                                <CoverImage key={item.id} coverImage={item.coverImage} />
-                                {/* <Label attached='bottom left'>{item.title}</Label> */}
-                            </Card>
-                        )
-                    )}
-                </Card.Group>
-            </div>
+            <Grid>
+                <Grid.Column mobile={16} computer={11} tablet={11}>
+                    <h1>唱片集</h1>
+                    <Divider />
+                    <DiscographyLayout records={records} />
+                </Grid.Column>
+                <Grid.Column mobile={16} computer={5} tablet={5} >
+                    <SideBar />
+                </Grid.Column>
+            </Grid>
         </Layout>
     )
 }
@@ -60,6 +52,8 @@ export const query = graphql`
           id
           title
           slug
+          artist
+          categories
         }
       }
     }

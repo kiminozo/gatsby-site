@@ -1,5 +1,6 @@
 ---
 title: "Pop Step Jump!"
+titlech: ""
 type: "song"
 date: "2010-09-05"
 order: 30401
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["西脇辰弥"]
 slug: "/songs/pop-step-jump"
 tags: []
+remarks: "Chorus・Main Vocal:岡崎律子"
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---
 
@@ -41,8 +43,8 @@ license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.
 芽吹いてるよ　inside you   
   
 ★ Repeat  
-  
-  <!-- 翻译 -->
+
+<!-- 翻译 -->
 
 犹如横越窗外蓝天的飞机一般  
 我做过好多飞翔的梦  

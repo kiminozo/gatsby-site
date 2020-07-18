@@ -1,5 +1,6 @@
 ---
 title: "Starry Night"
+titlech: "星光之夜"
 type: "song"
 date: "2010-08-22"
 order: 10208
@@ -11,6 +12,8 @@ lyricwriter: ["岡崎律子"]
 arranger: ["島健"]
 slug: "/songs/starry-night"
 tags: []
+remarks: "Chorus
+原本是岡崎律子小姐为エレナー写的曲子"
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---
 
@@ -18,7 +21,7 @@ license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.
 最終が出たあとの　誰もいないホームに   
 二人だけの靴音がとまどうように響いて   
   
-Don't tell me why   
+Don\'t tell me why   
 All for love   
 風も止まる Starry Night   
   
@@ -26,7 +29,7 @@ Step に腰かけて　夜明けまでこのまま
 いつもならのみこんだ　言葉さえこぼれるの   
 本当に好きもしも時が止まるのなら　今がいい   
   
-Don't ask me why   
+Don\\'t ask me why   
 All for love   
 二人きりね Starry Night   
   
@@ -34,7 +37,7 @@ All for love
 街も眠る Starry Night  
 
 <!-- 翻译 -->
-  
+
 从我们并肩漫步的街道　看得到车站的灯光哇   
 末班电车开出之后　在空无一人的月台上   
 只有我俩的脚步声流连不已地迴响着   

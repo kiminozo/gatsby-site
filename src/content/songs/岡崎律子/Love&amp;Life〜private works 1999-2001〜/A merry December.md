@@ -1,5 +1,6 @@
 ---
 title: "A merry December"
+titlech: ""
 type: "song"
 date: "2010-08-31"
 order: 11003
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["長谷川智樹"]
 slug: "/songs/a-merry-december"
 tags: []
+remarks: ""
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---
 
@@ -41,8 +43,8 @@ du di da はずむ心　いっしょに笑って
 du di da 涙さえも　フッと笑って   
   
 du di da…  
-  
-  <!-- 翻译 -->
+
+<!-- 翻译 -->
 
 尖峰时段的地下铁   
 人海之中我却是孤伶伶一人   
@@ -56,7 +58,7 @@ du di da…
 du di da 兴高采烈的心　请跟我一同欢笑   
   
 胸腔深处好似紧紧卡住   
-呼喊着 \\"救救我！\\"　我是怎麽搞的啊   
+呼喊着 \"救救我！\\"　我是怎麽搞的啊   
   
 令人有些感伤的日子裡听到温暖的新闻   
 传达给你吧   

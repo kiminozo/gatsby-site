@@ -1,5 +1,6 @@
 ---
 title: "Morning Grace"
+titlech: "优雅清晨"
 type: "song"
 date: "2010-09-01"
 order: 20901
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["村山達哉"]
 slug: "/songs/morning-grace"
 tags: []
+remarks: ""
 license: {type: "translated",author: "岡崎律子",translator: "ココロの雨"}
 ---
 
@@ -27,6 +29,7 @@ license: {type: "translated",author: "岡崎律子",translator: "ココロの雨
 どこまでつづくラビリンス   
 私は行こう にぎりしめる 夢   
   
+  
 呼んでいる声 私が必要?   
 かなしいの まようの   
 飛び立つ鳥 揺れてる花 囁く   
@@ -39,6 +42,7 @@ license: {type: "translated",author: "岡崎律子",translator: "ココロの雨
 笑顔ひとつで ほらね  
 こんなにあたたかい   
   
+  
 だれも知らない秘密の水辺で   
 踊れ いのちのパ.ド.ドゥ   
 明日を夢みてる   
@@ -46,8 +50,8 @@ license: {type: "translated",author: "岡崎律子",translator: "ココロの雨
 それは やさしく激しい潮流(ながれ)ね  
 しあわせ探すラビリンス   
 私は行くのよ   
-  
-  <!-- 翻译 -->
+
+<!-- 翻译 -->
 
 有一个声音在呼唤着  
 啥 拭去你的泪颜  
@@ -61,6 +65,7 @@ license: {type: "translated",author: "岡崎律子",translator: "ココロの雨
 那就像温柔 却又激烈的海潮  
 无论怎样也不会走完的迷宫  
 我要去 去把握我的梦  
+  
   
 有一个声音在呼唤着 非我不可吗？  
 伤心的 迷茫的  

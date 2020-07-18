@@ -1,5 +1,6 @@
 ---
 title: "雨のmusique"
+titlech: "雨的旋律"
 type: "song"
 date: "2010-08-30"
 order: 10905
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["鳥山雄司"]
 slug: "/songs/ame-no-musique"
 tags: []
+remarks: ""
 license: {}
 ---
 
@@ -41,8 +43,8 @@ Look at me Listen to me
 アタシヲアイシテ   
 だれも知らない私が　  
 ここにいるのよ   
-  
-  <!-- 翻译 -->
+
+<!-- 翻译 -->
 
 灰色的天空  
 绵绵的细雨   

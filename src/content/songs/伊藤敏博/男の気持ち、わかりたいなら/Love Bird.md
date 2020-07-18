@@ -1,5 +1,6 @@
 ---
 title: "Love Bird"
+titlech: ""
 type: "song"
 date: "2017-02-05"
 order: 50021
@@ -11,6 +12,7 @@ lyricwriter: ["伊藤敏博"]
 arranger: ["山本健司"]
 slug: "/songs/love-bird"
 tags: []
+remarks: ""
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net",reproduced-website: "織歌蟲"}
 ---
 
@@ -54,7 +56,9 @@ license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.
 新しい女になれ  
 僕の知らぬ街で  
 きっと......  
-  
+
+<!-- 翻译 -->
+
 本該是我坐的地方　還留有一個座位  
 羽翼消失在　蔚藍天際的彼方  
   

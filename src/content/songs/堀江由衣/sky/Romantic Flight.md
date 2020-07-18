@@ -1,5 +1,6 @@
 ---
 title: "Romantic Flight"
+titlech: "浪漫飛行"
 type: "song"
 date: "2013-03-31"
 order: 350102
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["村山達哉"]
 slug: "/songs/romantic-flight"
 tags: []
+remarks: "radio「堀江由衣的天使蛋」OP"
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net",reproduced-website: "織歌蟲"}
 ---
 
@@ -45,6 +47,9 @@ Shall we, 鼻歌まじりで夜空をピクニック
   
 冒険を求めて　旅をつづける私  
   
+
+<!-- 翻译 -->
+
 到了我們約好的時刻囉　推開房間的窗  
 放任我們的幻想天馬行空飛翔　只屬於我倆的祕密  
   

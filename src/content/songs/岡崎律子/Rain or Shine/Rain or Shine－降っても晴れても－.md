@@ -1,5 +1,6 @@
 ---
 title: "Rain or Shine－降っても晴れても－"
+titlech: "无论雨天或晴天"
 type: "song"
 date: "2010-08-25"
 order: 10504
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["長谷川智樹"]
 slug: "/songs/rain-or-shine"
 tags: []
+remarks: ""
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---
 
@@ -41,10 +43,14 @@ license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.
   
 巧(うま)く生きなくていい　肝心なのはそこじゃない   
 これも運命と笑いとばす　そんな陽気が好きよ  
+
+  
+  
+
   
 TBS系「黄金のレシピ」ED ('97年9月末－11月末)  
-  
-  <!-- 翻译 -->
+
+<!-- 翻译 -->
 
 我们所遇见的人　不全然都是我们喜欢的人   
 偶而也会碰到教人伤脑筋的人　常常因此心情低落   
@@ -72,6 +78,10 @@ TBS系「黄金のレシピ」ED ('97年9月末－11月末)
 想起你有一个很棒的口头禅   
   
 活得不高明也无所谓　重点不在那裡   
-"这也是命啊" 噗哧一笑　我就是喜欢你的阳光个性噢  
+\"这也是命啊\\" 噗哧一笑　我就是喜欢你的阳光个性噢  
+
+  
+  
+
   
 TBS系「黄金食谱（非正式译名）」ED ('97年9月末－11月末)

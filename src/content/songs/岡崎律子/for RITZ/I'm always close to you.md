@@ -1,5 +1,6 @@
 ---
 title: "I'm always close to you"
+titlech: ""
 type: "song"
 date: "2010-08-30"
 order: 10902
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["村山達哉","礒江俊道"]
 slug: "/songs/im-always-close-to-you"
 tags: []
+remarks: "Chorus"
 license: {}
 ---
 
@@ -43,8 +45,8 @@ I'm always close to you
 生きて　生きて どんな時にも　  
 なげてはだめよ それは　  
 なによりチャ一ミングなこと   
-  
-  <!-- 翻译 -->
+
+<!-- 翻译 -->
 
 即使不一定有明天   
 今天又该如何度过   

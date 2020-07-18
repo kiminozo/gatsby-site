@@ -2,22 +2,24 @@ import React, { Component } from "react"
 import { graphql, Link } from "gatsby"
 
 import { SEO, Layout, SideBar, CoverImage } from "../components";
-import StaffList, { StaffInfo } from '../components/StaffList'
+import StaffList, { StaffInfo, StaffLink } from '../components/StaffList'
 
 import {
   Button, Grid, Header, Ref, Segment, Rail, Accordion,
-  Label, Divider, Item, List
+  Label, Divider, Item, List, Card
 } from 'semantic-ui-react'
 import _ from "lodash";
 import demo from "../images/demo.png"
 
-type RecordInfo = {
+interface RecordInfo {
   coverImage: string;
+  artist: string;
   recordNo: string;
   recordPrice: string;
   recordPublisher: string;
   recordType: string;
   recordReleaseDate: string;
+  categories: string[];
 }
 
 interface TemplateProps {
@@ -34,31 +36,38 @@ interface TemplateProps {
         frontmatter: StaffInfo & {
           title: string;
           slug: string;
+          remarks?: string;
         }
       }[]
     }
   }
 }
 
-const Record = ({ title, info }: { title: string, info: RecordInfo }) => (
-  <Item.Group>
-    <Item>
-      <Item.Image>
-        <CoverImage coverImage={info.coverImage} />
-      </Item.Image>
-      <Item.Content>
-        <Item.Header>{title}</Item.Header>
-        <Item.Meta>编号:{info.recordNo}</Item.Meta>
-        <Item.Meta>艺术家:岡崎律子</Item.Meta>
-        <Item.Meta>唱片类型:{info.recordType}</Item.Meta>
-        <Item.Meta>发售日期:{info.recordReleaseDate}</Item.Meta>
-        <Item.Meta>发行商:{info.recordPublisher}</Item.Meta>
-        {info.recordPrice && <Item.Meta>售价:{info.recordPrice}</Item.Meta>}
-        <Item.Description>
-        </Item.Description>
-      </Item.Content>
-    </Item>
-  </Item.Group>
+const MetaItem = ({ meta, name }: { meta: string, name: string }) => (
+  name ? <List.Item>{meta}: {name}</List.Item> : <></>
+)
+
+const Record = ({ title, info, artist }: { title: string, info: RecordInfo, artist: string }) => (
+  <Card.Group centered>
+    <Card>
+      <CoverImage alt={title} coverimage={info.coverImage} />
+      <Card.Content>
+        <Card.Header>{title}</Card.Header>
+        <Card.Meta>
+          <Link to={`/discography/${_.kebabCase(artist)}/`}>{artist}</Link>
+        </Card.Meta>
+        <Card.Description>
+          <List>
+            <MetaItem meta='编号' name={info.recordNo} />
+            <MetaItem meta='唱片类型' name={info.recordType} />
+            <MetaItem meta='发售日期' name={info.recordReleaseDate} />
+            <MetaItem meta='发行商' name={info.recordPublisher} />
+            <MetaItem meta='售价' name={info.recordPrice} />
+          </List>
+        </Card.Description>
+      </Card.Content>
+    </Card>
+  </Card.Group>
 )
 
 class RecordTemplate extends Component<TemplateProps> {
@@ -71,14 +80,17 @@ class RecordTemplate extends Component<TemplateProps> {
 
   render() {
     const { record: { frontmatter, html }, songs: { nodes } } = this.props.data; // data.markdownRemark holds your post data
-    const { title, slug } = frontmatter;
+    const { title, slug, artist } = frontmatter;
     const songs = nodes.map(p => p.frontmatter)
+    //const artist = [...new Set<string>(songs.flatMap(p => p.singer))]
     return (
       <Layout path={slug}>
         <SEO title={title} />
         <Grid>
-          <Grid.Column mobile={16} computer={11} tablet={11}>
-            <Record title={title} info={frontmatter} />
+          <Grid.Column mobile={16} computer={4} tablet={4}>
+            <Record title={title} artist={artist} info={frontmatter} />
+          </Grid.Column>
+          <Grid.Column mobile={16} computer={12} tablet={12}>
             <h1>简介</h1>
             <div
               className="blog-post-content"
@@ -98,14 +110,17 @@ class RecordTemplate extends Component<TemplateProps> {
                       <List.Description>
                         <StaffList staff={song} />
                       </List.Description>
+                      {
+                        song.remarks &&
+                        <List.Description>
+                          <Label basic color='teal'>{song.remarks}</Label>
+                        </List.Description>
+                      }
                     </List.Content>
                   </List.Item>
                 ))
               }
             </List>
-          </Grid.Column>
-          <Grid.Column mobile={16} computer={5} tablet={5} >
-            <SideBar />
           </Grid.Column>
         </Grid>
       </Layout>
@@ -127,6 +142,8 @@ export const pageQuery = graphql`
         slug
         title
         coverImage
+        artist
+        categories
         recordNo
         recordPrice
         recordPublisher
@@ -143,6 +160,7 @@ export const pageQuery = graphql`
           lyricWriter:lyricwriter
           singer
           arranger
+          remarks
         }
       }
     }

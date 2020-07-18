@@ -1,5 +1,6 @@
 ---
 title: "Lucky ＆ Happy"
+titlech: ""
 type: "song"
 date: "2010-08-24"
 order: 10410
@@ -11,6 +12,8 @@ lyricwriter: ["岡崎律子"]
 arranger: ["光宗信吉"]
 slug: "/songs/lucky-and-happy"
 tags: []
+remarks: "Chorus・Chorus Arrange
+新録 『ウェディングピーチ FURIL』よりカバー曲"
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---
 
@@ -38,10 +41,17 @@ license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.
   
 そうよ Lucky みんなのために　Happy 私のためにね   
 けんめいに生きよう  
+
   
-● 愛天使伝説ウエディングピーチ より ● 今はどの辺りだろう 立ち止まる時あり　つっ走る時があり 未来へ向かっている  
   
-  <!-- 翻译 -->
+
+  
+● 愛天使伝説ウエディングピーチ より ●  
+今はどの辺りだろう  
+立ち止まる時あり　つっ走る時があり  
+未来へ向かっている  
+
+<!-- 翻译 -->
 
 现在的 Lucky　要好好珍惜　为了让 Happy 源源不绝   
 认真过日子吧   
@@ -67,5 +77,12 @@ license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.
   
 是啊　 Lucky 是为了大家　Happy 则是为了我自己   
 认真过日子吧  
+
   
-● 出自动画 \[ 愛天使伝説ウエディングピーチ \] ● 现在我身处何方呢 有驻足不前的时候　有急起直追的时候 不断往未来迈进
+  
+
+  
+● 出自动画 [ 愛天使伝説ウエディングピーチ \] ●  
+现在我身处何方呢  
+有驻足不前的时候　有急起直追的时候  
+不断往未来迈进

@@ -1,5 +1,6 @@
 ---
 title: "Sweet dreams"
+titlech: ""
 type: "song"
 date: "2010-08-29"
 order: 10814
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["村山達哉"]
 slug: "/songs/sweet-dreams"
 tags: []
+remarks: "Chorus"
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---
 
@@ -32,8 +34,8 @@ license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.
 さあ　いい夢を   
 そっと瞼にキス   
 …and "Sweet dreams"  
-  
-  <!-- 翻译 -->
+
+<!-- 翻译 -->
 
 夜幕已垂  
 星星飞降的天空  

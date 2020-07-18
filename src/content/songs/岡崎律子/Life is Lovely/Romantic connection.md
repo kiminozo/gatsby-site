@@ -1,5 +1,6 @@
 ---
 title: "Romantic connection"
+titlech: "浪漫接触"
 type: "song"
 date: "2010-08-29"
 order: 10805
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["村山達哉"]
 slug: "/songs/romantic-connection"
 tags: []
+remarks: ""
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---
 
@@ -40,8 +42,8 @@ license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.
   
 明日などいらない　今　時を止めて   
 今　この Romance に飛びこんできて  
-  
-  <!-- 翻译 -->
+
+<!-- 翻译 -->
 
 那时我真的好希望　能在你身边多待一会儿  
 满天繁星的归途　实在太短了啦  

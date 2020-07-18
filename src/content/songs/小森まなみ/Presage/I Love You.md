@@ -1,8 +1,9 @@
 ---
 title: "I Love You"
+titlech: ""
 type: "song"
 date: "2017-02-04"
-order: 0
+order: 100000
 discography: ["Presage"]
 discographyId: ["presage"]
 singer: ["小森まなみ"]
@@ -11,6 +12,7 @@ lyricwriter: ["小森まなみ"]
 arranger: ["池間史規"]
 slug: "/songs/i-love-you"
 tags: []
+remarks: "コーラス：岡崎律子＆高橋直純"
 license: {}
 ---
 
@@ -58,7 +60,9 @@ I Love You
 愛は今　あなたの中に   
 せつなさと　いとしさで　生まれてる   
 forever……  
-  
+
+<!-- 翻译 -->
+
 在新生的微風中　遠方搖曳的藍天  
 就連流淚的回憶　也化作溫柔的記憶  
 穿過幽谷的樂音  

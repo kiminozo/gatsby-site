@@ -1,5 +1,6 @@
 ---
 title: "BLUE POINT"
+titlech: ""
 type: "song"
 date: "2010-08-22"
 order: 10302
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["長谷川智樹"]
 slug: "/songs/blue-point"
 tags: []
+remarks: ""
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "あだち充の屋根裏部屋"}
 ---
 
@@ -42,7 +44,7 @@ No,No,No　違うよ
 流されて　流れても　それでいい   
 今　歩いてる  
 
- <!-- 翻译 --> 
+<!-- 翻译 -->
 
 从马路的那头　司空见惯的的人潮   
 对准我　开始蜂拥而上   

@@ -1,5 +1,6 @@
 ---
 title: "Magie"
+titlech: ""
 type: "song"
 date: "2010-08-29"
 order: 10804
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["村山達哉"]
 slug: "/songs/magie"
 tags: []
+remarks: "Chorus"
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---
 
@@ -41,8 +43,8 @@ license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.
 この愛が　心をも変えていく   
 それは夢じゃない   
 愛の Myster  
-  
-  <!-- 翻译 -->
+
+<!-- 翻译 -->
 
 所谓的未来　只是一面反映你心灵的镜子  
 不知不觉间就变成人们所说的 “预言” 了   

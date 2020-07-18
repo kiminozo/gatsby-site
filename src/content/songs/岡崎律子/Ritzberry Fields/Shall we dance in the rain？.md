@@ -1,5 +1,6 @@
 ---
 title: "Shall we dance in the rain？"
+titlech: ""
 type: "song"
 date: "2010-08-24"
 order: 10408
@@ -11,6 +12,8 @@ lyricwriter: ["岡崎律子"]
 arranger: ["光宗信吉"]
 slug: "/songs/shall-we-dance-in-the-rain"
 tags: []
+remarks: "Chorus・Chorus Arrange
+新録 原曲「あなたの天使になりたい」"
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---
 
@@ -42,10 +45,16 @@ I love you,
 手をとって駆けていこう   
 いつかきっとね   
 Shall we kiss in the rain？  
+
   
-● 愛天使伝説ウエディングピーチ より ● Sweet なきもちでどこまでも歩く ２人なら　雨の日もまた楽し  
   
-  <!-- 翻译 -->
+
+  
+● 愛天使伝説ウエディングピーチ より ●  
+Sweet なきもちでどこまでも歩く  
+２人なら　雨の日もまた楽し  
+
+<!-- 翻译 -->
 
 为何下起这麽大的雨呢   
 对恋人们而言　这可是难得的礼拜天   
@@ -75,5 +84,11 @@ I love you,
 有一天我一定会   
 拉着你的手奔驰而去吧   
 Shall we kiss in the rain？  
+
   
-● 出自動畫 \[ 愛天使伝説ウエディングピーチ \] ● 抱著甜蜜的心情走道天涯海角 兩人一起的話　就算是雨天也很愉快
+  
+
+  
+● 出自動畫 [ 愛天使伝説ウエディングピーチ \] ●  
+抱著甜蜜的心情走道天涯海角  
+兩人一起的話　就算是雨天也很愉快

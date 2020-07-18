@@ -1,5 +1,6 @@
 ---
 title: "Nowadays"
+titlech: "此时此刻"
 type: "song"
 date: "2010-08-22"
 order: 10206
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["京田誠一"]
 slug: "/songs/nowadays"
 tags: []
+remarks: "Chorus"
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---
 
@@ -35,8 +37,8 @@ Nowadays　こんなふうよ　楽しく生きてる
 変わらないって　思ってるんでしょ   
 でも悲しみを背負わないのが　そこがいいとこ   
 あなたも好きだったとこ  
-  
-  <!-- 翻译 -->
+
+<!-- 翻译 -->
 
 刺眼的午后阳光　行色匆匆的街角   
 被往来行人推撞着肩膀　失魂落魄地走着   

@@ -1,5 +1,6 @@
 ---
 title: "Shall we step in the rain?"
+titlech: ""
 type: "song"
 date: "2013-03-27"
 order: 300109
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["島健"]
 slug: "/songs/shall-we-step-in-the-rain"
 tags: []
+remarks: ""
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net",reproduced-website: "織歌蟲"}
 ---
 
@@ -45,6 +47,9 @@ Shall we step in the rain?
   
 Shall we step in the rain?  
   
+
+<!-- 翻译 -->
+
 雨下了起來　沒帶傘的你  
 露出全世界最難過的表情  
   

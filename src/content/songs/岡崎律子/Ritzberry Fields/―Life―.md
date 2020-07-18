@@ -1,5 +1,6 @@
 ---
 title: "―Life―"
+titlech: ""
 type: "song"
 date: "2010-08-24"
 order: 10407
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["岩本正樹"]
 slug: "/songs/life"
 tags: []
+remarks: ""
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---
 
@@ -42,10 +44,17 @@ Oh My God,
 それでも生きている   
   
 同じ空の下で　あなたも生きている  
+
   
-● BLUE SEED　より ● 今　ぐらりと心が揺れた でも平気な顔をしたね 凛々しい君と　明日また晴れやかに会おう  
   
-  <!-- 翻译 -->
+
+  
+● BLUE SEED　より ●  
+今　ぐらりと心が揺れた  
+でも平気な顔をしたね  
+凛々しい君と　明日また晴れやかに会おう  
+
+<!-- 翻译 -->
 
 在蓝天底下　垂下目光走着   
 举手遮住刺眼的阳光   
@@ -75,5 +84,12 @@ Oh My God, (噢　我的天啊)
 然而还是要活下去   
   
 因为你也活在同一片天空下  
+
   
-● 出自動畫 \[ BLUE SEED \] 的ED單曲《Touch and Go!!》cw ● 目前　心情動盪不安 不過還是裝出一副沒事的臉 令人肅然起敬的你　讓我們明天再度神清氣爽地見面吧
+  
+
+  
+● 出自動畫 [ BLUE SEED \] 的ED單曲《Touch and Go!!》cw ●  
+目前　心情動盪不安  
+不過還是裝出一副沒事的臉  
+令人肅然起敬的你　讓我們明天再度神清氣爽地見面吧

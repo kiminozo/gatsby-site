@@ -1,5 +1,6 @@
 ---
 title: "POWER OF LOVE"
+titlech: ""
 type: "song"
 date: "2013-04-14"
 order: 390102
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["梅村圭"]
 slug: "/songs/power-of-love"
 tags: []
+remarks: "Chorus・Chorus Arrange"
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net",reproduced-website: "織歌蟲"}
 ---
 
@@ -50,6 +52,9 @@ Just calling you　いつもあなたを想う
 I'm calling you　私も力になりたい   
 Power of love   
   
+
+<!-- 翻译 -->
+
 把燈關掉　來　打開窗戶  
 今晚約好要一起看星星  
 無論是近在咫尺的明日　或是遙不可及的宇宙  

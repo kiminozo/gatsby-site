@@ -12,7 +12,7 @@ recordPublisher: "TAURUS RECORDS"
 recordType: "5th Single"
 order: 25
 slug: "/discography/a-happy-life-single"
-coverImage: "5thsg.gif"
+coverImage: "a-happy-life-single.jpg"
 ---
 
 

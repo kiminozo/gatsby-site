@@ -1,5 +1,6 @@
 ---
 title: "Hello！"
+titlech: ""
 type: "song"
 date: "2010-08-30"
 order: 10908
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["村山達哉","礒江俊道"]
 slug: "/songs/hello"
 tags: []
+remarks: "Chorus"
 license: {}
 ---
 
@@ -49,8 +51,8 @@ license: {}
   
 どこまでも行けそう   
 Like a bird, I will fly to you   
-  
-  <!-- 翻译 -->
+
+<!-- 翻译 -->
 
 迷路在没有地图的街上   
 冰冷指尖无法动弹 是啊 来歌唱吧   

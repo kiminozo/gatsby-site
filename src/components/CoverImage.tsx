@@ -1,23 +1,40 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import Img, { FluidObject } from "gatsby-image"
 import { useCoverImagesData } from '../hooks/useCoverImagesData'
 import demo from "../images/demo.png"
-import { Image } from 'semantic-ui-react'
+import { Image, ImageProps, SemanticSIZES } from 'semantic-ui-react'
+import cx from 'classnames'
+
 interface Props {
-  coverImage: string
+  coverimage: string
+  size?: SemanticSIZES
+  bordered?: boolean
+  rounded?: boolean
+  alt?: string
 }
 
-const CoverImage = ({ coverImage }: Props) => {
+const imgStyle = { maxHeight: 200 }
+
+const useKeyOnly = (val: any, key: string) => val && key;
+
+const CoverImage = (props: Props) => {
   const data = useCoverImagesData();
+  const { coverimage: coverImage, size, bordered, rounded, alt } = props;
   const imageInfo = data.filter(p => p.base === coverImage)[0];
-  //console.log(imageInfo);
+  const className = cx(
+    'ui',
+    size ? size : 'medium',
+    'image',
+    useKeyOnly(bordered, 'bordered'),
+    useKeyOnly(rounded, 'rounded'),
+  )
   if (imageInfo) {
     return imageInfo.image ?
-      <Img fluid={imageInfo.image.fluid} />
-      : <Image src={imageInfo.publicURL} />
+      <Img className={className} alt={alt} fluid={{ ...imageInfo.image.fluid, aspectRatio: 1 }} />
+      : <Image size={size} src={imageInfo.publicURL} />
   }
-  return <Image src={demo} ></Image>
+  return <Image size={size} style={imgStyle} src={demo} ></Image>
 }
 
 export default CoverImage

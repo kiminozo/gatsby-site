@@ -1,5 +1,6 @@
 ---
 title: "ダバダバFallin'Love"
+titlech: ""
 type: "song"
 date: "2017-02-05"
 order: 60027
@@ -11,6 +12,7 @@ lyricwriter: ["渡辺なつみ"]
 arranger: ["長谷川智樹"]
 slug: "/songs/da-ba-da-ba-fallin-love"
 tags: []
+remarks: ""
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net",reproduced-website: "織歌蟲"}
 ---
 
@@ -50,7 +52,9 @@ Shinin' in my dreams
   
 ダダバダダダダダ   
 ダンダバダ　ダバダバ……  
-  
+
+<!-- 翻译 -->
+
 張著一雙愛作夢的大眼、好・想・當・大・人  
 心頭小鹿亂撞　好・想・遇・見某個人  
   

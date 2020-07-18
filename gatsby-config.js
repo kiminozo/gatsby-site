@@ -37,6 +37,7 @@ module.exports = {
     title: `For RITZ`,
     description: `岡崎律子的非官方中文资料站`,
     author: `@kiminozo`,
+    siteUrl: `https://www.forritz.org`,
   },
   plugins: [
     `gatsby-plugin-typescript`,
@@ -71,7 +72,7 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    `gatsby-plugin-offline`,
+    // `gatsby-plugin-offline`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-lodash`,
     {
@@ -139,5 +140,11 @@ module.exports = {
         matchFields: ['slug', 'modified'], // Array<String> default: ['modified']
       },
     },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: [`/category/*`, `/categories`, `/tags/*`, `/arranger/*`, `/lyric-writer/*`, `/song-writer/*`, `/singer/*`],
+      }
+    }
   ],
 }

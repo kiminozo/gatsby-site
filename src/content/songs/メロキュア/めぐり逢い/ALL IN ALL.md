@@ -1,5 +1,6 @@
 ---
 title: "ALL IN ALL"
+titlech: ""
 type: "song"
 date: "2010-09-05"
 order: 30412
@@ -11,6 +12,8 @@ lyricwriter: ["岡崎律子"]
 arranger: ["西脇辰弥"]
 slug: "/songs/all-in-all"
 tags: []
+remarks: "Chorus・Main Vocal:日向めぐみ
+『円盤皇女 十二月の夜想曲』劇中歌"
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---
 
@@ -45,8 +48,8 @@ You're my...
 あてもなく　果たしなく　はぐれてる夜にも   
 愛してる　感じてる　呼びあう二人   
 You're my all in all   
-  
-  <!-- 翻译 -->
+
+<!-- 翻译 -->
 
 破晓时的天空残留着几颗星子  
 全世界只剩我一人  

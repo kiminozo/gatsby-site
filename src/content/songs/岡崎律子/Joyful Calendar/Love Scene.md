@@ -1,5 +1,6 @@
 ---
 title: "Love Scene"
+titlech: "恋爱场景"
 type: "song"
 date: "2010-08-22"
 order: 10204
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["京田誠一"]
 slug: "/songs/love-scene"
 tags: []
+remarks: "Chorus"
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---
 
@@ -42,8 +44,8 @@ Apres l'amour　ここにいる　こんなに愛してる
 ずっと　ずっと　こうしたかった   
   
 私のもの　あなたのもの  
-  
-  <!-- 翻译 -->
+
+<!-- 翻译 -->
 
 哪　时间好像随时都不够用啊   
 还想多聊一会儿　总是这麽想   

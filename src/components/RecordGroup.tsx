@@ -1,37 +1,34 @@
-import React, { Component } from "react"
-import { graphql, useStaticQuery, Link } from "gatsby"
+import React from "react"
+import { Link } from "gatsby"
 
 
-import {
-    Icon, Grid, Header, Container, Segment, Divider, Responsive,
-    Button, Card, Image, Label, Item, List
-} from 'semantic-ui-react'
+import { Card, Label } from 'semantic-ui-react'
 import _ from "lodash";
 import { useRecordsData } from "../hooks/useRecordsData"
 import CoverImage from './CoverImage'
 
 
-import demo from "../images/demo.png"
 
 type Props = {
     discographyId: string[];
 }
 
+const lableStyle = { backgroundColor: '#0003', color: '#fff' }
 
 const RecordGroup = (props: Props) => {
     const { discographyId } = props;
 
     const records = useRecordsData();
 
-    //return <div></div>
     const list = records.filter(p => discographyId.indexOf(p.id) >= 0);
     return (
-        <Card.Group doubling>
+        <Card.Group stackable centered >
             {list.map(item => (
-                <Card as={Link} key={item.id} to={item.slug}>
-                    <CoverImage key={item.id} coverImage={item.coverImage} />
-                    <Label attached='bottom left'>{item.title}</Label>
+                <Card fluid as={Link} key={item.id} to={item.slug}>
+                    <CoverImage key={item.id} alt={item.title} coverimage={item.coverImage} />
+                    <Label size="tiny" style={lableStyle} attached='bottom'>{item.title}</Label>
                 </Card>
+
             ))
             }
         </Card.Group >)

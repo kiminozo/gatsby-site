@@ -51,7 +51,7 @@ const RitzCard = () => (
     </Card.Content>
     <Card.Content extra>
       <Button as="a" basic color='blue'
-        href="http://www.ne.jp/asahi/okazaki/book/"
+        href="http://www.ne.jp/asahi/okazaki/book/" target="_Blank"
         icon='world' content='岡崎律子Book' labelPosition='left' />
     </Card.Content>
   </Card >
@@ -63,7 +63,7 @@ const AlbumCard = ({ records }: { records: Record[] }) => (
     {records.map(item =>
       (
         <Card as={Link} key={item.title} to={item.slug}>
-          <CoverImage key={item.title} coverImage={item.coverImage} />
+          <CoverImage key={item.title} alt={item.title} coverimage={item.coverImage} />
           {/* <Label attached='bottom left'>{item.title}</Label> */}
         </Card>
       )
@@ -75,7 +75,7 @@ const AlbumCard = ({ records }: { records: Record[] }) => (
 
 const IndexPage = (props: Props) => (
   <Layout path={props.location.pathname}>
-    <SEO title="Home" />
+    <SEO title="首页" />
     <Grid>
       <Grid.Column mobile={16} computer={4} tablet={5}>
         <RitzCard />
@@ -115,7 +115,7 @@ const IndexPage = (props: Props) => (
         <AlbumCard records={props.data.records.nodes.map(p => p.frontmatter)} />
         <Divider hidden />
 
-        <Button as={Link} to="/biography" icon labelPosition='right'>
+        <Button as={Link} basic color='blue' to="/discography" icon labelPosition='right'>
           了解更多
           <Icon name='arrow right' />
         </Button>

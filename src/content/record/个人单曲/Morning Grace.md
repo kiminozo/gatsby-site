@@ -12,7 +12,7 @@ recordPublisher: "KING RECORDS"
 recordType: "9th Single"
 order: 29
 slug: "/discography/morning-grace"
-coverImage: "ps_tutu.jpg"
+coverImage: "morning-grace.jpg"
 ---
 
 

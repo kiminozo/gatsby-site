@@ -1,5 +1,6 @@
 ---
 title: "Sunday Sundae"
+titlech: "星期天聖代"
 type: "song"
 date: "2010-09-05"
 order: 30410
@@ -11,6 +12,8 @@ lyricwriter: ["岡崎律子"]
 arranger: ["Kei Yoshikawa"]
 slug: "/songs/sunday-sundae"
 tags: []
+remarks: "Chorus・Main Vocal:岡崎律子
+『メロキュアの沈黙のradio』主题曲"
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---
 
@@ -37,8 +40,8 @@ Don't let me leave alone
 Break this silence, please   
   
 Now I need you.  
-  
-  <!-- 翻译 -->
+
+<!-- 翻译 -->
 
 I just wanna be with you on Sunday (星期天我只想跟你腻在一块儿)  
 我恋爱了　Sunday　也是我所梦想的　Sunday   

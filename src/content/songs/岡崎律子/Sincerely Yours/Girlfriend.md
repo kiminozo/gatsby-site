@@ -1,5 +1,6 @@
 ---
 title: "Girlfriend"
+titlech: ""
 type: "song"
 date: "2010-08-19"
 order: 10108
@@ -11,8 +12,11 @@ lyricwriter: ["岡崎律子"]
 arranger: ["京田誠一"]
 slug: "/songs/girlfriend"
 tags: []
+remarks: ""
 license: {type: "translated",translator: "loveritz"}
 ---
+
+  
 
 彼のことが好きなの　愛されたい   
 何と引き換えてもいいと思う   
@@ -48,8 +52,12 @@ license: {type: "translated",translator: "loveritz"}
 苦しくなることも多くなる   
 だけど　そんなあなただからいいの  
 ずっとそのままがいいの  
+
   
-  <!-- 翻译 -->
+
+<!-- 翻译 -->
+
+  
 
 爱着他 也想要为他所爱   
 即使换一种方式表达也无所谓   

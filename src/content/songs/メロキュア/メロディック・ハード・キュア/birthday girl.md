@@ -1,5 +1,6 @@
 ---
 title: "birthday girl"
+titlech: ""
 type: "song"
 date: "2010-09-05"
 order: 30408
@@ -11,9 +12,11 @@ lyricwriter: ["日向めぐみ"]
 arranger: ["Papa Daisuke"]
 slug: "/songs/birthday-girl"
 tags: []
+remarks: "Chorus・Main Vocal:日向めぐみ"
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---
 
+  
 ★ 特別な夜が今　あたしに降りてくる   
 let's have some fun   
 feel every love   
@@ -56,8 +59,8 @@ it's birhday night
 ★ Repeat  
   
 ◆ Repeat  
-  
-  <!-- 翻译 -->
+
+<!-- 翻译 -->
 
 特别的夜晚　此刻将降临我身  
 let's have some fun (让我们尽情欢乐)  

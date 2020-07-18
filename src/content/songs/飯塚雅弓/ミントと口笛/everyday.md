@@ -1,5 +1,6 @@
 ---
 title: "everyday"
+titlech: ""
 type: "song"
 date: "2013-03-30"
 order: 300312
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["長谷川智樹"]
 slug: "/songs/everyday"
 tags: []
+remarks: ""
 license: {type: "reproduced",translator: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net",reproduced-website: "織歌蟲"}
 ---
 
@@ -49,6 +51,9 @@ Saturday and Sunday　私はちっぽけで無限大ね
 くりかえしじゃない   
 明日　なにが起こるだろう  
   
+
+<!-- 翻译 -->
+
 Monday　道聲 “早安”　早晨再度開始  
 Tuesday　我所種植的非洲菊　開出了火紅花朵  
   

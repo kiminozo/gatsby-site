@@ -1,5 +1,6 @@
 ---
 title: "Merry Christmas to You"
+titlech: ""
 type: "song"
 date: "2010-08-29"
 order: 10710
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["長谷川智樹"]
 slug: "/songs/merry-christmas-to-you"
 tags: []
+remarks: ""
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---
 
@@ -49,8 +51,8 @@ license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.
 明日への Merry Christmas   
   
 （I wish you a merry Christmas）  
-  
-  <!-- 翻译 -->
+
+<!-- 翻译 -->
 
 像这样的下雪之夜还把你叫出来　真不好意思   
 一盏两盏渐渐熄灭的城市灯火　真美   

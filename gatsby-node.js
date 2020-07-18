@@ -4,6 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 const _ = require("lodash")
+const path = require('path');
 
 // function getId(path) {
 //   let pathName = path;
@@ -11,11 +12,47 @@ const _ = require("lodash")
 //   const start = pathName.substring(0, end).lastIndexOf('/')
 //   return pathName.substring(start, end);
 // }
+Map.prototype.addListValue = function (key, value) {
+  let values = this.get(key);
+  if (!values) {
+    values = [];
+    this.set(key, values)
+  }
+  values.push(value);
+}
+
+
 
 const createPages = async (createPage, graphql, reporter) => {
+  const createPageWithPagination = ({ path, component, context, postsPerPage, totalCount }) => {
+    const numPages = Math.ceil(totalCount / postsPerPage);
+    Array.from({ length: numPages }).forEach((_, i) => {
+      createPage({
+        path: i === 0 ? path : `${path}/${i + 1}`,
+        component: component,
+        context: {
+          ...context,
+          basePath: path,
+          limit: postsPerPage,
+          skip: i * postsPerPage,
+          totalPages: numPages,
+          activePage: i + 1
+        },
+      })
+    })
+  }
+
 
   const result = await graphql(`
    {
+  metas:allMarkdownRemark(limit: 2000, filter: {frontmatter: {type: {eq: "meta"}}}) {
+    nodes {
+      frontmatter {
+        title
+        id
+      }
+    }
+  }
   posts:allMarkdownRemark(sort: {order: ASC, fields: [frontmatter___slug]}, limit: 1000, filter: {frontmatter: {type: {eq: null}}}) {
     edges {
       node {
@@ -30,6 +67,7 @@ const createPages = async (createPage, graphql, reporter) => {
       node {
         frontmatter {
           slug
+          quote
         }
       }
     }
@@ -50,7 +88,7 @@ const createPages = async (createPage, graphql, reporter) => {
           totalCount
         }
   }
-  categoriesGroup: allMarkdownRemark(limit: 2000) {
+  categoriesGroup: allMarkdownRemark(limit: 2000, filter: {frontmatter: { type: {eq: null}}}) {
     group(field: frontmatter___categories) {
       fieldValue
       totalCount
@@ -80,6 +118,18 @@ const createPages = async (createPage, graphql, reporter) => {
       totalCount
     }
   }
+  recordList: allMarkdownRemark(limit: 2000, filter: {frontmatter: {type: {eq: "record"}}}) {
+    group(field: frontmatter___categories) {
+      fieldValue
+      totalCount
+      nodes {
+        frontmatter {
+          id
+          artist
+        }
+      }
+    }
+  }
 }
 `)
   // Handle errors
@@ -87,6 +137,11 @@ const createPages = async (createPage, graphql, reporter) => {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
   }
+
+
+  const metas = result.data.metas.nodes.map(p => p.frontmatter);
+  const getMetaId = (title => metas.filter(p => p.title === title)
+    .map(p => p.id)[0] || _.kebabCase(title))
 
   const blogPostTemplate = require.resolve(`./src/templates/PostTemplate.tsx`)
   const posts = result.data.posts.edges;
@@ -110,8 +165,8 @@ const createPages = async (createPage, graphql, reporter) => {
       path: node.frontmatter.slug,
       component: songTemplate,
       context: {
-        // additional data can be passed via context
         slug: node.frontmatter.slug,
+        quote: node.frontmatter.quote,
       },
     })
   })
@@ -124,8 +179,6 @@ const createPages = async (createPage, graphql, reporter) => {
       component: recordTemplate,
       context: {
         id: node.frontmatter.id
-        // additional data can be passed via context
-        //slug: node.frontmatter.slug,
       },
     })
   })
@@ -146,71 +199,146 @@ const createPages = async (createPage, graphql, reporter) => {
   const categoryTemplate = require.resolve("./src/templates/CategoriesTemplate.tsx")
   const categories = result.data.categoriesGroup.group;
   // Make categorie pages
-  const postsPerPage = 10
+  //const postsPerPage = 10
 
   categories.forEach(category => {
-    const numPages = Math.ceil(category.totalCount / postsPerPage);
-    const path = `/categories/${_.kebabCase(category.fieldValue)}`
-    Array.from({ length: numPages }).forEach((_, i) => {
-      createPage({
-        path: i === 0 ? path : `${path}/${i + 1}`,
-        component: categoryTemplate,
-        context: {
-          category: category.fieldValue,
-          limit: postsPerPage,
-          skip: i * postsPerPage,
-          totalPages: numPages,
-          activePage: i + 1
-        },
-      })
+    createPageWithPagination({
+      path: `/category/${getMetaId(category.fieldValue)}`,
+      component: categoryTemplate,
+      context: {
+        category: category.fieldValue
+      },
+      postsPerPage: 10,
+      totalCount: category.totalCount
     })
   })
 
-
+  const staffPerPage = 20;
   const staffTemplate = require.resolve("./src/templates/staff/SingerTemplate.tsx")
   const singers = result.data.singers.group;
   singers.forEach(staff => {
-    createPage({
-      path: `/singer/${_.kebabCase(staff.fieldValue)}/`,
+    createPageWithPagination({
+      path: `/singer/${_.kebabCase(staff.fieldValue)}`,
       component: staffTemplate,
       context: {
         staff: staff.fieldValue,
       },
+      postsPerPage: staffPerPage,
+      totalCount: staff.totalCount
     })
   })
   const lyricWriterTemplate = require.resolve("./src/templates/staff/LyricWriterTemplate.tsx")
   const lyricWriters = result.data.lyricWriters.group;
   lyricWriters.forEach(staff => {
-    createPage({
-      path: `/lyric-writer/${_.kebabCase(staff.fieldValue)}/`,
+    createPageWithPagination({
+      path: `/lyric-writer/${_.kebabCase(staff.fieldValue)}`,
       component: lyricWriterTemplate,
       context: {
         staff: staff.fieldValue,
       },
+      postsPerPage: staffPerPage,
+      totalCount: staff.totalCount
     })
   })
+
+
   const songWriterTemplate = require.resolve("./src/templates/staff/SongWriterTemplate.tsx")
   const songWriters = result.data.songWriters.group;
   songWriters.forEach(staff => {
-    createPage({
-      path: `/song-writer/${_.kebabCase(staff.fieldValue)}/`,
+    createPageWithPagination({
+      path: `/song-writer/${_.kebabCase(staff.fieldValue)}`,
       component: songWriterTemplate,
       context: {
         staff: staff.fieldValue,
       },
+      postsPerPage: staffPerPage,
+      totalCount: staff.totalCount
     })
   })
   const arrangerTemplate = require.resolve("./src/templates/staff/ArrangerTemplate.tsx")
   const arrangers = result.data.arrangers.group;
   arrangers.forEach(staff => {
-    createPage({
-      path: `/arranger/${_.kebabCase(staff.fieldValue)}/`,
+    createPageWithPagination({
+      path: `/arranger/${_.kebabCase(staff.fieldValue)}`,
       component: arrangerTemplate,
       context: {
         staff: staff.fieldValue,
       },
+      postsPerPage: staffPerPage,
+      totalCount: staff.totalCount
     })
   })
+
+  const recordListTemplate = require.resolve("./src/templates/RecordListTemplate.tsx")
+  const discographyTemplate = require.resolve("./src/templates/DiscographyTemplate.tsx")
+  const recordGroups = result.data.recordList.group;
+  const artistMap = new Map();
+  recordGroups.forEach(recordGroup => {
+    const category = recordGroup.fieldValue;
+    const frontmatters = recordGroup.nodes.map(p => p.frontmatter);
+    const g = _.groupBy(frontmatters, p => p.artist);
+    const recordsMap = _.map(g, (value, key) => ({ artist: key, records: value }));
+    if (recordsMap.length == 1) {
+      //主分类
+      const { artist, records } = recordsMap[0];
+      artistMap.addListValue(artist, { category: category, records: records });
+      createPage({
+        path: `/discography/${_.kebabCase(category)}/`,
+        component: recordListTemplate,
+        context: {
+          title: category,
+          categories: Array.of(category),
+          artist: artist,
+          discographyIds: records.map(p => p.id)
+        },
+      })
+    } else {
+      //子分类
+      createPage({
+        path: `/discography/${_.kebabCase(category)}/`,
+        component: discographyTemplate,
+        context: {
+          category: category
+        },
+      });
+      //歌手
+      recordsMap.forEach(({ artist, records }) => {
+        createPage({
+          path: `/discography/${_.kebabCase(artist)}/`,
+          component: recordListTemplate,
+          context: {
+            title: artist,
+            categories: Array.of(category),
+            artist: artist,
+            discographyIds: records.map(p => p.id)
+          },
+        })
+      });
+
+    }
+  });
+
+
+  for (let [key, value] of artistMap.entries()) {
+    if (value.length == 1) {
+      continue;
+    }
+    const artist = key;
+    const categories = value.map(p => p.category);
+    const recordIds = value.flatMap(p => p.records).map(p => p.id);
+    createPage({
+      path: `/discography/${_.kebabCase(artist)}/`,
+      component: recordListTemplate,
+      context: {
+        title: artist,
+        categories: categories,
+        artist: artist,
+        discographyIds: recordIds
+      },
+    })
+  }
+
+
 }
 
 
@@ -229,3 +357,12 @@ exports.createPages = async ({
 
 }
 
+// exports.onCreateWebpackConfig = ({ stage, actions }) => {
+//   actions.setWebpackConfig({
+//     resolve: {
+//       alias: {
+//         '../../theme.config$': path.join(__dirname, 'src/theme/theme.config'),
+//       },
+//     },
+//   });
+// };

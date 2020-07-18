@@ -2,6 +2,7 @@
 title: "详细生平"
 tags: []
 slug: "/biography"
+license: {}
 ---
 
 <span id="y1959" style="color: green;">1959年12月29日</span>岡崎律子出生于日本长崎县。天生的左撇子，但是因为母亲异常介意在小学的时候被强迫纠正。&nbsp;

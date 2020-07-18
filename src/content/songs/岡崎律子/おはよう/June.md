@@ -1,5 +1,6 @@
 ---
 title: "June"
+titlech: ""
 type: "song"
 date: "2010-08-25"
 order: 10604
@@ -11,6 +12,7 @@ lyricwriter: ["岡崎律子"]
 arranger: ["蓮沼健介"]
 slug: "/songs/june"
 tags: []
+remarks: "1996.6.23(Sun)14:00～ On Air"
 license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.myweb.hinet.net/",reproduced-website: "織歌蟲網站"}
 ---
 
@@ -35,8 +37,8 @@ license: {type: "reproduced",author: "Orika",reproduced-url: "http://orikamushi.
 電話する理由を みつけてはあきらめる   
 どうしても泣きたくなる時には あなたを思って　  
 心ふるい立たせる それが約束と思うから  
-  
-  <!-- 翻译 -->
+
+<!-- 翻译 -->
 
 六月的霪雨霏霏　让我不由得眷恋起你   
 你的声音　手指和头髮　  

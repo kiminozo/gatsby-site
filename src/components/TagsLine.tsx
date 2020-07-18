@@ -4,6 +4,7 @@ import {
     Label, Icon,
 } from 'semantic-ui-react'
 import kebabCase from "lodash/kebabCase"
+import { getMetaId } from "../hooks/useMetaData";
 
 interface Props {
     categories?: string[];
@@ -15,7 +16,7 @@ const TagsLine = ({ categories, tags }: Props) => (
         {
             categories &&
             categories.map(category =>
-                (<Label as={Link} key={category} color='teal' to={`/category/${kebabCase(category)}/`} >
+                (<Label as={Link} key={category} color='teal' to={`/category/${getMetaId(category)}/`} >
                     <Icon name='bookmark' />{category}
                 </Label>)
             )

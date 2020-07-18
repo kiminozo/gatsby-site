@@ -4,8 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 const _ = require("lodash")
-const { group } = require("console");
-const { title } = require("process");
+const path = require('path');
 
 // function getId(path) {
 //   let pathName = path;
@@ -358,3 +357,12 @@ exports.createPages = async ({
 
 }
 
+// exports.onCreateWebpackConfig = ({ stage, actions }) => {
+//   actions.setWebpackConfig({
+//     resolve: {
+//       alias: {
+//         '../../theme.config$': path.join(__dirname, 'src/theme/theme.config'),
+//       },
+//     },
+//   });
+// };

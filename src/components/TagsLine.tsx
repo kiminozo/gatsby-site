@@ -15,7 +15,7 @@ const TagsLine = ({ categories, tags }: Props) => (
         {
             categories &&
             categories.map(category =>
-                (<Label as={Link} key={category} color='teal' to={`/categories/${kebabCase(category)}/`} >
+                (<Label as={Link} key={category} color='teal' to={`/category/${kebabCase(category)}/`} >
                     <Icon name='bookmark' />{category}
                 </Label>)
             )

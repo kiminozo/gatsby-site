@@ -1,6 +1,6 @@
 import _ from 'lodash'
 import React, { Component } from 'react'
-import { Search, SearchProps, SearchResultProps, Grid, Header, Segment, Label } from 'semantic-ui-react'
+import { Search, SearchProps, SearchResultData, SearchResultProps, Grid, Header, Segment, Label } from 'semantic-ui-react'
 import algoliasearch from "algoliasearch"
 
 const ALGOLIA_APP_ID = "RDHC5K1DVL"
@@ -12,43 +12,90 @@ const searchClient = algoliasearch(
 )
 const searchIndex = searchClient.initIndex("forritz.org");
 
-
-const source = _.times(5, () => ({
-    title: "faker.company.companyName()",
-    description: "faker.company.catchPhrase()",
-    image: "faker.internet.avatar()",
-    price: "faker.finance.amount(0, 100, 2, '$')",
+const source = _.times(5, (): Hit => ({
+    objectID: "id",
+    frontmatter: {
+        slug: "slug",
+        title: "title",
+    },
+    content: "content"
 }))
 
-const resultRenderer = ({ title }: SearchResultProps) => <Label content={title} />
 
 // resultRenderer.propTypes = {
 //     title: PropTypes.string,
 //     description: PropTypes.string,
 // }
 
-interface ResultRenderer {
-    title: string,
-    description: string,
+// interface ResultRenderer {
+//     title: string,
+//     description: string,
+// }
+
+interface Hit {
+    objectID: string;
+    frontmatter: {
+        slug: string;
+        title: string;
+        type?: string;
+        tags?: string[];
+        categories?: string[];
+        discography?: string[];
+        singer?: string;
+        titlech?: string;
+        lyricwriter?: string;
+        arranger?: string;
+        songwriter?: string;
+    }
+    content: string;
+}
+interface Props {
+
 }
 
-const initialState = { isLoading: false, results: [], value: '' }
+interface State {
+    isLoading: boolean;
+    results: Hit[];
+    value?: string;
+}
 
-export default class SearchExampleStandard extends Component {
-    state = initialState
+const initialState: State = { isLoading: false, results: [], value: '' }
 
-    handleResultSelect = (event: React.MouseEvent<HTMLElement>, data: SearchProps) => this.setState({ value: result.title })
+const ResultRenderer = ({ frontmatter: { title } }: SearchResultProps) => (
+    <Label content={title} />
+)
 
 
-    handleSearchChange = (event: React.MouseEvent<HTMLElement>, data: SearchProps) => {
-        this.setState({ isLoading: true, value: data.value })
+class SearchBox extends Component<Props, State>{
+    state = initialState;
 
-        //searchIndex.search(data.value)
+    handleResultSelect = (event: React.MouseEvent<HTMLElement>, { result }: SearchResultData) => this.setState({ value: result.title })
+
+    handleSearchChange = (event: React.MouseEvent<HTMLElement>, { value }: SearchProps) => {
+        this.setState({ isLoading: true, value })
+
+        if (!this.state.value) return this.setState(initialState)
+
+        searchIndex.search<Hit>(this.state.value)
+            .then(({ hits }) => {
+                this.setState({
+                    isLoading: false,
+                    results: hits,
+                })
+            });
+    }
+
+    handleSearchChangeFake = (event: React.MouseEvent<HTMLElement>, { value }: SearchProps) => {
+        this.setState({ isLoading: true, value })
+
+        // if (!this.state.value) return this.setState(initialState)
+
         setTimeout(() => {
-            if (this.state.value.length < 1) return this.setState(initialState)
+            if (!this.state.value || this.state.value.length < 1)
+                return this.setState(initialState)
 
             const re = new RegExp(_.escapeRegExp(this.state.value), 'i')
-            const isMatch = (result: SearchResultProps) => re.test(result.title)
+            const isMatch = (result: Hit) => re.test(result.content)
 
             this.setState({
                 isLoading: false,
@@ -60,18 +107,18 @@ export default class SearchExampleStandard extends Component {
     render() {
         const { isLoading, value, results } = this.state
 
+
         return (
             <Grid>
                 <Grid.Column width={6}>
                     <Search
                         loading={isLoading}
                         onResultSelect={this.handleResultSelect}
-                        onSearchChange={_.debounce(this.handleSearchChange, 500, {
+                        onSearchChange={_.debounce(this.handleSearchChangeFake, 500, {
                             leading: true,
                         })}
                         results={results}
                         value={value}
-                        resultRenderer={resultRenderer}
                     />
                 </Grid.Column>
                 <Grid.Column width={10}>
@@ -87,6 +134,17 @@ export default class SearchExampleStandard extends Component {
                     </Segment>
                 </Grid.Column>
             </Grid>
+        )
+    }
+}
+
+export default class SearchExampleStandard extends Component {
+
+
+    render() {
+
+        return (
+            <SearchBox />
         )
     }
 }

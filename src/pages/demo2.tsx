@@ -16,7 +16,7 @@ const source = _.times(5, (): Hit => ({
     objectID: "id",
     frontmatter: {
         slug: "slug",
-        title: "title",
+        title: "title2",
     },
     content: "content"
 }))
@@ -56,12 +56,12 @@ interface Props {
 interface State {
     isLoading: boolean;
     results: Hit[];
-    value?: string;
+    value: string;
 }
 
 const initialState: State = { isLoading: false, results: [], value: '' }
 
-const ResultRenderer = ({ frontmatter: { title } }: SearchResultProps) => (
+const ResultRenderer = ({ frontmatter: { title } }: Hit & SearchResultProps) => (
     <Label content={title} />
 )
 
@@ -72,9 +72,7 @@ class SearchBox extends Component<Props, State>{
     handleResultSelect = (event: React.MouseEvent<HTMLElement>, { result }: SearchResultData) => this.setState({ value: result.title })
 
     handleSearchChange = (event: React.MouseEvent<HTMLElement>, { value }: SearchProps) => {
-        this.setState({ isLoading: true, value })
-
-        if (!this.state.value) return this.setState(initialState)
+        this.setState({ isLoading: true, value: value ?? "" })
 
         searchIndex.search<Hit>(this.state.value)
             .then(({ hits }) => {
@@ -86,13 +84,20 @@ class SearchBox extends Component<Props, State>{
     }
 
     handleSearchChangeFake = (event: React.MouseEvent<HTMLElement>, { value }: SearchProps) => {
-        this.setState({ isLoading: true, value })
+        this.setState({ isLoading: true, value: value ?? "" })
 
         // if (!this.state.value) return this.setState(initialState)
 
+        // if (!this.state.value || this.state.value.length < 1) {
+        //     setTimeout(() => {
+        //         this.setState(initialState)
+        //     }, 300)
+        //     return;
+        // }
+
         setTimeout(() => {
-            if (!this.state.value || this.state.value.length < 1)
-                return this.setState(initialState)
+            // if (!this.state.value || this.state.value.length < 1)
+            //     return this.setState(initialState)
 
             const re = new RegExp(_.escapeRegExp(this.state.value), 'i')
             const isMatch = (result: Hit) => re.test(result.content)
@@ -114,11 +119,12 @@ class SearchBox extends Component<Props, State>{
                     <Search
                         loading={isLoading}
                         onResultSelect={this.handleResultSelect}
-                        onSearchChange={_.debounce(this.handleSearchChangeFake, 500, {
+                        onSearchChange={_.debounce(this.handleSearchChange, 500, {
                             leading: true,
                         })}
                         results={results}
                         value={value}
+                        resultRenderer={ResultRenderer}
                     />
                 </Grid.Column>
                 <Grid.Column width={10}>

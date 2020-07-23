@@ -2,29 +2,33 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
-const myQuery = `{
-  allSitePage(filter: {component: {ne: null}}) {
-    edges {
-      node {
-        objectID: id
-        component
-        path
-        componentChunkName
-        internal {
-          type
-          contentDigest
-          owner
-        }
+const searchQuery = `{
+  pages:allMarkdownRemark {
+    nodes {
+      objectID:id
+      frontmatter {
+        slug
+        title
+        type
+        tags
+        categories
+        discography
+        singer
+        titlech
+        lyricwriter
+        arranger
+        songwriter
       }
+      content: excerpt(truncate: true, pruneLength: 1024)
     }
   }
 }`;
 
 const queries = [
   {
-    query: myQuery,
-    transformer: ({ data }) => data.allSitePage.edges.map(({ node }) => node), // optional
-    indexName: 'index name to target', // overrides main index name, optional
+    query: searchQuery,
+    transformer: ({ data }) => data.pages.nodes, // optional
+    indexName: 'forritz.org', // overrides main index name, optional
     settings: {
       // optional, any index settings
     },

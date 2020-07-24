@@ -2,6 +2,14 @@ import _ from 'lodash'
 import React, { Component } from 'react'
 import { Search, SearchProps, SearchResultData, SearchResultProps, Grid, Header, Segment, Label } from 'semantic-ui-react'
 import algoliasearch from "algoliasearch"
+import {
+    Highlight,
+    Hits,
+    Snippet,
+    PoweredBy,
+} from "react-instantsearch-dom"
+import Highlighter from "react-highlight-words";
+import { Link } from 'gatsby'
 
 const ALGOLIA_APP_ID = "RDHC5K1DVL"
 const ALGOLIA_SEARCH_KEY = "16aa7a01e5797d9213578ddc66613e01"
@@ -13,12 +21,12 @@ const searchClient = algoliasearch(
 const searchIndex = searchClient.initIndex("forritz.org");
 
 const source = _.times(5, (): Hit => ({
-    objectID: "id",
+    objectID: "id2",
     frontmatter: {
-        slug: "slug",
+        slug: "slug2",
         title: "title2",
     },
-    content: "content"
+    content: "2飯塚雅弓さんのレコーディングで。   サウンドプロデューサーの長谷川さんと、コーラスを決めているところ。   コーラスとなると、つい、はりきる私ですが、この日は少なめにあっさりにして、おとなしく帰りました。   由于和饭冢雅弓的录音。   可以断定合唱的声音制片人是长谷川先生。   当变成合唱的时候、我是充满干劲"
 }))
 
 
@@ -31,6 +39,20 @@ const source = _.times(5, (): Hit => ({
 //     title: string,
 //     description: string,
 // }
+interface MatchWords {
+    value: string
+    fullyHighlighted?: boolean
+    matchedWords: string[]
+}
+
+interface HighlightHit {
+    _highlightResult: {
+        frontmatter: {
+            [key: string]: MatchWords,
+        }
+        content: MatchWords,
+    }
+}
 
 interface Hit {
     objectID: string;
@@ -49,6 +71,10 @@ interface Hit {
     }
     content: string;
 }
+// interface ResultProps extends Hit, HighlightHit, SearchResultProps {
+
+// }
+
 interface Props {
 
 }
@@ -61,9 +87,31 @@ interface State {
 
 const initialState: State = { isLoading: false, results: [], value: '' }
 
-const ResultRenderer = ({ frontmatter: { title } }: Hit & SearchResultProps) => (
-    <Label content={title} />
-)
+
+
+const ResultRenderer = (props: SearchResultProps) => {
+    const { frontmatter: { title, slug }, content, _highlightResult: highlight } = props as unknown as (HighlightHit & Hit);
+    return (
+        <Link to={slug}>
+            <Header as='h4'>
+                {title}
+                <Header.Subheader>
+                    <Highlighter searchWords={highlight.content.matchedWords}
+                        autoEscape={true}
+                        textToHighlight={content.substring(0, 100)} />
+                </Header.Subheader>
+            </Header>
+        </Link>
+    )
+}
+
+// const ResultRenderer = (props: SearchResultProps) => {
+//     let context = props.content;
+//     console.log(context)
+//     return (
+//         <div />
+//     )
+// }
 
 
 class SearchBox extends Component<Props, State>{
@@ -96,8 +144,8 @@ class SearchBox extends Component<Props, State>{
         // }
 
         setTimeout(() => {
-            // if (!this.state.value || this.state.value.length < 1)
-            //     return this.setState(initialState)
+            if (!this.state.value || this.state.value.length < 1)
+                return this.setState(initialState)
 
             const re = new RegExp(_.escapeRegExp(this.state.value), 'i')
             const isMatch = (result: Hit) => re.test(result.content)

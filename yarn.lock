@@ -2440,6 +2440,13 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-highlight-words@^0.16.1":
+  version "0.16.1"
+  resolved "https://registry.npm.taobao.org/@types/react-highlight-words/download/@types/react-highlight-words-0.16.1.tgz#9744f9587e16cf74870b77ab419ec79c29f63068"
+  integrity sha1-l0T5WH4Wz3SHC3erQZ7HnCn2MGg=
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-instantsearch-core@*":
   version "6.3.0"
   resolved "https://registry.npm.taobao.org/@types/react-instantsearch-core/download/@types/react-instantsearch-core-6.3.0.tgz#74acc99250ce416a96a0b1896e127a283a9f6b76"
@@ -8700,7 +8707,7 @@ hicat@^0.7.0:
     highlight.js "^8.1.0"
     minimist "^0.2.0"
 
-highlight-words-core@1.2.2:
+highlight-words-core@1.2.2, highlight-words-core@^1.2.0:
   version "1.2.2"
   resolved "https://registry.npm.taobao.org/highlight-words-core/download/highlight-words-core-1.2.2.tgz#1eff6d7d9f0a22f155042a00791237791b1eeaaa"
   integrity sha1-Hv9tfZ8KIvFVBCoAeRI3eRse6qo=
@@ -10691,6 +10698,11 @@ mem@^4.0.0:
     map-age-cleaner "^0.1.1"
     mimic-fn "^2.0.0"
     p-is-promise "^2.0.0"
+
+memoize-one@^4.0.0:
+  version "4.1.0"
+  resolved "https://registry.npm.taobao.org/memoize-one/download/memoize-one-4.1.0.tgz#a2387c58c03fff27ca390c31b764a79addf3f906"
+  integrity sha1-ojh8WMA//yfKOQwxt2Snmt3z+QY=
 
 memory-fs@^0.4.1:
   version "0.4.1"
@@ -12698,7 +12710,7 @@ prompts@^2.3.2:
     kleur "^3.0.3"
     sisteransi "^1.0.4"
 
-prop-types@^15.5.10, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.npm.taobao.org/prop-types/download/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha1-UsQedbjIfnK52TYOAga5ncv/psU=
@@ -13008,6 +13020,15 @@ react-helmet@^6.0.0:
     prop-types "^15.7.2"
     react-fast-compare "^2.0.4"
     react-side-effect "^2.1.0"
+
+react-highlight-words@^0.16.0:
+  version "0.16.0"
+  resolved "https://registry.npm.taobao.org/react-highlight-words/download/react-highlight-words-0.16.0.tgz#4b4b9824e3d2b98789d3e3b3aedb5e961ae1b7cf"
+  integrity sha1-S0uYJOPSuYeJ0+Ozrttelhrht88=
+  dependencies:
+    highlight-words-core "^1.2.0"
+    memoize-one "^4.0.0"
+    prop-types "^15.5.8"
 
 react-hot-loader@^4.12.21:
   version "4.12.21"

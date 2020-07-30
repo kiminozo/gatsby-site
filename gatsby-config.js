@@ -1,3 +1,5 @@
+const { object } = require('prop-types');
+
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
@@ -19,7 +21,7 @@ const searchQuery = `{
         arranger
         songwriter
       }
-      content: excerpt(truncate: true, pruneLength: 1024)
+      summary: excerpt(truncate: true, pruneLength: 1024)
     }
   }
 }`;
@@ -27,7 +29,7 @@ const searchQuery = `{
 const queries = [
   {
     query: searchQuery,
-    transformer: ({ data }) => data.pages.nodes, // optional
+    transformer: ({ data }) => data.pages.nodes.map(({ objectID, summary, frontmatter }) => Object.assign({ objectID, summary }, frontmatter)), // optional
     indexName: 'forritz.org', // overrides main index name, optional
     settings: {
       // optional, any index settings

@@ -91,7 +91,7 @@ const ResultRenderer = (props: SearchResultProps) => {
                 <Header.Subheader>
                     <Highlighter searchWords={highlight ? highlight.summary.matchedWords : []}
                         autoEscape={true}
-                        textToHighlight={summary.substring(0, 100)} />
+                        textToHighlight={summary.substring(0, 32)} />
                 </Header.Subheader>
             </Header>
         </Link>
@@ -161,9 +161,10 @@ class SearchBox extends Component<Props, State>{
                 <Grid.Column width={6}>
                     <Search
                         loading={isLoading}
+                        minCharacters={2}
                         onResultSelect={this.handleResultSelect}
-                        onSearchChange={_.debounce(this.handleSearchChange, 500, {
-                            leading: true,
+                        onSearchChange={_.debounce(this.handleSearchChange, 300, {
+                            trailing: true,
                         })}
                         results={results}
                         value={value}

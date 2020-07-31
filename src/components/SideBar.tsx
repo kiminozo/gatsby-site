@@ -2,6 +2,7 @@ import React from "react"
 import { Menu, Label } from "semantic-ui-react"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import { getMetaId } from "../hooks/useMetaData"
+import SearchBox from "./SearchBox"
 
 interface CategoriesGroup {
     fieldValue: string;
@@ -51,6 +52,9 @@ const SideBar = () => {
     const { record: { recordList }, post: { postList } } = data;
     return (
         <Menu vertical size='massive'>
+            <Menu.Header>
+                <SearchBox />
+            </Menu.Header>
             <Menu.Item>
                 <Menu.Header>作品列表</Menu.Header>
                 <Menu.Menu>

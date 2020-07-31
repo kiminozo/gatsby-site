@@ -22,11 +22,9 @@ const searchIndex = searchClient.initIndex("forritz.org");
 
 const source = _.times(5, (): Hit => ({
     objectID: "id2",
-    frontmatter: {
-        slug: "slug2",
-        title: "title2",
-    },
-    content: "2飯塚雅弓さんのレコーディングで。   サウンドプロデューサーの長谷川さんと、コーラスを決めているところ。   コーラスとなると、つい、はりきる私ですが、この日は少なめにあっさりにして、おとなしく帰りました。   由于和饭冢雅弓的录音。   可以断定合唱的声音制片人是长谷川先生。   当变成合唱的时候、我是充满干劲"
+    slug: "slug2",
+    title: "title2",
+    summary: "2飯塚雅弓さんのレコーディングで。   サウンドプロデューサーの長谷川さんと、コーラスを決めているところ。   コーラスとなると、つい、はりきる私ですが、この日は少なめにあっさりにして、おとなしく帰りました。   由于和饭冢雅弓的录音。   可以断定合唱的声音制片人是长谷川先生。   当变成合唱的时候、我是充满干劲"
 }))
 
 
@@ -47,33 +45,28 @@ interface MatchWords {
 
 interface HighlightHit {
     _highlightResult: {
-        frontmatter: {
-            [key: string]: MatchWords,
-        }
-        content: MatchWords,
+        [key: string]: MatchWords,
     }
 }
 
 interface Hit {
     objectID: string;
-    frontmatter: {
-        slug: string;
-        title: string;
-        type?: string;
-        tags?: string[];
-        categories?: string[];
-        discography?: string[];
-        singer?: string;
-        titlech?: string;
-        lyricwriter?: string;
-        arranger?: string;
-        songwriter?: string;
-    }
-    content: string;
+    summary: string;
+    slug: string;
+    title: string;
+    type?: string;
+    tags?: string[];
+    categories?: string[];
+    discography?: string[];
+    singer?: string;
+    titlech?: string;
+    lyricwriter?: string;
+    arranger?: string;
+    songwriter?: string;
 }
-// interface ResultProps extends Hit, HighlightHit, SearchResultProps {
+interface ResultProps extends Hit, HighlightHit, SearchResultProps {
 
-// }
+}
 
 interface Props {
 
@@ -90,15 +83,15 @@ const initialState: State = { isLoading: false, results: [], value: '' }
 
 
 const ResultRenderer = (props: SearchResultProps) => {
-    const { frontmatter: { title, slug }, content, _highlightResult: highlight } = props as unknown as (HighlightHit & Hit);
+    const { title, slug, summary, _highlightResult: highlight } = props as ResultProps;
     return (
         <Link to={slug}>
             <Header as='h4'>
                 {title}
                 <Header.Subheader>
-                    <Highlighter searchWords={highlight.content.matchedWords}
+                    <Highlighter searchWords={highlight ? highlight.summary.matchedWords : []}
                         autoEscape={true}
-                        textToHighlight={content.substring(0, 100)} />
+                        textToHighlight={summary.substring(0, 100)} />
                 </Header.Subheader>
             </Header>
         </Link>
@@ -120,11 +113,12 @@ class SearchBox extends Component<Props, State>{
     handleResultSelect = (event: React.MouseEvent<HTMLElement>, { result }: SearchResultData) => this.setState({ value: result.title })
 
     handleSearchChange = (event: React.MouseEvent<HTMLElement>, { value }: SearchProps) => {
-        this.setState({ isLoading: true, value: value ?? "" })
+        const self = this;
+        self.setState({ isLoading: true, value: value ?? "" })
 
-        searchIndex.search<Hit>(this.state.value)
+        searchIndex.search<Hit>({ query: self.state.value })
             .then(({ hits }) => {
-                this.setState({
+                self.setState({
                     isLoading: false,
                     results: hits,
                 })
@@ -132,7 +126,8 @@ class SearchBox extends Component<Props, State>{
     }
 
     handleSearchChangeFake = (event: React.MouseEvent<HTMLElement>, { value }: SearchProps) => {
-        this.setState({ isLoading: true, value: value ?? "" })
+        const self = this;
+        self.setState({ isLoading: true, value: value ?? "" })
 
         // if (!this.state.value) return this.setState(initialState)
 
@@ -144,13 +139,13 @@ class SearchBox extends Component<Props, State>{
         // }
 
         setTimeout(() => {
-            if (!this.state.value || this.state.value.length < 1)
-                return this.setState(initialState)
+            if (!self.state.value || self.state.value.length < 1)
+                return self.setState(initialState)
 
-            const re = new RegExp(_.escapeRegExp(this.state.value), 'i')
-            const isMatch = (result: Hit) => re.test(result.content)
+            const re = new RegExp(_.escapeRegExp(self.state.value), 'i')
+            const isMatch = (result: Hit) => re.test(result.summary)
 
-            this.setState({
+            self.setState({
                 isLoading: false,
                 results: _.filter(source, isMatch),
             })

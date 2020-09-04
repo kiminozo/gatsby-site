@@ -7,7 +7,7 @@ tags: ["新干线","演唱会","雨"]
 license: {type: "translated",author: "岡崎律子",translator: "loveritz",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/today/today29.html",reproduced-website: "岡崎律子Book"}
 ---
 
-[![today27](./images/today27.jpg)](./images/today27.jpg)
+[![](./images/today27.jpg)](./images/today27.jpg)
 
   
 3月20日（星期六）雨。井上喜久子小姐的演唱会在大阪サンケイホール礼堂举行。我是做早晨10：24分的新干线去的。但那天我几乎是到了那边，没做什么停留，便立即折返回来了。  

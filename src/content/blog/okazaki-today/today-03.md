@@ -7,7 +7,7 @@ tags: ["意见","曲子","过去"]
 license: {type: "translated",author: "岡崎律子",translator: "loveritz",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/today/today3.html",reproduced-website: "岡崎律子Book"}
 ---
 
-[![pola](./images/pola.gif)](./images/pola.gif)
+[![](./images/pola.gif)](./images/pola.gif)
 
 
 今天，脑海里想起了一些过去的事情。  

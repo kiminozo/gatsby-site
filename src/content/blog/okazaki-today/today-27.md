@@ -7,7 +7,7 @@ tags: ["多拉A梦","彼氏彼女","思恋 迷题","温泉旅行","湖"]
 license: {type: "translated",author: "岡崎律子",translator: "loveritz",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/today/today27.html",reproduced-website: "岡崎律子Book"}
 ---
 
-[![today27](./images/today27.jpg)](./images/today27.jpg)
+[![](./images/today27.jpg)](./images/today27.jpg)
 
   
 大家好。忙碌的日子告一段落，我也抽空去了一趟温泉旅行（虽然只是两日一夜的短途）。大概当了一个星期左右的“懒惰律子”，不过从上周开始一点一点进入录音工作了。“好，继续工作了！”。今天想在这里和大家分享一些偶然想到的事情。  

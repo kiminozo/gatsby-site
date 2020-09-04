@@ -7,7 +7,7 @@ tags: ["庙会","电视","雨"]
 license: {type: "translated",author: "岡崎律子",translator: "loveritz",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/today/today13.html",reproduced-website: "岡崎律子Book"}
 ---
 
-[![suwatte](./images/suwatte.jpg)](./images/suwatte.jpg)  
+[![](./images/suwatte.jpg)](./images/suwatte.jpg)  
 
   
 

@@ -7,7 +7,7 @@ tags: ["公园","温柔","豪斯登堡"]
 license: {type: "translated",author: "岡崎律子",translator: "loveritz",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/today/today6.html",reproduced-website: "岡崎律子Book"}
 ---
 
-[![fuusha](./images/fuusha.gif)](./images/fuusha.gif)  
+[![](./images/fuusha.gif)](./images/fuusha.gif)  
 
   
 现在的大街上到处都开满了梅花，你那里怎么样呢？记得豪斯登堡那里的三色堇和油菜花漂亮极了。到了3月，就该轮到郁金香盛开了吧。  

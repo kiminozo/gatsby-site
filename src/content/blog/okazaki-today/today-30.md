@@ -7,7 +7,7 @@ tags: ["喜久子","小森まなみ","雨"]
 license: {type: "translated",author: "岡崎律子",translator: "loveritz",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/today/today30.html",reproduced-website: "岡崎律子Book"}
 ---
 
-[![today27](./images/today27.jpg)](./images/today27.jpg)
+[![](./images/today27.jpg)](./images/today27.jpg)
 
   
 连着下雨天呢。大家有没有一件只要穿着就肯定会下雨的衣服呢？我前几天刚买的那件白色外套好像就是这个样子。喜久子小姐在名古屋的那次演唱会也下雨了。好像去大阪那次身边也带着伞……  

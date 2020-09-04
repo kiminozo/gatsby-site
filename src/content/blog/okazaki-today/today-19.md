@@ -7,7 +7,7 @@ tags: ["新专辑","春天","林原惠美","樱花","键盘"]
 license: {type: "translated",author: "岡崎律子",translator: "loveritz",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/today/today19.html",reproduced-website: "岡崎律子Book"}
 ---
 
-[![curtain2](./images/curtain2.jpg)](./images/curtain2.jpg)
+[![](./images/curtain2.jpg)](./images/curtain2.jpg)
 
   
 大家好。你家周围的樱花开了吗？  

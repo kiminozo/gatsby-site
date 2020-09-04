@@ -7,7 +7,7 @@ tags: ["向阳诗","困难","天气","学生时代","游泳课"]
 license: {type: "translated",author: "岡崎律子",translator: "loveritz",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/today/today10.html",reproduced-website: "岡崎律子Book"}
 ---
 
-[![flower](./images/flower.gif)](./images/flower.gif)  
+[![](./images/flower.gif)](./images/flower.gif)  
 
   
 

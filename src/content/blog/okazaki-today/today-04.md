@@ -7,7 +7,7 @@ tags: ["1997年1月","占卜","喜欢","懒惰","甜面圈和咖啡","竞争"]
 license: {type: "translated",author: "岡崎律子",translator: "loveritz",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/today/today4.html",reproduced-website: "岡崎律子Book"}
 ---
 
-[![pola](./images/pola.gif)](./images/pola.gif)
+[![](./images/pola.gif)](./images/pola.gif)
 
   
 寒假里一个晴朗的午后，脑海里突然飘入了一些毫无关联的记忆片段。  

@@ -7,7 +7,7 @@ tags: ["作息","出门","生活","言行","记事本"]
 license: {type: "translated",author: "岡崎律子",translator: "loveritz",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/today/today17.html",reproduced-website: "岡崎律子Book"}
 ---
 
-[![curtain2](./images/curtain2.jpg)](./images/curtain2.jpg)  
+[![](./images/curtain2.jpg)](./images/curtain2.jpg)  
 
   
 

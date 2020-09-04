@@ -7,7 +7,7 @@ tags: ["专辑","烟火","雨"]
 license: {type: "translated",author: "岡崎律子",translator: "loveritz",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/today/today22.html",reproduced-website: "岡崎律子Book"}
 ---
 
-[![today20](./images/today20.jpg)](./images/today20.jpg)
+[![](./images/today20.jpg)](./images/today20.jpg)
 
   
 这几天一直在准备专辑。深刻感受到了“冲劲”与“健康”的重要性，于是决定以此为本月目标，120%努力吧。  

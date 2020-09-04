@@ -7,7 +7,7 @@ tags: ["Good Luck","人偶","天气","研讨会"]
 license: {type: "translated",author: "岡崎律子",translator: "loveritz",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/today/today23.html",reproduced-website: "岡崎律子Book"}
 ---
 
-[![today20](./images/today20.jpg)](./images/today20.jpg)
+[![](./images/today20.jpg)](./images/today20.jpg)
 
   
 天气渐渐变凉了。最近感冒很猖獗呢，大家千万要注意身体，过一个精神和体力都充沛的秋天吧。  

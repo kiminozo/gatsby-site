@@ -7,7 +7,7 @@ tags: ["专辑","信","季节","新曲","海","盂兰盆节"]
 license: {type: "translated",author: "岡崎律子",translator: "loveritz",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/today/today12.html",reproduced-website: "岡崎律子Book"}
 ---
 
-[![suwatte](./images/suwatte.jpg)](./images/suwatte.jpg)
+[![](./images/suwatte.jpg)](./images/suwatte.jpg)
 
   
 大家好。到了9月，一下子感受到了后一个季节的气息，大家身体还好吧？8月21日是我的专辑“Ritzberry Fields”的发售日，但实际上我已经开始了下一张专辑的准备工作，整个夏天在家的时间真的很少很少。  

@@ -7,7 +7,7 @@ tags: ["おはよう","工作室"]
 license: {type: "translated",author: "岡崎律子",translator: "loveritz",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/today/today24.html",reproduced-website: "岡崎律子Book"}
 ---
 
-[![today24](./images/today24.jpg)](./images/today24.jpg)
+[![](./images/today24.jpg)](./images/today24.jpg)
 
 大家好。身体无恙否？  
 录音工作在9月30日顺利完成了。最近这段时间一直是无止境的工作室←→家的两点生活，所以终于松了口气。终于可以一边看着电视里的《kojikoji》（日本动画片名，不知道中文名丫。和樱桃小丸子是同一位编剧哦），一边开怀大笑了  

@@ -7,7 +7,7 @@ tags: ["占卜","工作","恋爱","早餐","迷路","通知"]
 license: {type: "translated",author: "岡崎律子",translator: "loveritz",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/today/today20.html",reproduced-website: "岡崎律子Book"}
 ---
 
-[![today20](./images/today20.jpg)](./images/today20.jpg)  
+[![](./images/today20.jpg)](./images/today20.jpg)  
 
   
 总觉得最近天空老是阴沉沉的，不过大家的身体还好吧？  

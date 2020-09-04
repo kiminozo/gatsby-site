@@ -7,7 +7,7 @@ tags: ["おはよう","天冷","井上喜久子"]
 license: {type: "translated",author: "岡崎律子",translator: "loveritz",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/today/today25.html",reproduced-website: "岡崎律子Book"}
 ---
 
-[![today24](./images/today24.jpg)](./images/today24.jpg) 
+[![](./images/today24.jpg)](./images/today24.jpg) 
 
   
 大家好。感觉好久没来过这里了。  

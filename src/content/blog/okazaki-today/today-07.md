@@ -7,7 +7,7 @@ tags: ["信","写真集","哭","电影"]
 license: {type: "translated",author: "岡崎律子",translator: "loveritz",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/today/today7.html",reproduced-website: "岡崎律子Book"}
 ---
 
-[![kasai2](./images/kasai2.gif)](./images/kasai2.gif)
+[![](./images/kasai2.gif)](./images/kasai2.gif)
 
   
 今天，我哭了一小会儿。  

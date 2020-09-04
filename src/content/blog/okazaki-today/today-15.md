@@ -7,7 +7,7 @@ tags: ["小森麻美","新干线","林原惠美","衣服","迪斯尼","雨"]
 license: {type: "translated",author: "岡崎律子",translator: "loveritz",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/today/today15.html",reproduced-website: "岡崎律子Book"}
 ---
 
-[![selfshot](./images/selfshot.jpg)](./images/selfshot.jpg)  
+[![](./images/selfshot.jpg)](./images/selfshot.jpg)  
 
   
 

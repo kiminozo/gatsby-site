@@ -7,7 +7,7 @@ tags: ["买房","在家","春季"]
 license: {type: "translated",author: "岡崎律子",translator: "loveritz",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/today/today28.html",reproduced-website: "岡崎律子Book"}
 ---
 
-[![today27](./images/today27.jpg)](./images/today27.jpg) 
+[![](./images/today27.jpg)](./images/today27.jpg) 
 
   
 在房间里悠哉游哉的时间都没有……最近如此安静，以至于以前感叹这些话的日子都仿佛幻觉一般。昨天、前天也是，电话一次都没有响过，我甚至想把听筒拿起来，看看是否还连着线。  

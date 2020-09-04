@@ -7,7 +7,7 @@ tags: ["希望","心情","生活"]
 license: {type: "translated",author: "岡崎律子",translator: "loveritz",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/today/today1.html",reproduced-website: "岡崎律子Book"}
 ---
 
-[![hoozue](./images/hoozue.gif)](./images/hoozue.gif)
+[![](./images/hoozue.gif)](./images/hoozue.gif)
 
 
 现在的你，每天过得怎样呢？我的话，现在既没在录专辑，也没在创作新歌，算是一段较为空闲的日子吧，所以也有时间对自己的生活好好做一番考虑。  

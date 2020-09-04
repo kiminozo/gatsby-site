@@ -7,7 +7,7 @@ tags: ["烦恼","生活","网站","雨"]
 license: {type: "reproduced",author: "岡崎律子",translator: "loveritz",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/today/today2.html",reproduced-website: "岡崎律子Book"}
 ---
 
-[![753](./images/753.gif)](./images/753.gif)
+[![](./images/753.gif)](./images/753.gif)
 
 
 天好冷，大家睡得好吗。半夜的时候，外面的雨下得好大，害得我怎么睡不着了。而那些脑子里想着问题，或是被别人拉去谈心的晚上，也经常会变成一个个无眠之夜。  

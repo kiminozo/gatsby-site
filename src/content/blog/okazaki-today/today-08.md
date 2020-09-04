@@ -7,7 +7,7 @@ tags: ["电视节目","自杀","音乐生活"]
 license: {type: "translated",author: "岡崎律子",translator: "loveritz",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/today/today7.html",reproduced-website: "岡崎律子Book"}
 ---
 
-[![kasai2](./images/kasai2.gif)](./images/kasai2.gif)
+[![](./images/kasai2.gif)](./images/kasai2.gif)
 
   
 大家好。最近一个月我是整天忙得喘不过气来。但总算能谈谈自己的音乐生活了，好高兴。  

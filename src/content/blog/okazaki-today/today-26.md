@@ -7,7 +7,7 @@ tags: ["1998年","孤独","敞开心扉","新年","春が来た","绕口令"]
 license: {type: "translated",author: "岡崎律子",translator: "loveritz",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/today/today26.html",reproduced-website: "岡崎律子Book"}
 ---
 
-[![today24](./images/today24.jpg)](./images/today24.jpg)
+[![](./images/today24.jpg)](./images/today24.jpg)
 
   
 <span style="color: #ff00ff;">新春打ち明け話</span>「春が来た」の中に、私はこの春への願いをこめて、あるメッセージを入れていたのです。“こころ澄まし 身を投げ出せ”のあと、次の“むずかしくしないでね”までの間奏のところ。ボコーダーという機械で、「アンタ宇宙人？！」という声になっているのですけれど、私は次のように歌ったのでした。Now spring has come, yeah.Won't you come and join us in the spring of 1999?It's a promise!  

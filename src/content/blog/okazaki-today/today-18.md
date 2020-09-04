@@ -7,7 +7,7 @@ tags: ["Ritzstar","原宿","感冒","皮卡丘","笑","车站","邮件"]
 license: {type: "translated",author: "岡崎律子",translator: "loveritz",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/today/today18.html",reproduced-website: "岡崎律子Book"}
 ---
 
-[![curtain2](./images/curtain2.jpg)](./images/curtain2.jpg)
+[![](./images/curtain2.jpg)](./images/curtain2.jpg)
 
   
 中午好。最近感冒猖獗，大家（家人）都没事吧？  

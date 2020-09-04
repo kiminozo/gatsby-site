@@ -7,7 +7,7 @@ tags: ["专辑","坏人","幼稚園","旅行","笔记本","艺人","采访"]
 license: {type: "translated",author: "岡崎律子",translator: "loveritz",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/today/today11.html",reproduced-website: "岡崎律子Book"}
 ---
 
-[![ascii](./images/ascii.jpg)](./images/ascii.jpg)  
+[![](./images/ascii.jpg)](./images/ascii.jpg)  
 
   
 

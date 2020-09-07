@@ -3,7 +3,7 @@ title: "●第34号掲載分（1999年8月7日）"
 date: "2020-09-07"
 categories: ["岡崎Today"]
 slug: "/okazaki-today/today-34"
-tags: []
+tags: ["烟花","地铁"]
 license: {type: "translated",author: "岡崎律子",translator: "貓总",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/today/today34.html",reproduced-website: "岡崎律子Book"}
 ---
 

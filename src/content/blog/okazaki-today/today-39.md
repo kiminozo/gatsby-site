@@ -3,7 +3,7 @@ title: "●第39号掲載分（1999年12月6日）"
 date: "2020-09-07"
 categories: ["岡崎Today"]
 slug: "/okazaki-today/today-39"
-tags: []
+tags: ["雪","哲理"]
 license: {type: "translated",author: "岡崎律子",translator: "貓总",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/today/today39.html",reproduced-website: "岡崎律子Book"}
 ---
 

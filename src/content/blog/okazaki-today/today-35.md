@@ -7,7 +7,7 @@ tags: []
 license: {type: "translated",author: "岡崎律子",translator: "貓总",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/today/today35.html",reproduced-website: "岡崎律子Book"}
 ---
 
-[![](./images/today32.jpg)](./images/today32.jpg)
+[![](./images/today35.jpg)](./images/today32.jpg)
 
 大家好。最近过得怎么样？  
 我进入九月份后，一直处在“是时候向着大自然出发啦！”这样的兴奋中。我没出现的这一大段时间里，也有好好地读大家发来的邮件，谢谢你们的支持。

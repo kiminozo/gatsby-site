@@ -4,7 +4,7 @@ date: "2020-09-04"
 categories: ["岡崎Today"]
 slug: "/okazaki-today/today-32"
 tags: []
-license: {type: "translated",author: "岡崎律子",translator: "貓总",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/today/today31.html",reproduced-website: "岡崎律子Book"}
+license: {type: "translated",author: "岡崎律子",translator: "貓总",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/today/today32.html",reproduced-website: "岡崎律子Book"}
 ---
 
 [![](./images/today32.jpg)](./images/today32.jpg)
@@ -38,18 +38,18 @@ license: {type: "translated",author: "岡崎律子",translator: "貓总",reprodu
 
 
     留言板1
-    非常感谢发来邮件的大家，我都很开心地在看。
-    联动这件事也当然OK。谢谢你们告诉我。
+    非常感谢发来邮件的大家，我都很开心地在看。  
+    联动这件事也当然OK。谢谢你们告诉我。  
 
     留言板2
-    大家还记得前段时间送给我Ritzstar这件事吗？那边的天文台给我寄来了夏日集会的通知呢。
-    虽然没法去参加，但还是有些开心，所以向大家报告一下。
+    大家还记得前段时间送给我Ritzstar这件事吗？那边的天文台给我寄来了夏日集会的通知呢。  
+    虽然没法去参加，但还是有些开心，所以向大家报告一下。  
 
 【*彩蛋1】
-    文明堂的总本店位于律子的出生地长崎县，已有一百多年历史，主营长崎蜂蜜蛋糕。
+    文明堂的总本店位于律子的出生地长崎县，已有一百多年历史，主营长崎蜂蜜蛋糕。  
 
 【*彩蛋2】
-    律子在日记中提到的那家歌舞伎座旁的文明堂咖啡现在仍旧在营业哦，有机会的话去重走一下律子当年的路线吧~
+    律子在日记中提到的那家歌舞伎座旁的文明堂咖啡现在仍旧在营业哦，有机会的话去重走一下律子当年的路线吧~ 
 
 ---
 
@@ -83,5 +83,6 @@ license: {type: "translated",author: "岡崎律子",translator: "貓总",reprodu
     リンクも、もちろんＯＫです。お知らせ下さってありがとう。
 
     その2            
-    Ritzmailのみなさま、前に私に贈ってくれたRitzstarのこと、覚えておいででしょうか？ あの天文台から、夏の集いのお知らせが届きました。
+    Ritzmailのみなさま、前に私に贈ってくれたRitzstarのこと、覚えておいででしょうか？   
+    あの天文台から、夏の集いのお知らせが届きました。 
     私は参加できないのですけれど、ちょっと嬉しかったので、ご報告です。

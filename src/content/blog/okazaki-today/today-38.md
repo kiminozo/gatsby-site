@@ -3,7 +3,7 @@ title: "●第38号掲載分（1999年11月18日）"
 date: "2020-09-07"
 categories: ["岡崎Today"]
 slug: "/okazaki-today/today-38"
-tags: []
+tags: ["录音","幽灵","新朋友","心情","花","鸭南蛮","吃"]
 license: {type: "translated",author: "岡崎律子",translator: "貓总",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/today/today38.html",reproduced-website: "岡崎律子Book"}
 ---
 

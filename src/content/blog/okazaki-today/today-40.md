@@ -3,7 +3,7 @@ title: "●第40号掲載分（2000年1月1日）"
 date: "2020-09-07"
 categories: ["岡崎Today"]
 slug: "/okazaki-today/today-40"
-tags: []
+tags: ["夏乃香织","生日"]
 license: {type: "translated",author: "岡崎律子",translator: "貓总",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/today/today40.html",reproduced-website: "岡崎律子Book"}
 ---
 

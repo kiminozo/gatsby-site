@@ -3,7 +3,7 @@ title: "●第41号掲載分（2000年1月25日）"
 date: "2020-09-07"
 categories: ["岡崎Today"]
 slug: "/okazaki-today/today-41"
-tags: []
+tags: ["禁欲","作曲","エレナー","英文歌","Yamaha儿童教室"]
 license: {type: "translated",author: "岡崎律子",translator: "貓总",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/today/today41.html",reproduced-website: "岡崎律子Book"}
 ---
 

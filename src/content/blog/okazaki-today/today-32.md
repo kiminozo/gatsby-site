@@ -3,7 +3,7 @@ title: "●第32号掲載分（1999年6月14日）"
 date: "2020-09-04"
 categories: ["岡崎Today"]
 slug: "/okazaki-today/today-32"
-tags: []
+tags: ["梅雨季","下午茶散步","蜂蜜蛋糕","Ritzmail","电影","催泪电影","饭冢雅弓"]
 license: {type: "translated",author: "岡崎律子",translator: "貓总",reproduced-url: "http://www.ne.jp/asahi/okazaki/book/today/today32.html",reproduced-website: "岡崎律子Book"}
 ---
 

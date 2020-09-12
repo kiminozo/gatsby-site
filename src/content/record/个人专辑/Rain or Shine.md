@@ -12,7 +12,7 @@ recordPublisher: "NU TAURUS"
 recordType: "5th Best Album"
 order: 5
 slug: "/discography/rain-or-shine"
-coverImage: "Rain or Shine.jpg"
+coverImage: "Rain-or-Shine.jpg"
 ---
 
 新曲２曲を含む、初のベスト盤。  

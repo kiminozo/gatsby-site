@@ -20,6 +20,7 @@ slug: "/about"
 原版奶昔  
 黃昏的歸途  
 星光守候
+xianzhao
 
 ## 翻译者
 loveritz  

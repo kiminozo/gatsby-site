@@ -24,7 +24,7 @@ interface MarkdownRemark {
     title: string;
     titlech?: string;
     slug: string;
-    date: string;
+    date?: string;
     lang: string;
     license?: License
     quote?: string;
@@ -119,7 +119,7 @@ export const query = graphql`
     markdownRemark(frontmatter: {slug: {eq: $slug}}) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date
         slug
         title
         titlech
